@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="5">
+  <title>Meme Hunter AI</title>
+  <style>
+    body{margin:0;background:#070b12;color:#fff;font-family:Arial,Helvetica,sans-serif;padding:18px}
+    h1{font-size:30px;margin:10px 0 14px}
+    h2{margin:0 0 10px;font-size:20px}
+    .card{background:#121a27;border:1px solid #243047;border-radius:18px;padding:16px;margin:12px 0;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .big{font-size:26px;font-weight:700}
+    .green{color:#00ff99}.red{color:#ff5b5b}.yellow{color:#ffd166}.muted{color:#95a3b8}
+    .row{display:flex;justify-content:space-between;border-bottom:1px solid #243047;padding:9px 0}
+    .row:last-child{border-bottom:0}
+    a{color:#64b5ff}
+  </style>
+</head>
+<body>
+  <h1>🤖 Meme Hunter AI</h1>
+
+  <div class="card">
+    <h2>Status: <span class="yellow">{{ state.status }}</span></h2>
+    <div class="muted">{{ state.reason }}</div>
+    <div class="muted">Last scan: {{ state.last_scan }}</div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="muted">Cash</div>
+      <div class="big">{{ money(trader.balance) }}</div>
+    </div>
+    <div class="card">
+      <div class="muted">Equity</div>
+      <div class="big green">{{ money(trader.equity) }}</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Performance</h2>
+    <div class="row"><span>Trades</span><b>{{ stats.total }}</b></div>
+    <div class="row"><span>Wins / Losses</span><b>{{ stats.wins }} / {{ stats.losses }}</b></div>
+    <div class="row"><span>Win Rate</span><b>{{ "%.1f"|format(stats.win_rate) }}%</b></div>
+    <div class="row"><span>Total P/L</span><b class="{{ 'green' if stats.total_pnl >= 0 else 'red' }}">{{ money(stats.total_pnl) }}</b></div>
+  </div>
+
+  {% if trader.position %}
+  <div class="card">
+    <h2>Current Position</h2>
+    <div class="row"><span>Coin</span><b>{{ trader.position.name }} ({{ trader.position.symbol }})</b></div>
+    <div class="row"><span>Entry</span><b>${{ "%.10f"|format(trader.position.entry) }}</b></div>
+    <div class="row"><span>Score</span><b>{{ trader.position.score }}/100</b></div>
+  </div>
+  {% endif %}
+
+  {% if state.best %}
+  <div class="card">
+    <h2>Best Coin Found</h2>
+    <div class="row"><span>Coin</span><b>{{ state.best.name }} ({{ state.best.symbol }})</b></div>
+    <div class="row"><span>Score</span><b class="green">{{ state.best.score }}/100</b></div>
+    <div class="row"><span>Market Cap</span><b>{{ money(state.best.market_cap) }}</b></div>
+    <div class="row"><span>Liquidity</span><b>{{ money(state.best.liquidity) }}</b></div>
+    <div class="row"><span>5m Volume</span><b>{{ money(state.best.volume_5m) }}</b></div>
+    <div class="row"><span>Buys / Sells</span><b>{{ state.best.buys }} / {{ state.best.sells }}</b></div>
+    <div class="row"><span>Pressure</span><b>{{ "%.2f"|format(state.best.pressure) }}x</b></div>
+    {% if state.best.url %}<p><a href="{{ state.best.url }}">Open chart</a></p>{% endif %}
+  </div>
+  {% endif %}
+
+  <div class="card">
+    <h2>Top Watchlist</h2>
+    {% for c in state.watchlist %}
+      <div class="row"><span>{{ c.symbol }}</span><b>{{ c.score }}/100 · MC {{ money(c.market_cap) }}</b></div>
+    {% else %}
+      <div class="muted">No strong coins found yet.</div>
+    {% endfor %}
+  </div>
+
+  <div class="card">
+    <h2>Recent Trades</h2>
+    {% for t in trader.trades[:10] %}
+      <div class="row">
+        <span>{{ t.coin }} — {{ t.reason }}</span>
+        <b class="{{ 'green' if t.pnl >= 0 else 'red' }}">{{ money(t.pnl) }} / {{ "%.2f"|format(t.pnl_pct) }}%</b>
+      </div>
+    {% else %}
+      <div class="muted">No trades yet.</div>
+    {% endfor %}
+  </div>
+
+  <div class="card">
+    <h2>Last Alert</h2>
+    <div class="muted">{{ state.last_alert }}</div>
+  </div>
+</body>
+</html>
