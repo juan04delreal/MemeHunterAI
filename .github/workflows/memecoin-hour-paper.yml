@@ -1,0 +1,48 @@
+name: Memecoin one-hour paper research
+on:
+  push:
+    branches: [research/memecoin-hour-20260918]
+    paths: [research/memecoin_hour_lab.py]
+permissions:
+  contents: read
+concurrency:
+  group: memecoin-hour-paper-20260918
+  cancel-in-progress: false
+jobs:
+  paper-experiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test paper accounting
+        run: python3 research/memecoin_hour_lab.py self-test
+      - name: Freeze experiment universe
+        run: python3 -u research/memecoin_hour_lab.py init
+      - name: Publish frozen settings
+        uses: actions/upload-artifact@v4
+        with:
+          name: memecoin-hour-start-${{ github.run_id }}
+          path: paper_results/manifest.json
+          retention-days: 7
+          if-no-files-found: error
+      - name: Run full-hour paper experiment
+        timeout-minutes: 65
+        run: python3 -u research/memecoin_hour_lab.py run
+      - name: Save data and results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: memecoin-hour-results-${{ github.run_id }}
+          path: paper_results/
+          retention-days: 7
+          if-no-files-found: warn
+      - name: Show report
+        if: always()
+        run: |
+          if [ -f paper_results/report.json ]; then
+            cat paper_results/report.json
+          else
+            echo 'NO REPORT: test did not complete. Do not claim an hour of trading.'
+          fi
