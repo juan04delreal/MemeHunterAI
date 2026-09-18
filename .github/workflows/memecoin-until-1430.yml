@@ -1,0 +1,59 @@
+name: Memecoin paper extension until 14:30 Eastern
+on:
+  push:
+    branches: [research/memecoin-hour-20260918]
+    paths: [research/memecoin_until_1430.py]
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: memecoin-paper-extension-1430-20260918
+  cancel-in-progress: false
+jobs:
+  paper-extension:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Retrieve the original frozen token selection
+        uses: actions/download-artifact@v4
+        with:
+          name: memecoin-hour-start-35371372217
+          path: parent_start
+          github-token: ${{ github.token }}
+          repository: juan04delreal/MemeHunterAI
+          run-id: 35371372217
+      - name: Test preserved accounting and freeze the extension policy
+        run: |
+          python3 research/memecoin_until_1430.py self-test
+          python3 -u research/memecoin_until_1430.py prepare
+      - name: Publish the extension settings before observing its outcomes
+        uses: actions/upload-artifact@v4
+        with:
+          name: memecoin-extension-start-${{ github.run_id }}
+          path: extension_results/manifest.json
+          retention-days: 7
+          if-no-files-found: error
+      - name: Continue paper research until 14:30 Eastern without resetting capital
+        timeout-minutes: 80
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 -u research/memecoin_until_1430.py run
+      - name: Preserve original and extended evidence including failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: memecoin-extension-results-${{ github.run_id }}
+          path: extension_results/
+          retention-days: 7
+          if-no-files-found: warn
+      - name: Print the extended result
+        if: always()
+        run: |
+          if [ -f extension_results/report.json ]; then
+            cat extension_results/report.json
+          else
+            echo 'NO EXTENSION REPORT. Do not claim collection or results through 14:30.'
+          fi
