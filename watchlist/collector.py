@@ -414,22 +414,36 @@ def run_cycle() -> None:
                     emit('transaction_decode_error', signature=sig, error=str(exc),
                          attempts=entry['attempts'], sources=entry['sources'])
                     if entry['attempts'] >= 8:
-                        emit('transaction_unavailable', signature=sig, attempts=entry['attempts'],
-                             sources=entry['sources'], reason='repeated RPC decode error; unresolved')
-                        state['unresolved_transaction_count'] = state.get('unresolved_transaction_count', 0) + 1
-                        del state['pending'][sig]
-                        seen.add(sig)
+                        if entry.get('recovery'):
+                            emit('recovery_still_unresolved', signature=sig, attempts=entry['attempts'],
+                                 sources=entry['sources'], reason='repeated RPC decode error')
+                            entry['attempts'] = 0
+                        else:
+                            emit('transaction_unavailable', signature=sig, attempts=entry['attempts'],
+                                 sources=entry['sources'], reason='repeated RPC decode error; unresolved')
+                            state['unresolved_transaction_count'] = state.get('unresolved_transaction_count', 0) + 1
+                            del state['pending'][sig]
+                            seen.add(sig)
                     continue
                 if tx is None:
                     entry['attempts'] += 1
                     if entry['attempts'] >= 8:
-                        emit('transaction_unavailable', signature=sig, attempts=entry['attempts'], sources=entry['sources'])
-                        state['unresolved_transaction_count'] = state.get('unresolved_transaction_count', 0) + 1
-                        del state['pending'][sig]
-                        seen.add(sig)
+                        if entry.get('recovery'):
+                            emit('recovery_still_unresolved', signature=sig, attempts=entry['attempts'],
+                                 sources=entry['sources'], reason='transaction still unavailable')
+                            entry['attempts'] = 0
+                        else:
+                            emit('transaction_unavailable', signature=sig, attempts=entry['attempts'], sources=entry['sources'])
+                            state['unresolved_transaction_count'] = state.get('unresolved_transaction_count', 0) + 1
+                            del state['pending'][sig]
+                            seen.add(sig)
                     continue
                 # Keep audit evidence, not merely a dashboard count.
-                emit('transaction_evidence', signature=sig, detected_at=entry['detected_at'], sources=entry['sources'], transaction=tx)
+                recovered_at = utc() if entry.get('recovery') else None
+                emit('transaction_evidence', signature=sig, detected_at=entry['detected_at'],
+                     recovered_at=recovered_at, recovery=bool(entry.get('recovery')),
+                     rpc_max_supported_transaction_version=MAX_SUPPORTED_TRANSACTION_VERSION,
+                     sources=entry['sources'], transaction=tx)
                 chain_time = tx.get('blockTime')
                 lag = None
                 if isinstance(chain_time, (int, float)):
@@ -438,10 +452,14 @@ def run_cycle() -> None:
                     row = {'signature': sig, 'observed_at': utc(), 'detected_at': entry['detected_at'],
                         'chain_block_time': chain_time, 'detection_lag_seconds': lag,
                         'sources': entry['sources'], 'early_entry_verified': False,
-                        'sample_period': ('during_monitor' if isinstance(chain_time, (int, float)) and chain_time >= datetime.fromisoformat(state['started_at']).timestamp() else 'before_monitor_or_unknown'), **flow}
+                        'recovered_at': recovered_at, 'classifier_version': VERSION,
+                        'rpc_max_supported_transaction_version': MAX_SUPPORTED_TRANSACTION_VERSION,
+                        'sample_period': ('recovered_historical' if entry.get('recovery') else
+                            ('during_monitor' if isinstance(chain_time, (int, float)) and chain_time >= datetime.fromisoformat(state['started_at']).timestamp()
+                             else 'before_monitor_or_unknown')), **flow}
                     emit('wallet_flow', **{k: v for k, v in row.items() if k != 'observed_at'})
                     state['recent_events'].append(row)
-                    if flow['classification'] == 'buy_candidate':
+                    if flow['classification'] == 'buy_candidate' and not entry.get('recovery'):
                         if flow['mint'] in cfg['tokens'] and row['sample_period'] == 'during_monitor':
                             buys = state['overlap'].setdefault(flow['wallet'], [])
                             if flow['mint'] not in buys:
@@ -451,6 +469,11 @@ def run_cycle() -> None:
                                 state['tracked_new_mints'].append(flow['mint'])
                             else:
                                 emit('new_mint_tracking_limit', mint=flow['mint'])
+                if entry.get('recovery'):
+                    state['recovered_transaction_count'] = state.get('recovered_transaction_count', 0) + 1
+                    state.setdefault('recovered_signatures', []).append(sig)
+                    state['recovered_signatures'] = state['recovered_signatures'][-5000:]
+                    state['unresolved_transaction_count'] = max(0, state.get('unresolved_transaction_count', 0) - 1)
                 seen.add(sig)
                 del state['pending'][sig]
             state['rpc_retry_after'] = 0
