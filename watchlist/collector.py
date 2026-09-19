@@ -234,6 +234,55 @@ def report(state: dict, cfg: dict, latest: dict) -> None:
     path.write_text('\n'.join(lines))
 
 
+
+def bootstrap_recovery(state: dict) -> None:
+    """Requeue previously retired transaction signatures once after the v1 reader repair.
+
+    Recovery records are historical evidence only. They must never be counted as forward
+    signals at their original block time.
+    """
+    marker = 'txv1-recovery-20260919'
+    if state.get('recovery_bootstrap') == marker:
+        return
+    retired, first_failure = {}, {}
+    for path in sorted(DATA.glob('events/**/*.jsonl')):
+        try:
+            lines = path.read_text().splitlines()
+        except OSError:
+            continue
+        for raw in lines:
+            try:
+                event = json.loads(raw)
+            except ValueError:
+                continue
+            sig = event.get('signature')
+            if not sig:
+                continue
+            if event.get('kind') == 'transaction_decode_error':
+                first_failure.setdefault(sig, event.get('observed_at'))
+            elif event.get('kind') == 'transaction_unavailable':
+                retired[sig] = event
+    seen = set(state.get('seen', []))
+    recovered = set(state.get('recovered_signatures', []))
+    for sig, event in retired.items():
+        if sig in recovered or sig in state.get('pending', {}):
+            continue
+        seen.discard(sig)
+        state.setdefault('pending', {})[sig] = {
+            'detected_at': first_failure.get(sig) or event.get('observed_at') or utc(),
+            'block_time': event.get('chain_block_time'),
+            'sources': event.get('sources') or ['historical-unresolved'],
+            'priority': -1,
+            'attempts': 0,
+            'recovery': True,
+        }
+    state['seen'] = list(seen)
+    state['recovery_bootstrap'] = marker
+    state['recovery_bootstrap_found'] = len(retired)
+    state.setdefault('recovered_signatures', [])
+    state.setdefault('recovered_transaction_count', 0)
+
+
 def run_cycle() -> None:
     DATA.mkdir(parents=True, exist_ok=True)
     cfg = load(ROOT / 'config.json')
@@ -243,6 +292,7 @@ def run_cycle() -> None:
             raise ValueError('invalid configured public address')
     state = load(DATA / 'state.json', {'schema': 1, 'started_at': utc(), 'cycles': 0, 'wallets': {},
         'pending': {}, 'seen': [], 'tracked_new_mints': [], 'overlap': {}, 'recent_events': [], 'rpc_retry_after': 0})
+    bootstrap_recovery(state)
     state['cycles'] += 1
     seen = set(state['seen'])
     rows, errors, markets = [], [], {}
