@@ -23,7 +23,8 @@ WSOL = 'So11111111111111111111111111111111111111112'
 USDC = 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'
 QUOTES = {WSOL, USDC}
 READ_METHODS = {'getSlot', 'getSignaturesForAddress', 'getTransaction'}
-VERSION = 'early-wallet-observer-1.1'
+VERSION = 'early-wallet-observer-1.2'
+MAX_SUPPORTED_TRANSACTION_VERSION = 1
 
 
 def utc() -> str:
@@ -352,7 +353,7 @@ def run_cycle() -> None:
             for sig in pending[:30]:
                 entry = state['pending'][sig]
                 try:
-                    tx = rpc.call('getTransaction', [sig, {'encoding': 'jsonParsed', 'commitment': 'confirmed', 'maxSupportedTransactionVersion': 0}])
+                    tx = rpc.call('getTransaction', [sig, {'encoding': 'jsonParsed', 'commitment': 'confirmed', 'maxSupportedTransactionVersion': MAX_SUPPORTED_TRANSACTION_VERSION}])
                 except FeedError as exc:
                     # A transaction-specific RPC error must not stop other wallet scans.
                     # Network/HTTP errors retain global backoff rather than hammering a provider.
