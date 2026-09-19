@@ -52,6 +52,9 @@ class Tests(unittest.TestCase):
     def test_mixed(self):
         tx=sample(); tx['transaction']['message']['instructions'] += sample('sell')['transaction']['message']['instructions']
         self.assertEqual(c.decode_flows(tx,{WALLET})[0]['classification'],'mixed_trade_unclassified')
+    def test_transaction_v1_read_support(self):
+        self.assertEqual(c.MAX_SUPPORTED_TRANSACTION_VERSION, 1)
+
     def test_forbidden_method(self):
         with self.assertRaises(c.FeedError):
             c.RPC().call('not_a_read_method', [])
