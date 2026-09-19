@@ -1,0 +1,35 @@
+name: Early wallet watchlist (read only)
+on:
+  push:
+    branches: ['research/early-wallet-watchlist']
+    paths:
+      - '.github/workflows/early-wallet-watchlist.yml'
+      - 'watchlist/collector.py'
+      - 'watchlist/test_collector.py'
+      - 'watchlist/config.json'
+      - 'watchlist/run.sh'
+      - 'watchlist/pulse.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: early-wallet-watchlist
+  cancel-in-progress: false
+jobs:
+  observe:
+    if: github.repository == 'juan04delreal/MemeHunterAI' && github.ref == 'refs/heads/research/early-wallet-watchlist' && github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 85
+    steps:
+      - name: Check out isolated research branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: research/early-wallet-watchlist
+          fetch-depth: 1
+      - name: Validate parser and safety checks
+        run: python3 -m unittest discover -s watchlist -p 'test_*.py' -v
+      - name: Collect and checkpoint read-only observations
+        env:
+          SOLANA_RPC_URL: ${{ secrets.SOLANA_RPC_URL }}
+          PYTHONUNBUFFERED: '1'
+        run: bash watchlist/run.sh
