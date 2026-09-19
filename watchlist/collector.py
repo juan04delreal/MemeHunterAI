@@ -23,7 +23,7 @@ WSOL = 'So11111111111111111111111111111111111111112'
 USDC = 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'
 QUOTES = {WSOL, USDC}
 READ_METHODS = {'getSlot', 'getSignaturesForAddress', 'getTransaction'}
-VERSION = 'early-wallet-observer-1.0'
+VERSION = 'early-wallet-observer-1.1'
 
 
 def utc() -> str:
@@ -57,6 +57,9 @@ def save(path: Path, obj) -> None:
 
 class FeedError(RuntimeError):
     """Sanitized exception: URLs and credentials must never reach logs."""
+    def __init__(self, message, code=None):
+        super().__init__(message)
+        self.code = code
 
 
 def request_json(url: str, payload=None):
@@ -94,7 +97,7 @@ class RPC:
         obj = request_json(self.url, {'jsonrpc': '2.0', 'id': self.calls, 'method': method, 'params': params})
         if not isinstance(obj, dict) or 'result' not in obj or obj.get('error'):
             code = (obj.get('error') or {}).get('code', 'unknown') if isinstance(obj, dict) else 'invalid'
-            raise FeedError(f'RPC error {code}')
+            raise FeedError(f'RPC error {code}', code=code)
         return obj['result']
 
 
@@ -186,7 +189,8 @@ def report(state: dict, cfg: dict, latest: dict) -> None:
              f"Last observation (UTC): `{latest['updated_at']}`", '',
              f"Status: **{latest['status']}** | Completed observation cycles: {state['cycles']}",
              f"Configured seed coins: {len(cfg['tokens'])} | Wallet leads: {len(cfg['wallets'])}",
-             f"RPC: {latest['rpc_status']} | Pending transaction decodes: {len(state['pending'])}", '',
+             f"RPC: {latest['rpc_status']} | Pending transaction decodes: {len(state['pending'])}",
+             f"Unresolved transactions retained in evidence logs: {state.get('unresolved_transaction_count', 0)}", '',
              'Refresh this page. Data is checkpointed about every 5 minutes; the collector targets 60-second cycles.',
              'The hourly supervisor renews bounded GitHub jobs. Runner/provider delays and restarts can cause gaps.', '',
              '## Market snapshots (not executable quotes)', '',
@@ -347,11 +351,29 @@ def run_cycle() -> None:
             pending = sorted(state['pending'], key=lambda sig: (state['pending'][sig]['priority'], state['pending'][sig]['detected_at']))
             for sig in pending[:30]:
                 entry = state['pending'][sig]
-                tx = rpc.call('getTransaction', [sig, {'encoding': 'jsonParsed', 'commitment': 'confirmed', 'maxSupportedTransactionVersion': 0}])
+                try:
+                    tx = rpc.call('getTransaction', [sig, {'encoding': 'jsonParsed', 'commitment': 'confirmed', 'maxSupportedTransactionVersion': 0}])
+                except FeedError as exc:
+                    # A transaction-specific RPC error must not stop other wallet scans.
+                    # Network/HTTP errors retain global backoff rather than hammering a provider.
+                    if exc.code is None:
+                        raise
+                    entry['attempts'] += 1
+                    errors.append('transaction decode: ' + str(exc))
+                    emit('transaction_decode_error', signature=sig, error=str(exc),
+                         attempts=entry['attempts'], sources=entry['sources'])
+                    if entry['attempts'] >= 8:
+                        emit('transaction_unavailable', signature=sig, attempts=entry['attempts'],
+                             sources=entry['sources'], reason='repeated RPC decode error; unresolved')
+                        state['unresolved_transaction_count'] = state.get('unresolved_transaction_count', 0) + 1
+                        del state['pending'][sig]
+                        seen.add(sig)
+                    continue
                 if tx is None:
                     entry['attempts'] += 1
                     if entry['attempts'] >= 8:
                         emit('transaction_unavailable', signature=sig, attempts=entry['attempts'], sources=entry['sources'])
+                        state['unresolved_transaction_count'] = state.get('unresolved_transaction_count', 0) + 1
                         del state['pending'][sig]
                         seen.add(sig)
                     continue
@@ -394,10 +416,15 @@ def run_cycle() -> None:
     status = 'OBSERVING' if rpc_status == 'connected' and markets else 'DEGRADED'
     if rpc_status == 'connected' and (len(state['pending']) > 100 or any(w.get('scan') for w in state['wallets'].values())):
         status = 'CATCHING_UP'
+    if rpc_status == 'connected' and errors:
+        status = 'PARTIAL_COVERAGE'
     latest = {'version': VERSION, 'updated_at': utc(), 'started_at': state['started_at'], 'status': status,
               'mode': 'WATCH_ONLY', 'run_id': os.environ.get('GITHUB_RUN_ID', 'local'),
               'rpc_status': rpc_status, 'rpc_provider': rpc.label, 'rpc_calls_this_cycle': rpc.calls,
-              'pending_transactions': len(state['pending']), 'markets': markets, 'errors': errors,
+              'pending_transactions': len(state['pending']), 'markets': markets, 'errors': sorted(set(errors)),
+              'unresolved_transaction_count': state.get('unresolved_transaction_count', 0),
+              'wallet_address_scans_current': rpc_status == 'connected',
+              'market_mints_without_price': [m for m in cfg['tokens'] if not markets.get(m, {}).get('price_usd')],
               'seed_token_count': len(cfg['tokens']), 'wallet_lead_count': len(cfg['wallets']),
               'real_trades_placed': 0, 'verified_early_wallets': 0, 'realized_profit': None,
               'target_cycle_seconds': 60, 'complete_historical_reconstruction': False}
