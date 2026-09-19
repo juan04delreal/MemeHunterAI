@@ -190,8 +190,9 @@ def report(state: dict, cfg: dict, latest: dict) -> None:
              f"Last observation (UTC): `{latest['updated_at']}`", '',
              f"Status: **{latest['status']}** | Completed observation cycles: {state['cycles']}",
              f"Configured seed coins: {len(cfg['tokens'])} | Wallet leads: {len(cfg['wallets'])}",
-             f"RPC: {latest['rpc_status']} | Pending transaction decodes: {len(state['pending'])}",
-             f"Unresolved transactions retained in evidence logs: {state.get('unresolved_transaction_count', 0)}", '',
+             f"RPC: {latest['rpc_status']} | Pending decodes: {len(state['pending'])}",
+             f"Outstanding unresolved: {state.get('unresolved_transaction_count', 0)} | Recovered after v1 repair: {state.get('recovered_transaction_count', 0)}",
+             f"RPC transaction-version support: v{MAX_SUPPORTED_TRANSACTION_VERSION}", '',
              'Refresh this page. Data is checkpointed about every 5 minutes; the collector targets 60-second cycles.',
              'The hourly supervisor renews bounded GitHub jobs. Runner/provider delays and restarts can cause gaps.', '',
              '## Market snapshots (not executable quotes)', '',
@@ -220,7 +221,8 @@ def report(state: dict, cfg: dict, latest: dict) -> None:
               '- Unknown programs, transfers, allocations, and complex transactions are not promoted to verified buys.',
               '- Pool creation time is NOT token creation time. Early-entry flags and profit are intentionally unset.',
               '- A mark is not an exit quote. No simulated fills or P&L are invented.',
-              '- RPC errors and pagination gaps are retained in the event logs. A running job alone is not proof of a healthy wallet feed.', '',
+              '- RPC errors and pagination gaps are retained in the event logs. A running job alone is not proof of a healthy wallet feed.',
+              '- Recovered historical transactions are labeled recovered_historical and are never backdated into forward overlap/signal results.', '',
               '## Latest observed events', '']
     for row in state['recent_events'][-15:]:
         lines.append(f"- `{row.get('observed_at')}` {row.get('classification')} `{row.get('wallet')}` / `{row.get('mint')}` / tx `{row.get('signature')}`")
@@ -487,16 +489,21 @@ def run_cycle() -> None:
     previous_seen = set(state['seen'])
     state['seen'] = (state['seen'] + [s for s in sorted(seen) if s not in previous_seen])[-12000:]
     state['recent_events'] = state['recent_events'][-100:]
-    status = 'OBSERVING' if rpc_status == 'connected' and markets else 'DEGRADED'
+    status = 'OBSERVING_HEALTHY' if rpc_status == 'connected' and markets else 'RPC_DEGRADED'
     if rpc_status == 'connected' and (len(state['pending']) > 100 or any(w.get('scan') for w in state['wallets'].values())):
         status = 'CATCHING_UP'
+    if rpc_status == 'connected' and state.get('unresolved_transaction_count', 0) > 0:
+        status = 'RECOVERING_HISTORY' if any(e.get('recovery') for e in state['pending'].values()) else 'OBSERVING_WITH_GAPS'
     if rpc_status == 'connected' and errors:
-        status = 'PARTIAL_COVERAGE'
+        status = 'OBSERVING_WITH_GAPS'
     latest = {'version': VERSION, 'updated_at': utc(), 'started_at': state['started_at'], 'status': status,
               'mode': 'WATCH_ONLY', 'run_id': os.environ.get('GITHUB_RUN_ID', 'local'),
               'rpc_status': rpc_status, 'rpc_provider': rpc.label, 'rpc_calls_this_cycle': rpc.calls,
               'pending_transactions': len(state['pending']), 'markets': markets, 'errors': sorted(set(errors)),
               'unresolved_transaction_count': state.get('unresolved_transaction_count', 0),
+              'recovered_transaction_count': state.get('recovered_transaction_count', 0),
+              'recovery_pending_transactions': sum(1 for e in state['pending'].values() if e.get('recovery')),
+              'rpc_max_supported_transaction_version': MAX_SUPPORTED_TRANSACTION_VERSION,
               'wallet_address_scans_current': rpc_status == 'connected',
               'market_mints_without_price': [m for m in cfg['tokens'] if not markets.get(m, {}).get('price_usd')],
               'seed_token_count': len(cfg['tokens']), 'wallet_lead_count': len(cfg['wallets']),
