@@ -1,0 +1,40 @@
+name: Early wallet RPC diagnostic
+on:
+  push:
+    branches: ['research/early-wallet-watchlist']
+    paths: ['.github/workflows/early-wallet-rpc-check.yml']
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    if: github.repository == 'juan04delreal/MemeHunterAI' && github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: research/early-wallet-watchlist
+      - name: Run parser tests
+        run: python3 -m unittest discover -s watchlist -p 'test_*.py' -v
+      - name: Inspect public read-only transaction responses
+        run: |
+          python3 - <<'PY'
+          import json, urllib.request, urllib.error, time
+          sig = '3B4pbehLiWftyHHQt5NExqRR6LbVHvjXKC6EzSXny28sEgWudEVgMYsqfPNuqKyZe6csXY38oEAiu1KEQkgdsdZA'
+          endpoints = [('publicnode', 'https://solana-rpc.publicnode.com'), ('solana-public', 'https://api.mainnet-beta.solana.com')]
+          for label, url in endpoints:
+              for version in [0]:
+                  payload = {'jsonrpc':'2.0','id':1,'method':'getTransaction','params':[sig,{'encoding':'jsonParsed','commitment':'confirmed','maxSupportedTransactionVersion':version}]}
+                  req = urllib.request.Request(url, data=json.dumps(payload).encode(), headers={'Content-Type':'application/json','User-Agent':'MemeHunterAI-ReadOnlyResearch/1.1'})
+                  try:
+                      with urllib.request.urlopen(req,timeout=12) as r:
+                          obj=json.load(r)
+                      tx=obj.get('result')
+                      summary = {'provider':label,'requested_max_version':version,'error':obj.get('error'), 'found':bool(tx), 'returned_version':tx.get('version') if isinstance(tx,dict) else None}
+                      print(json.dumps(summary), flush=True)
+                  except urllib.error.HTTPError as e:
+                      print(json.dumps({'provider':label,'http_status':e.code}),flush=True)
+                  except Exception as e:
+                      print(json.dumps({'provider':label,'error_type':type(e).__name__}),flush=True)
+                  time.sleep(1)
+          PY
