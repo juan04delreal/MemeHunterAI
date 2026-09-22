@@ -1,16 +1,16 @@
 {
-  "cycles": 520,
+  "cycles": 540,
   "entry_quotes_observed": 0,
   "exit_quotes_observed": 0,
   "mode": "WATCH_ONLY",
   "new_migrations_this_cycle": 0,
-  "quote_failures": 0,
+  "quote_failures": 3,
   "quote_provider_api_key_configured": false,
   "real_trades_placed": 0,
   "realized_profit": null,
   "rpc_connected": true,
-  "slot": 449452970,
-  "updated_at": "2026-09-22T17:59:28+00:00",
-  "validated_migrations": 0,
+  "slot": 449454094,
+  "updated_at": "2026-09-22T18:04:33+00:00",
+  "validated_migrations": 1,
   "version": "prospective-quote-lab-0.2"
 }
