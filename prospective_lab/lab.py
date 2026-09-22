@@ -4,7 +4,11 @@ import json, os, time, urllib.request, urllib.error
 from datetime import datetime, timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent; DATA=ROOT/'data'
-PUMPSWAP='pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA'\nPUMP='6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P'\nMIGRATE_DISC=[155,234,231,146,236,158,162,30]\nMAX_TX_VERSION=1\nALPHABET='123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
+PUMPSWAP='pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA'
+PUMP='6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P'
+MIGRATE_DISC=[155,234,231,146,236,158,162,30]
+MAX_TX_VERSION=1
+ALPHABET='123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
 WSOL='So11111111111111111111111111111111111111112'; USDC='EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'
 VERSION='prospective-quote-lab-0.2'
 def utc(): return datetime.now(timezone.utc).isoformat(timespec='seconds')
