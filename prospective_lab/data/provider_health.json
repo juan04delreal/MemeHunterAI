@@ -1,20 +1,20 @@
 {
   "access_mode": "keyless",
-  "checked_at": "2026-09-22T22:12:35.022+00:00",
+  "checked_at": "2026-09-22T22:22:38.117+00:00",
   "endpoint": "https://api.jup.ag/swap/v1/quote",
   "entry": {
     "access_mode": "keyless",
-    "context_slot_delta_from_rpc": 24,
+    "context_slot_delta_from_rpc": 66,
     "fills_assumed": false,
     "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
-    "observed_at": "2026-09-22T22:12:32.355+00:00",
+    "observed_at": "2026-09-22T22:22:35.457+00:00",
     "provider": "jupiter_metis_v1",
     "raw": {
-      "contextSlot": 449509772,
+      "contextSlot": 449512036,
       "inAmount": "50000000",
       "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-      "otherAmountThreshold": "420481753",
-      "outAmount": "424729043",
+      "otherAmountThreshold": "419000059",
+      "outAmount": "423232382",
       "outputMint": "So11111111111111111111111111111111111111112",
       "platformFee": null,
       "priceImpactPct": "0",
@@ -27,63 +27,63 @@
             "inAmount": "50000000",
             "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "label": "Kipseli",
-            "outAmount": "424729043",
+            "outAmount": "423232382",
             "outputMint": "So11111111111111111111111111111111111111112",
-            "updateContextSlot": "449509771"
+            "updateContextSlot": "449512035"
           }
         }
       ],
       "slippageBps": 100,
       "swapMode": "ExactIn",
-      "timeTaken": 0.001528352
+      "timeTaken": 0.001697143
     },
-    "received_epoch": 1790115152.355152,
-    "request_latency_seconds": 0.1798570156097412,
-    "requested_epoch": 1790115152.1752949,
+    "received_epoch": 1790115755.4571266,
+    "request_latency_seconds": 0.2074601650238037,
+    "requested_epoch": 1790115755.2496665,
     "status": "quote_observed"
   },
   "exit": {
     "access_mode": "keyless",
-    "context_slot_delta_from_rpc": 34,
+    "context_slot_delta_from_rpc": 76,
     "fills_assumed": false,
     "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
-    "observed_at": "2026-09-22T22:12:35.022+00:00",
+    "observed_at": "2026-09-22T22:22:38.117+00:00",
     "provider": "jupiter_metis_v1",
     "raw": {
-      "contextSlot": 449509782,
-      "inAmount": "424729043",
+      "contextSlot": 449512046,
+      "inAmount": "423232382",
       "inputMint": "So11111111111111111111111111111111111111112",
-      "otherAmountThreshold": "49497529",
-      "outAmount": "49997504",
+      "otherAmountThreshold": "49498855",
+      "outAmount": "49998843",
       "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
       "platformFee": null,
-      "priceImpactPct": "0",
+      "priceImpactPct": "0.0000404639464652559798326335",
       "routePlan": [
         {
           "bps": null,
           "percent": 100,
           "swapInfo": {
             "ammKey": "8FnX3xo2yYw3EUE6w3nQA4GfXGS9wpK6oj3veJpbFzLo",
-            "inAmount": "424729043",
+            "inAmount": "423232382",
             "inputMint": "So11111111111111111111111111111111111111112",
             "label": "BisonFi",
-            "outAmount": "49997504",
+            "outAmount": "49998843",
             "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-            "updateContextSlot": "449509782"
+            "updateContextSlot": "449512046"
           }
         }
       ],
       "slippageBps": 100,
       "swapMode": "ExactIn",
-      "timeTaken": 0.001341602
+      "timeTaken": 0.001573663
     },
-    "received_epoch": 1790115155.0229144,
-    "request_latency_seconds": 0.16382694244384766,
-    "requested_epoch": 1790115154.8590875,
+    "received_epoch": 1790115758.117576,
+    "request_latency_seconds": 0.15660977363586426,
+    "requested_epoch": 1790115757.960966,
     "status": "quote_observed"
   },
   "experiment_sample": false,
-  "next_probe_epoch": 1790115755.0229726,
+  "next_probe_epoch": 1790116358.1176424,
   "status": "healthy",
   "version": "prospective-quote-lab-0.3"
 }
