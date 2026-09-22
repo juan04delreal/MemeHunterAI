@@ -4,10 +4,32 @@ import json, os, time, urllib.request, urllib.error
 from datetime import datetime, timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent; DATA=ROOT/'data'
-PUMPSWAP='pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA'
+PUMPSWAP='pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA'\nPUMP='6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P'\nMIGRATE_DISC=[155,234,231,146,236,158,162,30]\nMAX_TX_VERSION=1\nALPHABET='123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
 WSOL='So11111111111111111111111111111111111111112'; USDC='EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'
-VERSION='prospective-quote-lab-0.1'
+VERSION='prospective-quote-lab-0.2'
 def utc(): return datetime.now(timezone.utc).isoformat(timespec='seconds')
+
+def b58decode(s):
+    n=0
+    for c in s: n=n*58+ALPHABET.index(c)
+    raw=n.to_bytes((n.bit_length()+7)//8,'big') if n else b''
+    return b'\0'*(len(s)-len(s.lstrip('1')))+raw
+def keystr(x): return x.get('pubkey','') if isinstance(x,dict) else str(x)
+def decode_migration(tx):
+    if not tx or (tx.get('meta') or {}).get('err') is not None: return None
+    msg=(tx.get('transaction') or {}).get('message') or {}
+    instructions=list(msg.get('instructions') or [])
+    for group in (tx.get('meta') or {}).get('innerInstructions') or []: instructions.extend(group.get('instructions') or [])
+    for ins in instructions:
+        if ins.get('programId')!=PUMP or not isinstance(ins.get('data'),str): continue
+        try:
+            if list(b58decode(ins['data'])[:8])!=MIGRATE_DISC: continue
+        except Exception: continue
+        accounts=[keystr(a) for a in ins.get('accounts') or []]
+        if len(accounts)<10: return None
+        return {'mint':accounts[2],'pool':accounts[9],'quote_mint':WSOL,'decoder':'official_pump_idl_migrate_layout'}
+    return None
+
 def load(p,d): return json.loads(p.read_text()) if p.exists() else d
 def save(p,o): p.parent.mkdir(parents=True,exist_ok=True); p.write_text(json.dumps(o,indent=2,sort_keys=True)+'\n')
 def req(url,payload=None,headers=None):
