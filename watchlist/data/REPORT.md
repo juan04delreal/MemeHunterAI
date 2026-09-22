@@ -2,9 +2,9 @@
 
 **WATCH ONLY. No trading, no private keys, no verified profitable-copy list.**
 
-Last observation (UTC): `2026-09-22T05:04:54+00:00`
+Last observation (UTC): `2026-09-22T05:09:55+00:00`
 
-Status: **OBSERVING_HEALTHY** | Completed observation cycles: 3623
+Status: **OBSERVING_HEALTHY** | Completed observation cycles: 3628
 Configured seed coins: 13 | Wallet leads: 6
 RPC: connected | Pending decodes: 0
 Outstanding unresolved: 0 | Recovered after v1 repair: 249
@@ -17,30 +17,30 @@ The hourly supervisor renews bounded GitHub jobs. Runner/provider delays and res
 
 | Mint | Symbol | Observed price | Pool liquidity |
 |---|---|---:|---:|
-| `AyYNfPtftg2zDP4ZbgcoQMggQtwLh4zpfVVmUJs2thto` | Tilcayo | $0.001791 | $175,163.74 |
-| `91ryaCo5yGpYZM3bs6GUPs97VWJQj7RozBmqPULgpump` | TIGRINO | $0.000261 | $62,477.59 |
-| `DDVUsN8sDFxbaX6gNBoD44kjZhFETWJnwAn4EX1dpump` | BABYCATE | $0.001015 | $115,089.07 |
-| `DnJeAP7hWjVNTTk1NUaDJ5Aps9qDroSsEMcKBCpSTNK` | PSA10 | $0.000018 | $13,262.39 |
-| `HgcxVs6kJhPAaGqnPNGaa7zYgNT49hJrLufiqcNMuYZT` | FEELSGOOD | $0.006347 | $97,980.50 |
-| `4tkupXEGfbYPCVN37CagviJd3tgWnudT9avKZvouT3Dm` | HEV | $0.001026 | $138,766.71 |
-| `DFQHUegJWE29Xu3BUxPezqi77uyHURRyxJpdtyvLpump` | PUMPCAT | $0.000093 | $31,158.68 |
+| `AyYNfPtftg2zDP4ZbgcoQMggQtwLh4zpfVVmUJs2thto` | Tilcayo | $0.001904 | $180,783.71 |
+| `91ryaCo5yGpYZM3bs6GUPs97VWJQj7RozBmqPULgpump` | TIGRINO | $0.000261 | $62,502.91 |
+| `DDVUsN8sDFxbaX6gNBoD44kjZhFETWJnwAn4EX1dpump` | BABYCATE | $0.001000 | $114,313.54 |
+| `DnJeAP7hWjVNTTk1NUaDJ5Aps9qDroSsEMcKBCpSTNK` | PSA10 | $0.000018 | $13,319.88 |
+| `HgcxVs6kJhPAaGqnPNGaa7zYgNT49hJrLufiqcNMuYZT` | FEELSGOOD | $0.005730 | $95,863.48 |
+| `4tkupXEGfbYPCVN37CagviJd3tgWnudT9avKZvouT3Dm` | HEV | $0.001047 | $140,436.50 |
+| `DFQHUegJWE29Xu3BUxPezqi77uyHURRyxJpdtyvLpump` | PUMPCAT | $0.000096 | $31,798.71 |
 | `JAzfwUUbThYJNpDhaezwZquKog4Q6CRFELJQrfLMpump` | Canary | unavailable | unavailable |
-| `6AUURRdHb9TrfPHv9AMofa8NEVoZDXcsbWKcUBpFSRXs` | CYPHERCAT | $0.001585 | $117,768.18 |
-| `fvHLJUwsynVHJrssbZ8MLNyku9jt2izUspbBD4Spump` | FLEX | $0.000705 | $90,256.18 |
-| `GJSfEpiK9RnmRt9AnZi3FL1b2K6AApcW1SzTs2FeHGis` | BRRR | $0.000769 | $80,155.97 |
-| `98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump` | PAID | $0.016740 | $730,215.34 |
-| `GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump` | ELON | $0.001931 | $185,704.03 |
+| `6AUURRdHb9TrfPHv9AMofa8NEVoZDXcsbWKcUBpFSRXs` | CYPHERCAT | $0.001603 | $118,417.43 |
+| `fvHLJUwsynVHJrssbZ8MLNyku9jt2izUspbBD4Spump` | FLEX | $0.000717 | $91,104.97 |
+| `GJSfEpiK9RnmRt9AnZi3FL1b2K6AApcW1SzTs2FeHGis` | BRRR | $0.000674 | $75,036.13 |
+| `98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump` | PAID | $0.017660 | $750,837.32 |
+| `GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump` | ELON | $0.001943 | $186,446.21 |
 
 ## Wallet leads (unverified)
 
 | Wallet | Role | Last successful address scan (UTC) |
 |---|---|---|
-| `kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf` | unverified-overlap-lead | 2026-09-22T05:04:48+00:00 |
-| `ftH8JtoAvBp5cxpGtMaoBKZDiGLRWBAXEwz3XyvsrwE` | unverified-overlap-lead | 2026-09-22T05:04:48+00:00 |
-| `6a7tbRtWETeGrzWmLTUFkRAMQ2p9HxN4xCaSinRYnFXZ` | unverified-overlap-lead | 2026-09-22T05:04:48+00:00 |
-| `cGxeYN6F7T9aELwjLPeL3hnJNscGU7EHg5CEsP4B3Hz` | historical-research-lead | 2026-09-22T05:04:49+00:00 |
-| `P5tb4T6SBVQaM3BAoGfpVudLtTdecqjsh4KV9ESAhKg` | historical-research-lead | 2026-09-22T05:04:49+00:00 |
-| `EKHARkLX6afkEkZvY8MBaMBzUKEwk6NWrDsA8pxHQ6TU` | reported-ELON-creator-risk-reference | 2026-09-22T05:04:50+00:00 |
+| `kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf` | unverified-overlap-lead | 2026-09-22T05:09:47+00:00 |
+| `ftH8JtoAvBp5cxpGtMaoBKZDiGLRWBAXEwz3XyvsrwE` | unverified-overlap-lead | 2026-09-22T05:09:48+00:00 |
+| `6a7tbRtWETeGrzWmLTUFkRAMQ2p9HxN4xCaSinRYnFXZ` | unverified-overlap-lead | 2026-09-22T05:09:48+00:00 |
+| `cGxeYN6F7T9aELwjLPeL3hnJNscGU7EHg5CEsP4B3Hz` | historical-research-lead | 2026-09-22T05:09:48+00:00 |
+| `P5tb4T6SBVQaM3BAoGfpVudLtTdecqjsh4KV9ESAhKg` | historical-research-lead | 2026-09-22T05:09:49+00:00 |
+| `EKHARkLX6afkEkZvY8MBaMBzUKEwk6NWrDsA8pxHQ6TU` | reported-ELON-creator-risk-reference | 2026-09-22T05:09:49+00:00 |
 
 ## Cross-token observations since this collector started
 
@@ -48,8 +48,8 @@ These are sampled, instruction-supported **buy candidates**, not verified early 
 
 | Wallet | Distinct supplied mints with observed buy candidates |
 |---|---:|
+| `6Qt8a3Y6B4nekSRQ1p2e5yqP5bSCbE6HzUTdWwdfYXmR` | 7 |
 | `2z2q5gk8TDgqCidzkXkyevXH1aDaVjWL8cQwoRbMF1Jq` | 6 |
-| `6Qt8a3Y6B4nekSRQ1p2e5yqP5bSCbE6HzUTdWwdfYXmR` | 6 |
 | `6a7tbRtWETeGrzWmLTUFkRAMQ2p9HxN4xCaSinRYnFXZ` | 4 |
 | `kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf` | 4 |
 | `3MshHo1CqCzpTUwQmPBhLdiGMozGnoY1c2zsWdHZsuMU` | 3 |
@@ -92,21 +92,21 @@ These are sampled, instruction-supported **buy candidates**, not verified early 
 
 ## Latest observed events
 
-- `2026-09-22T05:03:50+00:00` buy_candidate `kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf` / `EgrQxdckmSBEzKXzMD6PxjYdwsMcBpJjW8dx3RBWx4By` / tx `3oM6wz97jpASYwxvP1ALotyHTshpXfadASzsYPC1BpvAMAZuLe5hAQ4Ltp4c6FPbwdnCJucULYGuSPKWZUHLYrBH`
-- `2026-09-22T05:03:51+00:00` sell_candidate `kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf` / `3ULoD6ffRdG3B5Dndm1cQh7VNATqoitqQ1EVoAwWQZWk` / tx `5puozud4YQDpLCoPYn7QN2PebfbeKMbiqji8oLeNtYFudpsMZFkuDPRjT1ZCunNmZnherD6grivub867khb629Rz`
-- `2026-09-22T05:03:51+00:00` buy_candidate `kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf` / `stckszzSEhZgCsLmmUpas1hmkggVMRtLGucDTTXLfHs` / tx `4adn7aJnjTSxZTZbpLgtbm9uneEgWThkzC589Hw5j3TmyF6AtUDDxJtphMpCNPS6kVNMzQrfBRQ6hrLunGyfjGjx`
-- `2026-09-22T05:03:53+00:00` sell_candidate `5QBWPxji178auNjydYK62FduA7TEYet1NFoLTwvmBnVJ` / `DDVUsN8sDFxbaX6gNBoD44kjZhFETWJnwAn4EX1dpump` / tx `3bD8izJm4Ps8zNgzZCfp3Jmdfn1eV4WkdvgX3VpDJD3phhCmiy79K9URmKsAfuWEcJBAyoKbMLsk1G5SWhjLKGPr`
-- `2026-09-22T05:03:54+00:00` sell_candidate `AgvkFCgkY4ZMd6q74RgJHbtzZZ3rZWq4JP5cXLyy8H7o` / `DDVUsN8sDFxbaX6gNBoD44kjZhFETWJnwAn4EX1dpump` / tx `3PFg8mNYP3FGnz6rEzWUJ9vEjXVzh7B5jFnVBzcUv3nrvPkw1cbkg9hekpsaeJYf5cr6Jcn3NMtKYntYg2x8fYdA`
-- `2026-09-22T05:03:54+00:00` buy_candidate `5QBWPxji178auNjydYK62FduA7TEYet1NFoLTwvmBnVJ` / `DDVUsN8sDFxbaX6gNBoD44kjZhFETWJnwAn4EX1dpump` / tx `2h6odGDRr9UtnZLfrrYDc2G6vrfqJZs3uGL5o5UDjE6sXTm6AbphAGZRXDrv1DfFQ1GkMaHWWEHxq7Br5q2PSuyd`
-- `2026-09-22T05:04:51+00:00` buy_candidate `kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf` / `DrK9ci66pPJxi9ig327XcVRs8cDzs7frXXoHWwwKvsN5` / tx `3DXaAEPPasFXbi96F2Zo8yy614Jb32u3cRFbiHi9fFmJHpPRTDFhmpnGKJEdQa8MPeKiome6rPhu27SdVUQam7hK`
-- `2026-09-22T05:04:51+00:00` sell_candidate `kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf` / `DrK9ci66pPJxi9ig327XcVRs8cDzs7frXXoHWwwKvsN5` / tx `kG5rep98parypqSAyvxfcByV9L18A4mrQcwMhjAS3tKdhEmKaNyKcMsfXJYDV9PTHbPRWrk2sQ4BNFDs7bASoL4`
-- `2026-09-22T05:04:52+00:00` inflow_unclassified `EPfEYbi3bRLBwfaJESNEhWPnxk7XmeZjhrQRtCZET6tK` / `DnJeAP7hWjVNTTk1NUaDJ5Aps9qDroSsEMcKBCpSTNK` / tx `6gy4wtTNCsLwY6XBkcsBk5afF9My1EsqXpgRLD4sStUN5ZvjKhWhdWtnkVjjqKMMh7LfURv62F3SV6BpeDJvtw9`
-- `2026-09-22T05:04:52+00:00` outflow_unclassified `EPfEYbi3bRLBwfaJESNEhWPnxk7XmeZjhrQRtCZET6tK` / `Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB` / tx `6gy4wtTNCsLwY6XBkcsBk5afF9My1EsqXpgRLD4sStUN5ZvjKhWhdWtnkVjjqKMMh7LfURv62F3SV6BpeDJvtw9`
-- `2026-09-22T05:04:52+00:00` inflow_unclassified `CQsnrmL4Hrn73JkQt3LE1PVNjUnTLMSa6rMok7vZu7V7` / `DnJeAP7hWjVNTTk1NUaDJ5Aps9qDroSsEMcKBCpSTNK` / tx `22kW5rVLFyPNbLwxp5pvWU8LcuyqEzhKRkWpbf1CjLueBc2DPP5c51GJgT4tP98Vm8jnMWkn1aEiAGcQ8oCV1uYL`
-- `2026-09-22T05:04:52+00:00` inflow_unclassified `CQsnrmL4Hrn73JkQt3LE1PVNjUnTLMSa6rMok7vZu7V7` / `DnJeAP7hWjVNTTk1NUaDJ5Aps9qDroSsEMcKBCpSTNK` / tx `2faTQTSK2xKsv3ZQavvjpDUnUf7sH6vNio1KszSaDUoQ3UFQj7Febkpw3mHFtcNe2Hu9QqjrA6QTHu13cvku7LRV`
-- `2026-09-22T05:04:53+00:00` inflow_unclassified `E51GvASZywgWXu8ULRF7i3bdaARN2BaqD4TseqXjDz3t` / `3TLfRECWnnhjC6YHh1G6nGF6X5hw1AvKAceiiPTHB6DR` / tx `5PfVfkQystF8Bjg4bUxStzmAegVxLb7BDSeHvkNaXfcV7UYURXrDY6yq2WJnfjWpGDC963av59CV91zy2e3zBKwb`
-- `2026-09-22T05:04:53+00:00` outflow_unclassified `Cb7iwWLgcSKMoh89ydu231PVVuqdq4CStQGWoDA7uoiA` / `3TLfRECWnnhjC6YHh1G6nGF6X5hw1AvKAceiiPTHB6DR` / tx `2EE8mQnEREaTSsdKgkwpKGmfZ77uNhmJfersJFPEDtuV7MLoL56LRiszxFnjUyuWbxJogvUQrA2ZrFpLZ1KWKYyX`
-- `2026-09-22T05:04:54+00:00` outflow_unclassified `Eu7aSqjcCeogkjq1sawyvpJS6fZWJHfNMAq7psxDfXin` / `3TLfRECWnnhjC6YHh1G6nGF6X5hw1AvKAceiiPTHB6DR` / tx `3rmQX8TEKvUA4GEubSHHdLF8finpKXrqw8KKgC1LP1VvFCcBxorEoue122XMr9xD3nseVExguNRRjfG1eMtYUVGe`
+- `2026-09-22T05:07:52+00:00` buy_candidate `Hgpr2EjrAYewY3eMkC6GFAaGXXBiaDPmPM7TqyRuWNBi` / `fvHLJUwsynVHJrssbZ8MLNyku9jt2izUspbBD4Spump` / tx `3rfhzVnVcL1fY1jaPhcJcQEo3jhCaeGDNqJW7pmx1SZp9tiLeFH17hRbdCB6CY9L5rS5DqwAJGJuoxhk1tzEUhJf`
+- `2026-09-22T05:07:52+00:00` buy_candidate `F55kPP3nnE4UHWdf6SzXoVhGdL3ep35t4fdYjkPeuYeu` / `fvHLJUwsynVHJrssbZ8MLNyku9jt2izUspbBD4Spump` / tx `33oumaeH2kE2XcCm8WJzDU4qzxSyU88ymMY4RuqhJJDtFfAAGA323odrmtoukiCbAHwxnjjrMFa7BDDfvDK1raTJ`
+- `2026-09-22T05:07:52+00:00` sell_candidate `F55kPP3nnE4UHWdf6SzXoVhGdL3ep35t4fdYjkPeuYeu` / `Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump` / tx `33oumaeH2kE2XcCm8WJzDU4qzxSyU88ymMY4RuqhJJDtFfAAGA323odrmtoukiCbAHwxnjjrMFa7BDDfvDK1raTJ`
+- `2026-09-22T05:07:53+00:00` sell_candidate `DY5qAVztKXXPMY9enjbgvJxn6wPPZ1Ek34Jp3xJm4Lct` / `fvHLJUwsynVHJrssbZ8MLNyku9jt2izUspbBD4Spump` / tx `2yPM2tGoaHC82Xo9nQP4au8TH6b19ryVJYWa4mKP9uijiV391vRmUpG3p8J8yh3fhAvazFc5DYpZqjUwSw4diNep`
+- `2026-09-22T05:08:51+00:00` sell_candidate `kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf` / `3ULoD6ffRdG3B5Dndm1cQh7VNATqoitqQ1EVoAwWQZWk` / tx `KiSxYzmu9Xr21fQBiCWwj3d18s9Y5n9wmSciLL4NLYEwPkkuND299wQMx4TxKuSRE6VmTGC7LFKNVy1HcPTzB3g`
+- `2026-09-22T05:08:52+00:00` buy_candidate `kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf` / `3ULoD6ffRdG3B5Dndm1cQh7VNATqoitqQ1EVoAwWQZWk` / tx `44J34P9QpgDp2BADdqGM6coBGCbmm1LMmgMfgJdNt7n3XkRWHXMVEon6znQLbALFP7eWjiVVFKmAoE2SaP5D2hr`
+- `2026-09-22T05:08:52+00:00` sell_candidate `kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf` / `DrK9ci66pPJxi9ig327XcVRs8cDzs7frXXoHWwwKvsN5` / tx `5GByMDTm5PBzJ4MAHZAsqA83gFQL2k8fvfcV8heRbCX3vZKyoigV2oTRnXP1h8RYeH2abyFaaK5owQLuqfioSz1U`
+- `2026-09-22T05:08:52+00:00` buy_candidate `6a7tbRtWETeGrzWmLTUFkRAMQ2p9HxN4xCaSinRYnFXZ` / `98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump` / tx `4aCQhDRVY93G2gU37nmZU588b75NwaDbpNS7FW5CZzGaZUzHBzvyzLZU3zJwhjm9jcj7FTfK7XrpWe4ebPCzWPZs`
+- `2026-09-22T05:08:54+00:00` sell_candidate `9sgepAEMAVWo8LzzVT7CL4dhqxZnnhATbtkhnintTbv9` / `GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump` / tx `hPBhVRBQ3UFdWgqE3Z8VRpm6F2jGiDPiVnCQfn18abNDWnsBcWQVgtxX8Wt2NzvEgGJgXD7yu2oJA95mY1HYjGZ`
+- `2026-09-22T05:08:55+00:00` buy_candidate `7SfYX4H4sJhubn5EbsfZNGWkndz1Td2XYwe3kgEA1PcL` / `GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump` / tx `5JYP7KGzuvJn7K8WDzkesSsWWATFC2Mn2WakV4grvR46JXrBUk8iR87gVMuWmDfrCHDH4DpfErgtJ3MRNaTGE8Tx`
+- `2026-09-22T05:09:51+00:00` buy_candidate `kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf` / `pxC3qT4CNvTe58F7nUCixwvYchBcu7LHULPG8wKpump` / tx `3ekwWGnA8BqNax4UmofEJ8dxJ82xX6d9K6gnNZT1Du7kTGa6jPZFvBgpkLnVBA17dk3ZjUrjjKreREiw4QiNBKMz`
+- `2026-09-22T05:09:51+00:00` buy_candidate `kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf` / `HUcEu35oz1yku1yLBSYRL1UyAnAh59ZCkAYPRe2xpump` / tx `tKNT1TJMreztqEMS5xCQz1sGzDaJw5HroHNaGA4ow7mJGBFTM1XXZMKUQGT8JJBPfvX7YnSjpvrhGUvH1g9wP8B`
+- `2026-09-22T05:09:51+00:00` buy_candidate `kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf` / `F1Vjr8sWBhYmWbntLynqxFGkTmzifJfDDAxQaCYbpump` / tx `4MbGuebmtakapH1CEq4e3sJmKAFKJni7GGXuZfRe2KqFHkgrQRunJDpfMPZsjFtyqqfEvYWp9x7kc9T5y8yEos6P`
+- `2026-09-22T05:09:52+00:00` buy_candidate `kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf` / `FBZqePqMMfqs74SZaxbNu3Gsne6Ny9VSosNnWTAdpump` / tx `3yfacQXXtrTeDCcckTRGKYCzTm8JMNkdUHqrSYfSvwYtrymhwf5fzfyUJEb7s2EyKKbp5rGjxBrab7p1gwcUAQkR`
+- `2026-09-22T05:09:52+00:00` buy_candidate `kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf` / `3ULoD6ffRdG3B5Dndm1cQh7VNATqoitqQ1EVoAwWQZWk` / tx `5XFKZZGfysmHKMbBYG2Ea2acxSbVWMwnQjKw1ZFfRiuXJM5ZV9xti6KtiVdfnV32US3KfnnSsPHGLBz8Q6z3SSTw`
 
 ## Stop and results
 
