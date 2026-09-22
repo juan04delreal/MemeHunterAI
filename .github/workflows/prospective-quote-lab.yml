@@ -1,0 +1,32 @@
+name: Prospective quote lab (read only)
+on:
+  push:
+    branches: ['research/prospective-quote-lab']
+    paths: ['prospective_lab/**','.github/workflows/prospective-quote-lab.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: prospective-quote-lab
+  cancel-in-progress: false
+jobs:
+  research:
+    if: github.repository == 'juan04delreal/MemeHunterAI' && github.ref == 'refs/heads/research/prospective-quote-lab' && github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with: {ref: research/prospective-quote-lab, fetch-depth: 1}
+      - name: Test safety and schema
+        run: python3 -m unittest discover -s prospective_lab -p 'test_*.py' -v
+      - name: Run bounded read-only feasibility cycle
+        env:
+          SOLANA_RPC_URL: ${{ secrets.SOLANA_RPC_URL }}
+          JUPITER_API_KEY: ${{ secrets.JUPITER_API_KEY }}
+        run: python3 prospective_lab/lab.py
+      - name: Publish research checkpoint
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add prospective_lab/data
+          if ! git diff --cached --quiet; then git commit -m 'prospective lab: research checkpoint'; git push origin HEAD:research/prospective-quote-lab; fi

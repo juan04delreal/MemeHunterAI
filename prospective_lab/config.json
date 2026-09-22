@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "mode": "WATCH_ONLY",
+  "universe": "prospective_pumpswap_migrations",
+  "hypothetical_quote_sizes_usd": [
+    50
+  ],
+  "additional_delay_seconds": [
+    30,
+    60,
+    120,
+    300
+  ],
+  "exit_horizons_seconds": [
+    300,
+    900,
+    3600
+  ],
+  "max_new_opportunities_per_run": 200,
+  "notes": "Research only. No signing, no orders, no fills claimed."
+}
