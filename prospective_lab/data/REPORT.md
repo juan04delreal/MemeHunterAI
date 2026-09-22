@@ -2,14 +2,20 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-09-22T01:54:42+00:00
+Updated: 2026-09-22T14:41:12+00:00
 
 RPC connected: True
+Validated Pump migrations: 0
+Observed entry quotes: 0
+Observed exit quotes: 0
+Quote failures/unavailable: 0
+Jupiter API key configured: False
 
-Candidate program transactions: 100
+Migrations are admitted only from the official Pump migrate discriminator/account layout.
+Quote deadlines are measured from first actionable observation. Late observations remain late.
+Quotes are route snapshots, not fills. No realized profit is claimed.
 
-Validated migrations: 0
+## Recent opportunities
 
-Quote provider: not_attempted
-
-The lab does not call candidates launches until the decoder is independently validated.
+| Mint | First observed | Lag from chain | Entry quote states |
+|---|---|---:|---|
