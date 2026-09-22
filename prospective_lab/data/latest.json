@@ -1,0 +1,23 @@
+{
+  "candidate_count": 100,
+  "cycles": 1,
+  "limitations": [
+    "PumpSwap program signatures are candidates, not launches.",
+    "Migration mint/pool decoder not yet validated.",
+    "No executable fills are claimed.",
+    "Jupiter quote capability requires explicit configured API access; absence is recorded, not bypassed."
+  ],
+  "mode": "WATCH_ONLY",
+  "new_candidates": 100,
+  "quote_provider_probe": {
+    "reason": "no validated admitted mint this cycle",
+    "status": "not_attempted"
+  },
+  "real_trades_placed": 0,
+  "realized_profit": null,
+  "rpc_connected": true,
+  "slot": 449236197,
+  "updated_at": "2026-09-22T01:54:42+00:00",
+  "validated_opportunities": 0,
+  "version": "prospective-quote-lab-0.1"
+}
