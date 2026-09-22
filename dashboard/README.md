@@ -1,0 +1,1 @@
+# Mobile Research Dashboard\n\nPhone-friendly combined view of the two read-only research systems. Refreshes saved GitHub data every 30 seconds. No trading.\n
