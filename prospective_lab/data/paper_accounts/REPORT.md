@@ -3,7 +3,7 @@
 **PAPER ONLY — no real transactions.**
 
 Started: 2026-09-23T15:27:21.742+00:00
-Updated: 2026-09-23T17:29:04.837+00:00
+Updated: 2026-09-23T17:30:14.205+00:00
 
 PROVISIONAL PAPER ACCOUNTING, not executable fills or realized profit. Exact quoted token quantities are retained. Entry cash adds 1% or 3% plus 0.05 USDC; exit cash subtracts the same scenario percentage plus 0.05 USDC. These are extra cost stresses, not measured slippage or additional AMM fees. No transaction, latency-fill, market-impact, full-route or token-extension execution validation. Alternatives share observations; never sum their P&L. Open positions have unknown liquidation value; book equity holds them at cost. Failed exits retain locked capital and position slots. Quality checks never retroactively remove trades. Model times are quote receipt times; bookkeeping may occur later. No earlier quote records are backfilled into this pilot.
 
@@ -14,22 +14,22 @@ Each row is a separate $500 account, not a slice of one portfolio. No profit-bas
 |---|---:|---:|---:|---:|---:|
 | E30_H300_C100 | 33.94 | 0 | 0 | 32 | -466.06 |
 | E30_H300_C300 | 13.61 | 0 | 0 | 31 | -486.39 |
-| E30_H900_C100 | 693.88 | 4 | 0 | 30 | +396.08 |
-| E30_H900_C300 | 621.21 | 4 | 0 | 30 | +327.41 |
-| E30_H3600_C100 | 49.28 | 4 | 0 | 6 | -248.52 |
-| E30_H3600_C300 | 38.17 | 4 | 0 | 6 | -255.63 |
+| E30_H900_C100 | 643.33 | 5 | 0 | 30 | +396.08 |
+| E30_H900_C300 | 569.66 | 5 | 0 | 30 | +327.41 |
+| E30_H3600_C100 | 49.37 | 3 | 0 | 7 | -298.98 |
+| E30_H3600_C300 | 38.25 | 3 | 0 | 7 | -307.10 |
 | E60_H300_C100 | 16.79 | 0 | 0 | 51 | -483.21 |
 | E60_H300_C300 | 21.57 | 0 | 0 | 49 | -478.43 |
-| E60_H900_C100 | 680.51 | 5 | 0 | 28 | +433.26 |
-| E60_H900_C300 | 610.14 | 5 | 0 | 28 | +367.89 |
-| E60_H3600_C100 | 95.68 | 3 | 0 | 6 | -252.67 |
-| E60_H3600_C300 | 85.66 | 3 | 0 | 6 | -259.69 |
+| E60_H900_C100 | 750.86 | 4 | 0 | 29 | +453.06 |
+| E60_H900_C300 | 679.06 | 4 | 0 | 29 | +385.26 |
+| E60_H3600_C100 | 45.22 | 3 | 0 | 7 | -303.13 |
+| E60_H3600_C300 | 34.19 | 3 | 0 | 7 | -311.16 |
 | E120_H300_C100 | 34.99 | 0 | 0 | 33 | -465.01 |
 | E120_H300_C300 | 15.05 | 0 | 0 | 32 | -484.95 |
-| E120_H900_C100 | 160.68 | 4 | 0 | 29 | -137.12 |
-| E120_H900_C300 | 100.80 | 4 | 0 | 29 | -193.00 |
-| E120_H3600_C100 | 50.14 | 4 | 0 | 5 | -247.66 |
-| E120_H3600_C300 | 41.04 | 4 | 0 | 5 | -252.76 |
+| E120_H900_C100 | 110.13 | 5 | 0 | 29 | -137.12 |
+| E120_H900_C300 | 49.25 | 5 | 0 | 29 | -193.00 |
+| E120_H3600_C100 | 92.02 | 3 | 0 | 6 | -256.33 |
+| E120_H3600_C300 | 82.07 | 3 | 0 | 6 | -263.28 |
 | E300_H300_C100 | 35.47 | 0 | 0 | 41 | -464.53 |
 | E300_H300_C300 | 29.50 | 0 | 0 | 37 | -470.50 |
 | E300_H900_C100 | 15.04 | 2 | 0 | 26 | -383.86 |
