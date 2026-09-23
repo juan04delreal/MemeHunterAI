@@ -2,7 +2,7 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-09-23T10:56:16.786+00:00
+Updated: 2026-09-23T10:57:20.397+00:00
 Collector: prospective-quote-lab-0.3
 RPC connected: True
 Validated Pump migrations: 5
