@@ -2,12 +2,12 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-09-23T07:05:05.860+00:00
+Updated: 2026-09-23T07:06:09.647+00:00
 Collector: prospective-quote-lab-0.3
 RPC connected: True
 Validated Pump migrations: 5
 Observed entry quotes: 12
-Observed exit quotes: 33
+Observed exit quotes: 34
 Quote failures/unavailable: 8
 Missed deadlines (no backfill): 0
 Jupiter API key configured: False
