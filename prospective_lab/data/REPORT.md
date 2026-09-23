@@ -2,11 +2,11 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-09-23T05:40:31.284+00:00
+Updated: 2026-09-23T05:41:33.963+00:00
 Collector: prospective-quote-lab-0.3
 RPC connected: True
 Validated Pump migrations: 4
-Observed entry quotes: 5
+Observed entry quotes: 6
 Observed exit quotes: 12
 Quote failures/unavailable: 8
 Missed deadlines (no backfill): 0
@@ -24,7 +24,7 @@ Bounded latest-100 signature polling; complete migration coverage is NOT establi
 
 | Mint | First observed | Lag from chain | Entry quote states |
 |---|---|---:|---|
-| BczEAPL4GmQZe3fYN53bWBXf1bm3wxQGFcdqdyMQpump | 2026-09-23T05:39:51.982+00:00 | 1.9827744960784912 | 30:quote_observed |
+| BczEAPL4GmQZe3fYN53bWBXf1bm3wxQGFcdqdyMQpump | 2026-09-23T05:39:51.982+00:00 | 1.9827744960784912 | 30:quote_observed, 60:quote_observed |
 | 8N43KnV3kXsQfaRgkLS7regB4CxrdN67EF96nEE8pump | 2026-09-23T03:35:25.792+00:00 | 5.792809963226318 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | 3XYdRZ1Y2iEaXspZqiWb4LxQwy1F9bMZPER7QStxpump | 2026-09-22T18:41:20+00:00 | 5.154616355895996 | 30:not_configured, 60:not_configured, 120:not_configured, 300:not_configured |
 | 7HLmsdfVcQdCtK7pHK4iu4Gr2aqYTsBhcA3eiueipump | 2026-09-22T18:01:04+00:00 | 3.0555779933929443 | 30:not_configured, 60:not_configured, 120:not_configured, 300:not_configured |
