@@ -3,7 +3,7 @@
 **PAPER ONLY — no real transactions.**
 
 Started: 2026-09-23T15:27:21.742+00:00
-Updated: 2026-09-23T17:03:52.703+00:00
+Updated: 2026-09-23T17:05:00.590+00:00
 
 PROVISIONAL PAPER ACCOUNTING, not executable fills or realized profit. Exact quoted token quantities are retained. Entry cash adds 1% or 3% plus 0.05 USDC; exit cash subtracts the same scenario percentage plus 0.05 USDC. These are extra cost stresses, not measured slippage or additional AMM fees. No transaction, latency-fill, market-impact, full-route or token-extension execution validation. Alternatives share observations; never sum their P&L. Open positions have unknown liquidation value; book equity holds them at cost. Failed exits retain locked capital and position slots. Quality checks never retroactively remove trades. Model times are quote receipt times; bookkeeping may occur later. No earlier quote records are backfilled into this pilot.
 
@@ -14,14 +14,14 @@ Each row is a separate $500 account, not a slice of one portfolio. No profit-bas
 |---|---:|---:|---:|---:|---:|
 | E30_H300_C100 | 33.94 | 0 | 0 | 32 | -466.06 |
 | E30_H300_C300 | 13.61 | 0 | 0 | 31 | -486.39 |
-| E30_H900_C100 | 750.42 | 5 | 0 | 22 | +503.17 |
-| E30_H900_C300 | 690.77 | 5 | 0 | 22 | +448.52 |
+| E30_H900_C100 | 707.34 | 5 | 0 | 23 | +460.09 |
+| E30_H900_C300 | 646.53 | 5 | 0 | 23 | +404.28 |
 | E30_H3600_C100 | 50.46 | 4 | 0 | 5 | -247.34 |
 | E30_H3600_C300 | 41.35 | 4 | 0 | 5 | -252.45 |
-| E60_H300_C100 | 60.09 | 2 | 0 | 46 | -338.81 |
-| E60_H300_C300 | 70.06 | 2 | 0 | 44 | -326.84 |
-| E60_H900_C100 | 839.10 | 4 | 0 | 22 | +541.30 |
-| E60_H900_C300 | 779.67 | 4 | 0 | 22 | +485.87 |
+| E60_H300_C100 | 19.44 | 2 | 0 | 48 | -379.46 |
+| E60_H300_C300 | 26.18 | 2 | 0 | 46 | -370.72 |
+| E60_H900_C100 | 788.55 | 5 | 0 | 22 | +541.30 |
+| E60_H900_C300 | 728.12 | 5 | 0 | 22 | +485.87 |
 | E60_H3600_C100 | 50.49 | 4 | 0 | 5 | -247.31 |
 | E60_H3600_C300 | 41.37 | 4 | 0 | 5 | -252.43 |
 | E120_H300_C100 | 34.99 | 0 | 0 | 33 | -465.01 |
@@ -32,8 +32,8 @@ Each row is a separate $500 account, not a slice of one portfolio. No profit-bas
 | E120_H3600_C300 | 41.04 | 4 | 0 | 5 | -252.76 |
 | E300_H300_C100 | 35.47 | 0 | 0 | 41 | -464.53 |
 | E300_H300_C300 | 29.50 | 0 | 0 | 37 | -470.50 |
-| E300_H900_C100 | 91.11 | 4 | 0 | 21 | -206.69 |
-| E300_H900_C300 | 48.82 | 4 | 0 | 21 | -244.98 |
+| E300_H900_C100 | 41.32 | 4 | 0 | 22 | -256.48 |
+| E300_H900_C300 | 49.57 | 3 | 0 | 22 | -295.78 |
 | E300_H3600_C100 | 49.29 | 4 | 0 | 5 | -248.51 |
 | E300_H3600_C300 | 40.20 | 4 | 0 | 5 | -253.60 |
 
