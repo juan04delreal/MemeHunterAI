@@ -1,8 +1,8 @@
 {
   "coverage_note": "Bounded latest-100 signature polling; complete migration coverage is NOT established.",
-  "cycles": 2220,
+  "cycles": 2223,
   "entry_quotes_observed": 4,
-  "exit_quotes_observed": 6,
+  "exit_quotes_observed": 7,
   "health_checks_excluded_from_experiment": true,
   "missed_deadlines": 0,
   "mode": "WATCH_ONLY",
@@ -17,9 +17,9 @@
   "rpc_connected": true,
   "rpc_consecutive_failures": 0,
   "signature_window_saturated": true,
-  "slot": 449586310,
+  "slot": 449586546,
   "transaction_fetch_failures": 4,
-  "updated_at": "2026-09-23T03:51:41.933+00:00",
+  "updated_at": "2026-09-23T03:52:45.036+00:00",
   "validated_migrations": 3,
   "version": "prospective-quote-lab-0.3"
 }
