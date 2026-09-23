@@ -400,4 +400,7 @@ def cycle(run_seconds=20.0):
 
 
 if __name__ == '__main__':
-    print(json.dumps(cycle()))
+    # Hot handover after the existing runner pulls a tested checkpoint; no job cancellation.
+    from collector import activate, cycle as verified_cycle
+    activate()
+    print(json.dumps(verified_cycle()))

@@ -28,12 +28,12 @@ while (( $(date +%s) < END )); do
   git fetch --quiet origin "$BRANCH"
   git show FETCH_HEAD:prospective_lab/control.json > /tmp/prospective-control.json
   python3 -c 'import json,sys; c=json.load(open("/tmp/prospective-control.json")); sys.exit(0 if c.get("enabled") is True and c.get("mode")=="WATCH_ONLY" else 1)' || break
-  CURRENT=$(sha256sum prospective_lab/lab.py prospective_lab/test_lab.py)
+  CURRENT=$(find prospective_lab -maxdepth 1 -name '*.py' -print0 | sort -z | xargs -0 sha256sum)
   if [[ "$CURRENT" != "$TESTED" ]]; then
     python3 -m unittest discover -s prospective_lab -p 'test_*.py' -v
     TESTED="$CURRENT"
   fi
-  python3 prospective_lab/lab.py
+  PROSPECTIVE_CONTROL_PATH=/tmp/prospective-control.json python3 prospective_lab/collector.py
   NOW=$(date +%s)
   if (( NOW-LAST >= 60 )); then publish; LAST=$NOW; fi
 done
