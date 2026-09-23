@@ -3,7 +3,7 @@
 **PAPER ONLY — no real transactions.**
 
 Started: 2026-09-23T15:27:21.742+00:00
-Updated: 2026-09-23T17:45:09.462+00:00
+Updated: 2026-09-23T17:46:17.109+00:00
 
 PROVISIONAL PAPER ACCOUNTING, not executable fills or realized profit. Exact quoted token quantities are retained. Entry cash adds 1% or 3% plus 0.05 USDC; exit cash subtracts the same scenario percentage plus 0.05 USDC. These are extra cost stresses, not measured slippage or additional AMM fees. No transaction, latency-fill, market-impact, full-route or token-extension execution validation. Alternatives share observations; never sum their P&L. Open positions have unknown liquidation value; book equity holds them at cost. Failed exits retain locked capital and position slots. Quality checks never retroactively remove trades. Model times are quote receipt times; bookkeeping may occur later. No earlier quote records are backfilled into this pilot.
 
@@ -14,14 +14,14 @@ Each row is a separate $500 account, not a slice of one portfolio. No profit-bas
 |---|---:|---:|---:|---:|---:|
 | E30_H300_C100 | 33.94 | 0 | 0 | 32 | -466.06 |
 | E30_H300_C300 | 13.61 | 0 | 0 | 31 | -486.39 |
-| E30_H900_C100 | 749.23 | 3 | 0 | 35 | +400.88 |
-| E30_H900_C300 | 667.35 | 3 | 0 | 35 | +322.00 |
+| E30_H900_C100 | 648.13 | 5 | 0 | 35 | +400.88 |
+| E30_H900_C300 | 564.25 | 5 | 0 | 35 | +322.00 |
 | E30_H3600_C100 | 49.46 | 1 | 0 | 9 | -399.99 |
 | E30_H3600_C300 | 38.34 | 1 | 0 | 9 | -410.11 |
 | E60_H300_C100 | 16.79 | 0 | 0 | 51 | -483.21 |
 | E60_H300_C300 | 21.57 | 0 | 0 | 49 | -478.43 |
-| E60_H900_C100 | 557.84 | 4 | 0 | 33 | +260.04 |
-| E60_H900_C300 | 481.85 | 4 | 0 | 33 | +188.05 |
+| E60_H900_C100 | 561.48 | 3 | 0 | 34 | +213.13 |
+| E60_H900_C300 | 485.42 | 3 | 0 | 34 | +140.07 |
 | E60_H3600_C100 | 45.30 | 1 | 0 | 9 | -404.15 |
 | E60_H3600_C300 | 34.27 | 1 | 0 | 9 | -414.18 |
 | E120_H300_C100 | 34.99 | 0 | 0 | 33 | -465.01 |
