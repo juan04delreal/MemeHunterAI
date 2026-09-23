@@ -21,14 +21,14 @@
       "transactions_aggregate": {
         "h1": {
           "buys": 2,
-          "sells": 4
+          "sells": 2
         },
         "h24": {
           "buys": 114,
           "sells": 103
         },
         "h6": {
-          "buys": 23,
+          "buys": 19,
           "sells": 34
         },
         "m5": {
@@ -37,9 +37,9 @@
         }
       },
       "volume": {
-        "h1": 121.64,
+        "h1": 110.04,
         "h24": 10762.84,
-        "h6": 1087.7,
+        "h6": 988.98,
         "m5": 0
       }
     },
@@ -66,8 +66,8 @@
           "sells": 31
         },
         "h6": {
-          "buys": 36,
-          "sells": 14
+          "buys": 34,
+          "sells": 13
         },
         "m5": {
           "buys": 0,
@@ -77,7 +77,7 @@
       "volume": {
         "h1": 17.11,
         "h24": 249.3,
-        "h6": 87.6,
+        "h6": 76.31,
         "m5": 0
       }
     },
@@ -366,11 +366,11 @@
           "sells": 1
         },
         "h24": {
-          "buys": 233,
-          "sells": 193
+          "buys": 232,
+          "sells": 191
         },
         "h6": {
-          "buys": 40,
+          "buys": 39,
           "sells": 15
         },
         "m5": {
@@ -380,8 +380,8 @@
       },
       "volume": {
         "h1": 992.52,
-        "h24": 113617.37,
-        "h6": 12381.35,
+        "h24": 113010.71,
+        "h6": 12332.08,
         "m5": 0
       }
     },
@@ -426,28 +426,28 @@
     "4i5FqkfYDAPcEVcXyuVyaaBcz3bpwJPqDkmaF36kpump": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 45136.48,
-      "market_cap": 147730,
+      "liquidity_usd": 45171.8,
+      "market_cap": 147929,
       "mint": "4i5FqkfYDAPcEVcXyuVyaaBcz3bpwJPqDkmaF36kpump",
       "pair": "8Q5jAjkPxwV1ZmNGA36GRXoscFZJBAQDzm8QoGfg7C55",
       "pair_created_at_ms": 1789687594000,
-      "price_usd": "0.0001518",
+      "price_usd": "0.0001520",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "Aiden",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 23,
-          "sells": 19
+          "buys": 22,
+          "sells": 18
         },
         "h24": {
-          "buys": 1773,
-          "sells": 1771
+          "buys": 1760,
+          "sells": 1763
         },
         "h6": {
-          "buys": 271,
-          "sells": 272
+          "buys": 269,
+          "sells": 264
         },
         "m5": {
           "buys": 1,
@@ -455,48 +455,48 @@
         }
       },
       "volume": {
-        "h1": 1253.21,
-        "h24": 206677.85,
-        "h6": 32586.62,
-        "m5": 27.06
+        "h1": 1209.06,
+        "h24": 205722.31,
+        "h6": 32403.77,
+        "m5": 0.6
       }
     },
     "4tkupXEGfbYPCVN37CagviJd3tgWnudT9avKZvouT3Dm": {
       "dex": "raydium",
       "executable_quote": false,
-      "liquidity_usd": 132601.94,
-      "market_cap": 873080,
+      "liquidity_usd": 132503.91,
+      "market_cap": 872440,
       "mint": "4tkupXEGfbYPCVN37CagviJd3tgWnudT9avKZvouT3Dm",
       "pair": "Bkkau4CqFzUjyqLb5mfTXkpwBCknbMQYLBbwuQWNNJHU",
       "pair_created_at_ms": 1789153968000,
-      "price_usd": "0.0008730",
+      "price_usd": "0.0008724",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "HEV",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 12,
+          "buys": 10,
           "sells": 23
         },
         "h24": {
-          "buys": 904,
+          "buys": 903,
           "sells": 860
         },
         "h6": {
-          "buys": 505,
-          "sells": 343
+          "buys": 503,
+          "sells": 340
         },
         "m5": {
-          "buys": 2,
-          "sells": 0
+          "buys": 0,
+          "sells": 1
         }
       },
       "volume": {
-        "h1": 8152.2,
-        "h24": 281760.3,
-        "h6": 123469.94,
-        "m5": 2849.84
+        "h1": 8088.15,
+        "h24": 281722.55,
+        "h6": 122404.92,
+        "m5": 0.44
       }
     },
     "52YLW3zzqzViDnZ421Vu17YyTv8TyMfxjUqZ8AYqpump": {
@@ -540,39 +540,39 @@
     "53rZTtfGghxqdd6qTeDdfS8MBqg2CTyQeLW1LHCRpump": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 15785.31,
-      "market_cap": 26038,
+      "liquidity_usd": 15640.89,
+      "market_cap": 25583,
       "mint": "53rZTtfGghxqdd6qTeDdfS8MBqg2CTyQeLW1LHCRpump",
       "pair": "EyTL6ovdNrrnfyuvfsEkFDAmGk8nbt2dkxG6AdubaXC4",
       "pair_created_at_ms": 1789783333000,
-      "price_usd": "0.00002727",
+      "price_usd": "0.00002679",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "Pigeon",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 28,
-          "sells": 9
+          "buys": 27,
+          "sells": 8
         },
         "h24": {
           "buys": 851,
-          "sells": 662
+          "sells": 663
         },
         "h6": {
-          "buys": 94,
-          "sells": 93
+          "buys": 93,
+          "sells": 91
         },
         "m5": {
-          "buys": 3,
-          "sells": 0
+          "buys": 0,
+          "sells": 1
         }
       },
       "volume": {
-        "h1": 1354.02,
-        "h24": 73212.86,
-        "h6": 5579.55,
-        "m5": 92.27
+        "h1": 1386.79,
+        "h24": 73294.42,
+        "h6": 5439.24,
+        "m5": 81.55
       }
     },
     "54Ng9KZPCj1X58PkPxcsAhsdrb9pZXkA68SgNPEsCtv5": {
@@ -671,7 +671,7 @@
         },
         "h24": {
           "buys": 17,
-          "sells": 30
+          "sells": 29
         },
         "h6": {
           "buys": 1,
@@ -684,7 +684,7 @@
       },
       "volume": {
         "h1": 0,
-        "h24": 1038.69,
+        "h24": 1036.07,
         "h6": 24.24,
         "m5": 0
       }
@@ -857,64 +857,64 @@
       "transactions_aggregate": {
         "h1": {
           "buys": 0,
-          "sells": 8
+          "sells": 7
         },
         "h24": {
-          "buys": 323,
+          "buys": 322,
           "sells": 333
         },
         "h6": {
-          "buys": 47,
-          "sells": 61
+          "buys": 44,
+          "sells": 60
         },
         "m5": {
           "buys": 0,
-          "sells": 1
+          "sells": 0
         }
       },
       "volume": {
-        "h1": 41.33,
-        "h24": 22065.04,
-        "h6": 2073.14,
-        "m5": 6.32
+        "h1": 37.1,
+        "h24": 22058.09,
+        "h6": 2023.85,
+        "m5": 0
       }
     },
     "6AUURRdHb9TrfPHv9AMofa8NEVoZDXcsbWKcUBpFSRXs": {
       "dex": "raydium",
       "executable_quote": false,
-      "liquidity_usd": 153575.84,
-      "market_cap": 2165688,
+      "liquidity_usd": 157672.94,
+      "market_cap": 2280567,
       "mint": "6AUURRdHb9TrfPHv9AMofa8NEVoZDXcsbWKcUBpFSRXs",
       "pair": "4csHMs7d6ZYghbq6mS2o56BQ528eLjugQeFVhDjyWNS5",
       "pair_created_at_ms": 1789749517000,
-      "price_usd": "0.002165",
+      "price_usd": "0.002280",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "CYPHERCAT",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 55,
-          "sells": 29
+          "buys": 62,
+          "sells": 35
         },
         "h24": {
-          "buys": 1309,
-          "sells": 1119
+          "buys": 1312,
+          "sells": 1128
         },
         "h6": {
-          "buys": 202,
-          "sells": 144
+          "buys": 208,
+          "sells": 150
         },
         "m5": {
-          "buys": 6,
-          "sells": 2
+          "buys": 7,
+          "sells": 10
         }
       },
       "volume": {
-        "h1": 15836.79,
-        "h24": 452266.54,
-        "h6": 73377.49,
-        "m5": 3543.07
+        "h1": 24928.12,
+        "h24": 461401.06,
+        "h6": 79220.2,
+        "m5": 7816.29
       }
     },
     "6xw9Rnm8m6L9V11zzoJnWCthgxkx1qwCM3nQ36VBpump": {
@@ -1013,7 +1013,7 @@
         },
         "h24": {
           "buys": 10,
-          "sells": 31
+          "sells": 30
         },
         "h6": {
           "buys": 3,
@@ -1026,7 +1026,7 @@
       },
       "volume": {
         "h1": 0,
-        "h24": 1526.21,
+        "h24": 1519.22,
         "h6": 232.46,
         "m5": 0
       }
@@ -1148,24 +1148,24 @@
     "83UFQnxhzU2yfnxVUC7K8vaSLwVUnsXbnq2Guwwcpump": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 5918.38,
-      "market_cap": 7207,
+      "liquidity_usd": 5943.42,
+      "market_cap": 7246,
       "mint": "83UFQnxhzU2yfnxVUC7K8vaSLwVUnsXbnq2Guwwcpump",
       "pair": "6vFyKfrqiEEcV7upHPWtyiQeEfCRYQgBbzak2Dcv5x1z",
       "pair_created_at_ms": 1789735393000,
-      "price_usd": "0.000007470",
+      "price_usd": "0.000007510",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "boxingcat",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 1,
+          "buys": 2,
           "sells": 3
         },
         "h24": {
           "buys": 737,
-          "sells": 619
+          "sells": 618
         },
         "h6": {
           "buys": 37,
@@ -1177,10 +1177,10 @@
         }
       },
       "volume": {
-        "h1": 17.69,
-        "h24": 73107.64,
-        "h6": 3540.71,
-        "m5": 5.85
+        "h1": 25.89,
+        "h24": 72775.38,
+        "h6": 3460.77,
+        "m5": 8.2
       }
     },
     "84aFBuaAPeVKoFghavbvqGfjK7iBxkC7sKCZVhuupump": {
@@ -1249,14 +1249,14 @@
         },
         "m5": {
           "buys": 0,
-          "sells": 1
+          "sells": 0
         }
       },
       "volume": {
         "h1": 1.46,
         "h24": 52.36,
         "h6": 4.14,
-        "m5": 1.46
+        "m5": 0
       }
     },
     "8V4wssa4LbMj8WTgrtD5RXPi4X4RDSnbePQAXfCGpump": {
@@ -1300,164 +1300,164 @@
     "8k4sBtEeK4pf26noKqApv8NBTnuSJcbdwpKYknk5PbAA": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 111577.23,
-      "market_cap": 1091332,
+      "liquidity_usd": 113200.94,
+      "market_cap": 1120630,
       "mint": "8k4sBtEeK4pf26noKqApv8NBTnuSJcbdwpKYknk5PbAA",
       "pair": "2i2iULr7UwK1SDRB17T5FUtiMnFQL7fyy7rh69brZihc",
       "pair_created_at_ms": 1789647179000,
-      "price_usd": "0.001101",
+      "price_usd": "0.001131",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "CALI",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 124,
-          "sells": 172
+          "buys": 141,
+          "sells": 176
         },
         "h24": {
-          "buys": 3288,
-          "sells": 3524
+          "buys": 3304,
+          "sells": 3536
         },
         "h6": {
-          "buys": 776,
-          "sells": 830
+          "buys": 788,
+          "sells": 842
         },
         "m5": {
-          "buys": 3,
-          "sells": 13
+          "buys": 18,
+          "sells": 16
         }
       },
       "volume": {
-        "h1": 19811.78,
-        "h24": 620821.28,
-        "h6": 143418.44,
-        "m5": 605.64
+        "h1": 21401.53,
+        "h24": 622479.41,
+        "h6": 144476.17,
+        "m5": 2023.43
       }
     },
     "91ryaCo5yGpYZM3bs6GUPs97VWJQj7RozBmqPULgpump": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 60678.56,
-      "market_cap": 231431,
+      "liquidity_usd": 60283.97,
+      "market_cap": 228110,
       "mint": "91ryaCo5yGpYZM3bs6GUPs97VWJQj7RozBmqPULgpump",
       "pair": "2fwy38cJcChCVySA9cd5SAFaEPtZQWN2ssFip43hnsHU",
       "pair_created_at_ms": 1789729613000,
-      "price_usd": "0.0002371",
+      "price_usd": "0.0002337",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "TIGRINO",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 74,
-          "sells": 50
+          "buys": 89,
+          "sells": 56
         },
         "h24": {
-          "buys": 2059,
-          "sells": 1946
+          "buys": 2065,
+          "sells": 1941
         },
         "h6": {
-          "buys": 461,
-          "sells": 380
+          "buys": 475,
+          "sells": 385
         },
         "m5": {
-          "buys": 5,
-          "sells": 4
+          "buys": 13,
+          "sells": 7
         }
       },
       "volume": {
-        "h1": 13942.91,
-        "h24": 368446.7,
-        "h6": 84825.5,
-        "m5": 765.84
+        "h1": 15597.84,
+        "h24": 367458.47,
+        "h6": 86407.5,
+        "m5": 1397.45
       }
     },
     "98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 654869.01,
-      "market_cap": 12284697,
+      "liquidity_usd": 639266.01,
+      "market_cap": 11685152,
       "mint": "98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump",
       "pair": "6e3jZLtf4tQbWZm3f7A66jF8tfZn6MRQVrbDFgcNWarA",
       "pair_created_at_ms": 1789500144000,
-      "price_usd": "0.01282",
+      "price_usd": "0.01220",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "PAID",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 403,
-          "sells": 270
+          "buys": 477,
+          "sells": 271
         },
         "h24": {
-          "buys": 14106,
-          "sells": 13003
+          "buys": 14164,
+          "sells": 13005
         },
         "h6": {
-          "buys": 3337,
-          "sells": 3739
+          "buys": 3377,
+          "sells": 3726
         },
         "m5": {
-          "buys": 35,
-          "sells": 64
+          "buys": 76,
+          "sells": 10
         }
       },
       "volume": {
-        "h1": 104551.98,
-        "h24": 4273865.6,
-        "h6": 1122237.91,
-        "m5": 22710.4
+        "h1": 121944.63,
+        "h24": 4287008.33,
+        "h6": 1121090,
+        "m5": 14448.82
       }
     },
     "98rAFRoTjWVS6au9zRHcLuc3NdfaXQzvR6wJLKu2pump": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 8096.95,
-      "market_cap": 10225,
+      "liquidity_usd": 7998.02,
+      "market_cap": 10037,
       "mint": "98rAFRoTjWVS6au9zRHcLuc3NdfaXQzvR6wJLKu2pump",
       "pair": "CMhv5RKL7axdiMoaesxqJLvAb7rJiSbR7RnH6eMPvqtS",
       "pair_created_at_ms": 1789832675000,
-      "price_usd": "0.00001060",
+      "price_usd": "0.00001040",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "CC",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 10,
-          "sells": 1
+          "buys": 2,
+          "sells": 2
         },
         "h24": {
           "buys": 44,
-          "sells": 31
+          "sells": 32
         },
         "h6": {
           "buys": 22,
-          "sells": 6
+          "sells": 7
         },
         "m5": {
           "buys": 0,
-          "sells": 0
+          "sells": 1
         }
       },
       "volume": {
-        "h1": 228.28,
-        "h24": 2203.78,
-        "h6": 851.86,
-        "m5": 0
+        "h1": 53.8,
+        "h24": 2228.13,
+        "h6": 876.21,
+        "m5": 24.35
       }
     },
     "9U1f18idDeySFnYrurxqT1f5n5nE4g4Uk5LLzP69bh1": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 28823.76,
-      "market_cap": 62754,
+      "liquidity_usd": 28600.02,
+      "market_cap": 61839,
       "mint": "9U1f18idDeySFnYrurxqT1f5n5nE4g4Uk5LLzP69bh1",
       "pair": "9Hr6NXw5WSffxNQnqxwZyhRw81uz3PpB7RF9J3i9nMt1",
       "pair_created_at_ms": 1789672541000,
-      "price_usd": "0.00006434",
+      "price_usd": "0.00006341",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "SOLCAT",
@@ -1465,26 +1465,26 @@
       "transactions_aggregate": {
         "h1": {
           "buys": 6,
-          "sells": 6
+          "sells": 8
         },
         "h24": {
-          "buys": 628,
-          "sells": 586
+          "buys": 629,
+          "sells": 587
         },
         "h6": {
-          "buys": 101,
-          "sells": 130
+          "buys": 99,
+          "sells": 129
         },
         "m5": {
-          "buys": 0,
-          "sells": 0
+          "buys": 1,
+          "sells": 2
         }
       },
       "volume": {
-        "h1": 175.31,
-        "h24": 56106.32,
-        "h6": 7512.05,
-        "m5": 0
+        "h1": 367.13,
+        "h24": 56305.84,
+        "h6": 7617.06,
+        "m5": 202.49
       }
     },
     "A2oMu6cYg6kJpiJ8kSLvRWoDL9SdEQmGj2tFpBsiXBni": {
@@ -1604,12 +1604,12 @@
     "AyYNfPtftg2zDP4ZbgcoQMggQtwLh4zpfVVmUJs2thto": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 156330.67,
-      "market_cap": 1348456,
+      "liquidity_usd": 156598.76,
+      "market_cap": 1350577,
       "mint": "AyYNfPtftg2zDP4ZbgcoQMggQtwLh4zpfVVmUJs2thto",
       "pair": "ASgoadVEDL8zJn6KLUiMSh9m8x2yYAEZPsUSpvxHj3LY",
       "pair_created_at_ms": 1789657930000,
-      "price_usd": "0.001381",
+      "price_usd": "0.001383",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "Tilcayo",
@@ -1617,37 +1617,37 @@
       "transactions_aggregate": {
         "h1": {
           "buys": 49,
-          "sells": 47
+          "sells": 44
         },
         "h24": {
-          "buys": 3074,
-          "sells": 3283
+          "buys": 3072,
+          "sells": 3284
         },
         "h6": {
-          "buys": 502,
+          "buys": 501,
           "sells": 498
         },
         "m5": {
-          "buys": 2,
-          "sells": 2
+          "buys": 1,
+          "sells": 5
         }
       },
       "volume": {
-        "h1": 9157.32,
-        "h24": 587604.99,
-        "h6": 108033.31,
-        "m5": 367.41
+        "h1": 7238.49,
+        "h24": 587547.71,
+        "h6": 107473.23,
+        "m5": 124.77
       }
     },
     "B71gX62doV18XTxXGYcWrsEY613HFJzXh4ss8n1apump": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 5341.95,
-      "market_cap": 6102,
+      "liquidity_usd": 5354.39,
+      "market_cap": 6127,
       "mint": "B71gX62doV18XTxXGYcWrsEY613HFJzXh4ss8n1apump",
       "pair": "4kTR2iwh5n7ADCqRr3gw18Cz8DG7hfg5vHmbeTJUKJ5t",
       "pair_created_at_ms": 1789792882000,
-      "price_usd": "0.000006325",
+      "price_usd": "0.000006351",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "TJR",
@@ -1659,11 +1659,11 @@
         },
         "h24": {
           "buys": 79,
-          "sells": 104
+          "sells": 101
         },
         "h6": {
           "buys": 18,
-          "sells": 22
+          "sells": 21
         },
         "m5": {
           "buys": 0,
@@ -1671,9 +1671,9 @@
         }
       },
       "volume": {
-        "h1": 264.44,
-        "h24": 4383.73,
-        "h6": 1382.75,
+        "h1": 185.89,
+        "h24": 4382.29,
+        "h6": 1392.22,
         "m5": 0
       }
     },
@@ -1705,14 +1705,14 @@
         },
         "m5": {
           "buys": 0,
-          "sells": 1
+          "sells": 0
         }
       },
       "volume": {
         "h1": 18.61,
         "h24": 206.4,
         "h6": 205.17,
-        "m5": 2.03
+        "m5": 0
       }
     },
     "BbANAAXEUzg13z29SqSEPiSm5KQt3yVBkA1SKPM9pump": {
@@ -1845,7 +1845,7 @@
       "transactions_aggregate": {
         "h1": {
           "buys": 0,
-          "sells": 2
+          "sells": 1
         },
         "h24": {
           "buys": 8,
@@ -1861,7 +1861,7 @@
         }
       },
       "volume": {
-        "h1": 0.4,
+        "h1": 0.39,
         "h24": 55.83,
         "h6": 0.98,
         "m5": 0
@@ -2060,115 +2060,115 @@
     "D1sm1V3pHGTv32ugeXoer4a91xqfuh4jJBYQwePSKVez": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 33321.11,
-      "market_cap": 103069,
+      "liquidity_usd": 32792.34,
+      "market_cap": 99992,
       "mint": "D1sm1V3pHGTv32ugeXoer4a91xqfuh4jJBYQwePSKVez",
       "pair": "ECUmeKBNdHa7UE8KMh5YbHwR9jFtyidL5dSC951ippo8",
       "pair_created_at_ms": 1789764434000,
-      "price_usd": "0.0001047",
+      "price_usd": "0.0001015",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "KMS",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 22,
-          "sells": 23
+          "buys": 17,
+          "sells": 20
         },
         "h24": {
           "buys": 439,
-          "sells": 336
+          "sells": 339
         },
         "h6": {
           "buys": 370,
-          "sells": 267
+          "sells": 270
         },
         "m5": {
           "buys": 0,
-          "sells": 0
+          "sells": 3
         }
       },
       "volume": {
-        "h1": 3791.77,
-        "h24": 65355,
-        "h6": 57777.23,
-        "m5": 0
+        "h1": 2278.81,
+        "h24": 65841.13,
+        "h6": 58263.36,
+        "m5": 486.12
       }
     },
     "DDVUsN8sDFxbaX6gNBoD44kjZhFETWJnwAn4EX1dpump": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 128515.82,
-      "market_cap": 1182517,
+      "liquidity_usd": 128573.48,
+      "market_cap": 1181421,
       "mint": "DDVUsN8sDFxbaX6gNBoD44kjZhFETWJnwAn4EX1dpump",
       "pair": "FYNWkGx9f1PLtdtvVw3bnty5bDbGKZ3UirJMcU25VX7c",
       "pair_created_at_ms": 1787439043000,
-      "price_usd": "0.001220",
+      "price_usd": "0.001219",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "BABYCATE",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 65,
-          "sells": 77
+          "buys": 71,
+          "sells": 76
         },
         "h24": {
-          "buys": 2651,
-          "sells": 2187
+          "buys": 2657,
+          "sells": 2189
         },
         "h6": {
-          "buys": 457,
-          "sells": 526
+          "buys": 466,
+          "sells": 528
         },
         "m5": {
-          "buys": 13,
-          "sells": 1
+          "buys": 8,
+          "sells": 5
         }
       },
       "volume": {
-        "h1": 14719.83,
-        "h24": 365037.65,
-        "h6": 79409.68,
-        "m5": 675.57
+        "h1": 15028.14,
+        "h24": 364569.42,
+        "h6": 79587.51,
+        "m5": 463.45
       }
     },
     "DFQHUegJWE29Xu3BUxPezqi77uyHURRyxJpdtyvLpump": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 37061.83,
-      "market_cap": 113137,
+      "liquidity_usd": 40269.63,
+      "market_cap": 132170,
       "mint": "DFQHUegJWE29Xu3BUxPezqi77uyHURRyxJpdtyvLpump",
       "pair": "6HLorrkY3vqPsyTZDFvTGTnwnZsLM343Jxw6XvEPTKRt",
       "pair_created_at_ms": 1789792168000,
-      "price_usd": "0.0001172",
+      "price_usd": "0.0001369",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "PUMPCAT",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 679,
-          "sells": 633
+          "buys": 631,
+          "sells": 587
         },
         "h24": {
-          "buys": 6708,
-          "sells": 6385
+          "buys": 6676,
+          "sells": 6378
         },
         "h6": {
-          "buys": 2198,
-          "sells": 2074
+          "buys": 2208,
+          "sells": 2090
         },
         "m5": {
-          "buys": 19,
-          "sells": 21
+          "buys": 36,
+          "sells": 31
         }
       },
       "volume": {
-        "h1": 49907.53,
-        "h24": 607421.44,
-        "h6": 164611.91,
-        "m5": 1438.22
+        "h1": 47177.16,
+        "h24": 606389.73,
+        "h6": 166255.52,
+        "m5": 3042.83
       }
     },
     "DFdFmQbvoKjSvDd8cNeVRLeUToyVAPrRXooRMWSHpump": {
@@ -2212,12 +2212,12 @@
     "DTSnWMjHedLzcc2oVMpRzk1uankCF16v68PUmC65pump": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 5971.03,
-      "market_cap": 6586,
+      "liquidity_usd": 5945.1,
+      "market_cap": 6540,
       "mint": "DTSnWMjHedLzcc2oVMpRzk1uankCF16v68PUmC65pump",
       "pair": "6MWrTvnzghdFR4yZkJ5PGewgCp9Rmoi6rJs4Hu2iaRPL",
       "pair_created_at_ms": 1789791156000,
-      "price_usd": "0.000006993",
+      "price_usd": "0.000006945",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "DICKINU",
@@ -2225,26 +2225,26 @@
       "transactions_aggregate": {
         "h1": {
           "buys": 0,
-          "sells": 1
+          "sells": 2
         },
         "h24": {
           "buys": 68,
-          "sells": 64
+          "sells": 65
         },
         "h6": {
           "buys": 0,
-          "sells": 8
+          "sells": 9
         },
         "m5": {
           "buys": 0,
-          "sells": 0
+          "sells": 1
         }
       },
       "volume": {
-        "h1": 27.97,
-        "h24": 2338.72,
-        "h6": 267.86,
-        "m5": 0
+        "h1": 31.88,
+        "h24": 2342.63,
+        "h6": 271.78,
+        "m5": 3.91
       }
     },
     "DZ84Quh3Fwrg5pBj1wQPkszo9Z1nSLQPSpZ21yrSpump": {
@@ -2326,39 +2326,39 @@
     "DnJeAP7hWjVNTTk1NUaDJ5Aps9qDroSsEMcKBCpSTNK": {
       "dex": "raydium",
       "executable_quote": false,
-      "liquidity_usd": 15710.77,
-      "market_cap": 25622,
+      "liquidity_usd": 15669.2,
+      "market_cap": 25506,
       "mint": "DnJeAP7hWjVNTTk1NUaDJ5Aps9qDroSsEMcKBCpSTNK",
       "pair": "7Ts6yxxA1YVe6fUeqCgnPD7GfoXZd975wp4DAxw7iEaT",
       "pair_created_at_ms": 1789802921000,
-      "price_usd": "0.00002562",
+      "price_usd": "0.00002550",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "PSA10",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 23,
-          "sells": 28
+          "buys": 22,
+          "sells": 26
         },
         "h24": {
           "buys": 255,
-          "sells": 316
+          "sells": 318
         },
         "h6": {
-          "buys": 94,
-          "sells": 97
+          "buys": 95,
+          "sells": 99
         },
         "m5": {
-          "buys": 0,
-          "sells": 1
+          "buys": 1,
+          "sells": 2
         }
       },
       "volume": {
-        "h1": 2836.03,
-        "h24": 18768.13,
-        "h6": 9500.44,
-        "m5": 20.69
+        "h1": 2479.17,
+        "h24": 18753.85,
+        "h6": 9518.46,
+        "m5": 18.02
       }
     },
     "DrnnvCgwkNe3KjpSryR4V9uMKetKKT62gZnRR5iopoSL": {
@@ -2402,27 +2402,27 @@
     "EBsK6LyH8ZCF6aq2uD4fTkFHuPzA1DLUE7fLjMyJpump": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 9638.91,
-      "market_cap": 12853,
+      "liquidity_usd": 9686.02,
+      "market_cap": 12955,
       "mint": "EBsK6LyH8ZCF6aq2uD4fTkFHuPzA1DLUE7fLjMyJpump",
       "pair": "BNq95e7uvYYyER4VzhSD3yGPgTr3vQG27fmXqQHFjUhU",
       "pair_created_at_ms": 1789811272000,
-      "price_usd": "0.00001343",
+      "price_usd": "0.00001353",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "Annoyed",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 6,
+          "buys": 8,
           "sells": 1
         },
         "h24": {
-          "buys": 290,
+          "buys": 291,
           "sells": 260
         },
         "h6": {
-          "buys": 41,
+          "buys": 42,
           "sells": 32
         },
         "m5": {
@@ -2431,10 +2431,10 @@
         }
       },
       "volume": {
-        "h1": 248.43,
-        "h24": 17410.12,
-        "h6": 2399.61,
-        "m5": 12.41
+        "h1": 278.22,
+        "h24": 17439.82,
+        "h6": 2380.41,
+        "m5": 29.79
       }
     },
     "Ea9TZ2XC7AkgfKrFV5MnTKig5YWJoZH7xt4d4BnYpump": {
@@ -2858,39 +2858,39 @@
     "GJSfEpiK9RnmRt9AnZi3FL1b2K6AApcW1SzTs2FeHGis": {
       "dex": "raydium",
       "executable_quote": false,
-      "liquidity_usd": 82300.25,
-      "market_cap": 789222,
+      "liquidity_usd": 82275.01,
+      "market_cap": 788735,
       "mint": "GJSfEpiK9RnmRt9AnZi3FL1b2K6AApcW1SzTs2FeHGis",
       "pair": "6EFvd189kCKoxftbWYWdx7YqT38ES8jEHoyM3jjA7HWP",
       "pair_created_at_ms": 1789732212000,
-      "price_usd": "0.0007892",
+      "price_usd": "0.0007887",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "BRRR",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 14,
-          "sells": 20
+          "buys": 13,
+          "sells": 21
         },
         "h24": {
           "buys": 1609,
-          "sells": 1119
+          "sells": 1120
         },
         "h6": {
           "buys": 113,
-          "sells": 113
+          "sells": 115
         },
         "m5": {
           "buys": 0,
-          "sells": 1
+          "sells": 2
         }
       },
       "volume": {
-        "h1": 6777.61,
-        "h24": 555341.22,
-        "h6": 32393.21,
-        "m5": 30.95
+        "h1": 6768.77,
+        "h24": 555333.89,
+        "h6": 32405.83,
+        "m5": 12.62
       }
     },
     "GQW6Mr4buMjJ1Lwj3FgVUgcNQQsXiA3ivzR3ftnFpump": {
@@ -2972,39 +2972,39 @@
     "GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 141819.26,
-      "market_cap": 1010053,
+      "liquidity_usd": 142406.78,
+      "market_cap": 1016482,
       "mint": "GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump",
       "pair": "6tuhHpYSinf41V39KW3JmpVUaxehcabCbHZqqFnwR6xf",
       "pair_created_at_ms": 1789500364000,
-      "price_usd": "0.001088",
+      "price_usd": "0.001095",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "ELON",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 66,
-          "sells": 53
+          "buys": 72,
+          "sells": 48
         },
         "h24": {
-          "buys": 2959,
-          "sells": 2761
+          "buys": 2961,
+          "sells": 2754
         },
         "h6": {
-          "buys": 645,
-          "sells": 671
+          "buys": 649,
+          "sells": 657
         },
         "m5": {
-          "buys": 8,
-          "sells": 3
+          "buys": 6,
+          "sells": 1
         }
       },
       "volume": {
-        "h1": 13295.03,
-        "h24": 627614.39,
-        "h6": 166298.92,
-        "m5": 439.14
+        "h1": 11620.86,
+        "h24": 626632.6,
+        "h6": 164689.52,
+        "m5": 158.28
       }
     },
     "Gf79Rm3ffe58uZyRWBRv7YUB6ETUnHCt81WVMHckpump": {
@@ -3162,39 +3162,39 @@
     "HgcxVs6kJhPAaGqnPNGaa7zYgNT49hJrLufiqcNMuYZT": {
       "dex": "meteora",
       "executable_quote": false,
-      "liquidity_usd": 59616.82,
-      "market_cap": 5579909,
+      "liquidity_usd": 59558,
+      "market_cap": 5515899,
       "mint": "HgcxVs6kJhPAaGqnPNGaa7zYgNT49hJrLufiqcNMuYZT",
       "pair": "51nGR5Xc9xyuD12aX2V1LnHERCtN9L3B89DHSdeLV22q",
       "pair_created_at_ms": 1789769555000,
-      "price_usd": "0.005579",
+      "price_usd": "0.005515",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "FEELSGOOD",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 70,
-          "sells": 60
+          "buys": 65,
+          "sells": 67
         },
         "h24": {
-          "buys": 2195,
-          "sells": 1744
+          "buys": 2196,
+          "sells": 1748
         },
         "h6": {
-          "buys": 543,
-          "sells": 418
+          "buys": 535,
+          "sells": 426
         },
         "m5": {
-          "buys": 6,
-          "sells": 3
+          "buys": 1,
+          "sells": 8
         }
       },
       "volume": {
-        "h1": 8293.47,
-        "h24": 378340.88,
-        "h6": 93154.79,
-        "m5": 443.33
+        "h1": 8829.26,
+        "h24": 375518.99,
+        "h6": 91919.72,
+        "m5": 741.49
       }
     },
     "HstcjLxEwMi1KXtSXfXg359UDKbVs396WDRcmPjbpump": {
@@ -3288,20 +3288,20 @@
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 10,
-          "sells": 4
+          "buys": 9,
+          "sells": 3
         },
         "h24": {
-          "buys": 424,
-          "sells": 311
+          "buys": 423,
+          "sells": 312
         },
         "h6": {
           "buys": 40,
-          "sells": 29
+          "sells": 30
         },
         "m5": {
-          "buys": 3,
-          "sells": 0
+          "buys": 0,
+          "sells": 1
         }
       },
       "volume": {
@@ -3330,7 +3330,7 @@
           "sells": 7
         },
         "h24": {
-          "buys": 93,
+          "buys": 92,
           "sells": 131
         },
         "h6": {
@@ -3344,7 +3344,7 @@
       },
       "volume": {
         "h1": 411.43,
-        "h24": 10459.37,
+        "h24": 10436.38,
         "h6": 7213.73,
         "m5": 0
       }
@@ -3352,39 +3352,39 @@
     "fvHLJUwsynVHJrssbZ8MLNyku9jt2izUspbBD4Spump": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 84105.09,
-      "market_cap": 560416,
+      "liquidity_usd": 81878.48,
+      "market_cap": 530761,
       "mint": "fvHLJUwsynVHJrssbZ8MLNyku9jt2izUspbBD4Spump",
       "pair": "8qwgwpdfbBMNhdG76bDmtvLeSqtG9cEwuGGy6wGKhTB9",
       "pair_created_at_ms": 1789784302000,
-      "price_usd": "0.0005839",
+      "price_usd": "0.0005530",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "FLEX",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 29,
-          "sells": 90
+          "buys": 33,
+          "sells": 96
         },
         "h24": {
-          "buys": 2902,
-          "sells": 3706
+          "buys": 2907,
+          "sells": 3708
         },
         "h6": {
-          "buys": 650,
-          "sells": 1104
+          "buys": 637,
+          "sells": 1085
         },
         "m5": {
-          "buys": 2,
-          "sells": 15
+          "buys": 5,
+          "sells": 8
         }
       },
       "volume": {
-        "h1": 8980.93,
-        "h24": 647582.72,
-        "h6": 165281.35,
-        "m5": 2279.85
+        "h1": 14285.2,
+        "h24": 652559.16,
+        "h6": 167072.63,
+        "m5": 5328.72
       }
     },
     "nDNn22SD3Abe3UxbytH32fPErZw6MEJE8Ticm9kVi78": {
@@ -3428,39 +3428,39 @@
     "tipp4C4Jnpft26HC9VXNjUPidojZqxXf8nzKvrKf5BS": {
       "dex": "pumpswap",
       "executable_quote": false,
-      "liquidity_usd": 19913.23,
-      "market_cap": 30711,
+      "liquidity_usd": 19963.87,
+      "market_cap": 30853,
       "mint": "tipp4C4Jnpft26HC9VXNjUPidojZqxXf8nzKvrKf5BS",
       "pair": "CJieB7FUMhEFMaEFjAxQJnkVXNMvaBm3DHHP8RTgBeG1",
       "pair_created_at_ms": 1789837333000,
-      "price_usd": "0.00003099",
+      "price_usd": "0.00003113",
       "provider_event_time": null,
       "source": "DEX Screener",
       "symbol": "TIPPED",
       "token_creation_time": null,
       "transactions_aggregate": {
         "h1": {
-          "buys": 8,
+          "buys": 9,
           "sells": 12
         },
         "h24": {
-          "buys": 589,
-          "sells": 551
+          "buys": 586,
+          "sells": 547
         },
         "h6": {
-          "buys": 44,
-          "sells": 70
+          "buys": 42,
+          "sells": 66
         },
         "m5": {
-          "buys": 1,
-          "sells": 1
+          "buys": 0,
+          "sells": 0
         }
       },
       "volume": {
-        "h1": 650.2,
-        "h24": 26881.99,
-        "h6": 2113.23,
-        "m5": 113.94
+        "h1": 684.74,
+        "h24": 26710.58,
+        "h6": 2093.3,
+        "m5": 0
       }
     }
   },
@@ -3470,7 +3470,7 @@
   "realized_profit": null,
   "recovered_transaction_count": 249,
   "recovery_pending_transactions": 0,
-  "rpc_calls_this_cycle": 19,
+  "rpc_calls_this_cycle": 22,
   "rpc_max_supported_transaction_version": 1,
   "rpc_provider": "publicnode-public",
   "rpc_status": "connected",
@@ -3480,7 +3480,7 @@
   "status": "OBSERVING_HEALTHY",
   "target_cycle_seconds": 60,
   "unresolved_transaction_count": 0,
-  "updated_at": "2026-09-23T06:35:56+00:00",
+  "updated_at": "2026-09-23T06:40:57+00:00",
   "verified_early_wallets": 0,
   "version": "early-wallet-observer-1.2",
   "wallet_address_scans_current": true,
