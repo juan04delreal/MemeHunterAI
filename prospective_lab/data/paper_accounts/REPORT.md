@@ -3,7 +3,7 @@
 **PAPER ONLY — no real transactions.**
 
 Started: 2026-09-23T15:27:21.742+00:00
-Updated: 2026-09-23T16:41:07.685+00:00
+Updated: 2026-09-23T16:42:16.403+00:00
 
 PROVISIONAL PAPER ACCOUNTING, not executable fills or realized profit. Exact quoted token quantities are retained. Entry cash adds 1% or 3% plus 0.05 USDC; exit cash subtracts the same scenario percentage plus 0.05 USDC. These are extra cost stresses, not measured slippage or additional AMM fees. No transaction, latency-fill, market-impact, full-route or token-extension execution validation. Alternatives share observations; never sum their P&L. Open positions have unknown liquidation value; book equity holds them at cost. Failed exits retain locked capital and position slots. Quality checks never retroactively remove trades. Model times are quote receipt times; bookkeeping may occur later. No earlier quote records are backfilled into this pilot.
 
@@ -18,16 +18,16 @@ Each row is a separate $500 account, not a slice of one portfolio. No profit-bas
 | E30_H900_C300 | 653.68 | 5 | 0 | 16 | +411.43 |
 | E30_H3600_C100 | 50.46 | 4 | 0 | 5 | -247.34 |
 | E30_H3600_C300 | 41.35 | 4 | 0 | 5 | -252.45 |
-| E60_H300_C100 | 5.67 | 5 | 0 | 35 | -241.58 |
-| E60_H300_C300 | 37.88 | 3 | 0 | 35 | -307.47 |
+| E60_H300_C100 | 210.39 | 4 | 0 | 36 | -87.41 |
+| E60_H300_C300 | 238.46 | 2 | 0 | 36 | -158.44 |
 | E60_H900_C100 | 813.41 | 5 | 0 | 16 | +566.16 |
 | E60_H900_C300 | 764.62 | 5 | 0 | 16 | +522.37 |
 | E60_H3600_C100 | 50.49 | 4 | 0 | 5 | -247.31 |
 | E60_H3600_C300 | 41.37 | 4 | 0 | 5 | -252.43 |
 | E120_H300_C100 | 34.52 | 1 | 0 | 32 | -414.93 |
 | E120_H300_C300 | 14.59 | 1 | 0 | 31 | -433.86 |
-| E120_H900_C100 | 371.30 | 5 | 0 | 15 | +124.05 |
-| E120_H900_C300 | 333.46 | 5 | 0 | 15 | +91.21 |
+| E120_H900_C100 | 322.07 | 5 | 0 | 16 | +74.82 |
+| E120_H900_C300 | 283.21 | 5 | 0 | 16 | +40.96 |
 | E120_H3600_C100 | 50.14 | 4 | 0 | 5 | -247.66 |
 | E120_H3600_C300 | 41.04 | 4 | 0 | 5 | -252.76 |
 | E300_H300_C100 | 7.96 | 4 | 0 | 32 | -289.84 |
