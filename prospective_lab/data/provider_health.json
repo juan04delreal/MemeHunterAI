@@ -1,6 +1,6 @@
 {
   "access_mode": "keyless",
-  "checked_at": "2026-09-23T08:15:38.250+00:00",
+  "checked_at": "2026-09-23T08:15:41.158+00:00",
   "endpoint": "https://api.jup.ag/swap/v1/quote",
   "entry": {
     "access_mode": "keyless",
@@ -42,9 +42,48 @@
     "requested_epoch": 1790151337.9910142,
     "status": "quote_observed"
   },
+  "exit": {
+    "access_mode": "keyless",
+    "context_slot_delta_from_rpc": 4,
+    "fills_assumed": false,
+    "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+    "observed_at": "2026-09-23T08:15:41.158+00:00",
+    "provider": "jupiter_metis_v1",
+    "raw": {
+      "contextSlot": 449646145,
+      "inAmount": "423924057",
+      "inputMint": "So11111111111111111111111111111111111111112",
+      "otherAmountThreshold": "49518559",
+      "outAmount": "50018746",
+      "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "platformFee": null,
+      "priceImpactPct": "0",
+      "routePlan": [
+        {
+          "bps": null,
+          "percent": 100,
+          "swapInfo": {
+            "ammKey": "GMCJvYGf5Ex2ARiMquaBDqU6iKM8uiEQkB8jCnoNfHpC",
+            "inAmount": "423924057",
+            "inputMint": "So11111111111111111111111111111111111111112",
+            "label": "GoonFi V2",
+            "outAmount": "50018746",
+            "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "updateContextSlot": "449646145"
+          }
+        }
+      ],
+      "slippageBps": 100,
+      "swapMode": "ExactIn",
+      "timeTaken": 0.001832457
+    },
+    "received_epoch": 1790151341.1581783,
+    "request_latency_seconds": 0.32917165756225586,
+    "requested_epoch": 1790151340.8290067,
+    "status": "quote_observed"
+  },
   "experiment_sample": false,
-  "next_probe_epoch": 1790151337.8395405,
-  "pending_exit_amount": "423924057",
-  "status": "entry_verified_exit_pending",
+  "next_probe_epoch": 1790151941.1582239,
+  "status": "healthy",
   "version": "prospective-quote-lab-0.3"
 }
