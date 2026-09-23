@@ -1,6 +1,6 @@
 {
   "coverage_note": "Bounded latest-100 signature polling; complete migration coverage is NOT established.",
-  "cycles": 3421,
+  "cycles": 3424,
   "entry_quotes_observed": 12,
   "exit_quotes_observed": 36,
   "health_checks_excluded_from_experiment": true,
@@ -10,16 +10,16 @@
   "quote_failures": 8,
   "quote_provider_access_mode": "keyless",
   "quote_provider_api_key_configured": false,
-  "quote_provider_checked_at": "2026-09-23T10:51:03.252+00:00",
+  "quote_provider_checked_at": "2026-09-23T11:01:06.197+00:00",
   "quote_provider_health": "healthy",
   "real_trades_placed": 0,
   "realized_profit": null,
   "rpc_connected": true,
   "rpc_consecutive_failures": 0,
   "signature_window_saturated": true,
-  "slot": 449683441,
+  "slot": 449683683,
   "transaction_fetch_failures": 6,
-  "updated_at": "2026-09-23T11:00:31.303+00:00",
+  "updated_at": "2026-09-23T11:01:35.411+00:00",
   "validated_migrations": 5,
   "version": "prospective-quote-lab-0.3"
 }
