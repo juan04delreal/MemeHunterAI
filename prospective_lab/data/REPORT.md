@@ -2,12 +2,12 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-09-23T17:33:39.808+00:00
+Updated: 2026-09-23T17:34:47.870+00:00
 Collector: prospective-quote-lab-0.4
 RPC connected: True
-Evidence-confirmed unique migrations: 286
-Observed entry quotes: 904
-Observed exit quotes: 2444
+Evidence-confirmed unique migrations: 287
+Observed entry quotes: 908
+Observed exit quotes: 2460
 Quote failures/unavailable: 12
 Missed deadlines (no backfill): 1
 Jupiter API key configured: False
@@ -24,8 +24,9 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 
 | Mint | First observed | Lag from chain | Entry quote states |
 |---|---|---:|---|
-| 9749SX7zr3EAoJfobc4w6WCbNEB6ELCLF9AHT3tvpump | 2026-09-23T17:33:00.597+00:00 | 10.597375392913818 | 30:quote_observed |
-| Dk19Tiax7PJMaP4YxcnCPxQCDGcPs714aqFuza1Hpump | 2026-09-23T17:29:34.301+00:00 | 5.301374435424805 | 30:quote_observed, 60:quote_observed, 120:quote_observed |
+| 8WP2QJ2rz9BPBKtP155nWUDkThiPu5xxbvTxtXH2pump | 2026-09-23T17:33:47.612+00:00 | 27.61211848258972 | 30:quote_observed, 60:quote_observed |
+| 9749SX7zr3EAoJfobc4w6WCbNEB6ELCLF9AHT3tvpump | 2026-09-23T17:33:00.597+00:00 | 10.597375392913818 | 30:quote_observed, 60:quote_observed |
+| Dk19Tiax7PJMaP4YxcnCPxQCDGcPs714aqFuza1Hpump | 2026-09-23T17:29:34.301+00:00 | 5.301374435424805 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | B9GAasDDRfD7qYR27ZEVzssQFapr6EXyrqecJeCMBxXS | 2026-09-23T17:28:04.168+00:00 | 22.16878390312195 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | 3Webu2VWEUTigZuaDxTN7ky8nXZWSnXaWSvCxMGDpump | 2026-09-23T17:27:15.802+00:00 | 21.802622318267822 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | FUVqYCWVCbH5EXsXPN2Pr1Juhf7SANEUybJFTnZ3pump | 2026-09-23T17:25:47.387+00:00 | 24.387051343917847 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
@@ -43,16 +44,15 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 | GuwgM5yy7fChrc8QowHVQhabR32osrfZVZ6tcnbxpump | 2026-09-23T17:15:25.829+00:00 | 15.829811573028564 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | DBBUxu2rAiESswxE4WRU2trsFYmZjiTEYNYcaYkCpump | 2026-09-23T17:13:09.941+00:00 | 10.941391706466675 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | 3wT43aCDAMVsV3dpH9utjaQV1mZYGBSKrzUoP5UEpump | 2026-09-23T17:10:51.059+00:00 | 9.059574365615845 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
-| 9F2y4Jt7f74FNi1sSTQqX9MueAPDTogXbhKZGswepump | 2026-09-23T17:07:25.648+00:00 | 3.6487948894500732 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 
 ## Evidence and coverage audit
 
 Historical instruction matches and their raw quotes are retained, not automatically validated.
 Completion events, pool-creation instructions, and zero-to-positive pool funding are required for new samples. Prefunded or missing-evidence cases remain unresolved.
 Re-audits and initial historical catch-up never create backfilled quote experiments.
-Migration classifications: {"confirmed_new_migration": 286, "unresolved_no_new_migration_evidence": 94}
+Migration classifications: {"confirmed_new_migration": 287, "unresolved_no_new_migration_evidence": 94}
 Discovery source: migration_authority_index; pending transactions: 0; catch-up: False
 Out-of-scope or unrecognized migrate_v2 transactions: 13
-Pool snapshot checks: {"missed_snapshot_window_no_backfill": 1, "pool_state_corroborated": 85, "requires_review": 3024, "unavailable": 72, "unrecognized_or_inconsistent_pool_evidence": 118}
+Pool snapshot checks: {"missed_snapshot_window_no_backfill": 1, "pool_state_corroborated": 85, "requires_review": 3041, "unavailable": 72, "unrecognized_or_inconsistent_pool_evidence": 119}
 Pool-state corroboration does not validate full route fees, execution, or hypothetical market impact.
 Old quotes without simultaneous pool snapshots cannot be retroactively given that evidence.
