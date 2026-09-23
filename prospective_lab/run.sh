@@ -34,6 +34,7 @@ while (( $(date +%s) < END )); do
     TESTED="$CURRENT"
   fi
   PROSPECTIVE_CONTROL_PATH=/tmp/prospective-control.json python3 prospective_lab/collector.py
+  PROSPECTIVE_CONTROL_PATH=/tmp/prospective-control.json python3 prospective_lab/confirmation_pilot.py || echo 'CONFIRMATION_PILOT_PROCESS_ERROR: original collector preserved' >&2
   NOW=$(date +%s)
   if (( NOW-LAST >= 60 )); then publish; LAST=$NOW; fi
 done

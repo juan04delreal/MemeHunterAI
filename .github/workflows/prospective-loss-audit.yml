@@ -5,6 +5,9 @@ on:
     paths:
       - 'prospective_lab/research_audit.py'
       - 'prospective_lab/test_research_audit.py'
+      - 'prospective_lab/confirmation_pilot.py'
+      - 'prospective_lab/test_confirmation_pilot.py'
+      - 'prospective_lab/run.sh'
       - '.github/workflows/prospective-loss-audit.yml'
   workflow_dispatch:
 permissions:
