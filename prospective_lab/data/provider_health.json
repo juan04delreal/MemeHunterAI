@@ -1,6 +1,6 @@
 {
   "access_mode": "keyless",
-  "checked_at": "2026-09-23T20:48:08.905+00:00",
+  "checked_at": "2026-09-23T20:50:07.905+00:00",
   "endpoint": "https://api.jup.ag/swap/v1/quote",
   "entry": {
     "access_mode": "keyless",
@@ -42,9 +42,48 @@
     "requested_epoch": 1790196488.8344567,
     "status": "quote_observed"
   },
+  "exit": {
+    "access_mode": "keyless",
+    "context_slot_delta_from_rpc": 42,
+    "fills_assumed": false,
+    "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+    "observed_at": "2026-09-23T20:50:07.905+00:00",
+    "provider": "jupiter_metis_v1",
+    "raw": {
+      "contextSlot": 449816608,
+      "inAmount": "437464329",
+      "inputMint": "So11111111111111111111111111111111111111112",
+      "otherAmountThreshold": "49451670",
+      "outAmount": "49951181",
+      "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "platformFee": null,
+      "priceImpactPct": "0.0000021357964217922858368351",
+      "routePlan": [
+        {
+          "bps": null,
+          "percent": 100,
+          "swapInfo": {
+            "ammKey": "4QU2NpRaqmKMvPSwVKQDeW4V6JFEKJdkzbzdauumD9qN",
+            "inAmount": "437464329",
+            "inputMint": "So11111111111111111111111111111111111111112",
+            "label": "PancakeSwap",
+            "outAmount": "49951181",
+            "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "updateContextSlot": "449816585"
+          }
+        }
+      ],
+      "slippageBps": 100,
+      "swapMode": "ExactIn",
+      "timeTaken": 0.001637575
+    },
+    "received_epoch": 1790196607.905397,
+    "request_latency_seconds": 0.07688617706298828,
+    "requested_epoch": 1790196607.8285108,
+    "status": "quote_observed"
+  },
   "experiment_sample": false,
-  "next_probe_epoch": 1790196418.8579373,
-  "pending_exit_amount": "437464329",
-  "status": "entry_verified_exit_pending",
+  "next_probe_epoch": 1790197207.9054415,
+  "status": "healthy",
   "version": "prospective-quote-lab-0.4"
 }
