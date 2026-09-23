@@ -6,6 +6,7 @@ on:
       - 'prospective_lab/lab.py'
       - 'prospective_lab/collector.py'
       - 'prospective_lab/validation.py'
+      - 'prospective_lab/paper_account.py'
       - 'prospective_lab/test_*.py'
       - 'prospective_lab/config.json'
       - 'prospective_lab/control.json'

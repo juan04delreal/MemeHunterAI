@@ -338,6 +338,14 @@ def publish(state, new):
         'Pool-state corroboration does not validate full route fees, execution, or hypothetical market impact.\n'
         'Old quotes without simultaneous pool snapshots cannot be retroactively given that evidence.\n')
     report.write_text(text)
+    # Isolated, network-free virtual accounting; no research observations are changed.
+    if enabled():
+        try:
+            from paper_account import safe_run
+            control_path = Path(os.environ['PROSPECTIVE_CONTROL_PATH']) if os.environ.get('PROSPECTIVE_CONTROL_PATH') else None
+            safe_run(state, lab.ROOT, control_path=control_path)
+        except Exception as exc:
+            print('PAPER_ACCOUNT_HOOK_ERROR: ' + type(exc).__name__)
     return latest
 
 
