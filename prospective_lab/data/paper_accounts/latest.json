@@ -170,7 +170,7 @@
       "open_positions": 0,
       "profit_factor": 0.5762765407622714,
       "skip_reasons": {
-        "insufficient_virtual_cash": 64,
+        "insufficient_virtual_cash": 65,
         "position_limit": 9
       },
       "starting_cash_usdc": 500,
@@ -196,7 +196,7 @@
       "open_positions": 0,
       "profit_factor": 0.5657744618238947,
       "skip_reasons": {
-        "insufficient_virtual_cash": 67,
+        "insufficient_virtual_cash": 68,
         "position_limit": 8
       },
       "starting_cash_usdc": 500,
@@ -222,7 +222,7 @@
       "open_positions": 5,
       "profit_factor": 0.914238550536861,
       "skip_reasons": {
-        "position_limit": 72
+        "position_limit": 73
       },
       "starting_cash_usdc": 500,
       "unresolved_positions": 0,
@@ -247,7 +247,7 @@
       "open_positions": 5,
       "profit_factor": 0.8574428994137362,
       "skip_reasons": {
-        "position_limit": 72
+        "position_limit": 73
       },
       "starting_cash_usdc": 500,
       "unresolved_positions": 0,
@@ -272,7 +272,7 @@
       "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
-        "insufficient_virtual_cash": 90,
+        "insufficient_virtual_cash": 91,
         "position_limit": 24
       },
       "starting_cash_usdc": 500,
@@ -298,7 +298,7 @@
       "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
-        "insufficient_virtual_cash": 90,
+        "insufficient_virtual_cash": 91,
         "position_limit": 24
       },
       "starting_cash_usdc": 500,
@@ -324,7 +324,7 @@
       "open_positions": 0,
       "profit_factor": 0.4457118722804602,
       "skip_reasons": {
-        "insufficient_virtual_cash": 89
+        "insufficient_virtual_cash": 91
       },
       "starting_cash_usdc": 500,
       "unresolved_positions": 0,
@@ -349,7 +349,7 @@
       "open_positions": 0,
       "profit_factor": 0.4206546682666466,
       "skip_reasons": {
-        "insufficient_virtual_cash": 90
+        "insufficient_virtual_cash": 92
       },
       "starting_cash_usdc": 500,
       "unresolved_positions": 0,
@@ -374,7 +374,7 @@
       "open_positions": 0,
       "profit_factor": 0.6082406990782531,
       "skip_reasons": {
-        "insufficient_virtual_cash": 30,
+        "insufficient_virtual_cash": 32,
         "position_limit": 51
       },
       "starting_cash_usdc": 500,
@@ -400,7 +400,7 @@
       "open_positions": 0,
       "profit_factor": 0.6053580960873991,
       "skip_reasons": {
-        "insufficient_virtual_cash": 38,
+        "insufficient_virtual_cash": 40,
         "position_limit": 47
       },
       "starting_cash_usdc": 500,
@@ -426,7 +426,7 @@
       "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
-        "insufficient_virtual_cash": 88,
+        "insufficient_virtual_cash": 90,
         "position_limit": 24
       },
       "starting_cash_usdc": 500,
@@ -452,7 +452,7 @@
       "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
-        "insufficient_virtual_cash": 88,
+        "insufficient_virtual_cash": 90,
         "position_limit": 24
       },
       "starting_cash_usdc": 500,
@@ -568,18 +568,18 @@
       "account_id": "E300_H3600_C100",
       "additional_cost_bps": 100,
       "all_results_provisional": true,
-      "book_equity_at_cost_usdc": 97.473424,
-      "cash_usdc": 46.923424,
-      "closed_modeled_net_pnl_usdc": -402.526576,
-      "closed_positions": 9,
+      "book_equity_at_cost_usdc": 86.435733,
+      "cash_usdc": 86.435733,
+      "closed_modeled_net_pnl_usdc": -413.564267,
+      "closed_positions": 10,
       "entry_delay_seconds": 300,
       "exit_horizon_seconds": 3600,
-      "liquidation_equity_usdc": null,
-      "losses": 9,
+      "liquidation_equity_usdc": 86.435733,
+      "losses": 10,
       "market_max_drawdown_pct": null,
       "modeled_buys": 10,
-      "open_cost_basis_usdc": 50.55,
-      "open_positions": 1,
+      "open_cost_basis_usdc": 0.0,
+      "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
         "insufficient_virtual_cash": 86,
@@ -594,18 +594,18 @@
       "account_id": "E300_H3600_C300",
       "additional_cost_bps": 300,
       "all_results_provisional": true,
-      "book_equity_at_cost_usdc": 87.405274,
-      "cash_usdc": 35.855274,
-      "closed_modeled_net_pnl_usdc": -412.594726,
-      "closed_positions": 9,
+      "book_equity_at_cost_usdc": 74.568345,
+      "cash_usdc": 74.568345,
+      "closed_modeled_net_pnl_usdc": -425.431655,
+      "closed_positions": 10,
       "entry_delay_seconds": 300,
       "exit_horizon_seconds": 3600,
-      "liquidation_equity_usdc": null,
-      "losses": 9,
+      "liquidation_equity_usdc": 74.568345,
+      "losses": 10,
       "market_max_drawdown_pct": null,
       "modeled_buys": 10,
-      "open_cost_basis_usdc": 51.55,
-      "open_positions": 1,
+      "open_cost_basis_usdc": 0.0,
+      "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
         "insufficient_virtual_cash": 86,
@@ -619,7 +619,7 @@
   ],
   "all_results_provisional": true,
   "independent_market_coverage": null,
-  "ledger_events": 3655,
+  "ledger_events": 3675,
   "ledger_reconciled": true,
   "mode": "PAPER_ONLY",
   "network_requests_by_paper_layer": 0,
@@ -642,7 +642,7 @@
     "open_positions": 5,
     "profit_factor": 0.914238550536861,
     "skip_reasons": {
-      "position_limit": 72
+      "position_limit": 73
     },
     "starting_cash_usdc": 500,
     "unresolved_positions": 0,
@@ -655,8 +655,8 @@
   "research_quote_quality_counts": {
     "missed_snapshot_window_no_backfill": 6,
     "pool_state_corroborated": 88,
-    "requires_review": 3619,
-    "unavailable": 88,
+    "requires_review": 3635,
+    "unavailable": 89,
     "unrecognized_or_inconsistent_pool_evidence": 179
   },
   "spec": {
@@ -696,6 +696,6 @@
   "started_at": "2026-09-23T15:27:21.742+00:00",
   "status": "RUNNING",
   "unique_post_start_opportunities_with_model_buys": 83,
-  "updated_at": "2026-09-23T18:31:56.440+00:00",
+  "updated_at": "2026-09-23T18:33:05.210+00:00",
   "version": "quote-paper-account-1.0"
 }
