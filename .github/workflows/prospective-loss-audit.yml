@@ -1,0 +1,37 @@
+name: Prospective loss audit (offline)
+on:
+  push:
+    branches: ['research/prospective-quote-lab']
+    paths:
+      - 'prospective_lab/research_audit.py'
+      - 'prospective_lab/test_research_audit.py'
+      - '.github/workflows/prospective-loss-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: prospective-loss-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    if: github.repository == 'juan04delreal/MemeHunterAI' && github.ref == 'refs/heads/research/prospective-quote-lab' && github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+      - name: Check current read-only control
+        run: |
+          git fetch --depth=1 origin research/prospective-quote-lab
+          git show FETCH_HEAD:prospective_lab/control.json > /tmp/loss-audit-control.json
+          python3 -c 'import json; c=json.load(open("/tmp/loss-audit-control.json")); assert c.get("enabled") is True and c.get("mode")=="WATCH_ONLY"'
+      - name: Full regression suite before audit
+        run: python3 -m unittest discover -s prospective_lab -p 'test_*.py' -v
+      - name: Read-only snapshot audit
+        env:
+          PROSPECTIVE_CONTROL_PATH: /tmp/loss-audit-control.json
+        run: |
+          echo "AUDIT_SOURCE_COMMIT=$(git rev-parse HEAD)"
+          python3 prospective_lab/research_audit.py
