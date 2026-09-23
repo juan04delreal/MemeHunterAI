@@ -2,10 +2,10 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-09-23T03:34:39.988+00:00
+Updated: 2026-09-23T03:35:42.765+00:00
 Collector: prospective-quote-lab-0.3
 RPC connected: True
-Validated Pump migrations: 2
+Validated Pump migrations: 3
 Observed entry quotes: 0
 Observed exit quotes: 0
 Quote failures/unavailable: 8
@@ -24,5 +24,6 @@ Bounded latest-100 signature polling; complete migration coverage is NOT establi
 
 | Mint | First observed | Lag from chain | Entry quote states |
 |---|---|---:|---|
+| 8N43KnV3kXsQfaRgkLS7regB4CxrdN67EF96nEE8pump | 2026-09-23T03:35:25.792+00:00 | 5.792809963226318 | none |
 | 3XYdRZ1Y2iEaXspZqiWb4LxQwy1F9bMZPER7QStxpump | 2026-09-22T18:41:20+00:00 | 5.154616355895996 | 30:not_configured, 60:not_configured, 120:not_configured, 300:not_configured |
 | 7HLmsdfVcQdCtK7pHK4iu4Gr2aqYTsBhcA3eiueipump | 2026-09-22T18:01:04+00:00 | 3.0555779933929443 | 30:not_configured, 60:not_configured, 120:not_configured, 300:not_configured |
