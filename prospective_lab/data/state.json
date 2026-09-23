@@ -1,5 +1,5 @@
 {
-  "cycles": 2837,
+  "cycles": 2838,
   "errors": [
     "state_reset_from_feasibility_v0.1"
   ],
@@ -3533,28 +3533,13 @@
   "quote_next_epoch": 1790148328.5601912,
   "rpc_consecutive_failures": 0,
   "rpc_health": {
-    "checked_at": "2026-09-23T07:28:12.207+00:00",
+    "checked_at": "2026-09-23T07:28:36.226+00:00",
     "connected": true,
     "signature_window_saturated": true,
-    "slot": 449635387
+    "slot": 449635471
   },
   "schema": 2,
   "seen": [
-    "4krHWTWCe4BGApGnWQd5gT8CaiEnED7NZ2ae3E8exWJqaVwekJFm6Ts5dhGxfU74TGpf8V6DHaj52GXZ1MrpjtMm",
-    "58yptSbR9mxr4sn2s87Nsp9ffa6XBAXV4qrABT5gchR3tWKJSZZicn8Uy3Kq46qFmfZLEWfHLZmYdFAyRxrt1STC",
-    "3peAqK3KzhFaczA8BVgFAUh4ZWqCE9tFQAVvoS9FGoZ71DCfHjD7oNjGxr9VGzJbmNPRcpJzDEEEpUhG5VvZMjT1",
-    "3CjN7TJH2VodnLcQ194gHaKuGizJ1zHtbVskLeyCe6HuwCAjCFkgk2VuF5ViWyQ9rgZVhsBaztN82AERvhSXk7R7",
-    "43RGGQfAG2a93rkt34RhzGYiDb6M4sytHkdKHnuf57kXucWvftYmyokfH7rqhEvKCfXfJUUmpbw5FYTEVxqibQKM",
-    "4RzM2rum37pxJbPjN5QPRy23xKUEqPbucPidMUHc7MmgdbnVaAzghyQX6TCwrPTofFztiqQbmD175FQpjM6cmhPu",
-    "63rQNsoA4kvdM1uG2SaFD6Afar8xTWAnh7ws5nZ2ji5jBEfz1GgXSWfdiAewUK4Zu71X6ECvijXHj8YBxtZzQy4M",
-    "2U5GU3wHWLat4pr4V1pVRHM6LJ9Zfs6x8XD2HqDXuRuH94sRrTkEbRPPcHGJC935SVUtjBKe8bNVcePnmzorT6KU",
-    "3tcojSXTYfzj2htPHACVxFf9jU8DADKkSbWJ2rJj9oWyWJbQGYc7Q3YtGLFuQXMhWhq4MznGJiDCnUDBiw4MhWGt",
-    "P2y1JhfDbnb8TgJnbzVKUfA8NT3nYGqTyRQxiwzWQBSKJvGQX9rfjLVAxub4g9M7wJFaru5YNSHGziDQ693BGVY",
-    "3VvGLUnTXdjRi1jMQWi6Bv8MRnrs5SnKXxRPh6zXVEKoQtNs9uVDfckeEnDvZUCuqWYqoKkfxSYJKkBt3DPqhrK9",
-    "3qRG66YzYgEYb8eAHQjdTSergVzdvYiHejyW36W6RskNpfJQeGjNdmcuYrQoeQW3GLFD6UU44hxFoXgWSVanMejy",
-    "2VFfYjgVAbtFeBsJsbXnuUv1KME65nAgCNgvJttvJpyRW23SEttcFBfuE9xbAKdBwzAFsKRxtvZ5pJ4TvKQfe68q",
-    "8CaRaXhc56SwPzEZQdPMynTy1VyE4UAtC5LMRH8tHdLPgqB3tSDp8MZDWHvY5CZMwGXoLZ8MP8jEszu5GvCV8YT",
-    "3Bv9wEKpWifEVjG1fr9DQ5siagNtjhDFvrenjtHLVT6S38nog1F22UtLEiiB6RafVBshQVmuRYKNMKhN5UAhkTDN",
     "3kA2eyJrJ2LSumr2wdjkwfv1R6nc6dHsjpQEYem8PmEZiMa8gwoLvRQCDKM7pZWvUuzCPY2e2QMw1waUef8XdcUS",
     "5UybU3MZ5f2HCzjnMTcPga8SSBhTRG4EmEo5gcSJpCKaRoofQ7biknBg1v5ZqUGukGqaUn5tNxJJSjfGVgDMB6QJ",
     "4p24MFvjyYSL6Bnzk1hwubaVQQwEA2dAbRqR5TGq5CGAeQJnWqYagvcEu3sf3ywsHEbM79QghnzpvcbPRJSfX2kw",
@@ -23539,7 +23524,22 @@
     "n7Ce9BuzBe2PW2u71SafwCmVacQjtY7c6rB1pMqULormzMHWnVKpJSKiumzyRdZ56hNCrTscR5s5CxwWarLjSnu",
     "3qFmEhNwqiRnN2esyRLRuStTT8yRv6CMGTrmkNGF7pYKAPSuAHJ3bAKZ9L8uUnzPiAHRqTU2KumHwcf1dFAnAfQi",
     "65ocvcbzRYJRQzEp86fxnYJDSrm8uzVbekSVboc7g91Ee5uffn6ZBvg6vD1mqQJTxoa5DXVDUN7GGLzC5ggiPTB2",
-    "5AB98A4g8CfSk5ZcaNjBCtR2aZhC9ttxFNWsNFqwzxgJNXfnc7aqJ11k9szgiJoRXjBQYzfvL9Rv2KtBVwYmLpHv"
+    "5AB98A4g8CfSk5ZcaNjBCtR2aZhC9ttxFNWsNFqwzxgJNXfnc7aqJ11k9szgiJoRXjBQYzfvL9Rv2KtBVwYmLpHv",
+    "2duGUDG1BXKhvXAy9WpPGMqTSi7Bb2FdtjAicj5WQo6QEaRK79NgTypUCGfxEsK2wczotecUnADw7EwzFiPDKuvf",
+    "3W8kmGEdHcAZUY1iV7D6MDQVYJRX69P7gDxPVzi4T8WmamNrpx7idv6s2JxHAFwFwFfQtMGUU5e8aTFJEGNn9rfN",
+    "4xaT19DHR7tykvGKwVQJqrP1htpAxMRPNwQWzDxYuTyutVAnJcH63maXihZqPuprG8CYEZYEqdAF1TdN5eiSK9fL",
+    "2odkybQR519v7yf4d52dmdcqRMT12u8S3b6h2JdfvDpHhytp1bDy5zTQw87i2Z27m79iHrHRsQmZkSVqHHHgTBKB",
+    "4mkXbnPZ5bQ4v987QqLrWuStTF4f1QvsqR2vy2fsFt6wrDbkGoERCYDCCjrRUqLjqVhJrFzm7MmjCmE4fuLc6zKK",
+    "4shxx1vjpLBVk65nK2fysxp5hFwgCTGSEvkgYPFrGFaJXCMxLCwqQKB7dcdwxoTv4VkGSWNGZs4QbwHu862PhaVA",
+    "4X3BkmuVhPptv4tsNPnAjE69pbb2smCWCtLVnspVVfvds2GNXfZhiuJonBrkSL64br9nKrbER83xaRiLGuqJxdHi",
+    "5rhi7qqMaiLXMWXoMQEcvg5nTbVXcLHC4K4bm7RhKtVLZBYxw7YuMZRhnvxvBF9KeWJ2wAtyZ3faDbwMj6vws73j",
+    "4eopGiiFvwP3GebJuLGZRAX1NsAkJGRp1VNroPTJRB1TCCGpMPMi6mUa4misg35Arj4wSMpiPniwceyXMcB44yoQ",
+    "2H2vrY8n3anLTJNY1dBXVhcVm922nt5inFhb74G26YTXxH6y9Z5pJkb4CGEfHyFgf5gPfetofAd4Ckb9TPcwHyDw",
+    "3e7df78KtqDhmjPUS4Qcf6feMi1QVpXw1qXV9ggctL1GJ4nagG3LS6Py2wZWgh5r3eDYM891CRR9hYpa4eCuVhAS",
+    "515Dc3NST19AVGVaishrAK5pv747b2TnYN9Gv7fR5dek6T3FFB1cbNPLMB5efZs64D9TCEimERBQxNm1FbWShfdY",
+    "4vZ2HdZLckRw62XFL73M1ndSCUurAfJYgdZHHuPHembbLbN8XQjmWNmbGC8o6D385Uoxcn9fiPVQYBR6kxXn6XUQ",
+    "357ya4oh9AoXthfKGWrYdjy2K3nybKRWLS4YTHdK8UwNto3QD1QBL2SpNrEZdBQaUKTVQLEfcAAXphkRCmw3eCBP",
+    "3za2mxYm1x36cLY8dA8P9Gbthh93LH6kyCNNoYZcxGnWJvkP411QaUmr5ytBgWA55E6du7J5gf3wyy7wkyq2hD3P"
   ],
   "started_at": "2026-09-22T14:39:48+00:00",
   "transaction_fetch_failures": 6
