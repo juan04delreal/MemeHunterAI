@@ -2,19 +2,19 @@
   "backpressure_cycles": 0,
   "catchup_in_progress": false,
   "coverage_note": "Bounded migration-authority cursor and retry queue; SOL-paired migrate and migrate_v2 only; non-SOL pairs excluded. Independent total-market coverage is not established.",
-  "cycles": 4553,
+  "cycles": 4556,
   "discovery_index_status": "verified_global_layout",
   "discovery_source": "migration_authority_index",
-  "entry_quotes_observed": 982,
-  "exit_quotes_observed": 2678,
+  "entry_quotes_observed": 986,
+  "exit_quotes_observed": 2689,
   "fully_validated_quote_count": 0,
   "health_checks_excluded_from_experiment": true,
   "independent_coverage_fraction": null,
   "legacy_instruction_matches": 5,
-  "migration_instruction_candidates": 403,
+  "migration_instruction_candidates": 405,
   "migration_validation_statuses": {
-    "confirmed_new_migration": 306,
-    "unresolved_no_new_migration_evidence": 97
+    "confirmed_new_migration": 307,
+    "unresolved_no_new_migration_evidence": 98
   },
   "missed_deadlines": 1,
   "mode": "WATCH_ONLY",
@@ -30,20 +30,22 @@
   "quote_quality_counts": {
     "missed_snapshot_window_no_backfill": 6,
     "pool_state_corroborated": 85,
-    "requires_review": 3300,
+    "requires_review": 3311,
     "unavailable": 77,
-    "unrecognized_or_inconsistent_pool_evidence": 144
+    "unrecognized_or_inconsistent_pool_evidence": 148
   },
   "real_trades_placed": 0,
   "realized_profit": null,
-  "rpc_calls_last_cycle": 8,
+  "rpc_calls_last_cycle": 12,
   "rpc_connected": true,
   "rpc_consecutive_failures": 0,
-  "rpc_error_categories": {},
+  "rpc_error_categories": {
+    "rpc_error": 2
+  },
   "signature_window_saturated": false,
-  "slot": 449777769,
+  "slot": 449778022,
   "transaction_fetch_failures": 6,
-  "updated_at": "2026-09-23T17:58:46.754+00:00",
-  "validated_migrations": 306,
+  "updated_at": "2026-09-23T17:59:55.394+00:00",
+  "validated_migrations": 307,
   "version": "prospective-quote-lab-0.4"
 }
