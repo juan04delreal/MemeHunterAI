@@ -2,11 +2,11 @@
   "backpressure_cycles": 0,
   "catchup_in_progress": false,
   "coverage_note": "Bounded migration-authority cursor and retry queue; SOL-paired migrate and migrate_v2 only; non-SOL pairs excluded. Independent total-market coverage is not established.",
-  "cycles": 3597,
+  "cycles": 3600,
   "discovery_index_status": "verified_global_layout",
   "discovery_source": "migration_authority_index",
-  "entry_quotes_observed": 49,
-  "exit_quotes_observed": 70,
+  "entry_quotes_observed": 50,
+  "exit_quotes_observed": 71,
   "fully_validated_quote_count": 0,
   "health_checks_excluded_from_experiment": true,
   "independent_coverage_fraction": null,
@@ -28,7 +28,7 @@
   "quote_provider_checked_at": "2026-09-23T12:01:38.916+00:00",
   "quote_provider_health": "healthy",
   "quote_quality_counts": {
-    "requires_review": 61,
+    "requires_review": 63,
     "unavailable": 3,
     "unrecognized_or_inconsistent_pool_evidence": 7
   },
@@ -39,9 +39,9 @@
   "rpc_consecutive_failures": 0,
   "rpc_error_categories": {},
   "signature_window_saturated": false,
-  "slot": 449697575,
+  "slot": 449697814,
   "transaction_fetch_failures": 6,
-  "updated_at": "2026-09-23T12:02:54.557+00:00",
+  "updated_at": "2026-09-23T12:03:57.910+00:00",
   "validated_migrations": 72,
   "version": "prospective-quote-lab-0.4"
 }

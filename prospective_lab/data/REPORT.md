@@ -2,12 +2,12 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-09-23T12:02:54.557+00:00
+Updated: 2026-09-23T12:03:57.910+00:00
 Collector: prospective-quote-lab-0.4
 RPC connected: True
 Evidence-confirmed unique migrations: 72
-Observed entry quotes: 49
-Observed exit quotes: 70
+Observed entry quotes: 50
+Observed exit quotes: 71
 Quote failures/unavailable: 8
 Missed deadlines (no backfill): 0
 Jupiter API key configured: False
@@ -24,7 +24,7 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 
 | Mint | First observed | Lag from chain | Entry quote states |
 |---|---|---:|---|
-| PnHkPXL1YkToedJZ2jhRfSUGi9pThpFNMmiLZZCpump | 2026-09-23T12:01:32.020+00:00 | 19.02076745033264 | 30:quote_observed, 60:quote_observed |
+| PnHkPXL1YkToedJZ2jhRfSUGi9pThpFNMmiLZZCpump | 2026-09-23T12:01:32.020+00:00 | 19.02076745033264 | 30:quote_observed, 60:quote_observed, 120:quote_observed |
 | A1eCF4z9aQ4KK5fPqvj9Uq29donBLCgWuDYfGMDqpump | 2026-09-23T12:00:09.442+00:00 | 10.442708730697632 | 30:quote_observed, 60:quote_observed, 120:quote_observed |
 | 5k1bU7xjM4hmapAvemsGnK8uQFCiwp5LLiWDWQ2npump | 2026-09-23T11:54:07.028+00:00 | 20.02858304977417 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | CkczYoVSen5nFDbnk3xx9jW3Hnjd6aVCgCFqQWvApump | 2026-09-23T11:53:03.489+00:00 | 10.489013910293579 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
@@ -48,6 +48,6 @@ Re-audits and initial historical catch-up never create backfilled quote experime
 Migration classifications: {"confirmed_new_migration": 72, "unresolved_no_new_migration_evidence": 27}
 Discovery source: migration_authority_index; pending transactions: 0; catch-up: False
 Out-of-scope or unrecognized migrate_v2 transactions: 3
-Pool snapshot checks: {"requires_review": 61, "unavailable": 3, "unrecognized_or_inconsistent_pool_evidence": 7}
+Pool snapshot checks: {"requires_review": 63, "unavailable": 3, "unrecognized_or_inconsistent_pool_evidence": 7}
 Pool-state corroboration does not validate full route fees, execution, or hypothetical market impact.
 Old quotes without simultaneous pool snapshots cannot be retroactively given that evidence.
