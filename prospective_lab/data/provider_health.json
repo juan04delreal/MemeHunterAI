@@ -1,20 +1,20 @@
 {
   "access_mode": "keyless",
-  "checked_at": "2026-09-23T08:35:47.280+00:00",
+  "checked_at": "2026-09-23T08:50:26.750+00:00",
   "endpoint": "https://api.jup.ag/swap/v1/quote",
   "entry": {
     "access_mode": "keyless",
-    "context_slot_delta_from_rpc": 44,
+    "context_slot_delta_from_rpc": 1469,
     "fills_assumed": false,
     "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
-    "observed_at": "2026-09-23T08:35:44.637+00:00",
+    "observed_at": "2026-09-23T08:50:24.079+00:00",
     "provider": "jupiter_metis_v1",
     "raw": {
-      "contextSlot": 449650687,
+      "contextSlot": 449654014,
       "inAmount": "50000000",
       "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-      "otherAmountThreshold": "419510464",
-      "outAmount": "423747943",
+      "otherAmountThreshold": "421749511",
+      "outAmount": "426009607",
       "outputMint": "So11111111111111111111111111111111111111112",
       "platformFee": null,
       "priceImpactPct": "0",
@@ -23,38 +23,38 @@
           "bps": null,
           "percent": 100,
           "swapInfo": {
-            "ammKey": "BHrYr82teMWH38Q6QSgNEzkfZjiyLP74vL9m9FG6bQAD",
+            "ammKey": "7yD7gfXv49SFxhx9uTc11dEd7Nj98rGWeYMdZJgheZbG",
             "inAmount": "50000000",
             "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-            "label": "Quantum",
-            "outAmount": "423747943",
+            "label": "Kipseli",
+            "outAmount": "426009607",
             "outputMint": "So11111111111111111111111111111111111111112",
-            "updateContextSlot": "449650687"
+            "updateContextSlot": "449654013"
           }
         }
       ],
       "slippageBps": 100,
       "swapMode": "ExactIn",
-      "timeTaken": 0.001473111
+      "timeTaken": 0.001788437
     },
-    "received_epoch": 1790152544.637573,
-    "request_latency_seconds": 0.21857643127441406,
-    "requested_epoch": 1790152544.4189966,
+    "received_epoch": 1790153424.0793512,
+    "request_latency_seconds": 0.18895983695983887,
+    "requested_epoch": 1790153423.8903913,
     "status": "quote_observed"
   },
   "exit": {
     "access_mode": "keyless",
-    "context_slot_delta_from_rpc": 54,
+    "context_slot_delta_from_rpc": 11,
     "fills_assumed": false,
     "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
-    "observed_at": "2026-09-23T08:35:47.280+00:00",
+    "observed_at": "2026-09-23T08:50:26.750+00:00",
     "provider": "jupiter_metis_v1",
     "raw": {
-      "contextSlot": 449650697,
-      "inAmount": "423747943",
+      "contextSlot": 449654025,
+      "inAmount": "426009607",
       "inputMint": "So11111111111111111111111111111111111111112",
-      "otherAmountThreshold": "49496633",
-      "outAmount": "49996598",
+      "otherAmountThreshold": "49511851",
+      "outAmount": "50011970",
       "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
       "platformFee": null,
       "priceImpactPct": "0",
@@ -63,27 +63,27 @@
           "bps": null,
           "percent": 100,
           "swapInfo": {
-            "ammKey": "7yD7gfXv49SFxhx9uTc11dEd7Nj98rGWeYMdZJgheZbG",
-            "inAmount": "423747943",
+            "ammKey": "7wXtGayssQRekJYop299FoJZmcD7fvRW6NUwLk3r6VWM",
+            "inAmount": "426009607",
             "inputMint": "So11111111111111111111111111111111111111112",
-            "label": "Kipseli",
-            "outAmount": "49996598",
+            "label": "Quantum",
+            "outAmount": "50011970",
             "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-            "updateContextSlot": "449650696"
+            "updateContextSlot": "449654025"
           }
         }
       ],
       "slippageBps": 100,
       "swapMode": "ExactIn",
-      "timeTaken": 0.001393769
+      "timeTaken": 0.00173826
     },
-    "received_epoch": 1790152547.2808418,
-    "request_latency_seconds": 0.13882231712341309,
-    "requested_epoch": 1790152547.1420195,
+    "received_epoch": 1790153426.7501893,
+    "request_latency_seconds": 0.16615843772888184,
+    "requested_epoch": 1790153426.5840309,
     "status": "quote_observed"
   },
   "experiment_sample": false,
-  "next_probe_epoch": 1790153147.2808828,
+  "next_probe_epoch": 1790154026.7502477,
   "status": "healthy",
   "version": "prospective-quote-lab-0.3"
 }
