@@ -377,6 +377,7 @@
     "ZkkAJhaUE73sgdpxqTZciZ5NUXLc2jn9aiP3mMcpump:PiXCaB9ApwXZ1VEX9Ndwf3XnNVLVCyUMMvVAq3cFkdv": "cYMSu8sWKUqrASgoH33oXdEoGqRZcEs8rzYYxuSM73kDjvru1W26nJWaCVa7tp5RXe7b6nPKkKDB6kdwRGVFzfV:PiXCaB9ApwXZ1VEX9Ndwf3XnNVLVCyUMMvVAq3cFkdv",
     "aVXjUmSYeFrhgpR87bJ58qpbwKeeywuBwgUtmDipump:GEMp9vtSDeio94XezYtf6BthByAaPmBEKtHSSQMTDGpG": "67G8RRZpTQFngjGvycu8TedGcXsWgqJF1XizHeFvmt2zVXc8qaUwMdoj1wAMYFddGwcgqLzvyXdzncbtbaxdwuLU:GEMp9vtSDeio94XezYtf6BthByAaPmBEKtHSSQMTDGpG",
     "bL8y2s82iyB9Ujm4isKDUQsyMGPAKHNgXaQCDDupump:TGNTJpjmGU5xnathV9ht7oN78wJPgW9i8tGLWJJMj53": "DzVPwCGFVMjgMZ2CASSaYsa3L5gfTpFK15oLCwHLPyaex2FNnrP73AVmhrMHp8eYgRNKGyDYCXEMW5vQgJx9HFH:TGNTJpjmGU5xnathV9ht7oN78wJPgW9i8tGLWJJMj53",
+    "bcRudE7VCvcGXaUKaLiKHjo4LdCxMHW6XmGfJiypump:4eYFj7pECcqMAxhsLZez2gAbpszr1waBSCW1HsdMizRV": "2j332eKepHG2QS4FDLxGEQktQTqUntDnHxGGNHVqQQS8QNFHGkiAyNvXfrHktPuQFdsM7urGsY3WwyHhEw5wp8uE:4eYFj7pECcqMAxhsLZez2gAbpszr1waBSCW1HsdMizRV",
     "c4AtfqMRbC9FuHtVEHDhCm453tytU9E34MXXrp6bLuf:BJ6pFMwat4EG3UE6eSXY2Qtt8t74JAwioDE2T4WE233Y": "jsUR5HzYzZXEmg5rZiBaBzNSXtfEERaeUgU5KdQkgZ74DJjaFK43D72QhU7L9GzwRvv3NzgzYuwUyJbqLgR9axK:BJ6pFMwat4EG3UE6eSXY2Qtt8t74JAwioDE2T4WE233Y",
     "c7zP55vADXDi3snuMCc67zcYQogz1VBc5UZZ6fPpump:8Bv1M2kzpks5azNFZpnghcmKQhf1ZtfrVT3mwyGiihjv": "WTY8Quvm84z3vmop5vKpZ1b3xtkMceRC7EzEsdazcTKYRVaUyVyPurPusjAq7TNRh2RM5Jprys2mWksVj2hLAvq:8Bv1M2kzpks5azNFZpnghcmKQhf1ZtfrVT3mwyGiihjv",
     "d9HSkRhbVEeUxFgFxoU8bwz59U7WS8XUzF9eVc3pump:Hu3tD9ECvAGsmQj36qcmzeKprVK2g9w8qgqsMgSUfMWP": "54G4SFWPzKLpJ9CeCVw7KfPxmqrxyz9ZR5H4X7mCgygDbLEGqj4vTqUto6SRyjmQwMhksJUYYwXk7uAfNWLbs5yv:Hu3tD9ECvAGsmQj36qcmzeKprVK2g9w8qgqsMgSUfMWP",
@@ -416,15 +417,15 @@
     "zDpzE1ZhSB9f3138d3tesdh7md3QcSYGwBLWJKTpump:2Erhxh5b92EKhPkniNxbbsCa4HFdDMqy9W3BcD7RYUW5": "XcmW1uruys9pxvPd3z1RJ35MckELxXBZCVtGxSGGNNtDvhwsPRX9Lv8hE3na1xKcRe6uSMJMbnMAjM9Fg8EXx8V:2Erhxh5b92EKhPkniNxbbsCa4HFdDMqy9W3BcD7RYUW5",
     "zya77H7KjMgcNNJL7sqPf3zunL16iMssKi8PWrEpump:D3t9kUdg9AAhXU6QAA7Unmnq4Wf56sePD4cga3LQQydq": "5auYdVWCCXd6cVBNdM4AMQ21UD3WyyHgkB7yXuZ8Wr3oWMV9z6Q65xFKGdputJxmtN41hJh2xgjUEGaDQCYbJKYQ:D3t9kUdg9AAhXU6QAA7Unmnq4Wf56sePD4cga3LQQydq"
   },
-  "cycles": 4922,
+  "cycles": 4925,
   "discovery_v4": {
     "active_source": "migration_authority_index",
     "cursors": {
       "39azUYFWPz3VHgKCf3VChUwbpURdCHRxjWVowf5jUJjg": {
-        "anchor": "2NLeNZrvKhK677ZbQ2saAfQDf4MDLnJp2H1uwyCrAhVCiXWUS1fcEq1hNnGHW65FbiH9b9oowxRmhoHTSKMPKUoY",
+        "anchor": "wA1zXoYB7n97Z5QBqX5tN9ydWv27nxNCoSoLMokQPGHR6W6B5ozF6q6HFo6cxbpoYg3Zf64gone83BKhBz1KZRi",
         "baseline_slot": 449692156,
         "bootstrap_history_incomplete": true,
-        "last_provider_range_reconciled_at": "2026-09-23T20:22:21.746+00:00"
+        "last_provider_range_reconciled_at": "2026-09-23T20:23:32.875+00:00"
       }
     },
     "index_address": "39azUYFWPz3VHgKCf3VChUwbpURdCHRxjWVowf5jUJjg",
@@ -433,7 +434,7 @@
     "last_page_size": 0,
     "out_of_scope_or_unrecognized_v2_transactions": 18,
     "page_deferred_backpressure": false,
-    "pages_received": 1386,
+    "pages_received": 1389,
     "pending": {},
     "resolved": [
       "2D5PqHCX8AxeHVPLtGoUd3tpnm5ytcSsdYd9ZgbXpQ638H2LuTyGDrCwSMVb5js8miCcCZ8jPGVAmPkmMK2yvsTy",
@@ -1542,7 +1543,9 @@
       "2MeUwjURPGmfYXTJf7ZTmFVwCFLEMtnW8oi6Hx1gvfE1kT5mqr2BoDCzC2TpyS48mB9XhuhwEFnaRRiXky6wz9EK",
       "1GMpvG3Eg4nDwe1LdAGzYmE19FZpg6qg1RFADLXZ3iy7hopWRo6SuXBdv68EyHJ3VGdUn44bESXaEEHkjFygeeV",
       "2NLeNZrvKhK677ZbQ2saAfQDf4MDLnJp2H1uwyCrAhVCiXWUS1fcEq1hNnGHW65FbiH9b9oowxRmhoHTSKMPKUoY",
-      "4mxjDY5pFYx2dd681ER376jEXRK3YFi7gNyc5DLU2sb5TtBFateft4WEw1hp1Sh3Q8z8ur61FcuDcv88NWKrzPE8"
+      "4mxjDY5pFYx2dd681ER376jEXRK3YFi7gNyc5DLU2sb5TtBFateft4WEw1hp1Sh3Q8z8ur61FcuDcv88NWKrzPE8",
+      "wA1zXoYB7n97Z5QBqX5tN9ydWv27nxNCoSoLMokQPGHR6W6B5ozF6q6HFo6cxbpoYg3Zf64gone83BKhBz1KZRi",
+      "2j332eKepHG2QS4FDLxGEQktQTqUntDnHxGGNHVqQQS8QNFHGkiAyNvXfrHktPuQFdsM7urGsY3WwyHhEw5wp8uE"
     ],
     "start_slot": 449692613
   },
@@ -5845,6 +5848,66 @@
       "quote_mint": "So11111111111111111111111111111111111111112",
       "schema": "migration-evidence-v1",
       "signature": "2hrejRoZvW58bn9jphjSq2q7BrnGFewJpYLrrJTSdd1tFaBbF5r1DFfqoBUEqCbiQear7aH9KFZ4nJmb2kfkfNVP",
+      "status": "confirmed_new_migration"
+    },
+    "2j332eKepHG2QS4FDLxGEQktQTqUntDnHxGGNHVqQQS8QNFHGkiAyNvXfrHktPuQFdsM7urGsY3WwyHhEw5wp8uE:4eYFj7pECcqMAxhsLZez2gAbpszr1waBSCW1HsdMizRV": {
+      "chain_block_time": 1790194964,
+      "chain_slot": 449810404,
+      "checked_at": "2026-09-23T20:22:53.271+00:00",
+      "collector_version": "prospective-quote-lab-0.4",
+      "curve": "ErcF4Yevcb3sRJE1ushMVkn6zgzWXXQJZ5i5j7wHsrRk",
+      "event": {
+        "bonding_curve": "ErcF4Yevcb3sRJE1ushMVkn6zgzWXXQJZ5i5j7wHsrRk",
+        "event_base64": "velduVyU6pR5syl9Y/fz65admv7nJIovNlWDCH2Y954qauspuQDisgjdzsVwcYjeW8T+czzpdyJ7ZzUJPvZxF6FkU/j5U6UvAAgBqSy8AACI7LsEAAAAAMHh5AAAAAAAzd09Cf1GmYEMJ0iB7cDMbdX06yRKAIB/GT1wvuqg8o8UNbRqAAAAADYw472Ujod4m3R3hXP+d8CmwYzBc5wfBsHKDhT54bk4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "mint": "bcRudE7VCvcGXaUKaLiKHjo4LdCxMHW6XmGfJiypump",
+        "mint_amount_raw": "206900000000000",
+        "pool": "4eYFj7pECcqMAxhsLZez2gAbpszr1waBSCW1HsdMizRV",
+        "quote_amount_raw": "79424648",
+        "quote_mint": "11111111111111111111111111111111",
+        "timestamp": 1790194964
+      },
+      "evidence_note": "Matching Pump event, PumpSwap create_pool, and zero-to-positive pool funding required; absent evidence or prefunded pools remain unresolved.",
+      "first_seen_epoch": 1790194970.071231,
+      "historical_reaudit": false,
+      "id": "2j332eKepHG2QS4FDLxGEQktQTqUntDnHxGGNHVqQQS8QNFHGkiAyNvXfrHktPuQFdsM7urGsY3WwyHhEw5wp8uE:4eYFj7pECcqMAxhsLZez2gAbpszr1waBSCW1HsdMizRV",
+      "instruction_index": 2,
+      "instruction_version": "migrate_v2",
+      "mint": "bcRudE7VCvcGXaUKaLiKHjo4LdCxMHW6XmGfJiypump",
+      "new_pool_funding_proven": true,
+      "observation_lag_seconds": 9.271014213562012,
+      "pool": "4eYFj7pECcqMAxhsLZez2gAbpszr1waBSCW1HsdMizRV",
+      "pool_creation_instructions": [
+        {
+          "accounts": [
+            "4eYFj7pECcqMAxhsLZez2gAbpszr1waBSCW1HsdMizRV",
+            "ADyA8hdefvWN2dbGGWFotbzWxrAvLW83WG6QCVXvJKqw",
+            "GJFLhbzV38mzRp2zpeKGBf4tBDs68jE6ESjc2TEwXsa2",
+            "bcRudE7VCvcGXaUKaLiKHjo4LdCxMHW6XmGfJiypump",
+            "So11111111111111111111111111111111111111112",
+            "CkcJjNaFG5z5EBCqcjmZSQR3B7UY2ksDD5LroB4Zi2Ev",
+            "8MPRbeX6vTB9vJy4XBSTpX3qsDaCzBNYzyVWoD9DRY49",
+            "BByGh7BQFxgJrqjhcmsjjZJyGkJpMs8ymuGjTcidg7Dw",
+            "EeGAT5J5qRqLps3484haMQbaAiHTDkosSaF64a4uwgAm",
+            "6vvkU1MkF9mSFdmGuFnJ1rr3aiPLBGPPg1s81eEmMrHU",
+            "J9o7oNr95dDYPpZhnh5L4j7EEMnQJdfe4yCiLa6f99bz",
+            "11111111111111111111111111111111",
+            "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+            "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+            "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+            "GS4CU59F31iL7aR2Q8zVS8DRrcRnXX1yjQ66TqNVQnaR",
+            "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA"
+          ],
+          "data": "BGKWNXKDEVbL56LG2reTyB4TCMLqxLm86YW2DC2i4qHt5LWSj2gF98eNYUYwKKo8ysB2Bs65FVyBm4Sk6TXe4LdsYLpmJg7Z",
+          "programId": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA"
+        }
+      ],
+      "pool_post_lamports": 2026920,
+      "pool_pre_lamports": 0,
+      "prospective_boundary_eligible": true,
+      "quote_mint": "So11111111111111111111111111111111111111112",
+      "schema": "migration-evidence-v1",
+      "signature": "2j332eKepHG2QS4FDLxGEQktQTqUntDnHxGGNHVqQQS8QNFHGkiAyNvXfrHktPuQFdsM7urGsY3WwyHhEw5wp8uE",
       "status": "confirmed_new_migration"
     },
     "2jT17RcM2bSiSMM3jbaHyr3QHANNxPcqAMxcBVuX5fbw3WnSHAb5678R246uWMDDg6uQvvF3gokn3yFNSfdT2vZF:gDxu1HaCvdW4e9RyZhceL1eSY62KxXBfvhET4cCtrJs": {
@@ -29385,6 +29448,32 @@
       "signature": "vHj5oEimCeA7wjA5Yg9oKQZXjkTLGafbEM9htoVqszbisXXFdWfyh45CuXk4G2fEEK5MRy9vsiXZzGmn2EMRGYB",
       "status": "confirmed_new_migration"
     },
+    "wA1zXoYB7n97Z5QBqX5tN9ydWv27nxNCoSoLMokQPGHR6W6B5ozF6q6HFo6cxbpoYg3Zf64gone83BKhBz1KZRi:4eYFj7pECcqMAxhsLZez2gAbpszr1waBSCW1HsdMizRV": {
+      "chain_block_time": 1790194964,
+      "chain_slot": 449810405,
+      "checked_at": "2026-09-23T20:22:52.216+00:00",
+      "collector_version": "prospective-quote-lab-0.4",
+      "curve": "ErcF4Yevcb3sRJE1ushMVkn6zgzWXXQJZ5i5j7wHsrRk",
+      "event": null,
+      "evidence_note": "Matching Pump event, PumpSwap create_pool, and zero-to-positive pool funding required; absent evidence or prefunded pools remain unresolved.",
+      "first_seen_epoch": 1790194970.071231,
+      "historical_reaudit": false,
+      "id": "wA1zXoYB7n97Z5QBqX5tN9ydWv27nxNCoSoLMokQPGHR6W6B5ozF6q6HFo6cxbpoYg3Zf64gone83BKhBz1KZRi:4eYFj7pECcqMAxhsLZez2gAbpszr1waBSCW1HsdMizRV",
+      "instruction_index": 2,
+      "instruction_version": "migrate",
+      "mint": "bcRudE7VCvcGXaUKaLiKHjo4LdCxMHW6XmGfJiypump",
+      "new_pool_funding_proven": false,
+      "observation_lag_seconds": 8.216210842132568,
+      "pool": "4eYFj7pECcqMAxhsLZez2gAbpszr1waBSCW1HsdMizRV",
+      "pool_creation_instructions": [],
+      "pool_post_lamports": 2026920,
+      "pool_pre_lamports": 2026920,
+      "prospective_boundary_eligible": true,
+      "quote_mint": "So11111111111111111111111111111111111111112",
+      "schema": "migration-evidence-v1",
+      "signature": "wA1zXoYB7n97Z5QBqX5tN9ydWv27nxNCoSoLMokQPGHR6W6B5ozF6q6HFo6cxbpoYg3Zf64gone83BKhBz1KZRi",
+      "status": "unresolved_no_new_migration_evidence"
+    },
     "wDCNxHHMWToesJqALPnKK47zAhCp8ohk6tyE9f14RU7UqDAPn7QC2diG9c3RNztV8ccG6grtVGC6i8f7dTQirY1:BpJDW4gJdaM3z5KupJ2gjk7ecoyQpWMEkLwP5fZfhGZp": {
       "chain_block_time": 1790181829,
       "chain_slot": 449760971,
@@ -47747,6 +47836,67 @@
             "status": "quote_observed",
             "timing_eligible": true
           },
+          "3600": {
+            "access_mode": "keyless",
+            "collector_version": "prospective-quote-lab-0.4",
+            "context_slot_delta_from_rpc": 49,
+            "entry_delay_seconds": 60,
+            "exit_horizon_seconds": 3600,
+            "fills_assumed": false,
+            "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+            "hypothetical_token_input_raw": "1108827262030",
+            "late_by_seconds": 4.88526463508606,
+            "observed_at": "2026-09-23T20:23:03.162+00:00",
+            "provider": "jupiter_metis_v1",
+            "raw": {
+              "contextSlot": 449810471,
+              "inAmount": "1108827262030",
+              "inputMint": "BerWsfRFbh7Lp9c6N4DUUqmc433688eicWjehAkkpump",
+              "otherAmountThreshold": "2539715",
+              "outAmount": "2565368",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "platformFee": null,
+              "priceImpactPct": "0.0031098509546538846095795281",
+              "routePlan": [
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "7UnkgMLJAq15AfuvbceD3uz2WcGW3PPBJ8MhFdcEKgdm",
+                    "inAmount": "1108827262030",
+                    "inputMint": "BerWsfRFbh7Lp9c6N4DUUqmc433688eicWjehAkkpump",
+                    "label": "Pump.fun Amm",
+                    "outAmount": "22437989",
+                    "outputMint": "So11111111111111111111111111111111111111112",
+                    "updateContextSlot": "449809263"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "DbuvwPuLvH8uy2B1sKuu18aCd2QpCvfZdfDtdRZztBd2",
+                    "inAmount": "22437989",
+                    "inputMint": "So11111111111111111111111111111111111111112",
+                    "label": "1DEX",
+                    "outAmount": "2565368",
+                    "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "updateContextSlot": "449810358"
+                  }
+                }
+              ],
+              "slippageBps": 100,
+              "swapMode": "ExactIn",
+              "timeTaken": 0.001957106
+            },
+            "received_epoch": 1790194983.1629114,
+            "received_late_by_seconds": 4.999660968780518,
+            "request_latency_seconds": 0.11439633369445801,
+            "requested_epoch": 1790194983.048515,
+            "scheduled_epoch": 1790194978.1632504,
+            "status": "quote_observed",
+            "timing_eligible": true
+          },
           "900": {
             "access_mode": "keyless",
             "collector_version": "prospective-quote-lab-0.4",
@@ -52584,6 +52734,82 @@
         }
       },
       "exit_quotes": {
+        "120": {
+          "300": {
+            "access_mode": "keyless",
+            "collector_version": "prospective-quote-lab-0.4",
+            "context_slot_delta_from_rpc": 86,
+            "entry_delay_seconds": 120,
+            "exit_horizon_seconds": 300,
+            "fills_assumed": false,
+            "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+            "hypothetical_token_input_raw": "410192449049",
+            "late_by_seconds": 4.935856580734253,
+            "observed_at": "2026-09-23T20:23:33.798+00:00",
+            "provider": "jupiter_metis_v1",
+            "raw": {
+              "contextSlot": 449810587,
+              "inAmount": "410192449049",
+              "inputMint": "FDumYKfbqDnMxWCa9N2eW1Y2wGUiPU9ci6rb22pEpump",
+              "otherAmountThreshold": "29031455",
+              "outAmount": "29324702",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "platformFee": null,
+              "priceImpactPct": "0.013901104685020595892657346",
+              "routePlan": [
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "EUKoFyGyZx8ogaESYKdN9oMiZp67radXDiz1QX5M2sjN",
+                    "inAmount": "410192449049",
+                    "inputMint": "FDumYKfbqDnMxWCa9N2eW1Y2wGUiPU9ci6rb22pEpump",
+                    "label": "Pump.fun Amm",
+                    "outAmount": "256700926",
+                    "outputMint": "So11111111111111111111111111111111111111112",
+                    "updateContextSlot": "449810586"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "B4bn8eSGUWsETHdKj2uXUHDLW2s2zeRWrKZofBWxCMAm",
+                    "inAmount": "256700926",
+                    "inputMint": "So11111111111111111111111111111111111111112",
+                    "label": "Whirlpool",
+                    "outAmount": "34772",
+                    "outputMint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+                    "updateContextSlot": "449810582"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "8TxrtAxqA5PA2Y1d2pxzCz9SoDhjrBcYqNAQKVv6p443",
+                    "inAmount": "34772",
+                    "inputMint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+                    "label": "GoonFi V2",
+                    "outAmount": "29324702",
+                    "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "updateContextSlot": "449810587"
+                  }
+                }
+              ],
+              "slippageBps": 100,
+              "swapMode": "ExactIn",
+              "timeTaken": 0.002362576
+            },
+            "received_epoch": 1790195013.798037,
+            "received_late_by_seconds": 5.015597820281982,
+            "request_latency_seconds": 0.07974123954772949,
+            "requested_epoch": 1790195013.7182958,
+            "scheduled_epoch": 1790195008.7824392,
+            "status": "quote_observed",
+            "timing_eligible": true
+          }
+        },
         "30": {
           "300": {
             "access_mode": "keyless",
@@ -56278,6 +56504,69 @@
         }
       },
       "exit_quotes": {
+        "120": {
+          "300": {
+            "access_mode": "keyless",
+            "collector_version": "prospective-quote-lab-0.4",
+            "context_slot_delta_from_rpc": 57,
+            "entry_delay_seconds": 120,
+            "exit_horizon_seconds": 300,
+            "fills_assumed": false,
+            "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+            "hypothetical_token_input_raw": "169824875192",
+            "late_by_seconds": 2.351712703704834,
+            "observed_at": "2026-09-23T20:23:26.027+00:00",
+            "provider": "jupiter_metis_v1",
+            "raw": {
+              "contextSlot": 449810558,
+              "inAmount": "169824875192",
+              "inputMint": "Hvp3bfmHHWMeC1AXLMk7gHBDQf2HNEw27Yi5MM1pump",
+              "otherAmountThreshold": "53419289",
+              "outAmount": "53958877",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "platformFee": null,
+              "priceImpactPct": "0.0041149078489070474556827638",
+              "routePlan": [
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "FMTMXVGstd2exMsrwugs4wiN6SUN8VAaevkz4VpsRR8R",
+                    "inAmount": "169824875192",
+                    "inputMint": "Hvp3bfmHHWMeC1AXLMk7gHBDQf2HNEw27Yi5MM1pump",
+                    "label": "Pump.fun Amm",
+                    "outAmount": "472311124",
+                    "outputMint": "So11111111111111111111111111111111111111112",
+                    "updateContextSlot": "449810502"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "HTvjzsfX3yU6BUodCjZ5vZkUrAxMDTrBs3CJaq43ashR",
+                    "inAmount": "472311124",
+                    "inputMint": "So11111111111111111111111111111111111111112",
+                    "label": "Meteora DLMM",
+                    "outAmount": "53958877",
+                    "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "updateContextSlot": "449810558"
+                  }
+                }
+              ],
+              "slippageBps": 100,
+              "swapMode": "ExactIn",
+              "timeTaken": 0.002226193
+            },
+            "received_epoch": 1790195006.0270836,
+            "received_late_by_seconds": 2.430500030517578,
+            "request_latency_seconds": 0.07878732681274414,
+            "requested_epoch": 1790195005.9482963,
+            "scheduled_epoch": 1790195003.5965836,
+            "status": "quote_observed",
+            "timing_eligible": true
+          }
+        },
         "30": {
           "300": {
             "access_mode": "keyless",
@@ -60031,6 +60320,67 @@
             "request_latency_seconds": 0.04442453384399414,
             "requested_epoch": 1790191675.9720778,
             "scheduled_epoch": 1790191670.7731714,
+            "status": "quote_observed",
+            "timing_eligible": true
+          },
+          "3600": {
+            "access_mode": "keyless",
+            "collector_version": "prospective-quote-lab-0.4",
+            "context_slot_delta_from_rpc": 39,
+            "entry_delay_seconds": 120,
+            "exit_horizon_seconds": 3600,
+            "fills_assumed": false,
+            "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+            "hypothetical_token_input_raw": "4267254549985",
+            "late_by_seconds": 9.6719229221344,
+            "observed_at": "2026-09-23T20:23:00.543+00:00",
+            "provider": "jupiter_metis_v1",
+            "raw": {
+              "contextSlot": 449810461,
+              "inAmount": "4267254549985",
+              "inputMint": "9CcbKHUonSCzVkhHij3uy8zJEsTCfqXBHFMQMcj5pump",
+              "otherAmountThreshold": "11928606",
+              "outAmount": "12049096",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "platformFee": null,
+              "priceImpactPct": "0.0058066475335592875816638946",
+              "routePlan": [
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "62ALR9RzrB5szBj4n3p6AqxuKcZh7t9fdvt61TfZzqeQ",
+                    "inAmount": "4267254549985",
+                    "inputMint": "9CcbKHUonSCzVkhHij3uy8zJEsTCfqXBHFMQMcj5pump",
+                    "label": "Pump.fun Amm",
+                    "outAmount": "105371941",
+                    "outputMint": "So11111111111111111111111111111111111111112",
+                    "updateContextSlot": "449810378"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "82RLfDeEAoYtx3rwZF7igAQC1nGsBBvAMkygB5mcJojZ",
+                    "inAmount": "105371941",
+                    "inputMint": "So11111111111111111111111111111111111111112",
+                    "label": "Flux",
+                    "outAmount": "12049096",
+                    "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "updateContextSlot": "449810459"
+                  }
+                }
+              ],
+              "slippageBps": 100,
+              "swapMode": "ExactIn",
+              "timeTaken": 0.001929585
+            },
+            "received_epoch": 1790194980.5432177,
+            "received_late_by_seconds": 9.77004623413086,
+            "request_latency_seconds": 0.09812331199645996,
+            "requested_epoch": 1790194980.4450943,
+            "scheduled_epoch": 1790194970.7731714,
             "status": "quote_observed",
             "timing_eligible": true
           },
@@ -84515,6 +84865,99 @@
       "quote_mint": "So11111111111111111111111111111111111111112",
       "selection_reason": "corroborated_pump_migrate_event_and_pool_creation",
       "signature": "2hrejRoZvW58bn9jphjSq2q7BrnGFewJpYLrrJTSdd1tFaBbF5r1DFfqoBUEqCbiQear7aH9KFZ4nJmb2kfkfNVP",
+      "wallet_evidence_as_of_decision": "unknown_not_collected"
+    },
+    "2j332eKepHG2QS4FDLxGEQktQTqUntDnHxGGNHVqQQS8QNFHGkiAyNvXfrHktPuQFdsM7urGsY3WwyHhEw5wp8uE:4eYFj7pECcqMAxhsLZez2gAbpszr1waBSCW1HsdMizRV": {
+      "actionable_at": "2026-09-23T20:22:53.291+00:00",
+      "actionable_epoch": 1790194973.291625,
+      "chain_block_time": 1790194964,
+      "chain_slot": 449810404,
+      "collector_version": "prospective-quote-lab-0.4",
+      "decoder": "pump_migrate_event_and_pool_creation_v1",
+      "entry_quotes": {
+        "30": {
+          "access_mode": "keyless",
+          "actual_delay_from_actionable_seconds": 30.063541650772095,
+          "collector_version": "prospective-quote-lab-0.4",
+          "context_slot_delta_from_rpc": 47,
+          "fills_assumed": false,
+          "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+          "hypothetical_input_usdc": 50.0,
+          "late_by_seconds": 0.06354165077209473,
+          "observed_at": "2026-09-23T20:23:23.443+00:00",
+          "provider": "jupiter_metis_v1",
+          "raw": {
+            "contextSlot": 449810548,
+            "inAmount": "50000000",
+            "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "otherAmountThreshold": "342412026201506",
+            "outAmount": "345870733536874",
+            "outputMint": "bcRudE7VCvcGXaUKaLiKHjo4LdCxMHW6XmGfJiypump",
+            "platformFee": null,
+            "priceImpactPct": "0.8971046475937137907160142997",
+            "routePlan": [
+              {
+                "bps": null,
+                "percent": 100,
+                "swapInfo": {
+                  "ammKey": "8R5qdXKMn2KcfHBy9rEpi43KScHewqvRAcpFyqoL3wap",
+                  "inAmount": "50000000",
+                  "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "label": "Quantum",
+                  "outAmount": "437663275",
+                  "outputMint": "So11111111111111111111111111111111111111112",
+                  "updateContextSlot": "449810548"
+                }
+              },
+              {
+                "bps": null,
+                "percent": 100,
+                "swapInfo": {
+                  "ammKey": "4eYFj7pECcqMAxhsLZez2gAbpszr1waBSCW1HsdMizRV",
+                  "inAmount": "437663275",
+                  "inputMint": "So11111111111111111111111111111111111111112",
+                  "label": "Pump.fun Amm",
+                  "outAmount": "345870733536874",
+                  "outputMint": "bcRudE7VCvcGXaUKaLiKHjo4LdCxMHW6XmGfJiypump",
+                  "updateContextSlot": "449810546"
+                }
+              }
+            ],
+            "slippageBps": 100,
+            "swapMode": "ExactIn",
+            "timeTaken": 0.002548217
+          },
+          "received_epoch": 1790195003.4439325,
+          "received_late_by_seconds": 0.15230751037597656,
+          "request_latency_seconds": 0.08876585960388184,
+          "requested_epoch": 1790195003.3551667,
+          "scheduled_delay_seconds": 30,
+          "scheduled_epoch": 1790195003.291625,
+          "status": "quote_observed",
+          "timing_eligible": true
+        }
+      },
+      "exit_quotes": {},
+      "first_candidate_seen_epoch": 1790194970.071231,
+      "first_observed_at": "2026-09-23T20:22:53.291+00:00",
+      "first_observed_epoch": 1790194973.291625,
+      "future_information_used": false,
+      "id": "2j332eKepHG2QS4FDLxGEQktQTqUntDnHxGGNHVqQQS8QNFHGkiAyNvXfrHktPuQFdsM7urGsY3WwyHhEw5wp8uE:4eYFj7pECcqMAxhsLZez2gAbpszr1waBSCW1HsdMizRV",
+      "mint": "bcRudE7VCvcGXaUKaLiKHjo4LdCxMHW6XmGfJiypump",
+      "observation_lag_seconds": 9.291625022888184,
+      "pool": "4eYFj7pECcqMAxhsLZez2gAbpszr1waBSCW1HsdMizRV",
+      "positions": {
+        "30": {
+          "entry_observed_at": "2026-09-23T20:23:23.443+00:00",
+          "entry_received_epoch": 1790195003.4439325,
+          "entry_requested_epoch": 1790195003.3551667,
+          "hypothetical_only": true,
+          "token_amount_raw": "345870733536874"
+        }
+      },
+      "quote_mint": "So11111111111111111111111111111111111111112",
+      "selection_reason": "corroborated_pump_migrate_event_and_pool_creation",
+      "signature": "2j332eKepHG2QS4FDLxGEQktQTqUntDnHxGGNHVqQQS8QNFHGkiAyNvXfrHktPuQFdsM7urGsY3WwyHhEw5wp8uE",
       "wallet_evidence_as_of_decision": "unknown_not_collected"
     },
     "2jT17RcM2bSiSMM3jbaHyr3QHANNxPcqAMxcBVuX5fbw3WnSHAb5678R246uWMDDg6uQvvF3gokn3yFNSfdT2vZF:gDxu1HaCvdW4e9RyZhceL1eSY62KxXBfvhET4cCtrJs": {
@@ -135584,6 +136027,80 @@
             "scheduled_epoch": 1790194385.3356786,
             "status": "quote_observed",
             "timing_eligible": true
+          },
+          "900": {
+            "access_mode": "keyless",
+            "collector_version": "prospective-quote-lab-0.4",
+            "context_slot_delta_from_rpc": 82,
+            "entry_delay_seconds": 30,
+            "exit_horizon_seconds": 900,
+            "fills_assumed": false,
+            "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+            "hypothetical_token_input_raw": "3380214134246",
+            "late_by_seconds": 6.166400671005249,
+            "observed_at": "2026-09-23T20:23:11.592+00:00",
+            "provider": "jupiter_metis_v1",
+            "raw": {
+              "contextSlot": 449810504,
+              "inAmount": "3380214134246",
+              "inputMint": "87VYzAkD49NWSAqQmBnybuQbMtAoadEmvNvVwJmpump",
+              "otherAmountThreshold": "8428464",
+              "outAmount": "8513600",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "platformFee": null,
+              "priceImpactPct": "0.0059998394517102946556793734",
+              "routePlan": [
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "8RrSf3dD9YHWjzbCnPxY6dAayhNNBmNX7CWtjDJuE51m",
+                    "inAmount": "3380214134246",
+                    "inputMint": "87VYzAkD49NWSAqQmBnybuQbMtAoadEmvNvVwJmpump",
+                    "label": "Pump.fun Amm",
+                    "outAmount": "74498859",
+                    "outputMint": "So11111111111111111111111111111111111111112",
+                    "updateContextSlot": "449809579"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "6a3m2EgFFKfsFuQtP4LJJXPcAe3TQYXNyHUjjZpUxYgd",
+                    "inAmount": "74498859",
+                    "inputMint": "So11111111111111111111111111111111111111112",
+                    "label": "Whirlpool",
+                    "outAmount": "1789292",
+                    "outputMint": "27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4",
+                    "updateContextSlot": "449810500"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "HDQqC3z3kncjdeyrCBM6v8VE1mbPcn2xbDmWNXzBBKJC",
+                    "inAmount": "1789292",
+                    "inputMint": "27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4",
+                    "label": "Byreal",
+                    "outAmount": "8513600",
+                    "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "updateContextSlot": "449810498"
+                  }
+                }
+              ],
+              "slippageBps": 100,
+              "swapMode": "ExactIn",
+              "timeTaken": 0.002697079
+            },
+            "received_epoch": 1790194991.5925193,
+            "received_late_by_seconds": 6.256840705871582,
+            "request_latency_seconds": 0.09044003486633301,
+            "requested_epoch": 1790194991.5020792,
+            "scheduled_epoch": 1790194985.3356786,
+            "status": "quote_observed",
+            "timing_eligible": true
           }
         },
         "300": {
@@ -135721,6 +136238,80 @@
             "request_latency_seconds": 0.09970831871032715,
             "requested_epoch": 1790194416.3639374,
             "scheduled_epoch": 1790194415.3049998,
+            "status": "quote_observed",
+            "timing_eligible": true
+          },
+          "900": {
+            "access_mode": "keyless",
+            "collector_version": "prospective-quote-lab-0.4",
+            "context_slot_delta_from_rpc": 14,
+            "entry_delay_seconds": 60,
+            "exit_horizon_seconds": 900,
+            "fills_assumed": false,
+            "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+            "hypothetical_token_input_raw": "3208051367338",
+            "late_by_seconds": 1.007214069366455,
+            "observed_at": "2026-09-23T20:23:36.390+00:00",
+            "provider": "jupiter_metis_v1",
+            "raw": {
+              "contextSlot": 449810597,
+              "inAmount": "3208051367338",
+              "inputMint": "87VYzAkD49NWSAqQmBnybuQbMtAoadEmvNvVwJmpump",
+              "otherAmountThreshold": "7997591",
+              "outAmount": "8078374",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "platformFee": null,
+              "priceImpactPct": "0.0061975378764631694646658765",
+              "routePlan": [
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "8RrSf3dD9YHWjzbCnPxY6dAayhNNBmNX7CWtjDJuE51m",
+                    "inAmount": "3208051367338",
+                    "inputMint": "87VYzAkD49NWSAqQmBnybuQbMtAoadEmvNvVwJmpump",
+                    "label": "Pump.fun Amm",
+                    "outAmount": "70718117",
+                    "outputMint": "So11111111111111111111111111111111111111112",
+                    "updateContextSlot": "449809579"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "B4bn8eSGUWsETHdKj2uXUHDLW2s2zeRWrKZofBWxCMAm",
+                    "inAmount": "70718117",
+                    "inputMint": "So11111111111111111111111111111111111111112",
+                    "label": "Whirlpool",
+                    "outAmount": "9579",
+                    "outputMint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+                    "updateContextSlot": "449810589"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "8TxrtAxqA5PA2Y1d2pxzCz9SoDhjrBcYqNAQKVv6p443",
+                    "inAmount": "9579",
+                    "inputMint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+                    "label": "GoonFi V2",
+                    "outAmount": "8078374",
+                    "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "updateContextSlot": "449810595"
+                  }
+                }
+              ],
+              "slippageBps": 100,
+              "swapMode": "ExactIn",
+              "timeTaken": 0.0027408
+            },
+            "received_epoch": 1790195016.3909035,
+            "received_late_by_seconds": 1.0859036445617676,
+            "request_latency_seconds": 0.0786895751953125,
+            "requested_epoch": 1790195016.312214,
+            "scheduled_epoch": 1790195015.3049998,
             "status": "quote_observed",
             "timing_eligible": true
           }
@@ -152281,6 +152872,82 @@
         }
       },
       "exit_quotes": {
+        "120": {
+          "300": {
+            "access_mode": "keyless",
+            "collector_version": "prospective-quote-lab-0.4",
+            "context_slot_delta_from_rpc": 77,
+            "entry_delay_seconds": 120,
+            "exit_horizon_seconds": 300,
+            "fills_assumed": false,
+            "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+            "hypothetical_token_input_raw": "983456892511",
+            "late_by_seconds": 4.946946144104004,
+            "observed_at": "2026-09-23T20:23:31.196+00:00",
+            "provider": "jupiter_metis_v1",
+            "raw": {
+              "contextSlot": 449810578,
+              "inAmount": "983456892511",
+              "inputMint": "5CXftvMnmh6M78RYDBUSSMcgqkJKU5TUZbrrGQo8pump",
+              "otherAmountThreshold": "2364485",
+              "outAmount": "2388368",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "platformFee": null,
+              "priceImpactPct": "0.0034948479934948857393323139",
+              "routePlan": [
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "CJK2kXE4kRdwUqA95Qet96sKcdd6juArky2H559GKzaZ",
+                    "inAmount": "983456892511",
+                    "inputMint": "5CXftvMnmh6M78RYDBUSSMcgqkJKU5TUZbrrGQo8pump",
+                    "label": "Pump.fun Amm",
+                    "outAmount": "20903980",
+                    "outputMint": "So11111111111111111111111111111111111111112",
+                    "updateContextSlot": "449810284"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "6aUJ3j3RKxCVf6QbMYkdaCzDBiuApLGaBSmbDy4xH5WZ",
+                    "inAmount": "20903980",
+                    "inputMint": "So11111111111111111111111111111111111111112",
+                    "label": "Whirlpool",
+                    "outAmount": "89375",
+                    "outputMint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+                    "updateContextSlot": "449809969"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "iAMtZieUtpLwB3dzWw8Fo3H3FPkMFy3ej52URusseR1",
+                    "inAmount": "89375",
+                    "inputMint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+                    "label": "HumidiFi",
+                    "outAmount": "2388368",
+                    "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "updateContextSlot": "449810573"
+                  }
+                }
+              ],
+              "slippageBps": 100,
+              "swapMode": "ExactIn",
+              "timeTaken": 0.002409858
+            },
+            "received_epoch": 1790195011.19682,
+            "received_late_by_seconds": 5.0279381275177,
+            "request_latency_seconds": 0.08099198341369629,
+            "requested_epoch": 1790195011.115828,
+            "scheduled_epoch": 1790195006.168882,
+            "status": "quote_observed",
+            "timing_eligible": true
+          }
+        },
         "30": {
           "300": {
             "access_mode": "keyless",
@@ -160219,6 +160886,80 @@
             "request_latency_seconds": 0.08990287780761719,
             "requested_epoch": 1790194405.2134595,
             "scheduled_epoch": 1790194403.8496766,
+            "status": "quote_observed",
+            "timing_eligible": true
+          },
+          "900": {
+            "access_mode": "keyless",
+            "collector_version": "prospective-quote-lab-0.4",
+            "context_slot_delta_from_rpc": 66,
+            "entry_delay_seconds": 120,
+            "exit_horizon_seconds": 900,
+            "fills_assumed": false,
+            "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+            "hypothetical_token_input_raw": "115556922846",
+            "late_by_seconds": 4.679362535476685,
+            "observed_at": "2026-09-23T20:23:28.609+00:00",
+            "provider": "jupiter_metis_v1",
+            "raw": {
+              "contextSlot": 449810567,
+              "inAmount": "115556922846",
+              "inputMint": "97RHGYD1jaq2knhNWYGYNB3L8SoruK2DpaJBBqnGpump",
+              "otherAmountThreshold": "82897268",
+              "outAmount": "83734614",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "platformFee": null,
+              "priceImpactPct": "0.0142514334056211414449182833",
+              "routePlan": [
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "92HrUz3YrjJ9AJXfGYRZTMVNXfQbK41VY6B3LY9j7D76",
+                    "inAmount": "115556922846",
+                    "inputMint": "97RHGYD1jaq2knhNWYGYNB3L8SoruK2DpaJBBqnGpump",
+                    "label": "Pump.fun Amm",
+                    "outAmount": "732982537",
+                    "outputMint": "So11111111111111111111111111111111111111112",
+                    "updateContextSlot": "449810567"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "3nLR2KnqC4ZHmPbjJgZCmfKazPjyxZEeqQv77sctcs4P",
+                    "inAmount": "732982537",
+                    "inputMint": "So11111111111111111111111111111111111111112",
+                    "label": "PancakeSwap",
+                    "outAmount": "3133444",
+                    "outputMint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+                    "updateContextSlot": "449810564"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "iAMtZieUtpLwB3dzWw8Fo3H3FPkMFy3ej52URusseR1",
+                    "inAmount": "3133444",
+                    "inputMint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+                    "label": "HumidiFi",
+                    "outAmount": "83734614",
+                    "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "updateContextSlot": "449810566"
+                  }
+                }
+              ],
+              "slippageBps": 100,
+              "swapMode": "ExactIn",
+              "timeTaken": 0.002855601
+            },
+            "received_epoch": 1790195008.6099765,
+            "received_late_by_seconds": 4.760299921035767,
+            "request_latency_seconds": 0.08093738555908203,
+            "requested_epoch": 1790195008.5290391,
+            "scheduled_epoch": 1790195003.8496766,
             "status": "quote_observed",
             "timing_eligible": true
           }
@@ -174694,6 +175435,80 @@
             "request_latency_seconds": 0.09305524826049805,
             "requested_epoch": 1790194424.7382464,
             "scheduled_epoch": 1790194424.6866813,
+            "status": "quote_observed",
+            "timing_eligible": true
+          },
+          "900": {
+            "access_mode": "keyless",
+            "collector_version": "prospective-quote-lab-0.4",
+            "context_slot_delta_from_rpc": 44,
+            "entry_delay_seconds": 300,
+            "exit_horizon_seconds": 900,
+            "fills_assumed": false,
+            "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+            "hypothetical_token_input_raw": "111867045643",
+            "late_by_seconds": 0.04720354080200195,
+            "observed_at": "2026-09-23T20:23:44.822+00:00",
+            "provider": "jupiter_metis_v1",
+            "raw": {
+              "contextSlot": 449810627,
+              "inAmount": "111867045643",
+              "inputMint": "GA2G6CnP7dxtRUFagkzEU6kzn8wrxdS5iMMjLZAnpump",
+              "otherAmountThreshold": "64173902",
+              "outAmount": "64822123",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "platformFee": null,
+              "priceImpactPct": "0.0142496272064124903417503294",
+              "routePlan": [
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "DjWxpmRkAR1sJUHv156A31gyRkoTXa1LAR3XvBcQJByh",
+                    "inAmount": "111867045643",
+                    "inputMint": "GA2G6CnP7dxtRUFagkzEU6kzn8wrxdS5iMMjLZAnpump",
+                    "label": "Pump.fun Amm",
+                    "outAmount": "567692171",
+                    "outputMint": "So11111111111111111111111111111111111111112",
+                    "updateContextSlot": "449810627"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "HktfL7iwGKT5QHjywQkcDnZXScoh811k7akrMZJkCcEF",
+                    "inAmount": "567692171",
+                    "inputMint": "So11111111111111111111111111111111111111112",
+                    "label": "Whirlpool",
+                    "outAmount": "2425765",
+                    "outputMint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+                    "updateContextSlot": "449810624"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "Ce8WKGKeNPrtk85inFtkpskekaNibZiogSZBrcP7yhTN",
+                    "inAmount": "2425765",
+                    "inputMint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+                    "label": "TesseraV",
+                    "outAmount": "64822123",
+                    "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "updateContextSlot": "449810627"
+                  }
+                }
+              ],
+              "slippageBps": 100,
+              "swapMode": "ExactIn",
+              "timeTaken": 0.002884225
+            },
+            "received_epoch": 1790195024.8224688,
+            "received_late_by_seconds": 0.1357874870300293,
+            "request_latency_seconds": 0.08858394622802734,
+            "requested_epoch": 1790195024.7338848,
+            "scheduled_epoch": 1790195024.6866813,
             "status": "quote_observed",
             "timing_eligible": true
           }
@@ -222581,6 +223396,18 @@
             "scheduled_epoch": 1790194353.6525679,
             "status": "quote_observed",
             "timing_eligible": true
+          },
+          "900": {
+            "collector_version": "prospective-quote-lab-0.4",
+            "entry_delay_seconds": 300,
+            "exit_horizon_seconds": 900,
+            "hypothetical_token_input_raw": "420256685630766",
+            "late_by_seconds": 20.05863308906555,
+            "observed_at": "2026-09-23T20:22:53.711+00:00",
+            "reason": "deadline_expired_no_backfill",
+            "requested_epoch": null,
+            "scheduled_epoch": 1790194953.6525679,
+            "status": "missed_deadline"
           }
         },
         "60": {
@@ -228798,6 +229625,82 @@
             "request_latency_seconds": 0.08094143867492676,
             "requested_epoch": 1790194729.2782629,
             "scheduled_epoch": 1790194729.234805,
+            "status": "quote_observed",
+            "timing_eligible": true
+          }
+        },
+        "300": {
+          "300": {
+            "access_mode": "keyless",
+            "collector_version": "prospective-quote-lab-0.4",
+            "context_slot_delta_from_rpc": 36,
+            "entry_delay_seconds": 300,
+            "exit_horizon_seconds": 300,
+            "fills_assumed": false,
+            "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+            "hypothetical_token_input_raw": "3063930232630",
+            "late_by_seconds": 0.07166576385498047,
+            "observed_at": "2026-09-23T20:23:20.429+00:00",
+            "provider": "jupiter_metis_v1",
+            "raw": {
+              "contextSlot": 449810537,
+              "inAmount": "3063930232630",
+              "inputMint": "4SZvzSZtGQS6HtypLxcRj42XvsKcFp1x6NLELNXApump",
+              "otherAmountThreshold": "7827565",
+              "outAmount": "7906631",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "platformFee": null,
+              "priceImpactPct": "0.0054979623185239558362488346",
+              "routePlan": [
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "4qZtMYg1JcWaKwJ19HA6n8C6nZSTGbfyYHZYDXU6yXJs",
+                    "inAmount": "3063930232630",
+                    "inputMint": "4SZvzSZtGQS6HtypLxcRj42XvsKcFp1x6NLELNXApump",
+                    "label": "Pump.fun Amm",
+                    "outAmount": "69193236",
+                    "outputMint": "So11111111111111111111111111111111111111112",
+                    "updateContextSlot": "449810026"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "Ckp1kwZqosaLU1h3zWtuaMBubyWM7LX3cxYezRVin7p2",
+                    "inAmount": "69193236",
+                    "inputMint": "So11111111111111111111111111111111111111112",
+                    "label": "Whirlpool",
+                    "outAmount": "4019597",
+                    "outputMint": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+                    "updateContextSlot": "449810476"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "AjotvEmqbVWu9UPt3DKCiTgVxRxZYcVu99XshPdws9go",
+                    "inAmount": "4019597",
+                    "inputMint": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+                    "label": "HumidiFi",
+                    "outAmount": "7906631",
+                    "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "updateContextSlot": "449810533"
+                  }
+                }
+              ],
+              "slippageBps": 100,
+              "swapMode": "ExactIn",
+              "timeTaken": 0.002155417
+            },
+            "received_epoch": 1790195000.4292884,
+            "received_late_by_seconds": 0.15034031867980957,
+            "request_latency_seconds": 0.0786745548248291,
+            "requested_epoch": 1790195000.3506138,
+            "scheduled_epoch": 1790195000.278948,
             "status": "quote_observed",
             "timing_eligible": true
           }
@@ -238508,7 +239411,130 @@
       "chain_slot": 449810218,
       "collector_version": "prospective-quote-lab-0.4",
       "decoder": "pump_migrate_event_and_pool_creation_v1",
-      "entry_quotes": {},
+      "entry_quotes": {
+        "30": {
+          "access_mode": "keyless",
+          "actual_delay_from_actionable_seconds": 49.302408933639526,
+          "collector_version": "prospective-quote-lab-0.4",
+          "context_slot_delta_from_rpc": 11,
+          "fills_assumed": false,
+          "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+          "hypothetical_input_usdc": 50.0,
+          "late_by_seconds": 19.302408933639526,
+          "observed_at": "2026-09-23T20:22:52.773+00:00",
+          "provider": "jupiter_metis_v1",
+          "raw": {
+            "contextSlot": 449810433,
+            "inAmount": "50000000",
+            "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "otherAmountThreshold": "1199161648845",
+            "outAmount": "1211274392772",
+            "outputMint": "f1ippXecgRpYmsZt6uVRwJJKiBKjN579sVRHsAg2RR3",
+            "platformFee": null,
+            "priceImpactPct": "0.0893195104038973398276718617",
+            "routePlan": [
+              {
+                "bps": null,
+                "percent": 100,
+                "swapInfo": {
+                  "ammKey": "8sKQHfjNhvmAw94PhfvfMcytmqW6jmxvwieYyzXCCPu",
+                  "inAmount": "50000000",
+                  "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "label": "HumidiFi",
+                  "outAmount": "437272324",
+                  "outputMint": "So11111111111111111111111111111111111111112",
+                  "updateContextSlot": "449810433"
+                }
+              },
+              {
+                "bps": null,
+                "percent": 100,
+                "swapInfo": {
+                  "ammKey": "6gHUvXHYaWRgwLZQbB7MQJk2qEkcnEvZTG9RWTiSWCGH",
+                  "inAmount": "437272324",
+                  "inputMint": "So11111111111111111111111111111111111111112",
+                  "label": "Pump.fun Amm",
+                  "outAmount": "1211274392772",
+                  "outputMint": "f1ippXecgRpYmsZt6uVRwJJKiBKjN579sVRHsAg2RR3",
+                  "updateContextSlot": "449810433"
+                }
+              }
+            ],
+            "slippageBps": 100,
+            "swapMode": "ExactIn",
+            "timeTaken": 0.002429627
+          },
+          "received_epoch": 1790194972.7731922,
+          "received_late_by_seconds": 19.381869316101074,
+          "request_latency_seconds": 0.07946038246154785,
+          "requested_epoch": 1790194972.6937318,
+          "scheduled_delay_seconds": 30,
+          "scheduled_epoch": 1790194953.3913229,
+          "status": "quote_observed",
+          "timing_eligible": true
+        },
+        "60": {
+          "access_mode": "keyless",
+          "actual_delay_from_actionable_seconds": 62.27673268318176,
+          "collector_version": "prospective-quote-lab-0.4",
+          "context_slot_delta_from_rpc": 59,
+          "fills_assumed": false,
+          "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+          "hypothetical_input_usdc": 50.0,
+          "late_by_seconds": 2.2767326831817627,
+          "observed_at": "2026-09-23T20:23:05.748+00:00",
+          "provider": "jupiter_metis_v1",
+          "raw": {
+            "contextSlot": 449810481,
+            "inAmount": "50000000",
+            "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "otherAmountThreshold": "1205887692237",
+            "outAmount": "1218068375996",
+            "outputMint": "f1ippXecgRpYmsZt6uVRwJJKiBKjN579sVRHsAg2RR3",
+            "platformFee": null,
+            "priceImpactPct": "0.0227657638617366959496609172",
+            "routePlan": [
+              {
+                "bps": null,
+                "percent": 100,
+                "swapInfo": {
+                  "ammKey": "7wXtGayssQRekJYop299FoJZmcD7fvRW6NUwLk3r6VWM",
+                  "inAmount": "50000000",
+                  "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "label": "Quantum",
+                  "outAmount": "437518411",
+                  "outputMint": "So11111111111111111111111111111111111111112",
+                  "updateContextSlot": "449810480"
+                }
+              },
+              {
+                "bps": null,
+                "percent": 100,
+                "swapInfo": {
+                  "ammKey": "6gHUvXHYaWRgwLZQbB7MQJk2qEkcnEvZTG9RWTiSWCGH",
+                  "inAmount": "437518411",
+                  "inputMint": "So11111111111111111111111111111111111111112",
+                  "label": "Pump.fun Amm",
+                  "outAmount": "1218068375996",
+                  "outputMint": "f1ippXecgRpYmsZt6uVRwJJKiBKjN579sVRHsAg2RR3",
+                  "updateContextSlot": "449810480"
+                }
+              }
+            ],
+            "slippageBps": 100,
+            "swapMode": "ExactIn",
+            "timeTaken": 0.00274399
+          },
+          "received_epoch": 1790194985.7482076,
+          "received_late_by_seconds": 2.356884717941284,
+          "request_latency_seconds": 0.08015203475952148,
+          "requested_epoch": 1790194985.6680555,
+          "scheduled_delay_seconds": 60,
+          "scheduled_epoch": 1790194983.3913229,
+          "status": "quote_observed",
+          "timing_eligible": true
+        }
+      },
       "exit_quotes": {},
       "first_candidate_seen_epoch": 1790194920.1473982,
       "first_observed_at": "2026-09-23T20:22:03.391+00:00",
@@ -238518,7 +239544,22 @@
       "mint": "f1ippXecgRpYmsZt6uVRwJJKiBKjN579sVRHsAg2RR3",
       "observation_lag_seconds": 8.39132285118103,
       "pool": "6gHUvXHYaWRgwLZQbB7MQJk2qEkcnEvZTG9RWTiSWCGH",
-      "positions": {},
+      "positions": {
+        "30": {
+          "entry_observed_at": "2026-09-23T20:22:52.773+00:00",
+          "entry_received_epoch": 1790194972.7731922,
+          "entry_requested_epoch": 1790194972.6937318,
+          "hypothetical_only": true,
+          "token_amount_raw": "1211274392772"
+        },
+        "60": {
+          "entry_observed_at": "2026-09-23T20:23:05.748+00:00",
+          "entry_received_epoch": 1790194985.7482076,
+          "entry_requested_epoch": 1790194985.6680555,
+          "hypothetical_only": true,
+          "token_amount_raw": "1218068375996"
+        }
+      },
       "quote_mint": "So11111111111111111111111111111111111111112",
       "selection_reason": "corroborated_pump_migrate_event_and_pool_creation",
       "signature": "4mxjDY5pFYx2dd681ER376jEXRK3YFi7gNyc5DLU2sb5TtBFateft4WEw1hp1Sh3Q8z8ur61FcuDcv88NWKrzPE8",
@@ -289470,6 +290511,69 @@
             "timing_eligible": true
           }
         },
+        "300": {
+          "300": {
+            "access_mode": "keyless",
+            "collector_version": "prospective-quote-lab-0.4",
+            "context_slot_delta_from_rpc": 106,
+            "entry_delay_seconds": 300,
+            "exit_horizon_seconds": 300,
+            "fills_assumed": false,
+            "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+            "hypothetical_token_input_raw": "110384552362",
+            "late_by_seconds": 19.265875816345215,
+            "observed_at": "2026-09-23T20:22:50.187+00:00",
+            "provider": "jupiter_metis_v1",
+            "raw": {
+              "contextSlot": 449810424,
+              "inAmount": "110384552362",
+              "inputMint": "EtGtzV2BPtt9mcQwinh1mGJSgm9eWTT4wMGrZmbXpump",
+              "otherAmountThreshold": "60664474",
+              "outAmount": "61277246",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "platformFee": null,
+              "priceImpactPct": "0.01101196497926099337430047",
+              "routePlan": [
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "GqjMdVEefjUuv9jtx5aMpV4gHEc6dH721Mn6PWCx2SQq",
+                    "inAmount": "110384552362",
+                    "inputMint": "EtGtzV2BPtt9mcQwinh1mGJSgm9eWTT4wMGrZmbXpump",
+                    "label": "Pump.fun Amm",
+                    "outAmount": "535880530",
+                    "outputMint": "So11111111111111111111111111111111111111112",
+                    "updateContextSlot": "449810423"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "82RLfDeEAoYtx3rwZF7igAQC1nGsBBvAMkygB5mcJojZ",
+                    "inAmount": "535880530",
+                    "inputMint": "So11111111111111111111111111111111111111112",
+                    "label": "Flux",
+                    "outAmount": "61277246",
+                    "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "updateContextSlot": "449810423"
+                  }
+                }
+              ],
+              "slippageBps": 100,
+              "swapMode": "ExactIn",
+              "timeTaken": 0.002231697
+            },
+            "received_epoch": 1790194970.1875892,
+            "received_late_by_seconds": 19.377946853637695,
+            "request_latency_seconds": 0.11207103729248047,
+            "requested_epoch": 1790194970.0755181,
+            "scheduled_epoch": 1790194950.8096423,
+            "status": "quote_observed",
+            "timing_eligible": true
+          }
+        },
         "60": {
           "300": {
             "access_mode": "keyless",
@@ -313619,6 +314723,80 @@
             "status": "quote_observed",
             "timing_eligible": true
           },
+          "3600": {
+            "access_mode": "keyless",
+            "collector_version": "prospective-quote-lab-0.4",
+            "context_slot_delta_from_rpc": 30,
+            "entry_delay_seconds": 120,
+            "exit_horizon_seconds": 3600,
+            "fills_assumed": false,
+            "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+            "hypothetical_token_input_raw": "371846636881",
+            "late_by_seconds": 9.720717906951904,
+            "observed_at": "2026-09-23T20:22:57.937+00:00",
+            "provider": "jupiter_metis_v1",
+            "raw": {
+              "contextSlot": 449810452,
+              "inAmount": "371846636881",
+              "inputMint": "BbDEctxMLtDZYu2emf62LXc4GeaFYseqQ8JR7QT6pump",
+              "otherAmountThreshold": "825806",
+              "outAmount": "834147",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "platformFee": null,
+              "priceImpactPct": "0.0018977824110702556494739736",
+              "routePlan": [
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "DESnjwXNkdEuj3HiBXxf6CP2tQJcfqhAgxVuGEN7eWz8",
+                    "inAmount": "371846636881",
+                    "inputMint": "BbDEctxMLtDZYu2emf62LXc4GeaFYseqQ8JR7QT6pump",
+                    "label": "Pump.fun Amm",
+                    "outAmount": "7294867",
+                    "outputMint": "So11111111111111111111111111111111111111112",
+                    "updateContextSlot": "449808851"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "AwaVyGAF3N6K4YRUJk55Ui1GquKhKdD6vTCmVvCzXpKf",
+                    "inAmount": "7294867",
+                    "inputMint": "So11111111111111111111111111111111111111112",
+                    "label": "Raydium CLMM",
+                    "outAmount": "732791",
+                    "outputMint": "HzwqbKZw8HxMN6bF2yFZNrht3c2iXXzpKcFu7uBEDKtr",
+                    "updateContextSlot": "449809814"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "ArisQNcbjXPJD7RgPRvysatX3xcfHPTbcTkfD8kDoZ9i",
+                    "inAmount": "732791",
+                    "inputMint": "HzwqbKZw8HxMN6bF2yFZNrht3c2iXXzpKcFu7uBEDKtr",
+                    "label": "Whirlpool",
+                    "outAmount": "834147",
+                    "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "updateContextSlot": "449810256"
+                  }
+                }
+              ],
+              "slippageBps": 100,
+              "swapMode": "ExactIn",
+              "timeTaken": 0.002865931
+            },
+            "received_epoch": 1790194977.9374635,
+            "received_late_by_seconds": 9.799192190170288,
+            "request_latency_seconds": 0.07847428321838379,
+            "requested_epoch": 1790194977.8589892,
+            "scheduled_epoch": 1790194968.1382713,
+            "status": "quote_observed",
+            "timing_eligible": true
+          },
           "900": {
             "access_mode": "keyless",
             "collector_version": "prospective-quote-lab-0.4",
@@ -326077,6 +327255,80 @@
             "scheduled_epoch": 1790194361.636132,
             "status": "quote_observed",
             "timing_eligible": true
+          },
+          "900": {
+            "access_mode": "keyless",
+            "collector_version": "prospective-quote-lab-0.4",
+            "context_slot_delta_from_rpc": 20,
+            "entry_delay_seconds": 30,
+            "exit_horizon_seconds": 900,
+            "fills_assumed": false,
+            "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+            "hypothetical_token_input_raw": "48526298067",
+            "late_by_seconds": 13.640228033065796,
+            "observed_at": "2026-09-23T20:22:55.355+00:00",
+            "provider": "jupiter_metis_v1",
+            "raw": {
+              "contextSlot": 449810442,
+              "inAmount": "48526298067",
+              "inputMint": "4mS5JinFf5f1GCr5K2MRLgQiu95ifd4X763Uhj2Ypump",
+              "otherAmountThreshold": "53563232",
+              "outAmount": "54104274",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "platformFee": null,
+              "priceImpactPct": "0.0120715362747084334983336823",
+              "routePlan": [
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "E3fvyZyvr3pbhvgHTNXxbnu7Uvr9KG3wUY9TWijSv1kN",
+                    "inAmount": "48526298067",
+                    "inputMint": "4mS5JinFf5f1GCr5K2MRLgQiu95ifd4X763Uhj2Ypump",
+                    "label": "Pump.fun Amm",
+                    "outAmount": "473150417",
+                    "outputMint": "So11111111111111111111111111111111111111112",
+                    "updateContextSlot": "449810441"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "3RMKDUTQd3hxj69t6b9WN6GE9uJ6EpBrhxVN53FdhdLP",
+                    "inAmount": "473150417",
+                    "inputMint": "So11111111111111111111111111111111111111112",
+                    "label": "Quantum",
+                    "outAmount": "54106493",
+                    "outputMint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                    "updateContextSlot": "449810442"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "H7o7KCr5n3whqcPsPkeCPWrzivKrarqzidD3kt8fijvB",
+                    "inAmount": "54106493",
+                    "inputMint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                    "label": "Deriverse",
+                    "outAmount": "54104274",
+                    "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "updateContextSlot": "449810441"
+                  }
+                }
+              ],
+              "slippageBps": 100,
+              "swapMode": "ExactIn",
+              "timeTaken": 0.002736176
+            },
+            "received_epoch": 1790194975.3555653,
+            "received_late_by_seconds": 13.719433307647705,
+            "request_latency_seconds": 0.07920527458190918,
+            "requested_epoch": 1790194975.27636,
+            "scheduled_epoch": 1790194961.636132,
+            "status": "quote_observed",
+            "timing_eligible": true
           }
         },
         "300": {
@@ -326201,6 +327453,80 @@
             "request_latency_seconds": 0.07081866264343262,
             "requested_epoch": 1790194400.0461972,
             "scheduled_epoch": 1790194387.9845867,
+            "status": "quote_observed",
+            "timing_eligible": true
+          },
+          "900": {
+            "access_mode": "keyless",
+            "collector_version": "prospective-quote-lab-0.4",
+            "context_slot_delta_from_rpc": 11,
+            "entry_delay_seconds": 60,
+            "exit_horizon_seconds": 900,
+            "fills_assumed": false,
+            "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+            "hypothetical_token_input_raw": "48431529117",
+            "late_by_seconds": 6.120406150817871,
+            "observed_at": "2026-09-23T20:23:14.183+00:00",
+            "provider": "jupiter_metis_v1",
+            "raw": {
+              "contextSlot": 449810512,
+              "inAmount": "48431529117",
+              "inputMint": "4mS5JinFf5f1GCr5K2MRLgQiu95ifd4X763Uhj2Ypump",
+              "otherAmountThreshold": "53422487",
+              "outAmount": "53962108",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "platformFee": null,
+              "priceImpactPct": "0.0127368981084886341249104194",
+              "routePlan": [
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "E3fvyZyvr3pbhvgHTNXxbnu7Uvr9KG3wUY9TWijSv1kN",
+                    "inAmount": "48431529117",
+                    "inputMint": "4mS5JinFf5f1GCr5K2MRLgQiu95ifd4X763Uhj2Ypump",
+                    "label": "Pump.fun Amm",
+                    "outAmount": "472227440",
+                    "outputMint": "So11111111111111111111111111111111111111112",
+                    "updateContextSlot": "449810441"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "4kdxjt8pKEW4qV4ji4HANixwswDJw3Egn8L4x2BEWQqT",
+                    "inAmount": "472227440",
+                    "inputMint": "So11111111111111111111111111111111111111112",
+                    "label": "Meteora DLMM",
+                    "outAmount": "63984",
+                    "outputMint": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+                    "updateContextSlot": "449810500"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "3fUj4dDSwgpJuzriE32KsgmGGowKNZpnt7T9AD1noZrV",
+                    "inAmount": "63984",
+                    "inputMint": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+                    "label": "Meteora DLMM",
+                    "outAmount": "53962108",
+                    "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "updateContextSlot": "449810481"
+                  }
+                }
+              ],
+              "slippageBps": 100,
+              "swapMode": "ExactIn",
+              "timeTaken": 0.00270759
+            },
+            "received_epoch": 1790194994.1838017,
+            "received_late_by_seconds": 6.199214935302734,
+            "request_latency_seconds": 0.07880878448486328,
+            "requested_epoch": 1790194994.1049929,
+            "scheduled_epoch": 1790194987.9845867,
             "status": "quote_observed",
             "timing_eligible": true
           }
@@ -362489,6 +363815,67 @@
           "status": "quote_observed",
           "timing_eligible": true
         },
+        "300": {
+          "access_mode": "keyless",
+          "actual_delay_from_actionable_seconds": 303.9117865562439,
+          "collector_version": "prospective-quote-lab-0.4",
+          "context_slot_delta_from_rpc": 69,
+          "fills_assumed": false,
+          "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+          "hypothetical_input_usdc": 50.0,
+          "late_by_seconds": 3.9117865562438965,
+          "observed_at": "2026-09-23T20:23:08.335+00:00",
+          "provider": "jupiter_metis_v1",
+          "raw": {
+            "contextSlot": 449810491,
+            "inAmount": "50000000",
+            "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "otherAmountThreshold": "2434767840479",
+            "outAmount": "2459361455029",
+            "outputMint": "61WeQCJZoae4fC1Bt4UBkkTRJ5RoJhVLysDbhA17pump",
+            "platformFee": null,
+            "priceImpactPct": "0.0246552312288746154400893324",
+            "routePlan": [
+              {
+                "bps": null,
+                "percent": 100,
+                "swapInfo": {
+                  "ammKey": "ugobDeUHRY34mq1yK94eYrepgj2KVmUkHiaV8vyUD42",
+                  "inAmount": "50000000",
+                  "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "label": "Quantum",
+                  "outAmount": "437513507",
+                  "outputMint": "So11111111111111111111111111111111111111112",
+                  "updateContextSlot": "449810491"
+                }
+              },
+              {
+                "bps": null,
+                "percent": 100,
+                "swapInfo": {
+                  "ammKey": "8ViG2De7tnA52oME2fMgsxo4g3FEra19bf5wok2bSb7Q",
+                  "inAmount": "437513507",
+                  "inputMint": "So11111111111111111111111111111111111111112",
+                  "label": "Pump.fun Amm",
+                  "outAmount": "2459361455029",
+                  "outputMint": "61WeQCJZoae4fC1Bt4UBkkTRJ5RoJhVLysDbhA17pump",
+                  "updateContextSlot": "449810490"
+                }
+              }
+            ],
+            "slippageBps": 100,
+            "swapMode": "ExactIn",
+            "timeTaken": 0.002448852
+          },
+          "received_epoch": 1790194988.3355813,
+          "received_late_by_seconds": 3.9901561737060547,
+          "request_latency_seconds": 0.0783696174621582,
+          "requested_epoch": 1790194988.2572117,
+          "scheduled_delay_seconds": 300,
+          "scheduled_epoch": 1790194984.3454251,
+          "status": "quote_observed",
+          "timing_eligible": true
+        },
         "60": {
           "access_mode": "keyless",
           "actual_delay_from_actionable_seconds": 60.06487154960632,
@@ -362551,7 +363938,71 @@
           "timing_eligible": true
         }
       },
-      "exit_quotes": {},
+      "exit_quotes": {
+        "30": {
+          "300": {
+            "access_mode": "keyless",
+            "collector_version": "prospective-quote-lab-0.4",
+            "context_slot_delta_from_rpc": 24,
+            "entry_delay_seconds": 30,
+            "exit_horizon_seconds": 300,
+            "fills_assumed": false,
+            "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+            "hypothetical_token_input_raw": "1093696263883",
+            "late_by_seconds": 0.07592964172363281,
+            "observed_at": "2026-09-23T20:23:39.398+00:00",
+            "provider": "jupiter_metis_v1",
+            "raw": {
+              "contextSlot": 449810607,
+              "inAmount": "1093696263883",
+              "inputMint": "61WeQCJZoae4fC1Bt4UBkkTRJ5RoJhVLysDbhA17pump",
+              "otherAmountThreshold": "3048687",
+              "outAmount": "3079481",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "platformFee": null,
+              "priceImpactPct": "0.0027082290445698639468151492",
+              "routePlan": [
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "8ViG2De7tnA52oME2fMgsxo4g3FEra19bf5wok2bSb7Q",
+                    "inAmount": "1093696263883",
+                    "inputMint": "61WeQCJZoae4fC1Bt4UBkkTRJ5RoJhVLysDbhA17pump",
+                    "label": "Pump.fun Amm",
+                    "outAmount": "26957837",
+                    "outputMint": "So11111111111111111111111111111111111111112",
+                    "updateContextSlot": "449810604"
+                  }
+                },
+                {
+                  "bps": null,
+                  "percent": 100,
+                  "swapInfo": {
+                    "ammKey": "CYbD9RaToYMtWKA7QZyoLahnHdWq553Vm62Lh6qWtuxq",
+                    "inAmount": "26957837",
+                    "inputMint": "So11111111111111111111111111111111111111112",
+                    "label": "Raydium CLMM",
+                    "outAmount": "3079481",
+                    "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "updateContextSlot": "449810606"
+                  }
+                }
+              ],
+              "slippageBps": 100,
+              "swapMode": "ExactIn",
+              "timeTaken": 0.001870008
+            },
+            "received_epoch": 1790195019.3987226,
+            "received_late_by_seconds": 0.15480327606201172,
+            "request_latency_seconds": 0.0788736343383789,
+            "requested_epoch": 1790195019.319849,
+            "scheduled_epoch": 1790195019.2439194,
+            "status": "quote_observed",
+            "timing_eligible": true
+          }
+        }
+      },
       "first_candidate_seen_epoch": 1790194682.1404881,
       "first_observed_at": "2026-09-23T20:18:04.345+00:00",
       "first_observed_epoch": 1790194684.3454251,
@@ -362574,6 +364025,13 @@
           "entry_requested_epoch": 1790194719.1705785,
           "hypothetical_only": true,
           "token_amount_raw": "1093696263883"
+        },
+        "300": {
+          "entry_observed_at": "2026-09-23T20:23:08.335+00:00",
+          "entry_received_epoch": 1790194988.3355813,
+          "entry_requested_epoch": 1790194988.2572117,
+          "hypothetical_only": true,
+          "token_amount_raw": "2459361455029"
         },
         "60": {
           "entry_observed_at": "2026-09-23T20:19:04.483+00:00",
@@ -402811,149 +404269,244 @@
     "version": "prospective-quote-lab-0.4"
   },
   "quality_version_started_at": "2026-09-23T11:40:43.120+00:00",
-  "quote_next_epoch": 1790194962.8711228,
+  "quote_next_epoch": 1790195027.3224688,
   "quote_quality_counts": {
     "missed_snapshot_window_no_backfill": 98,
     "pool_state_corroborated": 88,
-    "requires_review": 4763,
+    "requires_review": 4781,
     "unavailable": 107,
     "unrecognized_or_inconsistent_pool_evidence": 292
   },
   "quote_quality_pending": {
-    "2AGQSd4c7UbC1fzLmXPq6bbD6RoM4ccFiG3k8VcdWVZkFrr4CZVHwdgv4XnzEaL214fEhJctCsMsi8JV1ELBuTLx:7UnkgMLJAq15AfuvbceD3uz2WcGW3PPBJ8MhFdcEKgdm:exit:30:3600": {
-      "id": "2AGQSd4c7UbC1fzLmXPq6bbD6RoM4ccFiG3k8VcdWVZkFrr4CZVHwdgv4XnzEaL214fEhJctCsMsi8JV1ELBuTLx:7UnkgMLJAq15AfuvbceD3uz2WcGW3PPBJ8MhFdcEKgdm:exit:30:3600",
+    "3KSz9m2NEtGW6ss8EmYnhNDdeAMY66Ltwg1KpTNCDrJ1ixP9tWp3GTG8q5o8qXuP5WrDDDjYMzu8PzLyWwt3682G:8RrSf3dD9YHWjzbCnPxY6dAayhNNBmNX7CWtjDJuE51m:exit:60:900": {
+      "id": "3KSz9m2NEtGW6ss8EmYnhNDdeAMY66Ltwg1KpTNCDrJ1ixP9tWp3GTG8q5o8qXuP5WrDDDjYMzu8PzLyWwt3682G:8RrSf3dD9YHWjzbCnPxY6dAayhNNBmNX7CWtjDJuE51m:exit:60:900",
       "opportunity": {
-        "id": "2AGQSd4c7UbC1fzLmXPq6bbD6RoM4ccFiG3k8VcdWVZkFrr4CZVHwdgv4XnzEaL214fEhJctCsMsi8JV1ELBuTLx:7UnkgMLJAq15AfuvbceD3uz2WcGW3PPBJ8MhFdcEKgdm",
-        "mint": "BerWsfRFbh7Lp9c6N4DUUqmc433688eicWjehAkkpump",
-        "pool": "7UnkgMLJAq15AfuvbceD3uz2WcGW3PPBJ8MhFdcEKgdm"
+        "id": "3KSz9m2NEtGW6ss8EmYnhNDdeAMY66Ltwg1KpTNCDrJ1ixP9tWp3GTG8q5o8qXuP5WrDDDjYMzu8PzLyWwt3682G:8RrSf3dD9YHWjzbCnPxY6dAayhNNBmNX7CWtjDJuE51m",
+        "mint": "87VYzAkD49NWSAqQmBnybuQbMtAoadEmvNvVwJmpump",
+        "pool": "8RrSf3dD9YHWjzbCnPxY6dAayhNNBmNX7CWtjDJuE51m"
       },
       "quote": {
         "access_mode": "keyless",
         "collector_version": "prospective-quote-lab-0.4",
-        "context_slot_delta_from_rpc": 71,
-        "entry_delay_seconds": 30,
-        "exit_horizon_seconds": 3600,
+        "context_slot_delta_from_rpc": 14,
+        "entry_delay_seconds": 60,
+        "exit_horizon_seconds": 900,
         "fills_assumed": false,
         "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
-        "hypothetical_token_input_raw": "789248137587",
-        "late_by_seconds": 10.245137691497803,
-        "observed_at": "2026-09-23T20:22:40.371+00:00",
+        "hypothetical_token_input_raw": "3208051367338",
+        "late_by_seconds": 1.007214069366455,
+        "observed_at": "2026-09-23T20:23:36.390+00:00",
         "provider": "jupiter_metis_v1",
         "raw": {
-          "contextSlot": 449810389,
-          "inAmount": "789248137587",
-          "inputMint": "BerWsfRFbh7Lp9c6N4DUUqmc433688eicWjehAkkpump",
-          "otherAmountThreshold": "1808664",
-          "outAmount": "1826933",
+          "contextSlot": 449810597,
+          "inAmount": "3208051367338",
+          "inputMint": "87VYzAkD49NWSAqQmBnybuQbMtAoadEmvNvVwJmpump",
+          "otherAmountThreshold": "7997591",
+          "outAmount": "8078374",
           "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
           "platformFee": null,
-          "priceImpactPct": "0.0025972041471768351742388442",
+          "priceImpactPct": "0.0061975378764631694646658765",
           "routePlan": [
             {
               "bps": null,
               "percent": 100,
               "swapInfo": {
-                "ammKey": "7UnkgMLJAq15AfuvbceD3uz2WcGW3PPBJ8MhFdcEKgdm",
-                "inAmount": "789248137587",
-                "inputMint": "BerWsfRFbh7Lp9c6N4DUUqmc433688eicWjehAkkpump",
+                "ammKey": "8RrSf3dD9YHWjzbCnPxY6dAayhNNBmNX7CWtjDJuE51m",
+                "inAmount": "3208051367338",
+                "inputMint": "87VYzAkD49NWSAqQmBnybuQbMtAoadEmvNvVwJmpump",
                 "label": "Pump.fun Amm",
-                "outAmount": "15976528",
+                "outAmount": "70718117",
                 "outputMint": "So11111111111111111111111111111111111111112",
-                "updateContextSlot": "449809263"
+                "updateContextSlot": "449809579"
               }
             },
             {
               "bps": null,
               "percent": 100,
               "swapInfo": {
-                "ammKey": "82RLfDeEAoYtx3rwZF7igAQC1nGsBBvAMkygB5mcJojZ",
-                "inAmount": "15976528",
+                "ammKey": "B4bn8eSGUWsETHdKj2uXUHDLW2s2zeRWrKZofBWxCMAm",
+                "inAmount": "70718117",
                 "inputMint": "So11111111111111111111111111111111111111112",
-                "label": "Flux",
-                "outAmount": "1826933",
+                "label": "Whirlpool",
+                "outAmount": "9579",
+                "outputMint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+                "updateContextSlot": "449810589"
+              }
+            },
+            {
+              "bps": null,
+              "percent": 100,
+              "swapInfo": {
+                "ammKey": "8TxrtAxqA5PA2Y1d2pxzCz9SoDhjrBcYqNAQKVv6p443",
+                "inAmount": "9579",
+                "inputMint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+                "label": "GoonFi V2",
+                "outAmount": "8078374",
                 "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-                "updateContextSlot": "449810388"
+                "updateContextSlot": "449810595"
               }
             }
           ],
           "slippageBps": 100,
           "swapMode": "ExactIn",
-          "timeTaken": 0.002008407
+          "timeTaken": 0.0027408
         },
-        "received_epoch": 1790194960.3711228,
-        "received_late_by_seconds": 10.375528335571289,
-        "request_latency_seconds": 0.13039064407348633,
-        "requested_epoch": 1790194960.2407322,
-        "scheduled_epoch": 1790194949.9955945,
+        "received_epoch": 1790195016.3909035,
+        "received_late_by_seconds": 1.0859036445617676,
+        "request_latency_seconds": 0.0786895751953125,
+        "requested_epoch": 1790195016.312214,
+        "scheduled_epoch": 1790195015.3049998,
         "status": "quote_observed",
         "timing_eligible": true
       }
     },
-    "2Fj2D3TRKGGwG85BihjJ1RGBVMd5SV7SBGrVNcr6GKyfg5URYTWbjV4wmiZZFhhvR4gV3qxZGqLiqUXCdRyzR3LZ:EUKoFyGyZx8ogaESYKdN9oMiZp67radXDiz1QX5M2sjN:exit:60:300": {
-      "id": "2Fj2D3TRKGGwG85BihjJ1RGBVMd5SV7SBGrVNcr6GKyfg5URYTWbjV4wmiZZFhhvR4gV3qxZGqLiqUXCdRyzR3LZ:EUKoFyGyZx8ogaESYKdN9oMiZp67radXDiz1QX5M2sjN:exit:60:300",
+    "3ywzNdgUqh7mnd4L9mzSQN48Bttcs6N8DScgqzm7Pw8F5LkJT4avfnJEpZZqAHgFEAcPwxNbkuSdtQ9ok74GT3JD:DjWxpmRkAR1sJUHv156A31gyRkoTXa1LAR3XvBcQJByh:exit:300:900": {
+      "id": "3ywzNdgUqh7mnd4L9mzSQN48Bttcs6N8DScgqzm7Pw8F5LkJT4avfnJEpZZqAHgFEAcPwxNbkuSdtQ9ok74GT3JD:DjWxpmRkAR1sJUHv156A31gyRkoTXa1LAR3XvBcQJByh:exit:300:900",
       "opportunity": {
-        "id": "2Fj2D3TRKGGwG85BihjJ1RGBVMd5SV7SBGrVNcr6GKyfg5URYTWbjV4wmiZZFhhvR4gV3qxZGqLiqUXCdRyzR3LZ:EUKoFyGyZx8ogaESYKdN9oMiZp67radXDiz1QX5M2sjN",
-        "mint": "FDumYKfbqDnMxWCa9N2eW1Y2wGUiPU9ci6rb22pEpump",
-        "pool": "EUKoFyGyZx8ogaESYKdN9oMiZp67radXDiz1QX5M2sjN"
+        "id": "3ywzNdgUqh7mnd4L9mzSQN48Bttcs6N8DScgqzm7Pw8F5LkJT4avfnJEpZZqAHgFEAcPwxNbkuSdtQ9ok74GT3JD:DjWxpmRkAR1sJUHv156A31gyRkoTXa1LAR3XvBcQJByh",
+        "mint": "GA2G6CnP7dxtRUFagkzEU6kzn8wrxdS5iMMjLZAnpump",
+        "pool": "DjWxpmRkAR1sJUHv156A31gyRkoTXa1LAR3XvBcQJByh"
       },
       "quote": {
         "access_mode": "keyless",
         "collector_version": "prospective-quote-lab-0.4",
-        "context_slot_delta_from_rpc": 61,
-        "entry_delay_seconds": 60,
-        "exit_horizon_seconds": 300,
+        "context_slot_delta_from_rpc": 44,
+        "entry_delay_seconds": 300,
+        "exit_horizon_seconds": 900,
         "fills_assumed": false,
         "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
-        "hypothetical_token_input_raw": "437764864090",
-        "late_by_seconds": 9.453480958938599,
-        "observed_at": "2026-09-23T20:22:37.734+00:00",
+        "hypothetical_token_input_raw": "111867045643",
+        "late_by_seconds": 0.04720354080200195,
+        "observed_at": "2026-09-23T20:23:44.822+00:00",
         "provider": "jupiter_metis_v1",
         "raw": {
-          "contextSlot": 449810379,
-          "inAmount": "437764864090",
-          "inputMint": "FDumYKfbqDnMxWCa9N2eW1Y2wGUiPU9ci6rb22pEpump",
-          "otherAmountThreshold": "35551318",
-          "outAmount": "35910422",
+          "contextSlot": 449810627,
+          "inAmount": "111867045643",
+          "inputMint": "GA2G6CnP7dxtRUFagkzEU6kzn8wrxdS5iMMjLZAnpump",
+          "otherAmountThreshold": "64173902",
+          "outAmount": "64822123",
           "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
           "platformFee": null,
-          "priceImpactPct": "0.0002666774761224138889968656",
+          "priceImpactPct": "0.0142496272064124903417503294",
           "routePlan": [
             {
               "bps": null,
               "percent": 100,
               "swapInfo": {
-                "ammKey": "EUKoFyGyZx8ogaESYKdN9oMiZp67radXDiz1QX5M2sjN",
-                "inAmount": "437764864090",
-                "inputMint": "FDumYKfbqDnMxWCa9N2eW1Y2wGUiPU9ci6rb22pEpump",
+                "ammKey": "DjWxpmRkAR1sJUHv156A31gyRkoTXa1LAR3XvBcQJByh",
+                "inAmount": "111867045643",
+                "inputMint": "GA2G6CnP7dxtRUFagkzEU6kzn8wrxdS5iMMjLZAnpump",
                 "label": "Pump.fun Amm",
-                "outAmount": "314038313",
+                "outAmount": "567692171",
                 "outputMint": "So11111111111111111111111111111111111111112",
-                "updateContextSlot": "449810378"
+                "updateContextSlot": "449810627"
               }
             },
             {
               "bps": null,
               "percent": 100,
               "swapInfo": {
-                "ammKey": "7wXtGayssQRekJYop299FoJZmcD7fvRW6NUwLk3r6VWM",
-                "inAmount": "314038313",
+                "ammKey": "HktfL7iwGKT5QHjywQkcDnZXScoh811k7akrMZJkCcEF",
+                "inAmount": "567692171",
                 "inputMint": "So11111111111111111111111111111111111111112",
-                "label": "Quantum",
-                "outAmount": "35910422",
+                "label": "Whirlpool",
+                "outAmount": "2425765",
+                "outputMint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+                "updateContextSlot": "449810624"
+              }
+            },
+            {
+              "bps": null,
+              "percent": 100,
+              "swapInfo": {
+                "ammKey": "Ce8WKGKeNPrtk85inFtkpskekaNibZiogSZBrcP7yhTN",
+                "inAmount": "2425765",
+                "inputMint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+                "label": "TesseraV",
+                "outAmount": "64822123",
                 "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-                "updateContextSlot": "449810379"
+                "updateContextSlot": "449810627"
               }
             }
           ],
           "slippageBps": 100,
           "swapMode": "ExactIn",
-          "timeTaken": 0.002354009
+          "timeTaken": 0.002884225
         },
-        "received_epoch": 1790194957.7346916,
-        "received_late_by_seconds": 9.523282766342163,
-        "request_latency_seconds": 0.06980180740356445,
-        "requested_epoch": 1790194957.6648898,
-        "scheduled_epoch": 1790194948.2114089,
+        "received_epoch": 1790195024.8224688,
+        "received_late_by_seconds": 0.1357874870300293,
+        "request_latency_seconds": 0.08858394622802734,
+        "requested_epoch": 1790195024.7338848,
+        "scheduled_epoch": 1790195024.6866813,
+        "status": "quote_observed",
+        "timing_eligible": true
+      }
+    },
+    "PWP4t6R3ZKpkxY9cAdSpTxDz2nTG2UmAKKgx7iVgTMt5tyvmJzFJC2ofTiHymGjQzHACAa7qgLW2bncH1mBirxZ:8ViG2De7tnA52oME2fMgsxo4g3FEra19bf5wok2bSb7Q:exit:30:300": {
+      "id": "PWP4t6R3ZKpkxY9cAdSpTxDz2nTG2UmAKKgx7iVgTMt5tyvmJzFJC2ofTiHymGjQzHACAa7qgLW2bncH1mBirxZ:8ViG2De7tnA52oME2fMgsxo4g3FEra19bf5wok2bSb7Q:exit:30:300",
+      "opportunity": {
+        "id": "PWP4t6R3ZKpkxY9cAdSpTxDz2nTG2UmAKKgx7iVgTMt5tyvmJzFJC2ofTiHymGjQzHACAa7qgLW2bncH1mBirxZ:8ViG2De7tnA52oME2fMgsxo4g3FEra19bf5wok2bSb7Q",
+        "mint": "61WeQCJZoae4fC1Bt4UBkkTRJ5RoJhVLysDbhA17pump",
+        "pool": "8ViG2De7tnA52oME2fMgsxo4g3FEra19bf5wok2bSb7Q"
+      },
+      "quote": {
+        "access_mode": "keyless",
+        "collector_version": "prospective-quote-lab-0.4",
+        "context_slot_delta_from_rpc": 24,
+        "entry_delay_seconds": 30,
+        "exit_horizon_seconds": 300,
+        "fills_assumed": false,
+        "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+        "hypothetical_token_input_raw": "1093696263883",
+        "late_by_seconds": 0.07592964172363281,
+        "observed_at": "2026-09-23T20:23:39.398+00:00",
+        "provider": "jupiter_metis_v1",
+        "raw": {
+          "contextSlot": 449810607,
+          "inAmount": "1093696263883",
+          "inputMint": "61WeQCJZoae4fC1Bt4UBkkTRJ5RoJhVLysDbhA17pump",
+          "otherAmountThreshold": "3048687",
+          "outAmount": "3079481",
+          "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "platformFee": null,
+          "priceImpactPct": "0.0027082290445698639468151492",
+          "routePlan": [
+            {
+              "bps": null,
+              "percent": 100,
+              "swapInfo": {
+                "ammKey": "8ViG2De7tnA52oME2fMgsxo4g3FEra19bf5wok2bSb7Q",
+                "inAmount": "1093696263883",
+                "inputMint": "61WeQCJZoae4fC1Bt4UBkkTRJ5RoJhVLysDbhA17pump",
+                "label": "Pump.fun Amm",
+                "outAmount": "26957837",
+                "outputMint": "So11111111111111111111111111111111111111112",
+                "updateContextSlot": "449810604"
+              }
+            },
+            {
+              "bps": null,
+              "percent": 100,
+              "swapInfo": {
+                "ammKey": "CYbD9RaToYMtWKA7QZyoLahnHdWq553Vm62Lh6qWtuxq",
+                "inAmount": "26957837",
+                "inputMint": "So11111111111111111111111111111111111111112",
+                "label": "Raydium CLMM",
+                "outAmount": "3079481",
+                "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                "updateContextSlot": "449810606"
+              }
+            }
+          ],
+          "slippageBps": 100,
+          "swapMode": "ExactIn",
+          "timeTaken": 0.001870008
+        },
+        "received_epoch": 1790195019.3987226,
+        "received_late_by_seconds": 0.15480327606201172,
+        "request_latency_seconds": 0.0788736343383789,
+        "requested_epoch": 1790195019.319849,
+        "scheduled_epoch": 1790195019.2439194,
         "status": "quote_observed",
         "timing_eligible": true
       }
@@ -402964,11 +404517,11 @@
   "rpc_cooldown_epoch": 0,
   "rpc_error_categories": {},
   "rpc_health": {
-    "checked_at": "2026-09-23T20:22:22.398+00:00",
+    "checked_at": "2026-09-23T20:23:34.280+00:00",
     "connected": true,
     "discovery_page_deferred_backpressure": false,
     "signature_window_saturated": false,
-    "slot": 449810318
+    "slot": 449810583
   },
   "schema": 2,
   "seen": [
