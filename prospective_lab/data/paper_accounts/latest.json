@@ -170,7 +170,7 @@
       "open_positions": 0,
       "profit_factor": 0.5762765407622714,
       "skip_reasons": {
-        "insufficient_virtual_cash": 98,
+        "insufficient_virtual_cash": 99,
         "position_limit": 9
       },
       "starting_cash_usdc": 500,
@@ -196,7 +196,7 @@
       "open_positions": 0,
       "profit_factor": 0.5657744618238947,
       "skip_reasons": {
-        "insufficient_virtual_cash": 101,
+        "insufficient_virtual_cash": 102,
         "position_limit": 8
       },
       "starting_cash_usdc": 500,
@@ -222,7 +222,7 @@
       "open_positions": 2,
       "profit_factor": 0.7909847149116702,
       "skip_reasons": {
-        "insufficient_virtual_cash": 10,
+        "insufficient_virtual_cash": 11,
         "position_limit": 87
       },
       "starting_cash_usdc": 500,
@@ -248,7 +248,7 @@
       "open_positions": 1,
       "profit_factor": 0.7707641585799111,
       "skip_reasons": {
-        "insufficient_virtual_cash": 24,
+        "insufficient_virtual_cash": 25,
         "position_limit": 76
       },
       "starting_cash_usdc": 500,
@@ -274,7 +274,7 @@
       "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
-        "insufficient_virtual_cash": 124,
+        "insufficient_virtual_cash": 125,
         "position_limit": 24
       },
       "starting_cash_usdc": 500,
@@ -300,7 +300,7 @@
       "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
-        "insufficient_virtual_cash": 124,
+        "insufficient_virtual_cash": 125,
         "position_limit": 24
       },
       "starting_cash_usdc": 500,
@@ -326,7 +326,7 @@
       "open_positions": 0,
       "profit_factor": 0.4457118722804602,
       "skip_reasons": {
-        "insufficient_virtual_cash": 125
+        "insufficient_virtual_cash": 126
       },
       "starting_cash_usdc": 500,
       "unresolved_positions": 0,
@@ -351,7 +351,7 @@
       "open_positions": 0,
       "profit_factor": 0.4206546682666466,
       "skip_reasons": {
-        "insufficient_virtual_cash": 126
+        "insufficient_virtual_cash": 127
       },
       "starting_cash_usdc": 500,
       "unresolved_positions": 0,
@@ -376,7 +376,7 @@
       "open_positions": 0,
       "profit_factor": 0.6082406990782531,
       "skip_reasons": {
-        "insufficient_virtual_cash": 66,
+        "insufficient_virtual_cash": 67,
         "position_limit": 51
       },
       "starting_cash_usdc": 500,
@@ -402,7 +402,7 @@
       "open_positions": 0,
       "profit_factor": 0.6053580960873991,
       "skip_reasons": {
-        "insufficient_virtual_cash": 74,
+        "insufficient_virtual_cash": 75,
         "position_limit": 47
       },
       "starting_cash_usdc": 500,
@@ -428,7 +428,7 @@
       "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
-        "insufficient_virtual_cash": 124,
+        "insufficient_virtual_cash": 125,
         "position_limit": 24
       },
       "starting_cash_usdc": 500,
@@ -454,7 +454,7 @@
       "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
-        "insufficient_virtual_cash": 124,
+        "insufficient_virtual_cash": 125,
         "position_limit": 24
       },
       "starting_cash_usdc": 500,
@@ -621,7 +621,7 @@
   ],
   "all_results_provisional": true,
   "independent_market_coverage": null,
-  "ledger_events": 4555,
+  "ledger_events": 4567,
   "ledger_reconciled": true,
   "mode": "PAPER_ONLY",
   "network_requests_by_paper_layer": 0,
@@ -644,7 +644,7 @@
     "open_positions": 2,
     "profit_factor": 0.7909847149116702,
     "skip_reasons": {
-      "insufficient_virtual_cash": 10,
+      "insufficient_virtual_cash": 11,
       "position_limit": 87
     },
     "starting_cash_usdc": 500,
@@ -658,9 +658,9 @@
   "research_quote_quality_counts": {
     "missed_snapshot_window_no_backfill": 44,
     "pool_state_corroborated": 88,
-    "requires_review": 4090,
+    "requires_review": 4105,
     "unavailable": 95,
-    "unrecognized_or_inconsistent_pool_evidence": 215
+    "unrecognized_or_inconsistent_pool_evidence": 216
   },
   "spec": {
     "additional_cost_bps": [
@@ -699,6 +699,6 @@
   "started_at": "2026-09-23T15:27:21.742+00:00",
   "status": "RUNNING",
   "unique_post_start_opportunities_with_model_buys": 98,
-  "updated_at": "2026-09-23T19:16:02.677+00:00",
+  "updated_at": "2026-09-23T19:17:12.312+00:00",
   "version": "quote-paper-account-1.0"
 }
