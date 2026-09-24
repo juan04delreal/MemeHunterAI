@@ -2,12 +2,12 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-09-24T10:50:37.699+00:00
+Updated: 2026-09-24T10:51:37.968+00:00
 Collector: prospective-quote-lab-0.4
 RPC connected: True
-Evidence-confirmed unique migrations: 1032
-Observed entry quotes: 3815
-Observed exit quotes: 10906
+Evidence-confirmed unique migrations: 1033
+Observed entry quotes: 3818
+Observed exit quotes: 10918
 Quote failures/unavailable: 442
 Missed deadlines (no backfill): 408
 Jupiter API key configured: False
@@ -24,8 +24,9 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 
 | Mint | First observed | Lag from chain | Entry quote states |
 |---|---|---:|---|
-| 86dUbiFZnH99ZA7hHnh9742NTpxR266Q4n5L5pevpump | 2026-09-24T10:48:56.949+00:00 | 32.949140548706055 | 30:quote_observed, 60:quote_observed |
-| 68hmMLubTJsZfhBaBMMajPrU84xpxViGoY2eG87Vpump | 2026-09-24T10:46:32.860+00:00 | 27.860624313354492 | 30:quote_observed, 60:missed_deadline, 120:quote_observed |
+| DyvDvUp2CVDJxrhKsXqdvXQvMgnZWLVoEkkqvEKtpump | 2026-09-24T10:50:56.939+00:00 | 37.9395694732666 | 30:quote_observed |
+| 86dUbiFZnH99ZA7hHnh9742NTpxR266Q4n5L5pevpump | 2026-09-24T10:48:56.949+00:00 | 32.949140548706055 | 30:quote_observed, 60:quote_observed, 120:quote_observed |
+| 68hmMLubTJsZfhBaBMMajPrU84xpxViGoY2eG87Vpump | 2026-09-24T10:46:32.860+00:00 | 27.860624313354492 | 30:quote_observed, 60:missed_deadline, 120:quote_observed, 300:quote_observed |
 | D1UEDuLUj2WuR5Yv27U7Hx5EFVZ2gMQVhpaqu9YWpump | 2026-09-24T10:45:32.638+00:00 | 18.638733386993408 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | BjgutVEnxpHje7uQ7tCGhXPyoQhyuhePVWCjgVFGpump | 2026-09-24T10:44:54.334+00:00 | 22.33457064628601 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | 7JKWFaSxeSPuCVFKPePML1THabUtnF9pL3ZnEqwTpump | 2026-09-24T10:43:55.308+00:00 | 4.308623313903809 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
@@ -43,16 +44,15 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 | GN7PMX42JBzPoZwm7M3sjdhHaMjuTu1MkSqygcnDpump | 2026-09-24T10:19:10.311+00:00 | 28.311781406402588 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | DJXTSst4QeaQsVXs9BFAGnRA3aVcPaBoTE5bw6c1pump | 2026-09-24T10:18:09.386+00:00 | 24.386573553085327 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | HuLK8wnrVx2dxwjK8RFMAEdf7TYkACRihTasctaapump | 2026-09-24T10:17:08.057+00:00 | 33.05756449699402 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
-| 4R6sTSvRmM2vZxGC4AYWMjPJE7j2TJMowwMcMeFbpump | 2026-09-24T10:16:30.210+00:00 | 26.210878610610962 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 
 ## Evidence and coverage audit
 
 Historical instruction matches and their raw quotes are retained, not automatically validated.
 Completion events, pool-creation instructions, and zero-to-positive pool funding are required for new samples. Prefunded or missing-evidence cases remain unresolved.
 Re-audits and initial historical catch-up never create backfilled quote experiments.
-Migration classifications: {"confirmed_new_migration": 1032, "unresolved_no_new_migration_evidence": 314}
+Migration classifications: {"confirmed_new_migration": 1033, "unresolved_no_new_migration_evidence": 314}
 Discovery source: migration_authority_index; pending transactions: 0; catch-up: False
 Out-of-scope or unrecognized migrate_v2 transactions: 39
-Pool snapshot checks: {"missed_snapshot_window_no_backfill": 2218, "pool_state_corroborated": 184, "requires_review": 11549, "unavailable": 163, "unrecognized_or_inconsistent_pool_evidence": 559}
+Pool snapshot checks: {"missed_snapshot_window_no_backfill": 2218, "pool_state_corroborated": 186, "requires_review": 11559, "unavailable": 163, "unrecognized_or_inconsistent_pool_evidence": 559}
 Pool-state corroboration does not validate full route fees, execution, or hypothetical market impact.
 Old quotes without simultaneous pool snapshots cannot be retroactively given that evidence.
