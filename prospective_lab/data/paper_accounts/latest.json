@@ -702,9 +702,9 @@
   "real_trades_placed": 0,
   "realized_profit": null,
   "research_quote_quality_counts": {
-    "missed_snapshot_window_no_backfill": 2109,
+    "missed_snapshot_window_no_backfill": 2111,
     "pool_state_corroborated": 147,
-    "requires_review": 10832,
+    "requires_review": 10842,
     "unavailable": 156,
     "unrecognized_or_inconsistent_pool_evidence": 497
   },
@@ -745,6 +745,6 @@
   "started_at": "2026-09-23T15:27:21.742+00:00",
   "status": "RUNNING",
   "unique_post_start_opportunities_with_model_buys": 112,
-  "updated_at": "2026-09-24T09:07:17.959+00:00",
+  "updated_at": "2026-09-24T09:08:19.042+00:00",
   "version": "quote-paper-account-1.0"
 }
