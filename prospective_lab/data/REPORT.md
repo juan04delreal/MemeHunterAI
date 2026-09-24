@@ -2,12 +2,12 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-09-24T12:48:38.187+00:00
+Updated: 2026-09-24T12:49:42.323+00:00
 Collector: prospective-quote-lab-0.4
 RPC connected: True
-Evidence-confirmed unique migrations: 1115
-Observed entry quotes: 4135
-Observed exit quotes: 11761
+Evidence-confirmed unique migrations: 1118
+Observed entry quotes: 4138
+Observed exit quotes: 11773
 Quote failures/unavailable: 500
 Missed deadlines (no backfill): 464
 Jupiter API key configured: False
@@ -24,6 +24,9 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 
 | Mint | First observed | Lag from chain | Entry quote states |
 |---|---|---:|---|
+| 7N8dDSFK9FqP2j8jmeJ1XN47x9oWdhKn2NpzPhGMpump | 2026-09-24T12:49:01.569+00:00 | 41.56942534446716 | 30:quote_observed |
+| CNE5X5aSBtwqsR5rmYx8XoKZ5MTVjED7ngT3bAyZpump | 2026-09-24T12:49:01.233+00:00 | 39.23301887512207 | 30:quote_observed |
+| 2RDV1zyUpJ9RG9Q4aqoB5gSHrT6goM149b95ktCTpump | 2026-09-24T12:49:00.227+00:00 | 26.227752923965454 | 30:quote_observed |
 | 44eUKGKKLiEA13Bs6zHqiw1K9YmuzY6Y8EUJEAvFpump | 2026-09-24T12:45:46.012+00:00 | 13.012696266174316 | 30:quote_observed, 60:quote_observed, 120:quote_observed |
 | 5CyQrj3bXue1K4eZ2xEqYnVZXtUR3x5aGnbLwL9hpump | 2026-09-24T12:43:01.778+00:00 | 24.778908252716064 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | ArU5LszCdTdeBVkmV9YWRGfjD5qao8ikoVu7mQ8Wpump | 2026-09-24T12:42:36.164+00:00 | 24.16458034515381 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
@@ -41,18 +44,15 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 | BNjqhDyfsmLzgtTP4impqjgCcvbrXnyaskGBVi8ipump | 2026-09-24T12:28:41.761+00:00 | 14.761428117752075 | 30:missed_deadline, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | AxZYPsQc2tFUWCvWCUd6sR2FWSJ8huqJbEuexmqXvGXo | 2026-09-24T12:26:58.801+00:00 | 21.80170965194702 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | E852dkWKCoS9KSFAGi6Z87rxpWxYByHu2SomPuddpump | 2026-09-24T12:24:53.382+00:00 | 24.382768869400024 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
-| ecGMHVBJVnDxBSeYrWjS2KF7YzBty4BLoGxKR3Dpump | 2026-09-24T12:24:29.337+00:00 | 21.33742928504944 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:missed_deadline |
-| CzhWkiwzxk6RxcfY5LgzsCvJzfwwP26xxkaU8ouNpump | 2026-09-24T12:23:27.215+00:00 | 21.21499991416931 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
-| FFDCa6WS6VMFa81HSD7cVmLo1hziwZKffPRDBjuapump | 2026-09-24T12:22:48.117+00:00 | 21.11728549003601 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 
 ## Evidence and coverage audit
 
 Historical instruction matches and their raw quotes are retained, not automatically validated.
 Completion events, pool-creation instructions, and zero-to-positive pool funding are required for new samples. Prefunded or missing-evidence cases remain unresolved.
 Re-audits and initial historical catch-up never create backfilled quote experiments.
-Migration classifications: {"confirmed_new_migration": 1115, "unresolved_no_new_migration_evidence": 347}
+Migration classifications: {"confirmed_new_migration": 1118, "unresolved_no_new_migration_evidence": 348}
 Discovery source: migration_authority_index; pending transactions: 0; catch-up: False
 Out-of-scope or unrecognized migrate_v2 transactions: 40
-Pool snapshot checks: {"missed_snapshot_window_no_backfill": 2530, "pool_state_corroborated": 220, "requires_review": 12341, "unavailable": 165, "unrecognized_or_inconsistent_pool_evidence": 581}
+Pool snapshot checks: {"missed_snapshot_window_no_backfill": 2539, "pool_state_corroborated": 220, "requires_review": 12344, "unavailable": 165, "unrecognized_or_inconsistent_pool_evidence": 581}
 Pool-state corroboration does not validate full route fees, execution, or hypothetical market impact.
 Old quotes without simultaneous pool snapshots cannot be retroactively given that evidence.
