@@ -2,14 +2,14 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-09-24T14:12:32.772+00:00
+Updated: 2026-09-24T14:13:39.948+00:00
 Collector: prospective-quote-lab-0.4
 RPC connected: True
 Evidence-confirmed unique migrations: 1195
-Observed entry quotes: 4402
-Observed exit quotes: 12426
-Quote failures/unavailable: 656
-Missed deadlines (no backfill): 620
+Observed entry quotes: 4406
+Observed exit quotes: 12436
+Quote failures/unavailable: 659
+Missed deadlines (no backfill): 623
 Jupiter API key configured: False
 Quote access mode: keyless
 Provider connection test: healthy
@@ -24,13 +24,13 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 
 | Mint | First observed | Lag from chain | Entry quote states |
 |---|---|---:|---|
-| EGedEci3YJjv9NX4CyYgbd6vAqiuHNTRuAsrcv1Lpump | 2026-09-24T14:11:51.282+00:00 | 27.282407999038696 | 30:quote_observed |
-| HtGLKFsYVH3e3ZJHFg8mEpePYEFEZg4HZLNJgayXpump | 2026-09-24T14:11:50.669+00:00 | 8.66923975944519 | 30:quote_observed |
-| 6saNzZ1WCKDPpeH6Msb9m8XTHdtYBDxy79J1WPx1pump | 2026-09-24T14:10:44.130+00:00 | 33.130064725875854 | 30:quote_observed, 60:missed_deadline |
+| EGedEci3YJjv9NX4CyYgbd6vAqiuHNTRuAsrcv1Lpump | 2026-09-24T14:11:51.282+00:00 | 27.282407999038696 | 30:quote_observed, 60:quote_observed |
+| HtGLKFsYVH3e3ZJHFg8mEpePYEFEZg4HZLNJgayXpump | 2026-09-24T14:11:50.669+00:00 | 8.66923975944519 | 30:quote_observed, 60:quote_observed |
+| 6saNzZ1WCKDPpeH6Msb9m8XTHdtYBDxy79J1WPx1pump | 2026-09-24T14:10:44.130+00:00 | 33.130064725875854 | 30:quote_observed, 60:missed_deadline, 120:quote_observed |
 | GkHNKou3rmackfSUqco3ar4TNGocMEE1GfE3Np2hpump | 2026-09-24T14:09:38.282+00:00 | 34.282432079315186 | 30:quote_observed, 60:quote_observed, 120:missed_deadline |
 | FwcLA7nFHJW2VVGwvWiXBeyekdx1Gm15WyhM9RPCpump | 2026-09-24T14:09:37.648+00:00 | 9.648850440979004 | 30:quote_observed, 60:quote_observed, 120:quote_observed |
-| 4dT5tffW1QepwQn2Tmvx9DRHW51vvPsi7hHvxbXupump | 2026-09-24T14:08:31.516+00:00 | 37.516870737075806 | 30:quote_observed, 60:quote_observed, 120:quote_observed |
-| AhgExmHaDB2VKGh72BDSRcm97p44QamrLa4vm65Jpump | 2026-09-24T14:07:27.681+00:00 | 40.681302547454834 | 30:quote_observed, 60:quote_observed, 120:missed_deadline |
+| 4dT5tffW1QepwQn2Tmvx9DRHW51vvPsi7hHvxbXupump | 2026-09-24T14:08:31.516+00:00 | 37.516870737075806 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
+| AhgExmHaDB2VKGh72BDSRcm97p44QamrLa4vm65Jpump | 2026-09-24T14:07:27.681+00:00 | 40.681302547454834 | 30:quote_observed, 60:quote_observed, 120:missed_deadline, 300:missed_deadline |
 | 7hEoBDSnc8eTWqA9M3x2ZRode1jvyhQeDGiLcmtDpump | 2026-09-24T14:07:27.163+00:00 | 16.16311812400818 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | 3L1Va5TsKdRariYXRQjnUb282SaMGug9RCysQcWCpump | 2026-09-24T14:04:34.222+00:00 | 7.222747564315796 | 30:missed_deadline, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | QmgFyzdwhcPRgX9aL2sKCHWXP83V8fZP94S1vjppump | 2026-09-24T14:02:21.045+00:00 | 14.045074701309204 | 30:missed_deadline, 60:quote_observed, 120:quote_observed, 300:quote_observed |
@@ -53,6 +53,6 @@ Re-audits and initial historical catch-up never create backfilled quote experime
 Migration classifications: {"confirmed_new_migration": 1195, "unresolved_no_new_migration_evidence": 371}
 Discovery source: migration_authority_index; pending transactions: 0; catch-up: False
 Out-of-scope or unrecognized migrate_v2 transactions: 40
-Pool snapshot checks: {"missed_snapshot_window_no_backfill": 3012, "pool_state_corroborated": 221, "requires_review": 12787, "unavailable": 168, "unrecognized_or_inconsistent_pool_evidence": 590}
+Pool snapshot checks: {"missed_snapshot_window_no_backfill": 3014, "pool_state_corroborated": 222, "requires_review": 12798, "unavailable": 168, "unrecognized_or_inconsistent_pool_evidence": 590}
 Pool-state corroboration does not validate full route fees, execution, or hypothetical market impact.
 Old quotes without simultaneous pool snapshots cannot be retroactively given that evidence.
