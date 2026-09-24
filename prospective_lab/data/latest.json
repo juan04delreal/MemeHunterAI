@@ -2,18 +2,18 @@
   "backpressure_cycles": 0,
   "catchup_in_progress": false,
   "coverage_note": "Bounded migration-authority cursor and retry queue; SOL-paired migrate and migrate_v2 only; non-SOL pairs excluded. Independent total-market coverage is not established.",
-  "cycles": 5431,
+  "cycles": 5434,
   "discovery_index_status": "verified_global_layout",
   "discovery_source": "migration_authority_index",
-  "entry_quotes_observed": 2175,
-  "exit_quotes_observed": 6133,
+  "entry_quotes_observed": 2180,
+  "exit_quotes_observed": 6151,
   "fully_validated_quote_count": 0,
   "health_checks_excluded_from_experiment": true,
   "independent_coverage_fraction": null,
   "legacy_instruction_matches": 5,
-  "migration_instruction_candidates": 818,
+  "migration_instruction_candidates": 819,
   "migration_validation_statuses": {
-    "confirmed_new_migration": 609,
+    "confirmed_new_migration": 610,
     "unresolved_no_new_migration_evidence": 209
   },
   "missed_deadlines": 161,
@@ -21,7 +21,7 @@
   "new_migrations_this_cycle": 0,
   "out_of_scope_or_unrecognized_v2_transactions": 28,
   "pending_transaction_count": 0,
-  "quote_audits_pending": 0,
+  "quote_audits_pending": 5,
   "quote_failures": 173,
   "quote_provider_access_mode": "keyless",
   "quote_provider_api_key_configured": false,
@@ -30,22 +30,20 @@
   "quote_quality_counts": {
     "missed_snapshot_window_no_backfill": 1266,
     "pool_state_corroborated": 88,
-    "requires_review": 6476,
+    "requires_review": 6492,
     "unavailable": 112,
-    "unrecognized_or_inconsistent_pool_evidence": 318
+    "unrecognized_or_inconsistent_pool_evidence": 320
   },
   "real_trades_placed": 0,
   "realized_profit": null,
-  "rpc_calls_last_cycle": 10,
+  "rpc_calls_last_cycle": 14,
   "rpc_connected": true,
   "rpc_consecutive_failures": 0,
-  "rpc_error_categories": {
-    "rpc_error": 4
-  },
+  "rpc_error_categories": {},
   "signature_window_saturated": false,
-  "slot": 449859928,
+  "slot": 449860203,
   "transaction_fetch_failures": 6,
-  "updated_at": "2026-09-24T00:02:12.863+00:00",
-  "validated_migrations": 609,
+  "updated_at": "2026-09-24T00:03:27.791+00:00",
+  "validated_migrations": 610,
   "version": "prospective-quote-lab-0.4"
 }
