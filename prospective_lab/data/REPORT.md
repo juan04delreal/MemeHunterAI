@@ -2,12 +2,12 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-09-24T12:09:21.638+00:00
+Updated: 2026-09-24T12:10:24.869+00:00
 Collector: prospective-quote-lab-0.4
 RPC connected: True
 Evidence-confirmed unique migrations: 1083
 Observed entry quotes: 4016
-Observed exit quotes: 11456
+Observed exit quotes: 11468
 Quote failures/unavailable: 459
 Missed deadlines (no backfill): 423
 Jupiter API key configured: False
@@ -53,6 +53,6 @@ Re-audits and initial historical catch-up never create backfilled quote experime
 Migration classifications: {"confirmed_new_migration": 1083, "unresolved_no_new_migration_evidence": 337}
 Discovery source: migration_authority_index; pending transactions: 0; catch-up: False
 Out-of-scope or unrecognized migrate_v2 transactions: 40
-Pool snapshot checks: {"missed_snapshot_window_no_backfill": 2316, "pool_state_corroborated": 217, "requires_review": 12144, "unavailable": 165, "unrecognized_or_inconsistent_pool_evidence": 580}
+Pool snapshot checks: {"missed_snapshot_window_no_backfill": 2318, "pool_state_corroborated": 218, "requires_review": 12153, "unavailable": 165, "unrecognized_or_inconsistent_pool_evidence": 580}
 Pool-state corroboration does not validate full route fees, execution, or hypothetical market impact.
 Old quotes without simultaneous pool snapshots cannot be retroactively given that evidence.
