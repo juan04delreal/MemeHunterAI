@@ -18,7 +18,7 @@
       "open_positions": 0,
       "profit_factor": 0.3439523925338508,
       "skip_reasons": {
-        "insufficient_virtual_cash": 794,
+        "insufficient_virtual_cash": 795,
         "quote_unavailable_missed_deadline": 13,
         "quote_unavailable_provider_error": 1
       },
@@ -45,7 +45,7 @@
       "open_positions": 0,
       "profit_factor": 0.31113228266723164,
       "skip_reasons": {
-        "insufficient_virtual_cash": 795,
+        "insufficient_virtual_cash": 796,
         "quote_unavailable_missed_deadline": 13,
         "quote_unavailable_provider_error": 1
       },
@@ -72,7 +72,7 @@
       "open_positions": 0,
       "profit_factor": 0.8018413881049733,
       "skip_reasons": {
-        "insufficient_virtual_cash": 647,
+        "insufficient_virtual_cash": 648,
         "position_limit": 101,
         "quote_unavailable_missed_deadline": 13,
         "quote_unavailable_provider_error": 1
@@ -100,7 +100,7 @@
       "open_positions": 0,
       "profit_factor": 0.7880104936850827,
       "skip_reasons": {
-        "insufficient_virtual_cash": 664,
+        "insufficient_virtual_cash": 665,
         "position_limit": 93,
         "quote_unavailable_missed_deadline": 13,
         "quote_unavailable_provider_error": 1
@@ -128,7 +128,7 @@
       "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
-        "insufficient_virtual_cash": 791,
+        "insufficient_virtual_cash": 792,
         "position_limit": 24,
         "quote_unavailable_missed_deadline": 13,
         "quote_unavailable_provider_error": 1
@@ -156,7 +156,7 @@
       "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
-        "insufficient_virtual_cash": 792,
+        "insufficient_virtual_cash": 793,
         "position_limit": 24,
         "quote_unavailable_missed_deadline": 13,
         "quote_unavailable_provider_error": 1
@@ -518,7 +518,7 @@
       "open_positions": 0,
       "profit_factor": 0.5831260396718895,
       "skip_reasons": {
-        "insufficient_virtual_cash": 777,
+        "insufficient_virtual_cash": 778,
         "position_limit": 2,
         "quote_unavailable_missed_deadline": 18
       },
@@ -545,7 +545,7 @@
       "open_positions": 0,
       "profit_factor": 0.5649259755532056,
       "skip_reasons": {
-        "insufficient_virtual_cash": 782,
+        "insufficient_virtual_cash": 783,
         "position_limit": 1,
         "quote_unavailable_missed_deadline": 18
       },
@@ -572,7 +572,7 @@
       "open_positions": 0,
       "profit_factor": 0.4967485384101165,
       "skip_reasons": {
-        "insufficient_virtual_cash": 759,
+        "insufficient_virtual_cash": 760,
         "position_limit": 32,
         "quote_unavailable_missed_deadline": 18
       },
@@ -599,7 +599,7 @@
       "open_positions": 0,
       "profit_factor": 0.4866430441431119,
       "skip_reasons": {
-        "insufficient_virtual_cash": 760,
+        "insufficient_virtual_cash": 761,
         "position_limit": 32,
         "quote_unavailable_missed_deadline": 18
       },
@@ -626,7 +626,7 @@
       "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
-        "insufficient_virtual_cash": 783,
+        "insufficient_virtual_cash": 784,
         "position_limit": 24,
         "quote_unavailable_missed_deadline": 18
       },
@@ -653,7 +653,7 @@
       "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
-        "insufficient_virtual_cash": 784,
+        "insufficient_virtual_cash": 785,
         "position_limit": 24,
         "quote_unavailable_missed_deadline": 18
       },
@@ -665,7 +665,7 @@
   ],
   "all_results_provisional": true,
   "independent_market_coverage": null,
-  "ledger_events": 20949,
+  "ledger_events": 20961,
   "ledger_reconciled": true,
   "mode": "PAPER_ONLY",
   "network_requests_by_paper_layer": 0,
@@ -703,8 +703,8 @@
   "realized_profit": null,
   "research_quote_quality_counts": {
     "missed_snapshot_window_no_backfill": 2220,
-    "pool_state_corroborated": 199,
-    "requires_review": 11724,
+    "pool_state_corroborated": 200,
+    "requires_review": 11732,
     "unavailable": 164,
     "unrecognized_or_inconsistent_pool_evidence": 568
   },
@@ -745,6 +745,6 @@
   "started_at": "2026-09-23T15:27:21.742+00:00",
   "status": "RUNNING",
   "unique_post_start_opportunities_with_model_buys": 112,
-  "updated_at": "2026-09-24T11:15:28.239+00:00",
+  "updated_at": "2026-09-24T11:16:50.699+00:00",
   "version": "quote-paper-account-1.0"
 }
