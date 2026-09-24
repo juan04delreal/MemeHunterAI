@@ -2,14 +2,14 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-09-24T18:45:57.777+00:00
+Updated: 2026-09-24T18:47:07.291+00:00
 Collector: prospective-quote-lab-0.4
 RPC connected: True
-Evidence-confirmed unique migrations: 1400
-Observed entry quotes: 5161
-Observed exit quotes: 14449
-Quote failures/unavailable: 1026
-Missed deadlines (no backfill): 990
+Evidence-confirmed unique migrations: 1401
+Observed entry quotes: 5163
+Observed exit quotes: 14459
+Quote failures/unavailable: 1030
+Missed deadlines (no backfill): 994
 Jupiter API key configured: False
 Quote access mode: keyless
 Provider connection test: healthy
@@ -24,8 +24,9 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 
 | Mint | First observed | Lag from chain | Entry quote states |
 |---|---|---:|---|
-| DCwRzNLGp3uFHPhNL9KuMVXPb48aXRFT5btfux9Qpump | 2026-09-24T18:45:15.333+00:00 | 15.333112239837646 | 30:quote_observed |
-| 9NnvxfavSswySguwuQ4Pa2wVZxM58x24rCXMb8rKpump | 2026-09-24T18:44:06.820+00:00 | 32.82063937187195 | 30:quote_observed, 60:quote_observed |
+| FbJMNyaXUGbFWD9gs3TVD2Q2q61Pz4td5QNFxj1Xpump | 2026-09-24T18:46:49.484+00:00 | 5.48494291305542 | none |
+| DCwRzNLGp3uFHPhNL9KuMVXPb48aXRFT5btfux9Qpump | 2026-09-24T18:45:15.333+00:00 | 15.333112239837646 | 30:quote_observed, 60:quote_observed |
+| 9NnvxfavSswySguwuQ4Pa2wVZxM58x24rCXMb8rKpump | 2026-09-24T18:44:06.820+00:00 | 32.82063937187195 | 30:quote_observed, 60:quote_observed, 120:quote_observed |
 | Aw2YHvb8swJUFDjf7Fi8fo4JH88XsmS77njdsk44pump | 2026-09-24T18:40:40.973+00:00 | 37.97333335876465 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | 8dBoMSwhbTRP2oHuX1RYyEF6kmdtPZE3dCrJjNCpump | 2026-09-24T18:35:22.077+00:00 | 22.077697038650513 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | DgUPd8QdCaYryWVowqrwyt9UKNC7HveZx8r71T6spump | 2026-09-24T18:34:57.005+00:00 | 9.005486488342285 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
@@ -43,16 +44,15 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 | HF3zdaU954t4uqtmxDERVV3pqnjVzS7BcKvqmKWQpump | 2026-09-24T18:21:15.035+00:00 | 14.035763502120972 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | BA5GyK6sFvamGbZiPPXPqHCGezhRafhFQccDuwPipump | 2026-09-24T18:20:10.025+00:00 | 18.025987148284912 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | 8ACRSHVTfiaZZLP4HHTYn5Rv8ERZP4T6tP6h5emeTuii | 2026-09-24T18:18:57.978+00:00 | 22.97802734375 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
-| 1gWWhs7qrd9sBHwppQdMU2h2fTnnyoCYCSuVjFBpump | 2026-09-24T18:17:50.432+00:00 | 8.432350873947144 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 
 ## Evidence and coverage audit
 
 Historical instruction matches and their raw quotes are retained, not automatically validated.
 Completion events, pool-creation instructions, and zero-to-positive pool funding are required for new samples. Prefunded or missing-evidence cases remain unresolved.
 Re-audits and initial historical catch-up never create backfilled quote experiments.
-Migration classifications: {"confirmed_new_migration": 1400, "unresolved_no_new_migration_evidence": 453}
+Migration classifications: {"confirmed_new_migration": 1401, "unresolved_no_new_migration_evidence": 453}
 Discovery source: migration_authority_index; pending transactions: 0; catch-up: False
 Out-of-scope or unrecognized migrate_v2 transactions: 45
-Pool snapshot checks: {"missed_snapshot_window_no_backfill": 3251, "pool_state_corroborated": 259, "requires_review": 15186, "unavailable": 183, "unrecognized_or_inconsistent_pool_evidence": 681}
+Pool snapshot checks: {"missed_snapshot_window_no_backfill": 3253, "pool_state_corroborated": 259, "requires_review": 15198, "unavailable": 183, "unrecognized_or_inconsistent_pool_evidence": 681}
 Pool-state corroboration does not validate full route fees, execution, or hypothetical market impact.
 Old quotes without simultaneous pool snapshots cannot be retroactively given that evidence.
