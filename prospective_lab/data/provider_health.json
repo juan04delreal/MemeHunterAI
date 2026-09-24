@@ -1,6 +1,6 @@
 {
   "access_mode": "keyless",
-  "checked_at": "2026-09-24T15:54:10.654+00:00",
+  "checked_at": "2026-09-24T15:57:24.568+00:00",
   "endpoint": "https://api.jup.ag/swap/v1/quote",
   "entry": {
     "access_mode": "keyless",
@@ -42,9 +42,48 @@
     "requested_epoch": 1790265250.5908768,
     "status": "quote_observed"
   },
+  "exit": {
+    "access_mode": "keyless",
+    "context_slot_delta_from_rpc": 69,
+    "fills_assumed": false,
+    "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+    "observed_at": "2026-09-24T15:57:24.568+00:00",
+    "provider": "jupiter_metis_v1",
+    "raw": {
+      "contextSlot": 450075982,
+      "inAmount": "430640452",
+      "inputMint": "So11111111111111111111111111111111111111112",
+      "otherAmountThreshold": "49596822",
+      "outAmount": "50097800",
+      "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "platformFee": null,
+      "priceImpactPct": "0",
+      "routePlan": [
+        {
+          "bps": null,
+          "percent": 100,
+          "swapInfo": {
+            "ammKey": "7yD7gfXv49SFxhx9uTc11dEd7Nj98rGWeYMdZJgheZbG",
+            "inAmount": "430640452",
+            "inputMint": "So11111111111111111111111111111111111111112",
+            "label": "Kipseli",
+            "outAmount": "50097800",
+            "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "updateContextSlot": "450075982"
+          }
+        }
+      ],
+      "slippageBps": 100,
+      "swapMode": "ExactIn",
+      "timeTaken": 0.001937954
+    },
+    "received_epoch": 1790265444.5681715,
+    "request_latency_seconds": 0.05576467514038086,
+    "requested_epoch": 1790265444.5124068,
+    "status": "quote_observed"
+  },
   "experiment_sample": false,
-  "next_probe_epoch": 1790265248.0299566,
-  "pending_exit_amount": "430640452",
-  "status": "entry_verified_exit_pending",
+  "next_probe_epoch": 1790266044.5682151,
+  "status": "healthy",
   "version": "prospective-quote-lab-0.4"
 }
