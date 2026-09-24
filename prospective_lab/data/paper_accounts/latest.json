@@ -703,10 +703,10 @@
   "realized_profit": null,
   "research_quote_quality_counts": {
     "missed_snapshot_window_no_backfill": 2058,
-    "pool_state_corroborated": 102,
-    "requires_review": 10391,
+    "pool_state_corroborated": 103,
+    "requires_review": 10393,
     "unavailable": 154,
-    "unrecognized_or_inconsistent_pool_evidence": 471
+    "unrecognized_or_inconsistent_pool_evidence": 472
   },
   "spec": {
     "additional_cost_bps": [
@@ -745,6 +745,6 @@
   "started_at": "2026-09-23T15:27:21.742+00:00",
   "status": "RUNNING",
   "unique_post_start_opportunities_with_model_buys": 112,
-  "updated_at": "2026-09-24T08:06:02.572+00:00",
+  "updated_at": "2026-09-24T08:07:03.709+00:00",
   "version": "quote-paper-account-1.0"
 }
