@@ -2,23 +2,23 @@
   "backpressure_cycles": 0,
   "catchup_in_progress": false,
   "coverage_note": "Bounded migration-authority cursor and retry queue; SOL-paired migrate and migrate_v2 only; non-SOL pairs excluded. Independent total-market coverage is not established.",
-  "cycles": 6681,
+  "cycles": 6683,
   "discovery_index_status": "verified_global_layout",
   "discovery_source": "migration_authority_index",
-  "entry_quotes_observed": 3713,
-  "exit_quotes_observed": 10630,
+  "entry_quotes_observed": 3714,
+  "exit_quotes_observed": 10637,
   "fully_validated_quote_count": 0,
   "health_checks_excluded_from_experiment": true,
   "independent_coverage_fraction": null,
   "legacy_instruction_matches": 5,
-  "migration_instruction_candidates": 1314,
+  "migration_instruction_candidates": 1317,
   "migration_validation_statuses": {
-    "confirmed_new_migration": 1005,
+    "confirmed_new_migration": 1008,
     "unresolved_no_new_migration_evidence": 309
   },
   "missed_deadlines": 391,
   "mode": "WATCH_ONLY",
-  "new_migrations_this_cycle": 0,
+  "new_migrations_this_cycle": 3,
   "out_of_scope_or_unrecognized_v2_transactions": 39,
   "pending_transaction_count": 0,
   "quote_audits_pending": 0,
@@ -30,22 +30,22 @@
   "quote_quality_counts": {
     "missed_snapshot_window_no_backfill": 2138,
     "pool_state_corroborated": 173,
-    "requires_review": 11277,
+    "requires_review": 11284,
     "unavailable": 159,
-    "unrecognized_or_inconsistent_pool_evidence": 548
+    "unrecognized_or_inconsistent_pool_evidence": 549
   },
   "real_trades_placed": 0,
   "realized_profit": null,
-  "rpc_calls_last_cycle": 3,
+  "rpc_calls_last_cycle": 8,
   "rpc_connected": true,
   "rpc_consecutive_failures": 0,
   "rpc_error_categories": {
     "rpc_error": 1
   },
   "signature_window_saturated": false,
-  "slot": 449997121,
+  "slot": 449997359,
   "transaction_fetch_failures": 6,
-  "updated_at": "2026-09-24T10:08:37.940+00:00",
-  "validated_migrations": 1005,
+  "updated_at": "2026-09-24T10:09:39.892+00:00",
+  "validated_migrations": 1008,
   "version": "prospective-quote-lab-0.4"
 }
