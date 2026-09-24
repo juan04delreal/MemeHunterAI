@@ -2,14 +2,14 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-09-24T15:32:11.892+00:00
+Updated: 2026-09-24T15:32:55.760+00:00
 Collector: prospective-quote-lab-0.4
 RPC connected: True
-Evidence-confirmed unique migrations: 1246
-Observed entry quotes: 4598
-Observed exit quotes: 13001
-Quote failures/unavailable: 732
-Missed deadlines (no backfill): 696
+Evidence-confirmed unique migrations: 1247
+Observed entry quotes: 4600
+Observed exit quotes: 13006
+Quote failures/unavailable: 733
+Missed deadlines (no backfill): 697
 Jupiter API key configured: False
 Quote access mode: keyless
 Provider connection test: healthy
@@ -24,8 +24,9 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 
 | Mint | First observed | Lag from chain | Entry quote states |
 |---|---|---:|---|
-| DnrXxmA568RjXURVqHe5rfsop7cCZypWwH8fYpJfpump | 2026-09-24T15:31:53.481+00:00 | 13.481521368026733 | none |
-| CCC3mknCxNe35GomqhcAnqfhZxwcCWaVFnRPv5Spump | 2026-09-24T15:31:29.911+00:00 | 11.91114616394043 | 30:quote_observed |
+| GLS6vwdxgfiQhF6bQa1jtXgXwrDpA8J136kfzLXpump | 2026-09-24T15:32:37.384+00:00 | 7.384612083435059 | none |
+| DnrXxmA568RjXURVqHe5rfsop7cCZypWwH8fYpJfpump | 2026-09-24T15:31:53.481+00:00 | 13.481521368026733 | 30:quote_observed |
+| CCC3mknCxNe35GomqhcAnqfhZxwcCWaVFnRPv5Spump | 2026-09-24T15:31:29.911+00:00 | 11.91114616394043 | 30:quote_observed, 60:quote_observed |
 | 9e7B9eT98vvZeRegqdRUqrdfTvbsF5hBB6ujdkZopump | 2026-09-24T15:28:05.107+00:00 | 6.107197999954224 | 30:quote_observed, 60:quote_observed, 120:quote_observed |
 | 6Yr3ZFX4xrfqQdzyzyq3RLtftupHGXcEKKDxRNKApump | 2026-09-24T15:25:07.577+00:00 | 22.577409982681274 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | 28yDtpDHVftocGKtTd9XtSV2aWvJmro2sXCjVot4pump | 2026-09-24T15:25:07.109+00:00 | 7.109732389450073 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
@@ -43,16 +44,15 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 | 8ouaSxj5XZ8i5rn7XWSntEgC3g7TQqsutk6VVM4ppump | 2026-09-24T15:11:14.255+00:00 | 17.255815267562866 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | 2sTVw3hD4BrJGNGQcy8Ds5EffgWEQRZaL24B7zaPpump | 2026-09-24T15:07:52.676+00:00 | 2.676619052886963 | 30:quote_observed, 60:quote_observed, 120:missed_deadline, 300:quote_observed |
 | ghdj76BknMeLL57yNsV3Bngyst3d3fbaec9g1c2pump | 2026-09-24T15:06:02.717+00:00 | 3.7177181243896484 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
-| iNiXVr2cxgzw7kD6tk95p19Ni9BPLio2CQ5uRqvpump | 2026-09-24T15:05:38.688+00:00 | 5.688615322113037 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 
 ## Evidence and coverage audit
 
 Historical instruction matches and their raw quotes are retained, not automatically validated.
 Completion events, pool-creation instructions, and zero-to-positive pool funding are required for new samples. Prefunded or missing-evidence cases remain unresolved.
 Re-audits and initial historical catch-up never create backfilled quote experiments.
-Migration classifications: {"confirmed_new_migration": 1246, "unresolved_no_new_migration_evidence": 391}
+Migration classifications: {"confirmed_new_migration": 1247, "unresolved_no_new_migration_evidence": 391}
 Discovery source: migration_authority_index; pending transactions: 0; catch-up: False
 Out-of-scope or unrecognized migrate_v2 transactions: 40
-Pool snapshot checks: {"missed_snapshot_window_no_backfill": 3069, "pool_state_corroborated": 231, "requires_review": 13444, "unavailable": 169, "unrecognized_or_inconsistent_pool_evidence": 638}
+Pool snapshot checks: {"missed_snapshot_window_no_backfill": 3069, "pool_state_corroborated": 232, "requires_review": 13447, "unavailable": 169, "unrecognized_or_inconsistent_pool_evidence": 640}
 Pool-state corroboration does not validate full route fees, execution, or hypothetical market impact.
 Old quotes without simultaneous pool snapshots cannot be retroactively given that evidence.
