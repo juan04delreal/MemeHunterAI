@@ -1,5 +1,5 @@
 {
-  "cycles": 6675,
+  "cycles": 6676,
   "overlap": {
     "136iatRu29puedt4YFmyy4YXovdBm6TEZ81mpDoxhi6c": [
       "DDVUsN8sDFxbaX6gNBoD44kjZhFETWJnwAn4EX1dpump"
@@ -3561,6 +3561,9 @@
     ],
     "81Zygotjp2J5BFgZ1jahQG5utw7d8Uvx2vgcRcWejD4x": [
       "DDVUsN8sDFxbaX6gNBoD44kjZhFETWJnwAn4EX1dpump"
+    ],
+    "81bZWx6mTowzMi6mPP4jjk9H46QU7GkVWmWsi94rjyUZ": [
+      "AyYNfPtftg2zDP4ZbgcoQMggQtwLh4zpfVVmUJs2thto"
     ],
     "81jk49Citf8fhw5RSwWarqDGEoFNzD6ysFAToKMvw7gx": [
       "98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump"
@@ -10353,136 +10356,6 @@
   "recent_events": [
     {
       "attribution": "program_discriminator_and_account_roles",
-      "chain_block_time": 1790246989,
-      "classification": "buy_candidate",
-      "classifier_version": "early-wallet-observer-1.2",
-      "detected_at": "2026-09-24T10:49:55+00:00",
-      "detection_lag_seconds": 6.0,
-      "early_entry_verified": false,
-      "historical_entry_price": null,
-      "mint": "G59zeXWwXMw2bb6UJD1ceELXRhNkLXHkYrtBYBV5agnt",
-      "native_sol_delta_including_rent_fees_and_other_flows": -3.200877134,
-      "observed_at": "2026-09-24T10:49:58+00:00",
-      "post_amount": "1277405.387643",
-      "pre_amount": "0",
-      "realized_profit": null,
-      "recovered_at": null,
-      "rpc_max_supported_transaction_version": 1,
-      "sample_period": "during_monitor",
-      "signature": "xJ4RsxR1NfcTg9FA9sCD9fba2PHUR6aPfcYLPBQSrweMPGx62JHDSEnEyvjhZyBWfbp9ozchRuqs7355Fuu1jpu",
-      "sources": [
-        "kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf"
-      ],
-      "token_delta": "1277405.387643",
-      "transaction_fee_lamports": 105000,
-      "wallet": "kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf"
-    },
-    {
-      "attribution": "program_discriminator_and_account_roles",
-      "chain_block_time": 1790246978,
-      "classification": "sell_candidate",
-      "classifier_version": "early-wallet-observer-1.2",
-      "detected_at": "2026-09-24T10:49:55+00:00",
-      "detection_lag_seconds": 17.0,
-      "early_entry_verified": false,
-      "historical_entry_price": null,
-      "mint": "G59zeXWwXMw2bb6UJD1ceELXRhNkLXHkYrtBYBV5agnt",
-      "native_sol_delta_including_rent_fees_and_other_flows": 3.237360883,
-      "observed_at": "2026-09-24T10:49:58+00:00",
-      "post_amount": "0",
-      "pre_amount": "1284031.74444",
-      "realized_profit": null,
-      "recovered_at": null,
-      "rpc_max_supported_transaction_version": 1,
-      "sample_period": "during_monitor",
-      "signature": "5f3KSdm3Hmwp5Jp3yyKVBXK8qMMN7zfCADWEXQVWeiDM1uEtSjAi1qFYUVe1k5uoksybk4U198JDRfSh67FtC9Kr",
-      "sources": [
-        "kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf"
-      ],
-      "token_delta": "-1284031.74444",
-      "transaction_fee_lamports": 105000,
-      "wallet": "kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf"
-    },
-    {
-      "attribution": "program_discriminator_and_account_roles",
-      "chain_block_time": 1790246964,
-      "classification": "buy_candidate",
-      "classifier_version": "early-wallet-observer-1.2",
-      "detected_at": "2026-09-24T10:49:55+00:00",
-      "detection_lag_seconds": 31.0,
-      "early_entry_verified": false,
-      "historical_entry_price": null,
-      "mint": "G59zeXWwXMw2bb6UJD1ceELXRhNkLXHkYrtBYBV5agnt",
-      "native_sol_delta_including_rent_fees_and_other_flows": -3.165201617,
-      "observed_at": "2026-09-24T10:49:59+00:00",
-      "post_amount": "1284031.74444",
-      "pre_amount": "0",
-      "realized_profit": null,
-      "recovered_at": null,
-      "rpc_max_supported_transaction_version": 1,
-      "sample_period": "during_monitor",
-      "signature": "2Q9Ui6aAfmGooUUmmNWYid6sjbTRUrcjmy43GZ6d2aQ7bxzWmXJpnZ4YNQMUfVwxuRFUtdy4rKB94sEaWV8mc38K",
-      "sources": [
-        "kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf"
-      ],
-      "token_delta": "1284031.74444",
-      "transaction_fee_lamports": 105000,
-      "wallet": "kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf"
-    },
-    {
-      "attribution": "program_discriminator_and_account_roles",
-      "chain_block_time": 1790246950,
-      "classification": "buy_candidate",
-      "classifier_version": "early-wallet-observer-1.2",
-      "detected_at": "2026-09-24T10:49:55+00:00",
-      "detection_lag_seconds": 45.0,
-      "early_entry_verified": false,
-      "historical_entry_price": null,
-      "mint": "5xxnT772vG9jMGJp7XNXkKzdErUFBnzGdszGL5mVpump",
-      "native_sol_delta_including_rent_fees_and_other_flows": -1.267030668,
-      "observed_at": "2026-09-24T10:49:59+00:00",
-      "post_amount": "1540116.592744",
-      "pre_amount": "0",
-      "realized_profit": null,
-      "recovered_at": null,
-      "rpc_max_supported_transaction_version": 1,
-      "sample_period": "during_monitor",
-      "signature": "3ax1WAFvceUwMERsfooq64rseyP3irCadRtdcYjxtKXMg6hcyZEQZA9Ui3GbK2BcPa9aGtVNn5UC5scytBBDY81n",
-      "sources": [
-        "kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf"
-      ],
-      "token_delta": "1540116.592744",
-      "transaction_fee_lamports": 105000,
-      "wallet": "kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf"
-    },
-    {
-      "attribution": "program_discriminator_and_account_roles",
-      "chain_block_time": 1790246948,
-      "classification": "buy_candidate",
-      "classifier_version": "early-wallet-observer-1.2",
-      "detected_at": "2026-09-24T10:49:55+00:00",
-      "detection_lag_seconds": 47.0,
-      "early_entry_verified": false,
-      "historical_entry_price": null,
-      "mint": "2jcvq8QcJ8TzEYJKYMCjR61kXVSzib4mEkz89tQxpump",
-      "native_sol_delta_including_rent_fees_and_other_flows": -1.454036086,
-      "observed_at": "2026-09-24T10:49:59+00:00",
-      "post_amount": "1466208.382942",
-      "pre_amount": "0",
-      "realized_profit": null,
-      "recovered_at": null,
-      "rpc_max_supported_transaction_version": 1,
-      "sample_period": "during_monitor",
-      "signature": "4RDKfU8Btyo7EEJRzDCzmPMEQJ3TSs6J3VXfSFWDbwz2swnXktKZXfwFyopA1Q1VeC15mc6PH6ca6uY8kiw1JRsf",
-      "sources": [
-        "kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf"
-      ],
-      "token_delta": "1466208.382942",
-      "transaction_fee_lamports": 105000,
-      "wallet": "kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf"
-    },
-    {
-      "attribution": "program_discriminator_and_account_roles",
       "chain_block_time": 1790246943,
       "classification": "sell_candidate",
       "classifier_version": "early-wallet-observer-1.2",
@@ -12950,6 +12823,136 @@
       "token_delta": "-27000.000000",
       "transaction_fee_lamports": 353500,
       "wallet": "FWYNSRnTijvYkCz3VyfxVXL5HoX4kiU1hqByuWJ9gfL9"
+    },
+    {
+      "attribution": "program_discriminator_and_account_roles",
+      "chain_block_time": 1790247748,
+      "classification": "buy_candidate",
+      "classifier_version": "early-wallet-observer-1.2",
+      "detected_at": "2026-09-24T11:03:18+00:00",
+      "detection_lag_seconds": 50.0,
+      "early_entry_verified": false,
+      "historical_entry_price": null,
+      "mint": "7GUnr7krtQhJwd6ASY2VUprd9t4c64zcgCsjdmZepump",
+      "native_sol_delta_including_rent_fees_and_other_flows": -1.835584508,
+      "observed_at": "2026-09-24T11:03:22+00:00",
+      "post_amount": "1171702.167426",
+      "pre_amount": "0",
+      "realized_profit": null,
+      "recovered_at": null,
+      "rpc_max_supported_transaction_version": 1,
+      "sample_period": "during_monitor",
+      "signature": "4ziwmmqsfWUvGnmSRD6ZCY6oRjn94KDNdRvdFeSQigzUCDXNoMV5D3ETP56Hm8dGcgKP5ysCteN5pfUKSQcuo7Cc",
+      "sources": [
+        "kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf"
+      ],
+      "token_delta": "1171702.167426",
+      "transaction_fee_lamports": 105000,
+      "wallet": "kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf"
+    },
+    {
+      "attribution": "program_discriminator_and_account_roles",
+      "chain_block_time": 1790247730,
+      "classification": "sell_candidate",
+      "classifier_version": "early-wallet-observer-1.2",
+      "detected_at": "2026-09-24T11:03:18+00:00",
+      "detection_lag_seconds": 68.0,
+      "early_entry_verified": false,
+      "historical_entry_price": null,
+      "mint": "8jpcHKbGtcwyYvo2FrkjStGpwXXpEJtrB91aWaRBpump",
+      "native_sol_delta_including_rent_fees_and_other_flows": 1.006254532,
+      "observed_at": "2026-09-24T11:03:22+00:00",
+      "post_amount": "0",
+      "pre_amount": "1712699.6503",
+      "realized_profit": null,
+      "recovered_at": null,
+      "rpc_max_supported_transaction_version": 1,
+      "sample_period": "during_monitor",
+      "signature": "2giMhSrwT2KX775CMfbMBS2K2MnUg8P914dVCpNQ8hwcaahi1QDwTk4S7iVYXRQfFMjpM1wcfZhXBkGUjDi778YT",
+      "sources": [
+        "kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf"
+      ],
+      "token_delta": "-1712699.6503",
+      "transaction_fee_lamports": 105000,
+      "wallet": "kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf"
+    },
+    {
+      "attribution": "balance_change_only",
+      "chain_block_time": 1790247798,
+      "classification": "outflow_unclassified",
+      "classifier_version": "early-wallet-observer-1.2",
+      "detected_at": "2026-09-24T11:03:21+00:00",
+      "detection_lag_seconds": 3.0,
+      "early_entry_verified": false,
+      "historical_entry_price": null,
+      "mint": "GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump",
+      "native_sol_delta_including_rent_fees_and_other_flows": 0.0,
+      "observed_at": "2026-09-24T11:03:22+00:00",
+      "post_amount": "0",
+      "pre_amount": "417295.797864",
+      "realized_profit": null,
+      "recovered_at": null,
+      "rpc_max_supported_transaction_version": 1,
+      "sample_period": "during_monitor",
+      "signature": "5VZhzSpmrD8E4R8K6VjqgrAYSdaDdRwdxK3Kx5gUQntGMRLorDkMFApEFKD89Hy78tu7nUSrHA57gvEFqyfWkDYD",
+      "sources": [
+        "6tuhHpYSinf41V39KW3JmpVUaxehcabCbHZqqFnwR6xf"
+      ],
+      "token_delta": "-417295.797864",
+      "transaction_fee_lamports": 291549,
+      "wallet": "SbnHwupqLTfComD41W49raa328SWJp4DFLRC6jxSUpx"
+    },
+    {
+      "attribution": "program_discriminator_and_account_roles",
+      "chain_block_time": 1790247752,
+      "classification": "buy_candidate",
+      "classifier_version": "early-wallet-observer-1.2",
+      "detected_at": "2026-09-24T11:03:21+00:00",
+      "detection_lag_seconds": 49.0,
+      "early_entry_verified": false,
+      "historical_entry_price": null,
+      "mint": "AyYNfPtftg2zDP4ZbgcoQMggQtwLh4zpfVVmUJs2thto",
+      "native_sol_delta_including_rent_fees_and_other_flows": -2.1875e-05,
+      "observed_at": "2026-09-24T11:03:23+00:00",
+      "post_amount": "89139.130208",
+      "pre_amount": "0",
+      "realized_profit": null,
+      "recovered_at": null,
+      "rpc_max_supported_transaction_version": 1,
+      "sample_period": "during_monitor",
+      "signature": "5dmxbZYtN4fL6t2JpPTgACrx5MYa79RUTJtLkXHQmsVzgiRxKGgmrodKU8SGA68nqT9DXcxYJsmFuoeE3pWbJkBG",
+      "sources": [
+        "ASgoadVEDL8zJn6KLUiMSh9m8x2yYAEZPsUSpvxHj3LY"
+      ],
+      "token_delta": "89139.130208",
+      "transaction_fee_lamports": 21875,
+      "wallet": "81bZWx6mTowzMi6mPP4jjk9H46QU7GkVWmWsi94rjyUZ"
+    },
+    {
+      "attribution": "program_discriminator_and_account_roles",
+      "chain_block_time": 1790247575,
+      "classification": "buy_candidate",
+      "classifier_version": "early-wallet-observer-1.2",
+      "detected_at": "2026-09-24T11:03:21+00:00",
+      "detection_lag_seconds": 226.0,
+      "early_entry_verified": false,
+      "historical_entry_price": null,
+      "mint": "AyYNfPtftg2zDP4ZbgcoQMggQtwLh4zpfVVmUJs2thto",
+      "native_sol_delta_including_rent_fees_and_other_flows": 0.0,
+      "observed_at": "2026-09-24T11:03:23+00:00",
+      "post_amount": "3070375.58559",
+      "pre_amount": "3067232.751248",
+      "realized_profit": null,
+      "recovered_at": null,
+      "rpc_max_supported_transaction_version": 1,
+      "sample_period": "during_monitor",
+      "signature": "4jznL1gMBC5Xx3KXBPWYi8jhHAyvusLMzs1be3Xtvvu17vckL5HKzetEMmtHkDQ8qFeGLEk86Txy2JGEAghZceYJ",
+      "sources": [
+        "ASgoadVEDL8zJn6KLUiMSh9m8x2yYAEZPsUSpvxHj3LY"
+      ],
+      "token_delta": "3142.834342",
+      "transaction_fee_lamports": 410000,
+      "wallet": "GyMwNWDwYcodKB8Sk3sAmKNinb1ynBYcvies2oCMbjHu"
     }
   ],
   "recovered_signatures": [
@@ -13209,12 +13212,6 @@
   "rpc_retry_after": 0,
   "schema": 1,
   "seen": [
-    "M7cAPm8FhVt1RajS7NYAAs6zp1Rut8MimeV57KTYkiHtzVJMEgjfEMnM79jCkCTcSpDZ8Fa1CsYy4wpMXfQRNWC",
-    "22jZ1WY62xGm4qTUtd8Ze5C2V6jsnSEmQaRFDytmMUgJkgJnCGbX2nYniZqEDmcFJuUNPNgV4nMjhvnjTA1NLM46",
-    "2GZSk4zAXPJyLrQqjuPRvC4JYfYQdwSYdZWNGTLDVDLZ4pEc7ZefAMJp4M4chqXKBUZVLbNe3fxunc1j1DobqBhv",
-    "47dZFRoyowUoksspTWybvnuTzwA51BW14EbCrop358ZZ7WLJYFFSRYahQxiB6iT21KhMH7c7PgfdqvqqMNFGtjrR",
-    "4n5p4CxX8mPCRUSNy3v32uBJiQpFJXK2fVHiWfHizJDJ9drXV8wtu4hCKitsP1xqCBNAhdsJ9Ymf5TWDU2m6ivMS",
-    "5EszMCDtQqyQQAFa3DRonpS5v2ffRkzYwSxY8vCJpzhBTWaBkW8U8a8YeYJqKEv1DLXkJmv89TrCugpXpzWibCb6",
     "5Gap29nvW3KCD8fvdqgDsQgA7D5hB4mPrASA3qtFY7QHCpoogTgz3T5uSC3ip1ZRJWkXM6o66H9SeLCwUkW9byzL",
     "63H1AzQMjFvEaRK9kHqthKj89UcPhKVcAiKoQv1JK9qttDiBUGUmTnx7tddWy3itESKZrJ3tcCy6XmKSj6AcQjGM",
     "ZuuZ1JEGDdakxsEK6ixFqa6tDTebKCujwFkNFoWafH7MHkswzL37RHHrvZXY2ogiPRXt9RYwhmf1Dq2CW3os6Rw",
@@ -25208,7 +25205,13 @@
     "4qfAhzBUXLCPwJRYQvACsFiD4ZLE6Po9NDHj7tEzgQ1Ex9eWsx5mWCM1dJiLiFX4cyfSeCjwyBbCgDuzgxi7wEoS",
     "5RG7juznVsNNHm2yjwkpGwkaVML1CH4uB9HAayXFcAR7wAZwzLm78nU16KeXYg4fgDQ1NQAWZwKtVEtaQwPUgG2o",
     "5v7VvRqTU9jSg1ViMqonPJUAovg9o6A9BnP4hhpRRatvgEBC8k4wnK8DhE1jzQ4G1nNECNDMCFwy7stjQqGTzXZb",
-    "5ycZ89t6EdUt5PJ2d6DEs9xEmM3P1xBtioSEvoRm1qHKn8Dzb6LNJ3wqE3xuQjk5Zu4kMCw7xEXENmaECadJJPgb"
+    "5ycZ89t6EdUt5PJ2d6DEs9xEmM3P1xBtioSEvoRm1qHKn8Dzb6LNJ3wqE3xuQjk5Zu4kMCw7xEXENmaECadJJPgb",
+    "2giMhSrwT2KX775CMfbMBS2K2MnUg8P914dVCpNQ8hwcaahi1QDwTk4S7iVYXRQfFMjpM1wcfZhXBkGUjDi778YT",
+    "4jznL1gMBC5Xx3KXBPWYi8jhHAyvusLMzs1be3Xtvvu17vckL5HKzetEMmtHkDQ8qFeGLEk86Txy2JGEAghZceYJ",
+    "4ziwmmqsfWUvGnmSRD6ZCY6oRjn94KDNdRvdFeSQigzUCDXNoMV5D3ETP56Hm8dGcgKP5ysCteN5pfUKSQcuo7Cc",
+    "5VZhzSpmrD8E4R8K6VjqgrAYSdaDdRwdxK3Kx5gUQntGMRLorDkMFApEFKD89Hy78tu7nUSrHA57gvEFqyfWkDYD",
+    "5dmxbZYtN4fL6t2JpPTgACrx5MYa79RUTJtLkXHQmsVzgiRxKGgmrodKU8SGA68nqT9DXcxYJsmFuoeE3pWbJkBG",
+    "dpUQsYLKmmXpHoB6KnTD9qQBgyxfFPFazV4ysY13pyuRDMco2VzYFgVYcswaTch3U6gkSyxX6pmsSJfq9UUX2jV"
   ],
   "started_at": "2026-09-19T11:46:13+00:00",
   "tracked_new_mints": [
@@ -25306,42 +25309,42 @@
       "cursor": "2yf34XiZ6NovpvXh1rkYDfcHL1S9vBi62eSGUSR5vT6L73bFCuhe9hwhU1NUj14eaTd2PoBrFRQUYr9Va8hH2KTo",
       "initialized": true,
       "last_chain_activity_time": 1790212661,
-      "last_scan_at": "2026-09-24T11:01:55+00:00",
+      "last_scan_at": "2026-09-24T11:03:19+00:00",
       "scan": null
     },
     "EKHARkLX6afkEkZvY8MBaMBzUKEwk6NWrDsA8pxHQ6TU": {
       "cursor": "",
       "initialized": true,
       "last_chain_activity_time": null,
-      "last_scan_at": "2026-09-24T11:01:56+00:00",
+      "last_scan_at": "2026-09-24T11:03:20+00:00",
       "scan": null
     },
     "P5tb4T6SBVQaM3BAoGfpVudLtTdecqjsh4KV9ESAhKg": {
       "cursor": "",
       "initialized": true,
       "last_chain_activity_time": null,
-      "last_scan_at": "2026-09-24T11:01:56+00:00",
+      "last_scan_at": "2026-09-24T11:03:20+00:00",
       "scan": null
     },
     "cGxeYN6F7T9aELwjLPeL3hnJNscGU7EHg5CEsP4B3Hz": {
       "cursor": "52jP6uybm3NmLZNJZk1imbX1Gdioh9eE3CPYYsuvU9FaL4erNWiekrYRUZZjL195mrmQi3dQYtF45gEzPwJWKBNb",
       "initialized": true,
       "last_chain_activity_time": 1790181977,
-      "last_scan_at": "2026-09-24T11:01:56+00:00",
+      "last_scan_at": "2026-09-24T11:03:20+00:00",
       "scan": null
     },
     "ftH8JtoAvBp5cxpGtMaoBKZDiGLRWBAXEwz3XyvsrwE": {
       "cursor": "4k1bcoqJ22pxfFXy4i7zoim3vHbeDXkUEtjHkKqSJLsHHoUrvzUQUyq6UpYCw4syhSV4MRJkNeLhUwKnTSzmw5nz",
       "initialized": true,
       "last_chain_activity_time": 1790219975,
-      "last_scan_at": "2026-09-24T11:01:55+00:00",
+      "last_scan_at": "2026-09-24T11:03:19+00:00",
       "scan": null
     },
     "kEFiAX3jo5NmemysQov342TZ9mGh6yp92GDRjhA8XDf": {
-      "cursor": "2rhcf34nb3gAp45BQdpEuNtoWkfcF4HX9RfuRVBFFDVQAd3xQdh41Uk6ecGgRRmHJv1E3EfERc5hZbbEMAPEXDDY",
+      "cursor": "4ziwmmqsfWUvGnmSRD6ZCY6oRjn94KDNdRvdFeSQigzUCDXNoMV5D3ETP56Hm8dGcgKP5ysCteN5pfUKSQcuo7Cc",
       "initialized": true,
-      "last_chain_activity_time": 1790247675,
-      "last_scan_at": "2026-09-24T11:01:54+00:00",
+      "last_chain_activity_time": 1790247748,
+      "last_scan_at": "2026-09-24T11:03:18+00:00",
       "scan": null
     }
   }
