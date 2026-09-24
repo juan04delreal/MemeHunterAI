@@ -1,6 +1,6 @@
 {
   "access_mode": "keyless",
-  "checked_at": "2026-09-24T19:05:09.269+00:00",
+  "checked_at": "2026-09-24T19:06:15.487+00:00",
   "endpoint": "https://api.jup.ag/swap/v1/quote",
   "entry": {
     "access_mode": "keyless",
@@ -68,9 +68,48 @@
     "requested_epoch": 1790276709.1538336,
     "status": "quote_observed"
   },
+  "exit": {
+    "access_mode": "keyless",
+    "context_slot_delta_from_rpc": 64,
+    "fills_assumed": false,
+    "freshness_note": "Context slot checked when RPC available; not an execution guarantee.",
+    "observed_at": "2026-09-24T19:06:15.487+00:00",
+    "provider": "jupiter_metis_v1",
+    "raw": {
+      "contextSlot": 450118426,
+      "inAmount": "426909617",
+      "inputMint": "So11111111111111111111111111111111111111112",
+      "otherAmountThreshold": "49504642",
+      "outAmount": "50004688",
+      "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "platformFee": null,
+      "priceImpactPct": "0",
+      "routePlan": [
+        {
+          "bps": null,
+          "percent": 100,
+          "swapInfo": {
+            "ammKey": "F3ds62W3NNEBQrwi2ZFy2vX3xu5fxL6f7VMtRdmKjoCv",
+            "inAmount": "426909617",
+            "inputMint": "So11111111111111111111111111111111111111112",
+            "label": "Flux",
+            "outAmount": "50004688",
+            "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "updateContextSlot": "450118426"
+          }
+        }
+      ],
+      "slippageBps": 100,
+      "swapMode": "ExactIn",
+      "timeTaken": 0.001561452
+    },
+    "received_epoch": 1790276775.4878116,
+    "request_latency_seconds": 0.16626739501953125,
+    "requested_epoch": 1790276775.3215442,
+    "status": "quote_observed"
+  },
   "experiment_sample": false,
-  "next_probe_epoch": 1790276709.1441326,
-  "pending_exit_amount": "426909617",
-  "status": "entry_verified_exit_pending",
+  "next_probe_epoch": 1790277375.4878597,
+  "status": "healthy",
   "version": "prospective-quote-lab-0.4"
 }
