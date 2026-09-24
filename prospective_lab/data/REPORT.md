@@ -2,12 +2,12 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-09-24T01:58:55.852+00:00
+Updated: 2026-09-24T02:00:15.079+00:00
 Collector: prospective-quote-lab-0.4
 RPC connected: True
-Evidence-confirmed unique migrations: 690
-Observed entry quotes: 2503
-Observed exit quotes: 7143
+Evidence-confirmed unique migrations: 693
+Observed entry quotes: 2506
+Observed exit quotes: 7153
 Quote failures/unavailable: 192
 Missed deadlines (no backfill): 180
 Jupiter API key configured: False
@@ -24,6 +24,9 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 
 | Mint | First observed | Lag from chain | Entry quote states |
 |---|---|---:|---|
+| 2B5y4GwFAqETkrQHTfkrGAXjFZRoZXVHt8AVHUstpump | 2026-09-24T01:59:57.599+00:00 | 8.59965443611145 | none |
+| 941A5S2VW86MWAKRPS9afAGs9tZbH7uKmiWxiQxuQEab | 2026-09-24T01:59:12.993+00:00 | 29.993318796157837 | 30:quote_observed |
+| 51RQFbXqfk6YRMcRARPrSMmqpsBLqQMcXhF5jow6pump | 2026-09-24T01:59:12.500+00:00 | 22.500178575515747 | 30:quote_observed, 60:quote_observed |
 | ESn1yxbnu9dRbEAesJEXfdUwJ9ApEZMKGL7LUzCapump | 2026-09-24T01:52:59.060+00:00 | 4.06071662902832 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | 3mMaR6wuioSMRVBa2kB5PMcytN5KhsdemrtW9Q69pump | 2026-09-24T01:43:30.660+00:00 | 19.66057062149048 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | CY38fy9eGuBxQPn1fJwTgvdudQaFTgouQb9izn5568i1 | 2026-09-24T01:42:11.721+00:00 | 8.721074342727661 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
@@ -41,18 +44,15 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 | FhHsCAFprcHUT9msa3LY9kjf5CcMK37SgTgfjc4xpump | 2026-09-24T01:29:33.501+00:00 | 16.50197148323059 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | EyR9itENUZVc18aZBuFXb9Wz12L8QQMjxXmvygWxpump | 2026-09-24T01:28:37.984+00:00 | 8.98497462272644 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | AitkCAt1CKd89oFEKC9wFDjopy9x4hGXhu6dsT6ypump | 2026-09-24T01:26:35.244+00:00 | 11.244379043579102 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
-| 9tEnYsLgeyntSZnqM5RoU1JouZRNyKomisSEtuXJpump | 2026-09-24T01:25:18.112+00:00 | 27.112316370010376 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
-| HggPvGafTeADEV1RHQE3onExsR8VPGsgWxpEfu25pump | 2026-09-24T01:23:59.197+00:00 | 12.1973557472229 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
-| QCXrTkyX435wBQB1F2Dgkjd6mAPR3fnHYUiYtMSpump | 2026-09-24T01:21:12.257+00:00 | 11.257959127426147 | 30:missed_deadline, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 
 ## Evidence and coverage audit
 
 Historical instruction matches and their raw quotes are retained, not automatically validated.
 Completion events, pool-creation instructions, and zero-to-positive pool funding are required for new samples. Prefunded or missing-evidence cases remain unresolved.
 Re-audits and initial historical catch-up never create backfilled quote experiments.
-Migration classifications: {"confirmed_new_migration": 690, "unresolved_no_new_migration_evidence": 230}
+Migration classifications: {"confirmed_new_migration": 693, "unresolved_no_new_migration_evidence": 230}
 Discovery source: migration_authority_index; pending transactions: 0; catch-up: False
 Out-of-scope or unrecognized migrate_v2 transactions: 30
-Pool snapshot checks: {"missed_snapshot_window_no_backfill": 1536, "pool_state_corroborated": 88, "requires_review": 7506, "unavailable": 120, "unrecognized_or_inconsistent_pool_evidence": 348}
+Pool snapshot checks: {"missed_snapshot_window_no_backfill": 1536, "pool_state_corroborated": 88, "requires_review": 7519, "unavailable": 120, "unrecognized_or_inconsistent_pool_evidence": 348}
 Pool-state corroboration does not validate full route fees, execution, or hypothetical market impact.
 Old quotes without simultaneous pool snapshots cannot be retroactively given that evidence.
