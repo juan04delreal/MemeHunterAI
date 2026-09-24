@@ -2,12 +2,12 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-09-24T09:46:03.661+00:00
+Updated: 2026-09-24T09:47:05.550+00:00
 Collector: prospective-quote-lab-0.4
 RPC connected: True
 Evidence-confirmed unique migrations: 994
-Observed entry quotes: 3662
-Observed exit quotes: 10479
+Observed entry quotes: 3667
+Observed exit quotes: 10484
 Quote failures/unavailable: 423
 Missed deadlines (no backfill): 389
 Jupiter API key configured: False
@@ -24,10 +24,10 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 
 | Mint | First observed | Lag from chain | Entry quote states |
 |---|---|---:|---|
-| 7bGfbHpFze5MZR9baDPMree7cvZuE4nkU1383biwpump | 2026-09-24T09:45:45.789+00:00 | 16.78934907913208 | none |
-| E9tR5s9cGLK7eSWkRGBe6FQ4aTh5iTXcyZW5mRDwpump | 2026-09-24T09:45:22.136+00:00 | 24.1364004611969 | 30:quote_observed |
-| BwTuxGTRziEWrNSWyWoYf3VN95kQVvWgXrs3W9sjpump | 2026-09-24T09:44:43.425+00:00 | 11.425495862960815 | 30:quote_observed, 60:quote_observed |
-| HkVY6WzouHGGV8Xewb7kUGNfZoxchQNxtqspjobnpump | 2026-09-24T09:41:17.303+00:00 | 37.30390453338623 | 30:quote_observed, 60:quote_observed, 120:quote_observed |
+| 7bGfbHpFze5MZR9baDPMree7cvZuE4nkU1383biwpump | 2026-09-24T09:45:45.789+00:00 | 16.78934907913208 | 30:quote_observed, 60:quote_observed |
+| E9tR5s9cGLK7eSWkRGBe6FQ4aTh5iTXcyZW5mRDwpump | 2026-09-24T09:45:22.136+00:00 | 24.1364004611969 | 30:quote_observed, 60:quote_observed |
+| BwTuxGTRziEWrNSWyWoYf3VN95kQVvWgXrs3W9sjpump | 2026-09-24T09:44:43.425+00:00 | 11.425495862960815 | 30:quote_observed, 60:quote_observed, 120:quote_observed |
+| HkVY6WzouHGGV8Xewb7kUGNfZoxchQNxtqspjobnpump | 2026-09-24T09:41:17.303+00:00 | 37.30390453338623 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | FsTs1teWnovkr8iRCmvbAnzsFqEKbSXGNKMKozSipump | 2026-09-24T09:40:16.597+00:00 | 20.59775686264038 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | 8m1yzDofuxPyG6qn8MNny3nQJT1Cqq3r1qTzWnTpump | 2026-09-24T09:36:12.992+00:00 | 6.992779016494751 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | LoK4DqYAJg2qks2AMHh7KVdRs1uSzWWJpSunShipump | 2026-09-24T09:34:11.923+00:00 | 11.923377990722656 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
@@ -53,6 +53,6 @@ Re-audits and initial historical catch-up never create backfilled quote experime
 Migration classifications: {"confirmed_new_migration": 994, "unresolved_no_new_migration_evidence": 308}
 Discovery source: migration_authority_index; pending transactions: 0; catch-up: False
 Out-of-scope or unrecognized migrate_v2 transactions: 39
-Pool snapshot checks: {"missed_snapshot_window_no_backfill": 2119, "pool_state_corroborated": 163, "requires_review": 11122, "unavailable": 158, "unrecognized_or_inconsistent_pool_evidence": 531}
+Pool snapshot checks: {"missed_snapshot_window_no_backfill": 2119, "pool_state_corroborated": 163, "requires_review": 11131, "unavailable": 158, "unrecognized_or_inconsistent_pool_evidence": 532}
 Pool-state corroboration does not validate full route fees, execution, or hypothetical market impact.
 Old quotes without simultaneous pool snapshots cannot be retroactively given that evidence.
