@@ -3,6 +3,7 @@
 from __future__ import annotations
 import copy
 import json
+import math
 import os
 import queue
 import threading
@@ -262,20 +263,49 @@ def pool_check(task, rpc):
     return result
 
 
+def pending_audit_tasks(pending):
+    """Restore observation order; JSON key sorting is not deadline order."""
+    def order(task):
+        value = (task.get('quote') or {}).get('received_epoch')
+        valid = type(value) in (int, float) and math.isfinite(value)
+        return (value if valid else float('-inf'), str(task.get('id', '')))
+    return [copy.deepcopy(task) for task in sorted(pending.values(), key=order)]
+
+
+def discovery_snapshot(state):
+    """Freeze worker inputs without copying the ever-growing quote history."""
+    fields = ('id', 'signature', 'mint', 'pool', 'collector_version')
+    return {'discovery_v4': copy.deepcopy(state.get('discovery_v4', {})),
+            'migration_validation': dict.fromkeys(state.get('migration_validation', {})),
+            'opportunities': {oid: {k: op[k] for k in fields if k in op}
+                              for oid, op in state['opportunities'].items()}}
+
+
 def audit_worker(events, tasks, rpc, end):
-    performed = 0
+    # At most six live snapshot attempts, within the unchanged shared RPC budget.
+    # Expiration is offline bookkeeping, capped separately at 100 total records.
+    performed = processed = expired = 0
     while time.monotonic()<end and enabled():
+        if performed>=6 or processed>=100:
+            break  # Do not dequeue a seventh live task and strand it until restart.
         try:
             task = tasks.get(timeout=0.25)
         except queue.Empty:
             continue
-        if performed>=6:
-            break
-        performed += 1
+        processed += 1
         try:
-            events.put(('quote_audit',pool_check(task,rpc)))
+            result = pool_check(task, rpc)
         except Exception as exc:
-            events.put(('quote_audit',{'id':task['id'],'status':'audit_error','error':type(exc).__name__,'checked_at':lab.utc()}))
+            result = {'id':task['id'],'status':'audit_error','error':type(exc).__name__,'checked_at':lab.utc()}
+        if result.get('status') == 'missed_snapshot_window_no_backfill':
+            # pool_check returns this before making any RPC request.
+            expired += 1
+        else:
+            performed += 1
+        events.put(('quote_audit', result))
+    print('QUOTE_AUDIT_WORKER ' + json.dumps({'maintenance':'audit-scheduler-1',
+        'live_attempts':performed,'expired_records':expired,'processed_records':processed,
+        'queued_remaining':tasks.qsize()},sort_keys=True), flush=True)
 
 
 def accept_audit(state, audit):
@@ -360,11 +390,11 @@ def cycle(run_seconds=20.0):
     state.setdefault('quality_version_started_at',lab.utc())
     events,tasks = queue.Queue(),queue.Queue()
     pending = state.setdefault('quote_quality_pending',{})
-    for task in pending.values():
-        tasks.put(copy.deepcopy(task))
+    for task in pending_audit_tasks(pending):
+        tasks.put(task)
     end = time.monotonic()+run_seconds
     rpc = ReadBudget(end,state.get('rpc_cooldown_epoch',0))
-    workers = [threading.Thread(target=discovery_worker,args=(events,copy.deepcopy(state),rpc,end),daemon=True),
+    workers = [threading.Thread(target=discovery_worker,args=(events,discovery_snapshot(state),rpc,end),daemon=True),
                threading.Thread(target=audit_worker,args=(events,tasks,rpc,end),daemon=True)]
     for worker in workers:
         worker.start()
