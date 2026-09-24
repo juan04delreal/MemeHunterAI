@@ -18,8 +18,8 @@
       "open_positions": 0,
       "profit_factor": 0.3439523925338508,
       "skip_reasons": {
-        "insufficient_virtual_cash": 530,
-        "quote_unavailable_missed_deadline": 4
+        "insufficient_virtual_cash": 538,
+        "quote_unavailable_missed_deadline": 7
       },
       "starting_cash_usdc": 500,
       "unresolved_positions": 0,
@@ -44,8 +44,8 @@
       "open_positions": 0,
       "profit_factor": 0.31113228266723164,
       "skip_reasons": {
-        "insufficient_virtual_cash": 531,
-        "quote_unavailable_missed_deadline": 4
+        "insufficient_virtual_cash": 539,
+        "quote_unavailable_missed_deadline": 7
       },
       "starting_cash_usdc": 500,
       "unresolved_positions": 0,
@@ -70,9 +70,9 @@
       "open_positions": 0,
       "profit_factor": 0.8018413881049733,
       "skip_reasons": {
-        "insufficient_virtual_cash": 383,
+        "insufficient_virtual_cash": 391,
         "position_limit": 101,
-        "quote_unavailable_missed_deadline": 4
+        "quote_unavailable_missed_deadline": 7
       },
       "starting_cash_usdc": 500,
       "unresolved_positions": 0,
@@ -97,9 +97,9 @@
       "open_positions": 0,
       "profit_factor": 0.7880104936850827,
       "skip_reasons": {
-        "insufficient_virtual_cash": 400,
+        "insufficient_virtual_cash": 408,
         "position_limit": 93,
-        "quote_unavailable_missed_deadline": 4
+        "quote_unavailable_missed_deadline": 7
       },
       "starting_cash_usdc": 500,
       "unresolved_positions": 0,
@@ -124,9 +124,9 @@
       "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
-        "insufficient_virtual_cash": 527,
+        "insufficient_virtual_cash": 535,
         "position_limit": 24,
-        "quote_unavailable_missed_deadline": 4
+        "quote_unavailable_missed_deadline": 7
       },
       "starting_cash_usdc": 500,
       "unresolved_positions": 0,
@@ -151,9 +151,9 @@
       "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
-        "insufficient_virtual_cash": 528,
+        "insufficient_virtual_cash": 536,
         "position_limit": 24,
-        "quote_unavailable_missed_deadline": 4
+        "quote_unavailable_missed_deadline": 7
       },
       "starting_cash_usdc": 500,
       "unresolved_positions": 0,
@@ -178,9 +178,9 @@
       "open_positions": 0,
       "profit_factor": 0.5762765407622714,
       "skip_reasons": {
-        "insufficient_virtual_cash": 498,
+        "insufficient_virtual_cash": 506,
         "position_limit": 9,
-        "quote_unavailable_missed_deadline": 7,
+        "quote_unavailable_missed_deadline": 10,
         "quote_unavailable_provider_error": 1
       },
       "starting_cash_usdc": 500,
@@ -206,9 +206,9 @@
       "open_positions": 0,
       "profit_factor": 0.5657744618238947,
       "skip_reasons": {
-        "insufficient_virtual_cash": 501,
+        "insufficient_virtual_cash": 509,
         "position_limit": 8,
-        "quote_unavailable_missed_deadline": 7,
+        "quote_unavailable_missed_deadline": 10,
         "quote_unavailable_provider_error": 1
       },
       "starting_cash_usdc": 500,
@@ -234,9 +234,9 @@
       "open_positions": 0,
       "profit_factor": 0.7773387667377657,
       "skip_reasons": {
-        "insufficient_virtual_cash": 404,
+        "insufficient_virtual_cash": 412,
         "position_limit": 87,
-        "quote_unavailable_missed_deadline": 7,
+        "quote_unavailable_missed_deadline": 10,
         "quote_unavailable_provider_error": 1
       },
       "starting_cash_usdc": 500,
@@ -262,9 +262,9 @@
       "open_positions": 0,
       "profit_factor": 0.7587069806616722,
       "skip_reasons": {
-        "insufficient_virtual_cash": 422,
+        "insufficient_virtual_cash": 430,
         "position_limit": 76,
-        "quote_unavailable_missed_deadline": 7,
+        "quote_unavailable_missed_deadline": 10,
         "quote_unavailable_provider_error": 1
       },
       "starting_cash_usdc": 500,
@@ -290,9 +290,9 @@
       "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
-        "insufficient_virtual_cash": 524,
+        "insufficient_virtual_cash": 532,
         "position_limit": 24,
-        "quote_unavailable_missed_deadline": 7,
+        "quote_unavailable_missed_deadline": 10,
         "quote_unavailable_provider_error": 1
       },
       "starting_cash_usdc": 500,
@@ -318,9 +318,9 @@
       "open_positions": 0,
       "profit_factor": 0.0,
       "skip_reasons": {
-        "insufficient_virtual_cash": 524,
+        "insufficient_virtual_cash": 532,
         "position_limit": 24,
-        "quote_unavailable_missed_deadline": 7,
+        "quote_unavailable_missed_deadline": 10,
         "quote_unavailable_provider_error": 1
       },
       "starting_cash_usdc": 500,
@@ -653,7 +653,7 @@
   ],
   "all_results_provisional": true,
   "independent_market_coverage": null,
-  "ledger_events": 14385,
+  "ledger_events": 14517,
   "ledger_reconciled": true,
   "mode": "PAPER_ONLY",
   "network_requests_by_paper_layer": 0,
@@ -676,9 +676,9 @@
     "open_positions": 0,
     "profit_factor": 0.7773387667377657,
     "skip_reasons": {
-      "insufficient_virtual_cash": 404,
+      "insufficient_virtual_cash": 412,
       "position_limit": 87,
-      "quote_unavailable_missed_deadline": 7,
+      "quote_unavailable_missed_deadline": 10,
       "quote_unavailable_provider_error": 1
     },
     "starting_cash_usdc": 500,
@@ -692,9 +692,9 @@
   "research_quote_quality_counts": {
     "missed_snapshot_window_no_backfill": 1724,
     "pool_state_corroborated": 88,
-    "requires_review": 8458,
+    "requires_review": 8475,
     "unavailable": 133,
-    "unrecognized_or_inconsistent_pool_evidence": 412
+    "unrecognized_or_inconsistent_pool_evidence": 413
   },
   "spec": {
     "additional_cost_bps": [
@@ -733,6 +733,6 @@
   "started_at": "2026-09-23T15:27:21.742+00:00",
   "status": "RUNNING",
   "unique_post_start_opportunities_with_model_buys": 112,
-  "updated_at": "2026-09-24T04:11:57.225+00:00",
+  "updated_at": "2026-09-24T04:13:14.944+00:00",
   "version": "quote-paper-account-1.0"
 }

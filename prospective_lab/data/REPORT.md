@@ -2,17 +2,17 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-09-24T04:11:56.366+00:00
+Updated: 2026-09-24T04:13:14.039+00:00
 Collector: prospective-quote-lab-0.4
 RPC connected: True
 Evidence-confirmed unique migrations: 780
-Observed entry quotes: 2806
-Observed exit quotes: 8057
-Quote failures/unavailable: 320
-Missed deadlines (no backfill): 305
+Observed entry quotes: 2822
+Observed exit quotes: 8061
+Quote failures/unavailable: 326
+Missed deadlines (no backfill): 311
 Jupiter API key configured: False
 Quote access mode: keyless
-Provider connection test: entry_verified_exit_pending
+Provider connection test: healthy
 
 Connection-test SOL/USDC quotes are separate from migration samples and never imply profit.
 Existing failed observations are retained. Expired deadlines are never backfilled.
@@ -24,17 +24,17 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 
 | Mint | First observed | Lag from chain | Entry quote states |
 |---|---|---:|---|
-| Vyz6M65DuBSghKBaGwKGtpDAmWTLM1J1dgY1XoMpump | 2026-09-24T04:11:44.751+00:00 | 992.7511656284332 | none |
-| 4aA7C3X5RdV1d8vri6N76hXLhK1f5vCN2sNb3mAJhg63 | 2026-09-24T04:11:44.222+00:00 | 952.2227623462677 | none |
-| BEkHheGKbajbZHNRrCCiC1KQbN5k8fK5EhiB3sNqRF5z | 2026-09-24T04:11:43.693+00:00 | 919.6936297416687 | none |
-| 95bdhn7cRPffFYJ7sKrifHw8PNNtofJNTzhppDxMpump | 2026-09-24T04:11:42.739+00:00 | 798.7396385669708 | none |
-| fKoq1tcLRDn5WKzDkLqPmkUfHGLDS1nbfeSraJ5pump | 2026-09-24T04:11:41.679+00:00 | 734.6796734333038 | none |
-| GC6t9umfTUpibSRdtwtKy6MX1XEZjUUr3LVUUdTLYCuq | 2026-09-24T04:11:41.255+00:00 | 516.25537109375 | none |
-| FnEQ3N4E1VMh2GeBj69cU4LfaYxjsktrAD9jKexwpump | 2026-09-24T04:11:40.725+00:00 | 348.72541642189026 | none |
-| 7g1KqzPuPXW972HWxgSNCYkunjes86pckhg6WxiYpump | 2026-09-24T04:11:40.301+00:00 | 294.3010423183441 | none |
-| 82ezhRLKdKwkSC9jkM3js1yf93VbmvLXNMPkBmompump | 2026-09-24T04:11:39.769+00:00 | 237.76914143562317 | none |
-| 5yRMyd99UjtQJX7MKkH97AmBjVQVQMqEUxDezewfpump | 2026-09-24T04:11:39.236+00:00 | 210.2362825870514 | none |
-| GFKg5wMi5GJowq1qhAzopejnPaqxcoLgVCrjGM4fpump | 2026-09-24T04:11:38.172+00:00 | 167.17290997505188 | none |
+| Vyz6M65DuBSghKBaGwKGtpDAmWTLM1J1dgY1XoMpump | 2026-09-24T04:11:44.751+00:00 | 992.7511656284332 | 30:quote_observed, 60:missed_deadline |
+| 4aA7C3X5RdV1d8vri6N76hXLhK1f5vCN2sNb3mAJhg63 | 2026-09-24T04:11:44.222+00:00 | 952.2227623462677 | 30:missed_deadline, 60:missed_deadline |
+| BEkHheGKbajbZHNRrCCiC1KQbN5k8fK5EhiB3sNqRF5z | 2026-09-24T04:11:43.693+00:00 | 919.6936297416687 | 30:missed_deadline, 60:missed_deadline |
+| 95bdhn7cRPffFYJ7sKrifHw8PNNtofJNTzhppDxMpump | 2026-09-24T04:11:42.739+00:00 | 798.7396385669708 | 30:quote_observed, 60:quote_observed |
+| fKoq1tcLRDn5WKzDkLqPmkUfHGLDS1nbfeSraJ5pump | 2026-09-24T04:11:41.679+00:00 | 734.6796734333038 | 30:missed_deadline, 60:quote_observed |
+| GC6t9umfTUpibSRdtwtKy6MX1XEZjUUr3LVUUdTLYCuq | 2026-09-24T04:11:41.255+00:00 | 516.25537109375 | 30:quote_observed, 60:quote_observed |
+| FnEQ3N4E1VMh2GeBj69cU4LfaYxjsktrAD9jKexwpump | 2026-09-24T04:11:40.725+00:00 | 348.72541642189026 | 30:quote_observed, 60:quote_observed |
+| 7g1KqzPuPXW972HWxgSNCYkunjes86pckhg6WxiYpump | 2026-09-24T04:11:40.301+00:00 | 294.3010423183441 | 30:quote_observed, 60:quote_observed |
+| 82ezhRLKdKwkSC9jkM3js1yf93VbmvLXNMPkBmompump | 2026-09-24T04:11:39.769+00:00 | 237.76914143562317 | 30:quote_observed, 60:quote_observed |
+| 5yRMyd99UjtQJX7MKkH97AmBjVQVQMqEUxDezewfpump | 2026-09-24T04:11:39.236+00:00 | 210.2362825870514 | 30:quote_observed, 60:quote_observed |
+| GFKg5wMi5GJowq1qhAzopejnPaqxcoLgVCrjGM4fpump | 2026-09-24T04:11:38.172+00:00 | 167.17290997505188 | 30:quote_observed, 60:quote_observed |
 | fdLgyBb3qPCAt91oXCPER8xcRvxVXbokbBsvWNKpump | 2026-09-24T03:52:26.448+00:00 | 22.448601484298706 | 30:missed_deadline, 60:missed_deadline, 120:missed_deadline, 300:missed_deadline |
 | 3whmkC3YdkMGXKxtk43AGQRiB2qrkbP9T6KrPz9spump | 2026-09-24T03:50:09.056+00:00 | 25.056791067123413 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:missed_deadline |
 | 8TgjKoV3D19ymor3cQa85yeRbtXyNvWkKN6KXGt6pump | 2026-09-24T03:49:46.899+00:00 | 14.899827480316162 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:missed_deadline |
@@ -53,6 +53,6 @@ Re-audits and initial historical catch-up never create backfilled quote experime
 Migration classifications: {"confirmed_new_migration": 780, "unresolved_no_new_migration_evidence": 255}
 Discovery source: migration_authority_index; pending transactions: 0; catch-up: False
 Out-of-scope or unrecognized migrate_v2 transactions: 31
-Pool snapshot checks: {"missed_snapshot_window_no_backfill": 1724, "pool_state_corroborated": 88, "requires_review": 8458, "unavailable": 133, "unrecognized_or_inconsistent_pool_evidence": 412}
+Pool snapshot checks: {"missed_snapshot_window_no_backfill": 1724, "pool_state_corroborated": 88, "requires_review": 8475, "unavailable": 133, "unrecognized_or_inconsistent_pool_evidence": 413}
 Pool-state corroboration does not validate full route fees, execution, or hypothetical market impact.
 Old quotes without simultaneous pool snapshots cannot be retroactively given that evidence.
