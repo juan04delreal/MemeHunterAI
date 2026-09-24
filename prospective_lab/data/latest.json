@@ -2,11 +2,11 @@
   "backpressure_cycles": 0,
   "catchup_in_progress": false,
   "coverage_note": "Bounded migration-authority cursor and retry queue; SOL-paired migrate and migrate_v2 only; non-SOL pairs excluded. Independent total-market coverage is not established.",
-  "cycles": 7525,
+  "cycles": 7527,
   "discovery_index_status": "verified_global_layout",
   "discovery_source": "migration_authority_index",
-  "entry_quotes_observed": 5004,
-  "exit_quotes_observed": 14001,
+  "entry_quotes_observed": 5007,
+  "exit_quotes_observed": 14010,
   "fully_validated_quote_count": 0,
   "health_checks_excluded_from_experiment": true,
   "independent_coverage_fraction": null,
@@ -16,13 +16,13 @@
     "confirmed_new_migration": 1359,
     "unresolved_no_new_migration_evidence": 432
   },
-  "missed_deadlines": 899,
+  "missed_deadlines": 902,
   "mode": "WATCH_ONLY",
-  "new_migrations_this_cycle": 1,
+  "new_migrations_this_cycle": 0,
   "out_of_scope_or_unrecognized_v2_transactions": 45,
   "pending_transaction_count": 0,
   "quote_audits_pending": 0,
-  "quote_failures": 935,
+  "quote_failures": 938,
   "quote_provider_access_mode": "keyless",
   "quote_provider_api_key_configured": false,
   "quote_provider_checked_at": "2026-09-24T17:47:56.564+00:00",
@@ -30,7 +30,7 @@
   "quote_quality_counts": {
     "missed_snapshot_window_no_backfill": 3192,
     "pool_state_corroborated": 245,
-    "requires_review": 14664,
+    "requires_review": 14676,
     "unavailable": 180,
     "unrecognized_or_inconsistent_pool_evidence": 676
   },
@@ -39,13 +39,11 @@
   "rpc_calls_last_cycle": 14,
   "rpc_connected": true,
   "rpc_consecutive_failures": 0,
-  "rpc_error_categories": {
-    "rpc_error": 1
-  },
+  "rpc_error_categories": {},
   "signature_window_saturated": false,
-  "slot": 450100849,
+  "slot": 450101104,
   "transaction_fetch_failures": 6,
-  "updated_at": "2026-09-24T17:48:16.462+00:00",
+  "updated_at": "2026-09-24T17:49:22.904+00:00",
   "validated_migrations": 1359,
   "version": "prospective-quote-lab-0.4"
 }
