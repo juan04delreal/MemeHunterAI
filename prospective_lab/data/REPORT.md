@@ -2,12 +2,12 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-09-24T08:59:11.378+00:00
+Updated: 2026-09-24T09:00:11.648+00:00
 Collector: prospective-quote-lab-0.4
 RPC connected: True
-Evidence-confirmed unique migrations: 966
-Observed entry quotes: 3559
-Observed exit quotes: 10154
+Evidence-confirmed unique migrations: 967
+Observed entry quotes: 3561
+Observed exit quotes: 10160
 Quote failures/unavailable: 413
 Missed deadlines (no backfill): 379
 Jupiter API key configured: False
@@ -24,8 +24,9 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 
 | Mint | First observed | Lag from chain | Entry quote states |
 |---|---|---:|---|
-| HQfciZiVsxbqW8DV6BaaDDyg1WU9k7V37KvFj5qTpump | 2026-09-24T08:58:06.154+00:00 | 34.154723167419434 | 30:quote_observed, 60:quote_observed |
-| qZbxwb4mrpjcGTBcmRSTiPvG21wYUriRYXQoRhbpump | 2026-09-24T08:54:44.332+00:00 | 37.33256769180298 | 30:quote_observed, 60:quote_observed, 120:quote_observed |
+| JVt8XBznFyvYbWRJ1uRzmZVBp8mJxnVA6SzcmKNpump | 2026-09-24T08:59:53.837+00:00 | 23.83725619316101 | none |
+| HQfciZiVsxbqW8DV6BaaDDyg1WU9k7V37KvFj5qTpump | 2026-09-24T08:58:06.154+00:00 | 34.154723167419434 | 30:quote_observed, 60:quote_observed, 120:quote_observed |
+| qZbxwb4mrpjcGTBcmRSTiPvG21wYUriRYXQoRhbpump | 2026-09-24T08:54:44.332+00:00 | 37.33256769180298 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | CQmF5Po3uaXhkaETH1z3pv2pionS1MvE3BLqjcbKpump | 2026-09-24T08:50:42.454+00:00 | 15.454964876174927 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | 9LUfP7XmpVxUgcwTaJz9SMHJA1m6t9HJsG558SLapump | 2026-09-24T08:50:18.664+00:00 | 25.66474747657776 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | 9854mC7w5NGnajGqi7AcU9rjirGjBZ2tNPxZnmippump | 2026-09-24T08:49:18.893+00:00 | 20.893186330795288 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
@@ -43,16 +44,15 @@ Bounded migration-authority cursor and retry queue; SOL-paired migrate and migra
 | 5bDSmegV9mkBaciQPat7T5rDbiCB8xmJyoseNNCKpump | 2026-09-24T08:28:04.581+00:00 | 17.58185052871704 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | H65RGwGrruzzpzBNgkrkynzMBFCkaKdPxRAA5Qxdpump | 2026-09-24T08:26:40.702+00:00 | 22.702939987182617 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 | E6asf2mRk7xbQSH816d1m1MAph7ZYFxn5jYCMtcKpump | 2026-09-24T08:25:39.734+00:00 | 25.734901189804077 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
-| G52s8Begr9rHmDmPPJEeCXiwckigymnYqHwGB2fDpump | 2026-09-24T08:25:02.771+00:00 | 14.771531343460083 | 30:quote_observed, 60:quote_observed, 120:quote_observed, 300:quote_observed |
 
 ## Evidence and coverage audit
 
 Historical instruction matches and their raw quotes are retained, not automatically validated.
 Completion events, pool-creation instructions, and zero-to-positive pool funding are required for new samples. Prefunded or missing-evidence cases remain unresolved.
 Re-audits and initial historical catch-up never create backfilled quote experiments.
-Migration classifications: {"confirmed_new_migration": 966, "unresolved_no_new_migration_evidence": 303}
+Migration classifications: {"confirmed_new_migration": 967, "unresolved_no_new_migration_evidence": 303}
 Discovery source: migration_authority_index; pending transactions: 0; catch-up: False
 Out-of-scope or unrecognized migrate_v2 transactions: 38
-Pool snapshot checks: {"missed_snapshot_window_no_backfill": 2107, "pool_state_corroborated": 141, "requires_review": 10768, "unavailable": 155, "unrecognized_or_inconsistent_pool_evidence": 494}
+Pool snapshot checks: {"missed_snapshot_window_no_backfill": 2107, "pool_state_corroborated": 141, "requires_review": 10776, "unavailable": 155, "unrecognized_or_inconsistent_pool_evidence": 494}
 Pool-state corroboration does not validate full route fees, execution, or hypothetical market impact.
 Old quotes without simultaneous pool snapshots cannot be retroactively given that evidence.
