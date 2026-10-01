@@ -2,7 +2,7 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-10-01T03:49:09.004+00:00
+Updated: 2026-10-01T03:50:28.236+00:00
 Collector: prospective-quote-lab-0.4
 RPC connected: False
 Evidence-confirmed unique migrations: 1427
@@ -12,7 +12,7 @@ Quote failures/unavailable: 1303
 Missed deadlines (no backfill): 1267
 Jupiter API key configured: False
 Quote access mode: keyless
-Provider connection test: entry_verified_exit_pending
+Provider connection test: healthy
 
 Connection-test SOL/USDC quotes are separate from migration samples and never imply profit.
 Existing failed observations are retained. Expired deadlines are never backfilled.
