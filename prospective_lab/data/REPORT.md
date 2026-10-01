@@ -2,7 +2,7 @@
 
 **WATCH ONLY — no trades.**
 
-Updated: 2026-10-01T07:23:14.732+00:00
+Updated: 2026-10-01T07:24:33.871+00:00
 Collector: prospective-quote-lab-0.4
 RPC connected: False
 Evidence-confirmed unique migrations: 1427
