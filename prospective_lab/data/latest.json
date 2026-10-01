@@ -2,7 +2,7 @@
   "backpressure_cycles": 0,
   "catchup_in_progress": false,
   "coverage_note": "Bounded migration-authority cursor and retry queue; SOL-paired migrate and migrate_v2 only; non-SOL pairs excluded. Independent total-market coverage is not established.",
-  "cycles": 8478,
+  "cycles": 8481,
   "discovery_index_status": "verified_global_layout",
   "discovery_source": "migration_authority_index",
   "entry_quotes_observed": 5258,
@@ -38,14 +38,14 @@
   "realized_profit": null,
   "rpc_calls_last_cycle": 2,
   "rpc_connected": false,
-  "rpc_consecutive_failures": 792,
+  "rpc_consecutive_failures": 795,
   "rpc_error_categories": {
     "rpc_error": 1
   },
   "signature_window_saturated": false,
-  "slot": 452188267,
+  "slot": 452188567,
   "transaction_fetch_failures": 6,
-  "updated_at": "2026-10-01T05:06:48.246+00:00",
+  "updated_at": "2026-10-01T05:08:08.353+00:00",
   "validated_migrations": 1427,
   "version": "prospective-quote-lab-0.4"
 }
