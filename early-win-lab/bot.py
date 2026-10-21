@@ -107,7 +107,11 @@ def run_once():
     try:
         profiles=discover_profiles()
         if not profiles: note="No fresh profiles returned; no prices fabricated."
-        pairs=token_pairs([x["tokenAddress"] for x in profiles])
+        held=[r["token_address"] for r in db.execute("SELECT token_address FROM positions").fetchall()]
+        discovered=[x["tokenAddress"] for x in profiles]
+        # Always prioritize open positions so exits can be evaluated even after a token leaves the latest-profile feed.
+        addresses=list(dict.fromkeys(held+discovered))[:60]
+        pairs=token_pairs(addresses)
         best={}
         for pair in pairs:
             address=(pair.get("baseToken") or {}).get("address")
