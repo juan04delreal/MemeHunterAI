@@ -12,6 +12,8 @@ POSITION_SIZE = 10.0
 MAX_OPEN = 4
 MAX_EXPOSURE = 40.0
 MAX_SIGNAL_AGE_MIN = 30
+SIGNATURE_PAGE_SIZE = 100
+MAX_SIGNATURE_PAGES = 2
 MIN_LIQUIDITY = 15000.0
 MIN_MCAP = 40000.0
 MAX_MCAP = 5000000.0
@@ -100,27 +102,58 @@ def token_deltas(tx, wallet):
             if abs(after.get(mint,0.0)-before.get(mint,0.0)) > 1e-10}
 
 def collect_wallet_signals(db, wallet):
-    rows = rpc("getSignaturesForAddress",[wallet,{"limit":100,"commitment":"confirmed"}]) or []
-    if not rows:
-        return 0, "no signatures"
+    # Paginate back to the saved cursor. A fixed first-page-only scan can silently
+    # skip activity when a watched wallet makes more than 100 transactions between runs.
+    rows = rpc("getSignaturesForAddress",[wallet,{"limit":1,"commitment":"confirmed"}]) or []
     cursor = db.execute("SELECT signature FROM wallet_cursors WHERE wallet=?",(wallet,)).fetchone()
     if not cursor:
+        if not rows:
+            return 0, "no signatures"
         db.execute("INSERT INTO wallet_cursors VALUES(?,?,?)",(wallet,rows[0]["signature"],iso_now()))
         db.commit()
         return 0, "baseline initialized; old history skipped"
+
     old_sig = cursor["signature"]
-    newer = []
-    for row in rows:
-        if row["signature"] == old_sig:
+    pages = []
+    before = None
+    found_cursor = False
+    for _ in range(MAX_SIGNATURE_PAGES):
+        options = {"limit":SIGNATURE_PAGE_SIZE,"commitment":"confirmed"}
+        if before:
+            options["before"] = before
+        page = rpc("getSignaturesForAddress",[wallet,options]) or []
+        if not page:
             break
-        newer.append(row)
+        pages.append(page)
+        if any(item.get("signature") == old_sig for item in page):
+            found_cursor = True
+            break
+        if len(page) < SIGNATURE_PAGE_SIZE:
+            break
+        before = page[-1]["signature"]
+
+    if not found_cursor:
+        scanned = sum(len(page) for page in pages)
+        return 0, f"saved cursor not found within {scanned} signatures; cursor held to avoid skipping activity"
+
+    newer = []
+    for page in pages:
+        for item in page:
+            if item.get("signature") == old_sig:
+                break
+            newer.append(item)
+        if any(item.get("signature") == old_sig for item in page):
+            break
+
     count = 0
+    incomplete = False
     for item in reversed(newer):
         sig = item["signature"]
         if item.get("err") is not None:
             continue
         tx = rpc("getTransaction",[sig,{"encoding":"jsonParsed","maxSupportedTransactionVersion":0,"commitment":"confirmed"}])
-        if not tx:
+        if tx is None:
+            incomplete = True
             continue
         for mint, delta in token_deltas(tx,wallet).items():
             side = "BUY" if delta > 0 else "SELL"
@@ -129,8 +162,12 @@ def collect_wallet_signals(db, wallet):
             if db.execute("SELECT changes()").fetchone()[0]:
                 count += 1
         time.sleep(0.08)
+
+    if incomplete:
+        return count, "one or more transaction lookups returned no data; cursor held for retry"
+
     db.execute("INSERT INTO wallet_cursors VALUES(?,?,?) ON CONFLICT(wallet) DO UPDATE SET signature=excluded.signature",
-               (wallet,rows[0]["signature"],iso_now()))
+               (wallet,pages[0][0]["signature"],iso_now()))
     db.commit()
     return count, "ok"
 

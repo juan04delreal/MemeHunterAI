@@ -42,6 +42,9 @@ jobs:
         env:
           SOLANA_RPC_URL: ${{ secrets.SOLANA_RPC_URL }}
         run: python wallet_copy.py
+      - name: Print read-only detailed paper ledger report
+        working-directory: early-win-lab
+        run: python report_ledger.py
       - name: Persist isolated paper ledger
         run: |
           git config user.name "github-actions[bot]"

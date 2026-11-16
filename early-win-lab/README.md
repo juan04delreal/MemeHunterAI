@@ -19,6 +19,12 @@ Watchlist:
 
 Addresses are stored in \`wallets.json\`. The first run establishes a signature cursor for each wallet and intentionally skips historical transactions; later runs process new signatures. A public RPC is used by default. An optional higher-capacity endpoint can be supplied as the GitHub Actions secret \`SOLANA_RPC_URL\`.
 
+## Discovery paper-trading settings
+
+The discovery engine has its own separate $100 virtual account. Its current code uses $5 entries, up to 5 open positions, $20,000 minimum liquidity, $50,000–$3,000,000 market-cap band, $5,000 minimum 5-minute volume, and at least 15 five-minute transactions. It enters when the weighted score reaches 35. Exit rules in code are a -40% stop, +150% target, trailing exit armed after a +50% peak with a 25% drawdown, or a 12-hour time exit. A -$5 UTC-day realized-loss gate pauses new entries for the rest of that UTC day; it is not a lifetime account drawdown limit.
+
+The wallet-consensus engine also has a separate $100 virtual account; it is not funded from the discovery account. Its $10 entries, 4-position/$40 exposure cap, two-wallet/30-minute consensus and exit rules are listed below. Do not combine the two ledgers when evaluating either strategy.
+
 ## Smart-money paper strategy
 
 - Separate virtual account: $100 starting balance.
