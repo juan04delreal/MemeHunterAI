@@ -1,26 +1,53 @@
 # Solana Early-Win Lab
 
-Isolated paper-only Solana token research bot. It does not use a wallet, private key, signer, or live order endpoint. It does not modify V11 or its database.
+Isolated Solana paper-trading research project. It never signs, sends, or broadcasts a transaction and contains no private key. It does not access or modify the V11 bot or its database.
 
-## Runtime
+## Engines
 
-GitHub Actions runs every 15 minutes and can be run manually. Each run fetches public latest Solana token profiles and DexScreener pair data, filters liquidity/market cap/5-minute volume/transaction count, scores short-term buyer flow, simulates trades, and persists a separate SQLite ledger.
+### Discovery paper trader
+\`bot.py\` scans DexScreener latest Solana token profiles and simulates discovery-based entries in its own ledger tables.
 
-Initial settings: $100 balance, $5 positions, maximum 5 open positions, 1% simulated entry/exit fee allowance, 1% slippage per side, -40% stop, +150% target, trailing exit after +50% peak return with 25% drawdown, 12-hour time exit, and $5 daily realized-loss circuit breaker.
+### Pump.fun smart-money paper trader
+\`wallet_copy.py\` tracks five public Pump.fun leaderboard wallets using Solana JSON-RPC transaction history. It looks for token balance increases (buys), then only considers tokens bought by at least two monitored wallets within a rolling 30-minute window. It rechecks DexScreener price and market quality after a 60-second observation delay before simulating an entry.
+
+Watchlist:
+- megacrabtopaxio: gVDXhoGbePACvSqN7CZBtQXFW9eyJwsgudPEwSydAkx
+- ephraimschindle: JDQKDrc1TQgBRvdFh56tkta5sYcDj1SoP52Eiu64rSrT
+- throatycrab1008: 29yFzeBZgxf5zqrAkKXwgZtQehRf4pL8WbV2nRJikbw8
+- PetalS0l: 4HXb7ivgvjbHC3TBesmmD9LovH8tmTv9DZsq12GMvEpU
+- MOGorDIE: 8ZN71XTdVo8yRovnGLmNgW3Tgniw6A4J3JGLvPD686FP
+
+Addresses are stored in \`wallets.json\`. The first run establishes a signature cursor for each wallet and intentionally skips historical transactions; later runs process new signatures. A public RPC is used by default. An optional higher-capacity endpoint can be supplied as the GitHub Actions secret \`SOLANA_RPC_URL\`.
+
+## Smart-money paper strategy
+
+- Separate virtual account: $100 starting balance.
+- Simulated entry: $10 per token; maximum 4 positions and $40 total cost exposure.
+- Consensus: at least 2 tracked wallets buy the same mint within 30 minutes.
+- Market quality: minimum $15,000 liquidity, $40,000–$5,000,000 market cap, at least $2,000 5-minute volume, and 5-minute buys/sells ratio of at least 1.10.
+- Entry: wait 60 seconds once per run, refresh price, then apply 1.5% adverse slippage and a 1% total fee allowance.
+- Exits: -30% stop; sell half at +50%; after +80% peak gain, trail by 25%; close remainder after 6 hours.
+- At most 2 new positions per workflow run.
+
+These are experimental defaults, not a claim of maximum profit or a guarantee. The engine does not yet calculate independently verified rolling 30/90-day wallet win rates or remove related wallets. It uses a two-wallet consensus filter as a starting anti-noise rule, not proof of independent smart money.
+
+## Runtime and persistence
+
+GitHub Actions runs every 15 minutes and supports manual dispatch. Each run tests both engines, executes the scans, and commits \`state.sqlite3\` to preserve the isolated paper ledger. Smart-money tables are separate (\`wallet_account\`, \`wallet_signals\`, \`wallet_positions\`, \`wallet_trades\`, \`wallet_runs\`) from discovery tables. GitHub Actions is scheduled automation, not a continuously running server.
+
+## Verification
+
+From \`early-win-lab/\`:
+\`python -m unittest -v\`
+\`python bot.py\`
+\`python wallet_copy.py\`
 
 ## Important limitations
 
-- Wallet realized-PnL attribution and coordinated-wallet clustering are not integrated yet. This version does not claim a buyer is a profitable trader based only on activity.
-- Public feeds can omit tokens or delay updates. Missing prices are not fabricated.
-- A +150% target is a test rule, not a forecast.
-- Fill, liquidity impact and slippage assumptions are approximations. Review at least 30–50 closed trades before judging performance.
-- GitHub Actions is scheduled automation, not a continuously running server.
-- Ledger lives in state.sqlite3 and is committed by the workflow. Never store secrets or wallet keys here.
-
-## Results
-
-Open the Actions tab and choose Early-Win Lab Paper Trading. Logs print JSON containing cash, estimated equity, realized PnL, positions, and scan counts.
-
-## Local test
-
-Run python -m unittest -v, then python bot.py.
+- A wallet's leaderboard win rate can be calculated over different periods and trade definitions. Public leaderboard numbers are snapshots, not proof of persistent edge.
+- The first run seeds cursors and does not replay old buys. Wait for new wallet activity before expecting entries.
+- The public Solana RPC may throttle or omit transactions; set a dedicated RPC endpoint secret for more reliable monitoring.
+- DexScreener pair data can lag or be unavailable for new mints. No missing price is fabricated.
+- Token balance deltas can miss complex routed trades, and token account ownership metadata is not always complete.
+- The bot does not cluster wallets, model copy-trade latency beyond the observation delay, or guarantee actual market fills.
+- Review at least 50–100 closed paper trades before considering any strategy change. Paper results are not evidence of live profitability.
