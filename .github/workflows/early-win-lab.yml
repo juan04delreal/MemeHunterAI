@@ -34,9 +34,14 @@ jobs:
       - name: Run unit tests
         working-directory: early-win-lab
         run: python -m unittest -v
-      - name: Run one paper-trading scan
+      - name: Run discovery paper-trading scan
         working-directory: early-win-lab
         run: python bot.py
+      - name: Run Pump.fun wallet-consensus paper trader
+        working-directory: early-win-lab
+        env:
+          SOLANA_RPC_URL: ${{ secrets.SOLANA_RPC_URL }}
+        run: python wallet_copy.py
       - name: Persist isolated paper ledger
         run: |
           git config user.name "github-actions[bot]"
