@@ -30,6 +30,10 @@ class WalletCopyTests(unittest.TestCase):
         self.assertEqual(m["price"], 0.01)
         self.assertGreaterEqual(m["ratio"], 2.0)
 
+    def test_wallet_polling_batch_is_bounded(self):
+        self.assertEqual(wc.MAX_PENDING_TX_PER_WALLET, 50)
+        self.assertEqual(wc.RPC_REQUEST_DELAY_SECONDS, 0.5)
+
     def test_wallet_watchlist_has_five_unique_addresses(self):
         wallets = wc.load_wallets()
         addresses = [w["address"] for w in wallets]
