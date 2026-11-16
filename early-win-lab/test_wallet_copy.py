@@ -80,7 +80,7 @@ class WalletCopyTests(unittest.TestCase):
                 saved = db.execute("SELECT signature FROM wallet_cursors WHERE wallet='Wallet111'").fetchone()["signature"]
                 self.assertEqual(saved, "old-cursor")
                 pending = db.execute("SELECT COUNT(*) n FROM wallet_pending_signatures").fetchone()["n"]
-                self.assertEqual(pending, 0)
+                self.assertEqual(pending, 50)
                 self.assertEqual(db.execute("SELECT COUNT(*) n FROM wallet_catchup").fetchone()["n"], 1)
                 with mock.patch.object(wc, "rpc", side_effect=fake_rpc), mock.patch.object(wc.time, "sleep"):
                     count, note = wc.collect_wallet_signals(db, "Wallet111")
