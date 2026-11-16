@@ -15,11 +15,14 @@ MAX_SIGNAL_AGE_MIN = 30
 SIGNATURE_PAGE_SIZE = 100
 MAX_PENDING_TX_PER_WALLET = 50
 RPC_REQUEST_DELAY_SECONDS = 0.5
-MIN_LIQUIDITY = 15000.0
-MIN_MCAP = 40000.0
-MAX_MCAP = 5000000.0
-MIN_VOL5M = 2000.0
-MIN_BUY_SELL_RATIO = 1.10
+MIN_LIQUIDITY = 25000.0
+MIN_MCAP = 50000.0
+MAX_MCAP = 3000000.0
+MIN_VOL5M = 5000.0
+MIN_BUYS5M = 10
+MIN_BUY_SELL_RATIO = 1.50
+MIN_LIQUIDITY_MCAP_RATIO = 0.08
+MIN_BUY_SELL_RATIO_1H = 1.10
 SLIPPAGE = 0.015
 FEE_RATE = 0.01
 STOP = -0.30
@@ -230,15 +233,29 @@ def dex_pair(mint):
 
 def pair_metrics(pair):
     tx=(pair.get("txns") or {}).get("m5") or {}
+    tx1=(pair.get("txns") or {}).get("h1") or {}
     buys=float(tx.get("buys") or 0); sells=float(tx.get("sells") or 0)
+    buys1=float(tx1.get("buys") or 0); sells1=float(tx1.get("sells") or 0)
     return {
       "price":float(pair.get("priceUsd") or 0),
       "liq":float(((pair.get("liquidity") or {}).get("usd")) or 0),
       "mcap":float(pair.get("marketCap") or pair.get("fdv") or 0),
       "vol":float(((pair.get("volume") or {}).get("m5")) or 0),
       "ratio":buys/max(sells,1.0),
-      "buys":buys,"sells":sells
+      "ratio1h":buys1/max(sells1,1.0),
+      "buys":buys,"sells":sells,"buys1h":buys1,"sells1h":sells1
     }
+
+def passes_entry_quality(m):
+    return (
+      m["price"]>0 and m["liq"]>=MIN_LIQUIDITY and
+      MIN_MCAP<=m["mcap"]<=MAX_MCAP and
+      m["liq"]/max(m["mcap"],1.0)>=MIN_LIQUIDITY_MCAP_RATIO and
+      m["vol"]>=MIN_VOL5M and m["buys"]>=MIN_BUYS5M and
+      m["ratio"]>=MIN_BUY_SELL_RATIO and
+      (m["buys1h"]+m["sells1h"])>0 and
+      m["ratio1h"]>=MIN_BUY_SELL_RATIO_1H
+    )
 
 def close_qty(db, pos, qty, price, reason):
     if qty <= 0 or price <= 0: return 0.0
@@ -306,8 +323,7 @@ def run_once():
             pair=dex_pair(mint)
             if not pair: continue
             m=pair_metrics(pair)
-            if not (m["price"]>0 and m["liq"]>=MIN_LIQUIDITY and MIN_MCAP<=m["mcap"]<=MAX_MCAP and
-                    m["vol"]>=MIN_VOL5M and m["ratio"]>=MIN_BUY_SELL_RATIO):
+            if not passes_entry_quality(m):
                 continue
             # Delay once per run, then re-price; cap entries per run to protect the small paper account.
             if not delayed:
@@ -317,7 +333,7 @@ def run_once():
             refreshed=dex_pair(mint)
             if not refreshed: continue
             m2=pair_metrics(refreshed)
-            if m2["price"]<=0 or m2["liq"]<MIN_LIQUIDITY or m2["ratio"]<MIN_BUY_SELL_RATIO: continue
+            if not passes_entry_quality(m2): continue
             entry=m2["price"]*(1+SLIPPAGE)
             qty=POSITION_SIZE*(1-FEE_RATE/2)/entry
             src=json.dumps([x for x in (sig["wallets"] or "").split(",") if x])

@@ -21,7 +21,7 @@ Addresses are stored in \`wallets.json\`. The first run establishes a signature 
 
 ## Discovery paper-trading settings
 
-The discovery engine has its own separate $100 virtual account. Its current code uses $5 entries, up to 5 open positions, $20,000 minimum liquidity, $50,000–$3,000,000 market-cap band, $5,000 minimum 5-minute volume, and at least 15 five-minute transactions. It enters when the weighted score reaches 35. Exit rules in code are a -40% stop, +150% target, trailing exit armed after a +50% peak with a 25% drawdown, or a 12-hour time exit. A -$5 UTC-day realized-loss gate pauses new entries for the rest of that UTC day; it is not a lifetime account drawdown limit.
+The discovery engine has its own separate $100 virtual account. Its current code uses $5 entries, up to 5 open positions, $20,000 minimum liquidity, $50,000–$3,000,000 market-cap band, $10,000 minimum 5-minute volume, at least 25 five-minute transactions, at least 20 five-minute buys, a 5-minute buys/sells ratio of 1.50, a 1-hour buys/sells ratio of 1.10, liquidity at least 8% of market cap, and a weighted entry score of at least 60. Missing 1-hour flow data fails closed. These are new forward-only experimental filters, not thresholds selected from historical backtest optimization. Exit rules in code are a -40% stop, +150% target, trailing exit armed after a +50% peak with a 25% drawdown, or a 12-hour time exit. A -$5 UTC-day realized-loss gate pauses new entries for the rest of that UTC day; it is not a lifetime account drawdown limit.
 
 The wallet-consensus engine also has a separate $100 virtual account; it is not funded from the discovery account. Its $10 entries, 4-position/$40 exposure cap, two-wallet/30-minute consensus and exit rules are listed below. Do not combine the two ledgers when evaluating either strategy.
 
@@ -30,12 +30,12 @@ The wallet-consensus engine also has a separate $100 virtual account; it is not 
 - Separate virtual account: $100 starting balance.
 - Simulated entry: $10 per token; maximum 4 positions and $40 total cost exposure.
 - Consensus: at least 2 tracked wallets buy the same mint within 30 minutes.
-- Market quality: minimum $15,000 liquidity, $40,000–$5,000,000 market cap, at least $2,000 5-minute volume, and 5-minute buys/sells ratio of at least 1.10.
+- Market quality: minimum $25,000 liquidity, $50,000–$3,000,000 market cap, at least $5,000 5-minute volume, at least 10 five-minute buys, 5-minute buys/sells ratio of at least 1.50, 1-hour buys/sells ratio of at least 1.10, and liquidity at least 8% of market cap. Both initial and post-delay refreshed quotes must pass every filter.
 - Entry: wait 60 seconds once per run, refresh price, then apply 1.5% adverse slippage and a 1% total fee allowance.
 - Exits: -30% stop; sell half at +50%; after +80% peak gain, trail by 25%; close remainder after 6 hours.
 - At most 2 new positions per workflow run.
 
-These are experimental defaults, not a claim of maximum profit or a guarantee. The engine does not yet calculate independently verified rolling 30/90-day wallet win rates or remove related wallets. It uses a two-wallet consensus filter as a starting anti-noise rule, not proof of independent smart money.
+These stricter filters are a new forward-only trial, not a claim of maximum profit or a guarantee. The discovery account currently has less than its unchanged $5 minimum position size, so it will continue scanning and managing any existing positions but cannot open a new position unless existing paper proceeds replenish cash; do not reset or top up the ledger. The wallet-consensus account remains independently funded at its existing $100 paper balance. Do not compare the new trial with prior results as if the old trades had used these filters. The engine does not yet calculate independently verified rolling 30/90-day wallet win rates or remove related wallets. It uses a two-wallet consensus filter as a starting anti-noise rule, not proof of independent smart money.
 
 ## Runtime and persistence
 

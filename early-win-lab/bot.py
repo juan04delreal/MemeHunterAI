@@ -9,7 +9,10 @@ ROOT = Path(__file__).resolve().parent
 DB_PATH = Path(os.environ.get("EARLY_WIN_DB", ROOT / "state.sqlite3"))
 STARTING_CASH, POSITION_SIZE, MAX_OPEN_POSITIONS = 100.0, 5.0, 5
 MIN_LIQUIDITY_USD, MIN_MCAP_USD, MAX_MCAP_USD = 20_000.0, 50_000.0, 3_000_000.0
-MIN_VOL5M_USD, MIN_TXNS5M, MAX_HOLD_HOURS = 5_000.0, 15, 12
+MIN_VOL5M_USD, MIN_TXNS5M, MAX_HOLD_HOURS = 10_000.0, 25, 12
+MIN_ENTRY_SCORE = 60.0
+MIN_LIQUIDITY_MCAP_RATIO = 0.08
+MIN_BUYS5M, MIN_BUY_SELL_RATIO_5M, MIN_BUY_SELL_RATIO_1H = 20, 1.50, 1.10
 STOP_LOSS_PCT, TAKE_PROFIT_PCT = -0.40, 1.50
 TRAIL_ARM_PCT, TRAIL_DRAWDOWN_PCT = 0.50, 0.25
 FEE_RATE, SLIPPAGE_RATE, DAILY_LOSS_LIMIT = 0.01, 0.01, 5.0
@@ -78,8 +81,15 @@ def score_pair(pair):
     m=metrics(pair)
     if m["price"]<=0 or m["liquidity"]<MIN_LIQUIDITY_USD: return 0.0,m,["insufficient price/liquidity"]
     if not MIN_MCAP_USD<=m["mcap"]<=MAX_MCAP_USD: return 0.0,m,["market cap outside test band"]
+    if m["mcap"]<=0 or m["liquidity"]/m["mcap"]<MIN_LIQUIDITY_MCAP_RATIO:
+        return 0.0,m,["liquidity is below 8% of market cap"]
     if m["vol5m"]<MIN_VOL5M_USD: return 0.0,m,["insufficient 5m volume"]
     if m["buys5m"]+m["sells5m"]<MIN_TXNS5M: return 0.0,m,["insufficient 5m transactions"]
+    if m["buys5m"]<MIN_BUYS5M or m["buys5m"]/max(m["sells5m"],1.0)<MIN_BUY_SELL_RATIO_5M:
+        return 0.0,m,["weak 5m buy pressure"]
+    total1=m["buys1h"]+m["sells1h"]
+    if total1<=0 or m["buys1h"]/max(m["sells1h"],1.0)<MIN_BUY_SELL_RATIO_1H:
+        return 0.0,m,["weak or missing 1h buy pressure"]
     score=min(25.0,m["vol5m"]/max(m["liquidity"],1)*100.0)
     total=m["buys5m"]+m["sells5m"]
     score+=min(35.0,max(0.0,((m["buys5m"]/total if total else 0)-0.45)*100))
@@ -138,7 +148,7 @@ def run_once():
                 if db.execute("SELECT 1 FROM positions WHERE token_address=?",(address,)).fetchone(): continue
                 if db.execute("SELECT 1 FROM seen_tokens WHERE token_address=?",(address,)).fetchone(): continue
                 score,m,_=score_pair(pair)
-                if score>=35: ranked.append((score,pair,m))
+                if score>=MIN_ENTRY_SCORE: ranked.append((score,pair,m))
             ranked.sort(key=lambda x:x[0],reverse=True)
             for score,pair,m in ranked:
                 if count>=MAX_OPEN_POSITIONS or cash<POSITION_SIZE: break

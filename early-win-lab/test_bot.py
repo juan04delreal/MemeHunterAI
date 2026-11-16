@@ -17,6 +17,20 @@ class EarlyWinLabTests(unittest.TestCase):
         self.assertGreater(score,35)
         self.assertEqual(metrics["price"],0.01)
 
+    def test_rejects_weak_buy_pressure_even_when_liquidity_is_high(self):
+        pair={"priceUsd":"0.01","liquidity":{"usd":80000},"marketCap":400000,"volume":{"m5":25000},
+              "txns":{"m5":{"buys":30,"sells":40},"h1":{"buys":100,"sells":100}}}
+        score,_,reasons=bot.score_pair(pair)
+        self.assertEqual(score,0)
+        self.assertIn("weak 5m buy pressure",reasons)
+
+    def test_requires_sustained_one_hour_buy_pressure(self):
+        pair={"priceUsd":"0.01","liquidity":{"usd":80000},"marketCap":400000,"volume":{"m5":25000},
+              "txns":{"m5":{"buys":80,"sells":20},"h1":{"buys":10,"sells":20}}}
+        score,_,reasons=bot.score_pair(pair)
+        self.assertEqual(score,0)
+        self.assertIn("weak or missing 1h buy pressure",reasons)
+
     def test_account_starts_at_100(self):
         with tempfile.TemporaryDirectory() as tmp:
             old=bot.DB_PATH

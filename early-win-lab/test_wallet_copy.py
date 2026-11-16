@@ -30,6 +30,21 @@ class WalletCopyTests(unittest.TestCase):
         self.assertEqual(m["price"], 0.01)
         self.assertGreaterEqual(m["ratio"], 2.0)
 
+    def test_entry_quality_rejects_weak_recent_and_hourly_buy_pressure(self):
+        weak = {"price":0.01,"liq":80000,"mcap":400000,"vol":25000,
+                "ratio":0.8,"ratio1h":0.8,"buys":20,"sells":25,"buys1h":40,"sells1h":50}
+        self.assertFalse(wc.passes_entry_quality(weak))
+
+    def test_entry_quality_requires_liquidity_coverage(self):
+        thin = {"price":0.01,"liq":15000,"mcap":1000000,"vol":25000,
+                "ratio":2.0,"ratio1h":2.0,"buys":30,"sells":10,"buys1h":100,"sells1h":30}
+        self.assertFalse(wc.passes_entry_quality(thin))
+
+    def test_entry_quality_accepts_strong_two_window_flow(self):
+        strong = {"price":0.01,"liq":80000,"mcap":400000,"vol":25000,
+                  "ratio":2.0,"ratio1h":2.0,"buys":80,"sells":40,"buys1h":400,"sells1h":200}
+        self.assertTrue(wc.passes_entry_quality(strong))
+
     def test_wallet_polling_batch_is_bounded(self):
         self.assertEqual(wc.MAX_PENDING_TX_PER_WALLET, 50)
         self.assertEqual(wc.RPC_REQUEST_DELAY_SECONDS, 0.5)
