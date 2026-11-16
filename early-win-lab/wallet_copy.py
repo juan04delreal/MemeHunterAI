@@ -93,13 +93,14 @@ def token_deltas(tx, wallet):
             mint = row.get("mint")
             if not mint or mint == WSOL:
                 continue
-            amount = float(((row.get("uiTokenAmount") or {}).get("uiAmount")) or 0)
+            amt = row.get("uiTokenAmount") or {}
+            amount = float(amt.get("uiAmount") if amt.get("uiAmount") is not None else (amt.get("uiAmountString") or 0))
             target[mint] = target.get(mint, 0.0) + amount
     return {mint: after.get(mint,0.0)-before.get(mint,0.0) for mint in set(before)|set(after)
             if abs(after.get(mint,0.0)-before.get(mint,0.0)) > 1e-10}
 
 def collect_wallet_signals(db, wallet):
-    rows = rpc("getSignaturesForAddress",[wallet,{"limit":30,"commitment":"confirmed"}]) or []
+    rows = rpc("getSignaturesForAddress",[wallet,{"limit":100,"commitment":"confirmed"}]) or []
     if not rows:
         return 0, "no signatures"
     cursor = db.execute("SELECT signature FROM wallet_cursors WHERE wallet=?",(wallet,)).fetchone()
@@ -210,6 +211,8 @@ def run_once():
         open_rows=db.execute("SELECT COALESCE(SUM(cost),0) exposure,COUNT(*) n FROM wallet_positions").fetchone()
         exposure=float(open_rows["exposure"]); count=int(open_rows["n"])
         eligible=0
+        delayed=False
+        processed=0
         for sig in grouped:
             if sig["n"] < 2: continue
             eligible+=1
@@ -222,8 +225,11 @@ def run_once():
             if not (m["price"]>0 and m["liq"]>=MIN_LIQUIDITY and MIN_MCAP<=m["mcap"]<=MAX_MCAP and
                     m["vol"]>=MIN_VOL5M and m["ratio"]>=MIN_BUY_SELL_RATIO):
                 continue
-            # A 60-second observation delay reduces chasing instantaneous prints; price is fetched after delay.
-            time.sleep(60)
+            # Delay once per run, then re-price; cap entries per run to protect the small paper account.
+            if not delayed:
+                time.sleep(60)
+                delayed=True
+            if processed>=2: break
             refreshed=dex_pair(mint)
             if not refreshed: continue
             m2=pair_metrics(refreshed)
@@ -235,7 +241,7 @@ def run_once():
               (mint,(refreshed.get("baseToken") or {}).get("symbol","?"),(refreshed.get("baseToken") or {}).get("name","?"),
                entry,qty,POSITION_SIZE,iso_now(),entry,entry,src))
             db.execute("UPDATE wallet_account SET cash=cash-? WHERE id=1",(POSITION_SIZE,))
-            cash-=POSITION_SIZE; exposure+=POSITION_SIZE; count+=1; opened+=1
+            cash-=POSITION_SIZE; exposure+=POSITION_SIZE; count+=1; opened+=1; processed+=1
         db.execute("INSERT INTO wallet_runs(ran_at,wallets_checked,new_signals,eligible_mints,opened,closed,note) VALUES(?,?,?,?,?,?,?)",
           (iso_now(),len(wallets),new_signals,eligible,opened,closed,"; ".join(notes)[:1000]))
         db.commit()
