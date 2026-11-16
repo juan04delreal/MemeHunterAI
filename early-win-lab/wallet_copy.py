@@ -156,23 +156,27 @@ def collect_wallet_signals(db, wallet):
     # Fetch at most one older page per run. The catch-up checkpoint and pending
     # signatures are durable, so high-volume wallets are not silently truncated.
     if not created_catchup and not catchup["fetch_complete"]:
-        page = rpc("getSignaturesForAddress",[wallet,{"limit":SIGNATURE_PAGE_SIZE,"before":catchup["before_signature"],"commitment":"confirmed"}]) or []
-        if not page:
-            note = "catch-up waiting: RPC returned no older signatures; cursor held"
+        pending_before = int(db.execute("SELECT COUNT(*) AS n FROM wallet_pending_signatures WHERE wallet=?",(wallet,)).fetchone()["n"])
+        if pending_before > 0:
+            note = f"catch-up draining: {pending_before} pending signatures; cursor held"
         else:
-            found_target = False
-            for item in page:
-                if item.get("signature") == catchup["target_signature"]:
-                    found_target = True
-                    break
-                db.execute("INSERT OR IGNORE INTO wallet_pending_signatures VALUES(?,?,?,?,?)",
-                           (wallet,item["signature"],item.get("blockTime"),int(item.get("err") is not None),iso_now()))
-            if found_target:
-                db.execute("UPDATE wallet_catchup SET fetch_complete=1,before_signature=NULL WHERE wallet=?",(wallet,))
+            page = rpc("getSignaturesForAddress",[wallet,{"limit":SIGNATURE_PAGE_SIZE,"before":catchup["before_signature"],"commitment":"confirmed"}]) or []
+            if not page:
+                note = "catch-up waiting: RPC returned no older signatures; cursor held"
             else:
-                db.execute("UPDATE wallet_catchup SET before_signature=? WHERE wallet=?",(page[-1]["signature"],wallet))
-                note = "catch-up paging: saved cursor not reached yet; cursor held"
-            db.commit()
+                found_target = False
+                for item in page:
+                    if item.get("signature") == catchup["target_signature"]:
+                        found_target = True
+                        break
+                    db.execute("INSERT OR IGNORE INTO wallet_pending_signatures VALUES(?,?,?,?,?)",
+                               (wallet,item["signature"],item.get("blockTime"),int(item.get("err") is not None),iso_now()))
+                if found_target:
+                    db.execute("UPDATE wallet_catchup SET fetch_complete=1,before_signature=NULL WHERE wallet=?",(wallet,))
+                else:
+                    db.execute("UPDATE wallet_catchup SET before_signature=? WHERE wallet=?",(page[-1]["signature"],wallet))
+                    note = "catch-up paging: saved cursor not reached yet; cursor held"
+                db.commit()
         catchup = db.execute("SELECT * FROM wallet_catchup WHERE wallet=?",(wallet,)).fetchone()
 
     pending = db.execute("""SELECT * FROM wallet_pending_signatures WHERE wallet=?
