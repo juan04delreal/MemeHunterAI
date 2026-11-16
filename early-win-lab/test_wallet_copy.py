@@ -58,11 +58,13 @@ class WalletCopyTests(unittest.TestCase):
                 db.commit()
                 first_page = [{"signature": f"new-{i:03d}", "blockTime": 2000-i} for i in range(100)]
                 calls = []
+                transaction_options = []
                 def fake_rpc(method, params):
                     calls.append((method, params))
                     if method == "getSignaturesForAddress":
                         return first_page if "before" not in params[1] else [{"signature": "old-cursor", "blockTime": 1000}]
                     if method == "getTransaction":
+                        transaction_options.append(params[1])
                         return {"meta": {}}
                     raise AssertionError(method)
                 with mock.patch.object(wc, "rpc", side_effect=fake_rpc), unittest.mock.patch.object(wc.time, "sleep"):
@@ -74,6 +76,8 @@ class WalletCopyTests(unittest.TestCase):
                 self.assertEqual(second_page_call[1][1]["before"], "new-099")
                 saved = db.execute("SELECT signature FROM wallet_cursors WHERE wallet='Wallet111'").fetchone()["signature"]
                 self.assertEqual(saved, "new-000")
+                self.assertTrue(transaction_options)
+                self.assertTrue(all(opts["maxSupportedTransactionVersion"] == 1 for opts in transaction_options))
                 db.close()
             finally:
                 wc.DB_PATH = old_path
@@ -86,16 +90,49 @@ class WalletCopyTests(unittest.TestCase):
                 db = wc.db_connect()
                 db.execute("INSERT INTO wallet_cursors VALUES(?,?,?)", ("Wallet111", "old-cursor", "2026-01-01T00:00:00+00:00"))
                 db.commit()
-                page1 = [{"signature": f"new-{i:03d}"} for i in range(100)]
-                page2 = [{"signature": f"older-{i:03d}"} for i in range(100)]
+                pages = [[{"signature": f"page{n}-{i:03d}"} for i in range(100)] for n in range(4)]
                 def fake_rpc(method, params):
                     if method == "getSignaturesForAddress":
-                        return page1 if "before" not in params[1] else page2
+                        if "before" not in params[1]:
+                            return pages[0]
+                        before = params[1]["before"]
+                        for n in range(1, 4):
+                            if before == pages[n-1][-1]["signature"]:
+                                return pages[n]
+                        raise AssertionError(before)
                     raise AssertionError("Transactions must not be processed when the cursor is not reached")
                 with unittest.mock.patch.object(wc, "rpc", side_effect=fake_rpc):
                     count, note = wc.collect_wallet_signals(db, "Wallet111")
                 self.assertEqual(count, 0)
+                self.assertIn("400 signatures", note)
                 self.assertIn("cursor held", note)
+                saved = db.execute("SELECT signature FROM wallet_cursors WHERE wallet='Wallet111'").fetchone()["signature"]
+                self.assertEqual(saved, "old-cursor")
+                db.close()
+            finally:
+                wc.DB_PATH = old_path
+
+
+    def test_holds_cursor_when_transaction_lookup_is_missing(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            old_path = wc.DB_PATH
+            try:
+                wc.DB_PATH = Path(tmp) / "wallet_test.sqlite3"
+                db = wc.db_connect()
+                db.execute("INSERT INTO wallet_cursors VALUES(?,?,?)", ("Wallet111", "old-cursor", "2026-01-01T00:00:00+00:00"))
+                db.commit()
+                page = [{"signature": "new-signature", "blockTime": 2000}, {"signature": "old-cursor", "blockTime": 1000}]
+                def fake_rpc(method, params):
+                    if method == "getSignaturesForAddress":
+                        return page
+                    if method == "getTransaction":
+                        self.assertEqual(params[1]["maxSupportedTransactionVersion"], 1)
+                        return None
+                    raise AssertionError(method)
+                with mock.patch.object(wc, "rpc", side_effect=fake_rpc):
+                    count, note = wc.collect_wallet_signals(db, "Wallet111")
+                self.assertEqual(count, 0)
+                self.assertIn("cursor held for retry", note)
                 saved = db.execute("SELECT signature FROM wallet_cursors WHERE wallet='Wallet111'").fetchone()["signature"]
                 self.assertEqual(saved, "old-cursor")
                 db.close()

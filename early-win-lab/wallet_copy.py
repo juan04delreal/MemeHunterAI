@@ -13,7 +13,7 @@ MAX_OPEN = 4
 MAX_EXPOSURE = 40.0
 MAX_SIGNAL_AGE_MIN = 30
 SIGNATURE_PAGE_SIZE = 100
-MAX_SIGNATURE_PAGES = 2
+MAX_SIGNATURE_PAGES = 4
 MIN_LIQUIDITY = 15000.0
 MIN_MCAP = 40000.0
 MAX_MCAP = 5000000.0
@@ -151,7 +151,7 @@ def collect_wallet_signals(db, wallet):
         sig = item["signature"]
         if item.get("err") is not None:
             continue
-        tx = rpc("getTransaction",[sig,{"encoding":"jsonParsed","maxSupportedTransactionVersion":0,"commitment":"confirmed"}])
+        tx = rpc("getTransaction",[sig,{"encoding":"jsonParsed","maxSupportedTransactionVersion":1,"commitment":"confirmed"}])
         if tx is None:
             incomplete = True
             continue

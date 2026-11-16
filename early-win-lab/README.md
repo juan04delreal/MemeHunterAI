@@ -17,7 +17,7 @@ Watchlist:
 - PetalS0l: 4HXb7ivgvjbHC3TBesmmD9LovH8tmTv9DZsq12GMvEpU
 - MOGorDIE: 8ZN71XTdVo8yRovnGLmNgW3Tgniw6A4J3JGLvPD686FP
 
-Addresses are stored in \`wallets.json\`. The first run establishes a signature cursor for each wallet and intentionally skips historical transactions; later runs process new signatures. A public RPC is used by default. An optional higher-capacity endpoint can be supplied as the GitHub Actions secret \`SOLANA_RPC_URL\`.
+Addresses are stored in \`wallets.json\`. The first run establishes a signature cursor for each wallet and intentionally skips historical transactions; later runs paginate up to 400 signatures per wallet per run. If the saved cursor is not reached or a transaction lookup is missing, the cursor is held rather than silently skipping activity. The RPC client accepts Solana transaction version 1. A public RPC is used by default. An optional higher-capacity endpoint can be supplied as the GitHub Actions secret \`SOLANA_RPC_URL\`.
 
 ## Discovery paper-trading settings
 
