@@ -104,9 +104,9 @@ def token_deltas(tx, wallet):
 def collect_wallet_signals(db, wallet):
     # Paginate back to the saved cursor. A fixed first-page-only scan can silently
     # skip activity when a watched wallet makes more than 100 transactions between runs.
-    rows = rpc("getSignaturesForAddress",[wallet,{"limit":1,"commitment":"confirmed"}]) or []
     cursor = db.execute("SELECT signature FROM wallet_cursors WHERE wallet=?",(wallet,)).fetchone()
     if not cursor:
+        rows = rpc("getSignaturesForAddress",[wallet,{"limit":1,"commitment":"confirmed"}]) or []
         if not rows:
             return 0, "no signatures"
         db.execute("INSERT INTO wallet_cursors VALUES(?,?,?)",(wallet,rows[0]["signature"],iso_now()))
