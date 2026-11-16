@@ -13,7 +13,8 @@ MAX_OPEN = 4
 MAX_EXPOSURE = 40.0
 MAX_SIGNAL_AGE_MIN = 30
 SIGNATURE_PAGE_SIZE = 100
-MAX_SIGNATURE_PAGES = 4
+MAX_PENDING_TX_PER_WALLET = 100
+RPC_REQUEST_DELAY_SECONDS = 0.5
 MIN_LIQUIDITY = 15000.0
 MIN_MCAP = 40000.0
 MAX_MCAP = 5000000.0
@@ -49,10 +50,18 @@ def request_json(url, payload=None, timeout=18):
         return json.loads(resp.read().decode())
 
 def rpc(method, params):
-    result = request_json(RPC_URL, {"jsonrpc":"2.0","id":1,"method":method,"params":params})
-    if result.get("error"):
-        raise RuntimeError(str(result["error"]))
-    return result.get("result")
+    # Public Solana RPC endpoints can return 429s. Retry with bounded exponential backoff.
+    for attempt in range(4):
+        try:
+            result = request_json(RPC_URL, {"jsonrpc":"2.0","id":1,"method":method,"params":params})
+            if result.get("error"):
+                raise RuntimeError(str(result["error"]))
+            return result.get("result")
+        except urllib.error.HTTPError as exc:
+            if exc.code != 429 or attempt == 3:
+                raise
+            time.sleep(min(2 ** (attempt + 1), 8))
+    raise RuntimeError("Solana RPC retry budget exhausted")
 
 def db_connect():
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -79,6 +88,12 @@ def db_connect():
       id INTEGER PRIMARY KEY AUTOINCREMENT, ran_at TEXT NOT NULL, wallets_checked INTEGER NOT NULL,
       new_signals INTEGER NOT NULL, eligible_mints INTEGER NOT NULL, opened INTEGER NOT NULL,
       closed INTEGER NOT NULL, note TEXT);
+    CREATE TABLE IF NOT EXISTS wallet_catchup(
+      wallet TEXT PRIMARY KEY, head_signature TEXT NOT NULL, target_signature TEXT NOT NULL,
+      before_signature TEXT, fetch_complete INTEGER NOT NULL DEFAULT 0, started_at TEXT NOT NULL);
+    CREATE TABLE IF NOT EXISTS wallet_pending_signatures(
+      wallet TEXT NOT NULL, signature TEXT NOT NULL, block_time INTEGER, failed INTEGER NOT NULL DEFAULT 0,
+      queued_at TEXT NOT NULL, PRIMARY KEY(wallet,signature));
     """)
     db.execute("INSERT OR IGNORE INTO wallet_account VALUES(1,?,?,?)",(START_CASH,START_CASH,iso_now()))
     db.commit()
@@ -102,8 +117,6 @@ def token_deltas(tx, wallet):
             if abs(after.get(mint,0.0)-before.get(mint,0.0)) > 1e-10}
 
 def collect_wallet_signals(db, wallet):
-    # Paginate back to the saved cursor. A fixed first-page-only scan can silently
-    # skip activity when a watched wallet makes more than 100 transactions between runs.
     cursor = db.execute("SELECT signature FROM wallet_cursors WHERE wallet=?",(wallet,)).fetchone()
     if not cursor:
         rows = rpc("getSignaturesForAddress",[wallet,{"limit":1,"commitment":"confirmed"}]) or []
@@ -113,63 +126,93 @@ def collect_wallet_signals(db, wallet):
         db.commit()
         return 0, "baseline initialized; old history skipped"
 
-    old_sig = cursor["signature"]
-    pages = []
-    before = None
-    found_cursor = False
-    for _ in range(MAX_SIGNATURE_PAGES):
-        options = {"limit":SIGNATURE_PAGE_SIZE,"commitment":"confirmed"}
-        if before:
-            options["before"] = before
-        page = rpc("getSignaturesForAddress",[wallet,options]) or []
+    catchup = db.execute("SELECT * FROM wallet_catchup WHERE wallet=?",(wallet,)).fetchone()
+    created_catchup = False
+    note = ""
+
+    if catchup is None:
+        page = rpc("getSignaturesForAddress",[wallet,{"limit":SIGNATURE_PAGE_SIZE,"commitment":"confirmed"}]) or []
         if not page:
-            break
-        pages.append(page)
-        if any(item.get("signature") == old_sig for item in page):
-            found_cursor = True
-            break
-        if len(page) < SIGNATURE_PAGE_SIZE:
-            break
-        before = page[-1]["signature"]
-
-    if not found_cursor:
-        scanned = sum(len(page) for page in pages)
-        return 0, f"saved cursor not found within {scanned} signatures; cursor held to avoid skipping activity"
-
-    newer = []
-    for page in pages:
+            return 0, "ok"
+        old_sig = cursor["signature"]
+        newer = []
+        found_cursor = False
         for item in page:
             if item.get("signature") == old_sig:
+                found_cursor = True
                 break
             newer.append(item)
-        if any(item.get("signature") == old_sig for item in page):
-            break
+        if not newer and found_cursor:
+            return 0, "ok"
+        for item in newer:
+            db.execute("INSERT OR IGNORE INTO wallet_pending_signatures VALUES(?,?,?,?,?)",
+                       (wallet,item["signature"],item.get("blockTime"),int(item.get("err") is not None),iso_now()))
+        db.execute("INSERT INTO wallet_catchup(wallet,head_signature,target_signature,before_signature,fetch_complete,started_at) VALUES(?,?,?,?,?,?)",
+                   (wallet,page[0]["signature"],old_sig,None if found_cursor else page[-1]["signature"],int(found_cursor),iso_now()))
+        db.commit()
+        catchup = db.execute("SELECT * FROM wallet_catchup WHERE wallet=?",(wallet,)).fetchone()
+        created_catchup = True
 
+    # Fetch at most one older page per run. The catch-up checkpoint and pending
+    # signatures are durable, so high-volume wallets are not silently truncated.
+    if not created_catchup and not catchup["fetch_complete"]:
+        page = rpc("getSignaturesForAddress",[wallet,{"limit":SIGNATURE_PAGE_SIZE,"before":catchup["before_signature"],"commitment":"confirmed"}]) or []
+        if not page:
+            note = "catch-up waiting: RPC returned no older signatures; cursor held"
+        else:
+            found_target = False
+            for item in page:
+                if item.get("signature") == catchup["target_signature"]:
+                    found_target = True
+                    break
+                db.execute("INSERT OR IGNORE INTO wallet_pending_signatures VALUES(?,?,?,?,?)",
+                           (wallet,item["signature"],item.get("blockTime"),int(item.get("err") is not None),iso_now()))
+            if found_target:
+                db.execute("UPDATE wallet_catchup SET fetch_complete=1,before_signature=NULL WHERE wallet=?",(wallet,))
+            else:
+                db.execute("UPDATE wallet_catchup SET before_signature=? WHERE wallet=?",(page[-1]["signature"],wallet))
+                note = "catch-up paging: saved cursor not reached yet; cursor held"
+            db.commit()
+        catchup = db.execute("SELECT * FROM wallet_catchup WHERE wallet=?",(wallet,)).fetchone()
+
+    pending = db.execute("""SELECT * FROM wallet_pending_signatures WHERE wallet=?
+                             ORDER BY COALESCE(block_time,0) ASC, queued_at ASC LIMIT ?""",
+                          (wallet,MAX_PENDING_TX_PER_WALLET)).fetchall()
     count = 0
-    incomplete = False
-    for item in reversed(newer):
-        sig = item["signature"]
-        if item.get("err") is not None:
+    for item in pending:
+        if item["failed"]:
+            db.execute("DELETE FROM wallet_pending_signatures WHERE wallet=? AND signature=?",(wallet,item["signature"]))
             continue
-        tx = rpc("getTransaction",[sig,{"encoding":"jsonParsed","maxSupportedTransactionVersion":1,"commitment":"confirmed"}])
+        try:
+            tx = rpc("getTransaction",[item["signature"],{"encoding":"jsonParsed","maxSupportedTransactionVersion":1,"commitment":"confirmed"}])
+        except Exception as exc:
+            note = "transaction fetch paused; pending signature retained: " + str(exc)[:120]
+            break
         if tx is None:
-            incomplete = True
+            note = "transaction lookup missing; pending signature retained for retry"
             continue
         for mint, delta in token_deltas(tx,wallet).items():
             side = "BUY" if delta > 0 else "SELL"
             db.execute("INSERT OR IGNORE INTO wallet_signals VALUES(?,?,?,?,?,?,?)",
-                       (sig,wallet,mint,side,delta,item.get("blockTime"),iso_now()))
+                       (item["signature"],wallet,mint,side,delta,item["block_time"],iso_now()))
             if db.execute("SELECT changes()").fetchone()[0]:
                 count += 1
-        time.sleep(0.08)
+        db.execute("DELETE FROM wallet_pending_signatures WHERE wallet=? AND signature=?",(wallet,item["signature"]))
+        time.sleep(RPC_REQUEST_DELAY_SECONDS)
 
-    if incomplete:
-        return count, "one or more transaction lookups returned no data; cursor held for retry"
-
-    db.execute("INSERT INTO wallet_cursors VALUES(?,?,?) ON CONFLICT(wallet) DO UPDATE SET signature=excluded.signature",
-               (wallet,pages[0][0]["signature"],iso_now()))
     db.commit()
-    return count, "ok"
+    catchup = db.execute("SELECT * FROM wallet_catchup WHERE wallet=?",(wallet,)).fetchone()
+    pending_count = int(db.execute("SELECT COUNT(*) AS n FROM wallet_pending_signatures WHERE wallet=?",(wallet,)).fetchone()["n"])
+    if catchup and catchup["fetch_complete"] and pending_count == 0:
+        db.execute("UPDATE wallet_cursors SET signature=?,initialized_at=? WHERE wallet=?",
+                   (catchup["head_signature"],iso_now(),wallet))
+        db.execute("DELETE FROM wallet_catchup WHERE wallet=?",(wallet,))
+        db.commit()
+        return count, note or "ok"
+    if catchup:
+        phase = "catch-up paging" if not catchup["fetch_complete"] else "processing catch-up"
+        return count, note or f"{phase}: {pending_count} pending signatures; cursor held"
+    return count, note or "ok"
 
 def dex_pair(mint):
     try:
@@ -285,10 +328,13 @@ def run_once():
         acct=db.execute("SELECT cash FROM wallet_account WHERE id=1").fetchone()
         positions=db.execute("SELECT qty,last_price,cost FROM wallet_positions").fetchall()
         realized=float(db.execute("SELECT COALESCE(SUM(pnl),0) p FROM wallet_trades").fetchone()["p"])
+        pending_count=int(db.execute("SELECT COUNT(*) AS n FROM wallet_pending_signatures").fetchone()["n"])
+        catchup_count=int(db.execute("SELECT COUNT(*) AS n FROM wallet_catchup").fetchone()["n"])
         result={"mode":"PAPER_ONLY","wallets_monitored":len(wallets),"new_wallet_signals":new_signals,
           "eligible_consensus_tokens":eligible,"opened":opened,"closed_or_partial":closed,
           "cash":round(acct["cash"],2),"open_positions":len(positions),"realized_pnl":round(realized,4),
           "equity_estimate":round(acct["cash"]+sum(p["qty"]*p["last_price"] for p in positions),4),
+          "pending_signatures":pending_count,"wallets_catching_up":catchup_count,
           "wallets":[{"name":w["name"],"address":w["address"]} for w in wallets],"notes":notes}
         print(json.dumps(result,indent=2)); return result
     finally:

@@ -82,6 +82,8 @@ def build_report(db_path=DB_PATH):
         scans = _dict_rows(db.execute("SELECT * FROM scans ORDER BY id DESC LIMIT 20").fetchall()) if _has_table(db, "scans") else []
         wallet_runs = _dict_rows(db.execute("SELECT * FROM wallet_runs ORDER BY id DESC LIMIT 20").fetchall()) if _has_table(db, "wallet_runs") else []
         signal_count = db.execute("SELECT COUNT(*) AS n FROM wallet_signals").fetchone()["n"] if _has_table(db, "wallet_signals") else None
+        pending_signature_count = db.execute("SELECT COUNT(*) AS n FROM wallet_pending_signatures").fetchone()["n"] if _has_table(db, "wallet_pending_signatures") else None
+        catchup_state = _dict_rows(db.execute("SELECT * FROM wallet_catchup ORDER BY wallet").fetchall()) if _has_table(db, "wallet_catchup") else []
         return {
             "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "database_path": str(path),
@@ -90,6 +92,8 @@ def build_report(db_path=DB_PATH):
             "scan_history_latest_20": scans,
             "wallet_run_history_latest_20": wallet_runs,
             "wallet_signal_count": signal_count,
+            "wallet_pending_signature_count": pending_signature_count,
+            "wallet_catchup_state": catchup_state,
             "important_notes": [
                 "Two separate virtual accounts are reported independently; do not add them together as one portfolio.",
                 "Open-position marks use the last price stored by a scan, not a guaranteed executable quote.",
