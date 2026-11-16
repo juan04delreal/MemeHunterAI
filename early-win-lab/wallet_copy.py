@@ -26,7 +26,7 @@ TRAIL_DRAWDOWN = 0.25
 MAX_HOLD_HOURS = 6
 WSOL = "So11111111111111111111111111111111111111112"
 USER_AGENT = "PumpSmartMoneyPaperLab/1.0"
-RPC_URL = os.environ.get("SOLANA_RPC_URL", "https://api.mainnet-beta.solana.com")
+RPC_URL = os.environ.get("SOLANA_RPC_URL") or "https://api.mainnet-beta.solana.com"
 
 def utcnow():
     return datetime.now(timezone.utc)
